@@ -1,0 +1,26 @@
+[project]
+name = "tajfel-study"
+version = "0.1.0"
+description = "Tajfel (1971) minimal-group paradigm as a standalone SocioVerse2 study"
+requires-python = ">=3.11"
+dependencies = [
+    # The SocioVerse2 runtime. Pick ONE of the following, or install it yourself:
+    #   (a) a published wheel/PyPI package, e.g.  "socioverse>=0.2.0"
+    #   (b) an editable local checkout for framework development:
+    #       pip install -e /path/to/SocioVerse2
+    "socioverse",
+    # LLM mode only (--llm openai):
+    "openai",
+    # CSV export from the DuckDB store:
+    "duckdb",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools]
+packages = ["tajfel"]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"

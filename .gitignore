@@ -1,0 +1,47 @@
+# === Secrets (never commit) ===
+.env
+.env.*
+!.env.example
+
+# === Run artifacts (generated data, never shipped) ===
+runs/
+**/trajectory/
+**/*.duckdb
+**/*.duckdb.wal
+**/*.parquet
+
+# === Python ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.so
+*.egg-info/
+.eggs/
+*.whl
+.venv/
+venv/
+env/
+build/
+dist/
+develop-eggs/
+downloads/
+wheels/
+
+# === Testing / coverage ===
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# === OS / editor ===
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
