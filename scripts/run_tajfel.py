@@ -121,14 +121,15 @@ def write_study_artifacts(out: Path, study, env_bundle, pop_bundle, sim: Simulat
     write_artifact(out / "simulation" / "simulation.json", sim)
 
 
-def export_rows(out: Path, pairs: list[tuple[int, str, str, int, int, int, int]]
+def export_rows(out: Path, pairs: list[tuple[int, str, str, int, int, int, int, str]]
                 ) -> tuple[int, Path]:
     """Write allocations.csv: one row per (step, agent, matrix) allocation choice."""
     dest = out / "export" / "allocations.csv"
     dest.parent.mkdir(parents=True, exist_ok=True)
     with dest.open("w", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
-        w.writerow(["step", "agent_id", "matrix", "row", "ingroup_points", "outgroup_points", "gap"])
+        w.writerow(["step", "agent_id", "matrix", "row", "own_group",
+                    "ingroup_points", "outgroup_points", "gap"])
         for rec in pairs:
             w.writerow(rec)
     return len(pairs), dest
@@ -253,7 +254,8 @@ def main(argv: list[str] | None = None) -> int:
                 if rec.get("action_kind") != "allocate_in_group_matrix":
                     continue
                 allocs.append((rec.get("step"), rec.get("agent_id"), pl.get("matrix"),
-                               pl.get("row"), pl.get("ingroup_points"), pl.get("outgroup_points"),
+                               pl.get("row"), pl.get("own_group"),
+                               pl.get("ingroup_points"), pl.get("outgroup_points"),
                                pl.get("gap")))
             n_alloc, csv_path = export_rows(out, allocs)
             mpath = export_metrics_csv(out, rows)

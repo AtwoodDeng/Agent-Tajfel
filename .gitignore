@@ -5,6 +5,7 @@
 
 # === Run artifacts (generated data, never shipped) ===
 runs/
+runs_feedback/
 **/trajectory/
 **/*.duckdb
 **/*.duckdb.wal

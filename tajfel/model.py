@@ -93,20 +93,22 @@ _log = logging.getLogger(__name__)
 #          profit end -- the classic trade-off that reveals ingroup favouritism.
 
 # Reading the response correctly matters more than it looks. On a type-1 (parity) matrix the
-# ingroup-outgroup GAP varies row to row, so the gap IS the dependent variable. On a type-3
-# (MIF) matrix the gap is HELD CONSTANT across rows and the joint profit varies -- so on that
-# matrix the informative statistic is the joint profit (the row the agent picked), and the
-# favours-ingroup end is the LOW joint-profit end. This is exactly Tajfel's design: the
-# subject must sacrifice absolute payoff to favour the ingroup, and doing so is the effect.
+# own-group-minus-other-group GAP varies row to row on every matrix, so that gap IS the
+# dependent variable throughout. On a type-3 (MIF) matrix the gap varies in the OPPOSITE
+# direction to the joint profit: walking up the table buys the ingroup a bigger relative
+# advantage while shrinking the total paid out. That sacrifice is what the matrix measures.
 
 MATRIX_PARITY: list[tuple[int, int]] = [
     (19, 1), (17, 3), (15, 5), (13, 7), (11, 9),
     (9, 11), (7, 13), (5, 15), (3, 17), (1, 19),
 ]
-# Type 3 (MIF): gap is constant at +6, joint profit rises with the row. The ingroup-favouring
-# pull is toward the LOW rows (give up joint profit to keep the ingroup ahead).
+# Type 3 (MIF): the gap GROWS as the joint profit FALLS, which is the real maximum-difference
+# trade-off: row 0 is the maximum-difference row (biggest gap, lowest joint profit), the last
+# row is the maximum-joint row (biggest total, own group behind). No row dominates another --
+# own-group points fall monotonically while the other group's rise -- so every one of the four
+# Tajfel strategies (max joint / max own / max difference / fair) lands on a different row.
 MATRIX_MIF: list[tuple[int, int]] = [
-    (7, 1), (8, 2), (9, 3), (10, 4), (11, 5), (12, 6),
+    (15, 5), (14, 8), (13, 11), (12, 14), (11, 17), (10, 20),
 ]
 # Type 2 (MJP): joint profit peaks INTERIOR to the table and the gap falls away at the high end,
 # so a joint-profit maximiser lands mid-table while an ingroup-favouring agent drifts toward the
@@ -123,7 +125,7 @@ MATRICES: dict[str, list[tuple[int, int]]] = {
 }
 
 # Anchor rows (what "favouring the ingroup" means on each matrix type).
-ROW_MIF_FAVOUR = 0                          # low joint profit, ingroup still ahead
+ROW_MIF_FAVOUR = 0                          # maximum difference / lowest joint profit
 ROW_MJP_MAX_JOINT = max(range(len(MATRIX_MJP)), key=lambda r: sum(MATRIX_MJP[r]))
 ROW_PARITY_FAIR = min(range(len(MATRIX_PARITY)),
                       key=lambda r: abs(MATRIX_PARITY[r][0] - MATRIX_PARITY[r][1]))
@@ -148,6 +150,11 @@ CONDITION_FRAMING = {
     "c3": ("You and another participant were assigned to groups by a trivial criterion. Your own "
            "group is much smaller than the other group. The matrix below shows both columns."),
 }
+# The c3 cover story has to be TRUE for the agent hearing it: only the minority group is rare,
+# so a majority-group agent gets the "larger" wording instead of being told its group is small.
+CONDITION_FRAMING["c3_majority"] = (
+    "You and another participant were assigned to groups by a trivial criterion. Your own group "
+    "is much larger than the other group. The matrix below shows both columns.")
 
 # --- shared, PURE seed / index functions (no mutable shared state -> generic cls(bundle) works) ---
 
@@ -161,18 +168,37 @@ def agent_index(aid: str) -> int:
     return int(aid.split("-")[1])
 
 
+GROUPS = ("A", "B")
+
+
 def group_of(i: int, n: int, condition: str = DEFAULT_CONDITION) -> str:
-    """Deterministic group assignment. c3 makes the FIRST group the minority (10 of n)."""
+    """Which of the two groups agent i belongs to. c3 makes group A the rare minority."""
+    if n <= 1:
+        return "A"
     if condition == "c3":
-        n_minority = max(1, min(n - 1, int(round(n * 0.2)))) if n > 1 else 1
-        return "ingroup" if i < n_minority else "outgroup"
-    return "ingroup" if i % 2 == 0 else "outgroup"
+        n_minority = max(1, min(n - 1, int(round(n * 0.2))))
+        return "A" if i < n_minority else "B"
+    return "A" if i % 2 == 0 else "B"
+
+
+def other_group(g: str) -> str:
+    return "B" if g == "A" else "A"
 
 
 def group_sizes(n: int, condition: str = DEFAULT_CONDITION) -> tuple[int, int]:
-    """(n_ingroup, n_outgroup) for the given pool size and condition."""
-    n_in = sum(1 for i in range(n) if group_of(i, n, condition) == "ingroup")
-    return n_in, n - n_in
+    """(n_A, n_B) for the given pool size and condition."""
+    n_a = sum(1 for i in range(n) if group_of(i, n, condition) == "A")
+    return n_a, n - n_a
+
+
+def own_points(group: str, a: int, b: int) -> int:
+    """Points a (group-A, group-B) row gives to the DECIDING agent's own group."""
+    return int(a) if group == "A" else int(b)
+
+
+def own_gap(group: str, a: int, b: int) -> int:
+    """> 0 means this agent gave their OWN group more than the other group."""
+    return (int(a) - int(b)) if group == "A" else (int(b) - int(a))
 
 
 def matrix_for(kind: str) -> list[tuple[int, int]]:
@@ -189,21 +215,19 @@ def allocation_gap(kind: str, row: int) -> int:
     return int(a) - int(b)
 
 
-def ingroup_favour(kind: str, row: int) -> float:
-    """The matrix-appropriate dependent variable: how much a choice favours the ingroup.
+def ingroup_favour(kind: str, row: int, own_group: str = "A") -> float:
+    """How much a choice favours the DECIDING agent's own group over the other group.
 
-    On a type-1 (parity) matrix this is just the points gap. On type-3 (MIF) the gap is constant
-    by construction, so favouring the ingroup shows up as walking DOWN the table and sacrificing
-    joint profit -- the statistic is therefore the negated joint profit, so that higher always
-    means "more ingroup-favouring" and the three matrix types can be pooled. Type-2 (MJP) is a
-    mixed case: the gap and the joint profit move together, so we use the gap.
+    Always the oriented points gap (own-group points - other-group points), so higher is always
+    more ingroup-favouring and the three matrix types pool cleanly. Each agent's "ingroup" is
+    their OWN group: on the c3 arm a majority-group agent who favours their own group scores
+    positive too, which is what makes the per-allocator stratification of C3 possible.
+    `kind` is accepted for the call sites and to bounds-check the row.
     """
     pairs = matrix_for(kind)
     row = max(0, min(len(pairs) - 1, int(row)))
     a, b = pairs[row]
-    if kind == "mif":
-        return float(-(a + b))       # low joint profit == strong ingroup pull
-    return float(a - b)
+    return own_gap(own_group, a, b)
 
 
 def row_count(kind: str) -> int:
@@ -223,11 +247,12 @@ class TajfelPopulationProvider(PopulationProvider):
             raise ValueError(f"condition must be one of {CONDITIONS}, got {self.condition!r}")
 
     def build(self, seed: int) -> list[Persona]:
-        n_in, n_out = group_sizes(self.n, self.condition)
+        n_a, n_b = group_sizes(self.n, self.condition)
         out = []
         for i in range(self.n):
             g = group_of(i, self.n, self.condition)
             trivial = ["over-estimated the number of dots", "preferred the painting"]
+            n_own = n_a if g == "A" else n_b
 
             out.append(Persona(
                 agent_id=agent_id(i),
@@ -236,7 +261,8 @@ class TajfelPopulationProvider(PopulationProvider):
                     "group": g,
                     "condition": self.condition,
                     "trivial_criterion": trivial[i % len(trivial)],
-                    "group_size": n_in if g == "ingroup" else n_out,
+                    "group_size": n_own,
+                    "other_group_size": self.n - n_own,
                     "pool_size": self.n,
                 },
                 init_state={"group": g, "steps_played": 0, "cum_gap": 0},
@@ -307,15 +333,24 @@ class TajfelEnvironmentProvider(EnvironmentProvider):
     def observe_batch(self, agent_ids: list[str], t: int, round_idx: int = 0) -> list[Observation]:
         kind = self.matrix_at(t)
         pairs = matrix_for(kind)
-        rows = [{"row": r, "ingroup_points": a, "outgroup_points": b,
-                 "gap": a - b, "joint": a + b}
+        # rows are stored canonically as (group A, group B); each agent is shown them from its
+        # own point of view, so "the left column is YOUR group" stays true for every agent
+        rows = [{"row": r, "a_points": a, "b_points": b, "gap": a - b, "joint": a + b}
                 for r, (a, b) in enumerate(pairs)]
-        framing = CONDITION_FRAMING.get(self.condition, CONDITION_FRAMING[DEFAULT_CONDITION])
+        n_a, n_b = group_sizes(self.n, self.condition)
 
         out: list[Observation] = []
         for aid in agent_ids:
             i = agent_index(aid)
             g = group_of(i, self.n, self.condition)
+            n_own = n_a if g == "A" else n_b
+            n_other = self.n - n_own
+            # only the MINORITY is rare, so a majority agent must not be told its group is small
+            if self.condition == "c3" and n_own > n_other:
+                framing = CONDITION_FRAMING["c3_majority"]
+            else:
+                framing = CONDITION_FRAMING.get(self.condition,
+                                                CONDITION_FRAMING[DEFAULT_CONDITION])
             records = self.history.get(aid, [])
             out.append(Observation(
                 agent_id=aid, step=t,
@@ -326,13 +361,16 @@ class TajfelEnvironmentProvider(EnvironmentProvider):
                 },
                 local_physical={
                     "own_group": g,
+                    "other_group": other_group(g),
+                    "own_group_size": n_own,
+                    "other_group_size": n_other,
                     "ingroup_column": "left" if self.label_visible else None,
                     "outgroup_column": "right" if self.label_visible else None,
                     "steps_played": len(records),
-                    "cum_gap": sum(r["gap"] for r in records),
+                    "cum_gap": sum(int(r["gap"]) for r in records),
                     "last_choice_gap": records[-1]["gap"] if records else None,
                 },
-                macro_information={"framing": framing},
+                macro_information={"framing": framing, "condition": self.condition},
             ))
         return out
 
@@ -442,12 +480,23 @@ def build_tajfel_prompt(ob: Observation, lang: str = "en") -> str:
     The c2 arm must not leak the category: when `label_visible` is false the columns are named
     Person A / Person B and the task text never mentions ingroup or outgroup. This is the whole
     manipulation, so it is enforced here rather than left to the caller.
+
+    DELIBERATELY MEMORYLESS (C1-C3): the classic Tajfel paradigm treats every allocation as an
+    INDEPENDENT single-shot decision -- real participants never see their own past matrices --
+    so the history fields the environment puts in local_physical (steps_played / cum_gap /
+    last_choice_gap) are intentionally NOT rendered into this prompt, and decide_batch
+    intentionally ignores its `memories` argument. The D-series feedback study (see
+    Docs/Specs/tajfel_feedback_study_spec.md) is the arm where cross-round memory is the
+    construct under test; it gets its own prompt section, not a change to this one.
     """
     t = _PROMPTS[lang]
     framing = ob.macro_information.get("framing", "")
     rows = ob.macro_physical.get("rows", [])
     label_visible = bool(ob.macro_physical.get("label_visible", True))
     kind = ob.macro_physical.get("matrix_kind", "?")
+    # rows are stored canonically (A, B); on a labelled arm the agent sees the two columns from
+    # ITS OWN point of view, so "the left column is your group" is true for every agent
+    own = (ob.local_physical or {}).get("own_group", "A")
 
     lines = [t["head"].format(framing=framing), f"- Matrix type: {kind}"]
     if label_visible:
@@ -458,12 +507,14 @@ def build_tajfel_prompt(ob: Observation, lang: str = "en") -> str:
         lines.append(t["task_hidden"])
     lines.append("")
     for r in rows:
+        a, b = int(r["a_points"]), int(r["b_points"])
         if label_visible:
-            lines.append(f"  row {r['row']}:  ingroup {r['ingroup_points']}  "
-                         f"outgroup {r['outgroup_points']}   (joint {r['joint']})")
+            own_pts, other_pts = (a, b) if own == "A" else (b, a)
+            lines.append(f"  row {r['row']}:  ingroup {own_pts}  outgroup {other_pts}   "
+                         f"(joint {a + b})")
         else:
-            lines.append(f"  row {r['row']}:  A {r['ingroup_points']}  "
-                         f"B {r['outgroup_points']}   (joint {r['joint']})")
+            # a hidden label must not disclose which column is the agent's own group
+            lines.append(f"  row {r['row']}:  A {a}  B {b}   (joint {a + b})")
     lines.append("")
     lines.append(t["tail"].format(max_row=len(rows) - 1))
     return "\n".join(lines)
@@ -505,10 +556,12 @@ class TajfelDecisionModel(DecisionModel):
       - matrix_bias (float)   how far up the ingroup-difference end a scripted agent drifts (0..1)
       - noise (float)         per-agent scripted randomness (0..1)
       - label_gain (float)    how strongly the SCRIPTED stub responds to a visible label
+      - rarity_gain (float)   extra scripted drift when the agent's own group is the minority
       - llm_kind, model, temperature, max_tokens, max_workers, prompt_lang
     """
 
     def __init__(self, matrix_bias: float = 0.65, noise: float = 0.5, label_gain: float = 0.3,
+                 rarity_gain: float = 0.3,
                  llm_kind: str = "scripted", model: str | None = None,
                  temperature: float = 0.7, max_tokens: int = 160, max_workers: int = 8,
                  prompt_lang: str = "en"):
@@ -518,6 +571,7 @@ class TajfelDecisionModel(DecisionModel):
         self.matrix_bias = float(matrix_bias)
         self.noise = float(noise)
         self.label_gain = float(label_gain)
+        self.rarity_gain = float(rarity_gain)
         self.llm_kind = llm_kind
         self.max_workers = max(1, int(max_workers))
         self.llm = _make_llm(llm_kind, model=model, temperature=temperature, max_tokens=max_tokens)
@@ -525,29 +579,51 @@ class TajfelDecisionModel(DecisionModel):
     def _scripted_row(self, ob: Observation, n_rows: int) -> int:
         """A deterministic-but-noisy row pick.
 
-        Deterministic in (agent, step, matrix kind) so a re-run reproduces the same choices, but
-        spread across agents rather than pinned to one row: `noise` sets how wide the individual
-        draw is around the group-level centre. The centre is the row that would favour the
-        ingroup on THIS matrix type, and a visible label tilts the centre further that way --
-        so the stub reproduces a crude version of the label effect, which is exactly what makes
-        it useful for smoke-testing the pipeline's contrast wiring.
+        Deterministic in (agent, step, matrix kind, condition, own group) so a re-run reproduces
+        the same choices, but spread across agents rather than pinned to one row: `noise` sets
+        how wide the individual draw is around the group-level centre. The centre is the row
+        that would favour THIS agent's own group on THIS matrix type; a visible label tilts the
+        centre further that way and, on c3, being the rare minority tilts it a little further
+        still.
+
+        This is a PIPELINE PROBE, not a model of the phenomenon. Reading the condition here is
+        what makes the c1/c3 arms distinguishable at all -- without it a broken c3 wiring would
+        pass the smoke test silently -- so the tilt direction is a wiring assertion, not
+        evidence about minimal-group behaviour.
         """
-        aid = ob.agent_id
+        rows = ob.macro_physical.get("rows", []) or []
+        if not rows:
+            return 0
+        lpb = ob.local_physical or {}
+        own = lpb.get("own_group", "A")
+        cond = str((ob.macro_information or {}).get("condition", ""))
+        kind = ob.macro_physical.get("matrix_kind", "")
         h = 0
-        for ch in f"{aid}|{ob.step}|{ob.macro_physical.get('matrix_kind', '')}":
+        for ch in f"{ob.agent_id}|{ob.step}|{kind}|{cond}|{own}":
             h = (h * 131 + ord(ch)) % 100003
         u = (h % 997) / 997.0                          # u in [0, 1), well spread over agents
 
         visible = bool(ob.macro_physical.get("label_visible"))
-        kind = ob.macro_physical.get("matrix_kind")
-        # 0.0 = the row that most favours the ingroup, 1.0 = the opposite end
+        # rank 0.0 = the row that most favours this agent's own group, 1.0 = the opposite end.
+        # A hidden label carries no own-group cue, so it is ranked on the canonical A/B gap.
+        gaps = []
+        for r in rows:
+            a, b = int(r["a_points"]), int(r["b_points"])
+            gaps.append((a - b) if (own == "A" or not visible) else (b - a))
+        lo, hi = min(gaps), max(gaps)
+
         centre = 0.5
         if visible:
-            centre -= self.label_gain * self.matrix_bias     # drift toward the ingroup end
+            centre -= self.label_gain * self.matrix_bias     # drift toward the own-group end
+            n_own = lpb.get("own_group_size")
+            n_oth = lpb.get("other_group_size")
+            if cond == "c3" and n_own is not None and n_oth is not None and n_own < n_oth:
+                centre -= self.rarity_gain * self.matrix_bias
         # noise widens the draw around the centre (noise=0 -> everyone picks the centre row)
-        pos = centre + (u - 0.5) * self.noise
-        pos = min(1.0, max(0.0, pos))
-        return int(round(pos * (n_rows - 1)))
+        pos = min(1.0, max(0.0, centre + (u - 0.5) * self.noise))
+        if hi == lo:
+            return int(round(pos * (n_rows - 1)))
+        return min(range(n_rows), key=lambda r: abs((hi - gaps[r]) / (hi - lo) - pos))
 
     def _choose(self, ob: Observation) -> tuple[int, str, list[str]]:
         rows = ob.macro_physical.get("rows", [])
@@ -570,6 +646,9 @@ class TajfelDecisionModel(DecisionModel):
         return int(dec["row"]), "llm", [dec.get("reason") or f"row={dec['row']}"]
 
     def decide_batch(self, obs: list[Observation], memories: dict[str, Any]) -> list[Action]:
+        # `memories` is intentionally unused for C1-C3: each allocation is an independent
+        # single-shot decision (see build_tajfel_prompt). The D-series study reuses this model
+        # with a memory-aware prompt; do NOT "fix" this without that spec.
         if self.llm_kind == "openai" and len(obs) > 1:
             from concurrent.futures import ThreadPoolExecutor
             if hasattr(self.llm, "_ensure"):
@@ -586,15 +665,23 @@ class TajfelDecisionModel(DecisionModel):
                 continue
             r = rows[min(max(0, row), len(rows) - 1)]
             kind = ob.macro_physical.get("matrix_kind")
+            own = (ob.local_physical or {}).get("own_group", "A")
+            a, b = int(r["a_points"]), int(r["b_points"])
+            # ingroup_points/outgroup_points are the points this choice gives the DECIDING
+            # agent's own group and the other group -- not fixed matrix columns
+            own_pts, other_pts = (a, b) if own == "A" else (b, a)
             actions.append(Action(
                 agent_id=ob.agent_id, step=ob.step, kind="allocate_in_group_matrix",
                 payload={
                     "matrix": kind,
                     "row": int(r["row"]),
-                    "ingroup_points": int(r["ingroup_points"]),
-                    "outgroup_points": int(r["outgroup_points"]),
-                    "gap": int(r["gap"]),
-                    "favour": ingroup_favour(kind, int(r["row"])),
+                    "own_group": own,
+                    "a_points": a,
+                    "b_points": b,
+                    "ingroup_points": own_pts,
+                    "outgroup_points": other_pts,
+                    "gap": own_pts - other_pts,
+                    "favour": float(own_pts - other_pts),
                     "reason": (rationale[0] if rationale else ""),
                 },
                 source=source, rationale=rationale,
@@ -616,11 +703,11 @@ TAJFEL_METRICS = [
 class TajfelMetricCollector(MetricCollector):
     """The paper's dependent variable, computed per matrix type.
 
-    `mean_favour` pools the matrix-appropriate statistic (`ingroup_favour`): on the parity matrix
-    the points gap, on the MIF matrix the (negated) joint profit -- because there the gap is held
-    constant and favouring the ingroup means sacrificing absolute payoff. Higher is always more
-    ingroup-favouring. `mif_favour_share` is the share of MIF choices in the ingroup-favouring
-    half of the table (rows below the midpoint); the uniform baseline is 0.5.
+    Every action payload already carries the own-group-oriented gap, so `mean_favour` is the
+    mean of (own-group points - other-group points) and higher is always more ingroup-favouring
+    -- on every matrix type, and for every agent whichever group they were assigned to.
+    `mif_favour_share` is the share of MIF choices that kept the agent's OWN group ahead; the
+    uniform baseline is the share of own-favouring rows in the table (0.5 for the current one).
     """
 
     def collect(self, env: Any, actions: list[Action], t: int) -> dict[str, Any]:
@@ -628,8 +715,7 @@ class TajfelMetricCollector(MetricCollector):
         n = len(acts)
 
         def _favour(pred) -> float | None:
-            sub = [ingroup_favour(a.payload.get("matrix"), int(a.payload.get("row", 0)))
-                   for a in acts if pred(a)]
+            sub = [float(a.payload.get("gap", 0)) for a in acts if pred(a)]
             return round(mean(sub), 4) if sub else None
 
         def _gap(pred) -> float | None:
@@ -637,8 +723,7 @@ class TajfelMetricCollector(MetricCollector):
             return round(mean(sub), 4) if sub else None
 
         by_mif = [a for a in acts if a.payload.get("matrix") == "mif"]
-        n_mif_rows = row_count("mif")
-        mif_favour = sum(1 for a in by_mif if int(a.payload.get("row", 0)) < n_mif_rows / 2)
+        mif_favour = sum(1 for a in by_mif if int(a.payload.get("gap", 0)) > 0)
 
         return {
             "mean_favour": _favour(lambda a: True),
@@ -703,13 +788,13 @@ def make_tajfel_bundles(
         step_meaning="one allocation decision over one matrix type; steps rotate parity -> MJP -> MIF",
         metrics=list(TAJFEL_METRICS),
         metric_descriptions={
-            "mean_favour": "matrix-appropriate ingroup-favouring statistic (parity/MJP: points gap; MIF: negated joint profit); higher = more ingroup-favouring",
-            "favour_parity": "mean ingroup-favouring statistic on the parity (equal joint-profit) matrix",
-            "favour_mjp": "mean ingroup-favouring statistic on the maximum-joint-profit matrix",
-            "favour_mif": "mean ingroup-favouring statistic on the maximum-ingroup-difference matrix (negated joint profit)",
-            "mean_gap": "mean of (ingroup points - outgroup points) over all choices; >0 = ingroup favouritism",
-            "gap_parity": "mean points gap on the parity matrix",
-            "mif_favour_share": "share of MIF choices in the ingroup-favouring (low joint-profit) half; uniform baseline 0.5",
+            "mean_favour": "mean (own-group points - other-group points) over all choices; > 0 = the agent's OWN group was favoured",
+            "favour_parity": "own-group points gap on the parity (equal joint-profit) matrix",
+            "favour_mjp": "own-group points gap on the maximum-joint-profit matrix",
+            "favour_mif": "own-group points gap on the maximum-ingroup-difference matrix (favouritism costs joint profit here)",
+            "mean_gap": "alias of mean_favour, retained for readability in the exported CSV",
+            "gap_parity": "own-group points gap on the parity matrix",
+            "mif_favour_share": "share of MIF choices that kept the agent's OWN group ahead; uniform baseline 0.5",
             "mean_joint": "mean total points allocated to the pair (own-payoff cost of favouritism)",
             "fallback_rate": "share of LLM replies that failed to parse and used the scripted rule; >0.10 invalidates the run",
             "n_allocations": "allocations recorded this step (= agents that answered)",
@@ -723,7 +808,7 @@ def make_tajfel_bundles(
         legacy_simulator="from_scratch",
         provider_refs=["tajfel.env", "tajfel.pop", "tajfel.decision", "tajfel.collector"],
         adjustable_params=["condition", "n_agents", "n_steps", "matrices", "matrix_bias",
-                           "noise", "label_gain", "llm_kind", "prompt_lang"],
+                           "noise", "label_gain", "rarity_gain", "llm_kind", "prompt_lang"],
         status="draft",
         maintainer="dsh",
     )
@@ -766,7 +851,7 @@ def make_tajfel_bundles(
         study_id=study_id, n_steps=n_steps, seed=seed,
         decision_ref="tajfel.decision",
         decision_args={
-            "matrix_bias": 0.65, "noise": 0.5, "label_gain": 0.3,
+            "matrix_bias": 0.65, "noise": 0.5, "label_gain": 0.3, "rarity_gain": 0.3,
             "llm_kind": "scripted", "prompt_lang": "en", "max_workers": 8,
         },
         collector_ref="tajfel.collector",
