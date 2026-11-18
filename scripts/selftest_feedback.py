@@ -20,6 +20,8 @@ def check(ok,msg):
 def main():
  for seed in range(8):
   e=FeedbackEnvironmentProvider(seed=seed)
+  check(len({g for g in e.groups.values()})==2,"randomized groups contain both labels")
+  check(any((int(a.split("-")[1]) % 2 == 0) != (g == "A") for a,g in e.groups.items()),"agent ID parity must not encode group")
   for t in range(1,6):
    e.advance_to(t); ps=e.pairings[t]; check(len(ps)==5,f"seed {seed} step {t}: five pairs")
    check(sum(p[2]=='AA' for p in ps)==1 and sum(p[2]=='BB' for p in ps)==1 and sum(p[2]=='AB' for p in ps)==3,"pair structure")
@@ -48,10 +50,28 @@ def main():
   for t in range(1,4):
    for a,b,k in e.pairings[t]:
     for r in (1,2): check(sum(m['step']==t and m['round']==r and m['sender'] in (a,b) and m['recipient'] in (a,b) for m in e.messages)==2,"bidirectional chat")
+  # Oversized incoming LLM text is clipped and explicitly marked.
+  tx=FeedbackEnvironmentProvider(arm="d1",seed=5); tx.advance_to(1)
+  from types import SimpleNamespace as NS
+  long_action=NS(agent_id="tj-000",step=1,kind="chat",payload={"content":"中"*240,"recipient":"tj-001","round_idx":1},source="llm")
+  tx.apply_messages([long_action],1,1)
+  check(len(tx.messages[0]["content"])==200 and tx.messages[0]["truncated"],"incoming text truncation flag")
+  # The LLM mode calls the client and distinguishes valid replies from fallback.
+  e=FeedbackEnvironmentProvider(arm="d1",seed=4); e.advance_to(1); o=e.observe_batch(["tj-000"],1,0)[0]
+  llm=FeedbackDecisionModel(llm_kind="openai"); llm._call_llm=lambda prompt:'{"row": 2}'
+  valid=llm.decide_batch([o],{})[0]; check(valid.source=="llm" and valid.payload["row"]==2,"OpenAI allocation parsing")
+  llm._call_llm=lambda prompt:'not json'; bad=llm.decide_batch([o],{})[0]; check(bad.source=="fallback" and llm.fallback_count==1,"LLM fallback accounting")
+  om=FeedbackEnvironmentProvider(arm="d4",seed=3); om.advance_to(1); chat=om.observe_batch(["tj-000"],1,1)[0]
+  llm2=FeedbackDecisionModel(llm_kind="openai"); llm2._call_llm=lambda prompt:'{"message":"你好，我们继续讨论公平。"}'
+  ca=llm2.decide_batch([chat],{})[0]; check(ca.source=="llm" and "你好" in ca.payload["content"],"OpenAI chat parsing")
  with tempfile.TemporaryDirectory() as d:
   for arm in ARMS:
    env,met=run_arm(arm,5,9,d); check(len(met)==5 and all(x['fallback_rate']==0 for x in met),"end-to-end metrics")
    check((Path(d)/arm/'export'/'messages.csv').exists(),"messages export")
+   with (Path(d)/arm/'export'/'allocations.csv').open(encoding='utf-8',newline='') as f:
+    hdr=next(csv.reader(f)); check("arm" in hdr and "pair_type" in hdr,"allocation export schema")
+   with (Path(d)/arm/'export'/'metrics.csv').open(encoding='utf-8',newline='') as f:
+    check(sum(1 for _ in csv.DictReader(f))==5,"metrics export step count")
   # repeat determinism
   d1=Path(d)/'repeat1'; d2=Path(d)/'repeat2'; run_arm('d1',5,33,d1); run_arm('d1',5,33,d2)
   x=(d1/'d1/export/allocations.csv').read_bytes(); y=(d2/'d1/export/allocations.csv').read_bytes(); check(x==y,"allocation export reproducibility")
