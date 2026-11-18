@@ -28,13 +28,14 @@ def main():
    flat=[x for a,b,_ in ps for x in (a,b)]; check(len(set(flat))==10,"perfect matching")
  for arm in ARMS:
   e=FeedbackEnvironmentProvider(arm=arm,seed=17); d=FeedbackDecisionModel(); ids=list(e.groups)
+  chat_rounds = () if arm == "d5" else (1,2)
   for t in range(1,4):
    e.advance_to(t); acts=d.decide_batch(e.observe_batch(ids,t,0),{}); e.apply_allocations(acts,t)
-   for r in (1,2): e.apply_messages(d.decide_batch(e.observe_batch(ids,t,r),{}),t,r)
+   for r in chat_rounds: e.apply_messages(d.decide_batch(e.observe_batch(ids,t,r),{}),t,r)
   check(all(len([x for x in h if x['kind']=='allocation'])==3 for h in e.history.values()),f"{arm} allocations history")
-  check(len(e.messages)==3*10*2,f"{arm} message count")
+  check(len(e.messages)==len(chat_rounds)*3*10,f"{arm} message count")
   check(all(len(x['content'])<=200 for x in e.messages),"message limit")
-  if arm=='d1': check(all(x['has_cross'] for x in e.announcements),"D1 complete announcements")
+  if arm in ('d1','d5'): check(all(x['has_cross'] for x in e.announcements),"D1/D5 complete announcements")
   if arm=='d3': check(all(x['is_sum_only'] and not any(z in x['text'].lower() for z in ('group a','group b','ingroup','outgroup')) for x in e.announcements),"D3 sum-only")
   if arm in ('d2','d4'): check(not e.announcements,"no-announcement arm")
   obs=e.observe_batch(ids,3,0)
@@ -49,7 +50,7 @@ def main():
   # each pair has two messages in each communication round
   for t in range(1,4):
    for a,b,k in e.pairings[t]:
-    for r in (1,2): check(sum(m['step']==t and m['round']==r and m['sender'] in (a,b) and m['recipient'] in (a,b) for m in e.messages)==2,"bidirectional chat")
+    for r in chat_rounds: check(sum(m['step']==t and m['round']==r and m['sender'] in (a,b) and m['recipient'] in (a,b) for m in e.messages)==2,"bidirectional chat")
   # Oversized incoming LLM text is clipped and explicitly marked.
   tx=FeedbackEnvironmentProvider(arm="d1",seed=5); tx.advance_to(1)
   from types import SimpleNamespace as NS

@@ -44,7 +44,7 @@ except Exception:
                      (self.carry_previous_step and m.get("step")==step-1))]
         def drain(self): return []
 
-ARMS=("d1","d2","d3","d4")
+ARMS=("d1","d2","d3","d4","d5")
 N_AGENTS=10
 STEPS=5
 
@@ -84,9 +84,9 @@ def build_feedback_prompt(ob, round_idx=None):
     hist=lp.get("personal_history", []) or []
     rows=mp.get("rows", [])
     lines=["You are a participant in a multi-round allocation and communication study."]
-    visible=bool(mp.get("label_visible", arm in ("d1","d2")))
+    visible=bool(mp.get("label_visible", arm in ("d1","d2","d5")))
     if r==0:
-        lines.append("Choose exactly one row of the matrix. Reply only as JSON: {\"row\": 0}.")
+        lines.append('Choose exactly one row of the matrix. Reply as JSON only: {"row": 0, "reason": "one short sentence explaining why you chose this row"}')
         for row in rows:
             a,b=row["a_points"],row["b_points"]
             if visible:
@@ -101,7 +101,10 @@ def build_feedback_prompt(ob, round_idx=None):
     if hist:
         lines.append("Your past choices:")
         for h in hist:
-            if h.get("kind")=="allocation": lines.append(f"step {h['step']}: row {h['row']}, gap {h['gap']}")
+            if h.get("kind")=="allocation":
+                past=f"step {h['step']}: row {h['row']}, gap {h['gap']}"
+                if h.get("reason"): past+=f" ({h['reason']})"
+                lines.append(past)
         pubs=[h for h in hist if h.get("kind")=="announcement"]
         if pubs:
             lines.append("Published results so far:")
@@ -120,7 +123,7 @@ class FeedbackEnvironmentProvider(EnvironmentProvider):
         self.n=int(args.get("n_agents",n_agents)); self.arm=str(args.get("arm",arm))
         self.matrices=list(args.get("matrices",matrices or ["mif"]))
         self.seed=int(args.get("seed",seed)); self.groups=_groups(self.n,self.seed)
-        self.label_visible=self.arm in ("d1","d2")
+        self.label_visible=self.arm in ("d1","d2","d5")
         self.history={agent_id(i):[] for i in range(self.n)}
         self.pairings={}; self.messages=[]; self.allocations=[]; self.scores=[]; self.announcements=[]
         self._pending_partner={}; self.fallback_count=0; self.call_count=0; self.call_events=[]
@@ -128,10 +131,19 @@ class FeedbackEnvironmentProvider(EnvironmentProvider):
     def reset(self, seed=0): self.seed=int(seed); self.groups=_groups(self.n,self.seed); self.history={a:[] for a in self.groups}; self.pairings={}; self.messages=[]; self.allocations=[]; self.scores=[]; self.announcements=[]; self.fallback_count=0; self.call_count=0; self.call_events=[]; self._pending_partner={}; self.message_bus=InMemoryMessageBus(carry_previous_step=True)
     def matrix_at(self,t): return self.matrices[(max(1,t)-1)%len(self.matrices)]
     def advance_to(self,t):
-        ids=list(self.groups); rng=random.Random((self.seed*1000003+t*9176)&0xffffffff); A=[a for a in ids if self.groups[a]=="A"]; B=[a for a in ids if self.groups[a]=="B"]; rng.shuffle(A); rng.shuffle(B)
-        pairs=[(A[0],A[1],"AA"),(B[0],B[1],"BB")]+[(A[i],B[i],"AB") for i in range(2,5)]
+        ids=list(self.groups); rng=random.Random((self.seed*1000003+t*9176)&0xffffffff)
+        A=[a for a in ids if self.groups[a]=="A"]; B=[a for a in ids if self.groups[a]=="B"]
+        rng.shuffle(A); rng.shuffle(B)
+        # ~60% cross-group pairs (scaled from the original 3 AB : 1 AA : 1 BB), covering all agents
+        n_ab=min(len(A),len(B))*3//5
+        if (len(A)-n_ab)%2: n_ab-=1
+        if (len(B)-n_ab)%2: n_ab-=1
+        n_ab=max(0,n_ab)
+        pairs=[(A[i],B[i],"AB") for i in range(n_ab)]
+        pairs += [(A[i],A[i+1],"AA") for i in range(n_ab,len(A)-1,2)]
+        pairs += [(B[i],B[i+1],"BB") for i in range(n_ab,len(B)-1,2)]
         rng.shuffle(pairs); self.pairings[t]=[(a,b,k) for a,b,k in pairs]
-        self._pending_partner={x:(y,k) for x,y,k in pairs for y,x in [(x,y)]} if False else {}
+        self._pending_partner={}
         for a,b,k in pairs: self._pending_partner[a]=(b,k); self._pending_partner[b]=(a,k)
         return []
     def agent_state(self, agent_id_):
@@ -145,14 +157,14 @@ class FeedbackEnvironmentProvider(EnvironmentProvider):
     def _announcement(self,t):
         if not self.scores: return ""
         s=self.scores[-1]
-        if self.arm=="d1": return (f"Previous results: group A total {s['group_a_received']}; group B total {s['group_b_received']}; " f"A-to-A {s['a_to_a']}; A-to-B {s['a_to_b']}; B-to-A {s['b_to_a']}; B-to-B {s['b_to_b']}.")
+        if self.arm in ("d1","d5"): return (f"Previous results: group A total {s['group_a_received']}; group B total {s['group_b_received']}; " f"A-to-A {s['a_to_a']}; A-to-B {s['a_to_b']}; B-to-A {s['b_to_a']}; B-to-B {s['b_to_b']}.")
         if self.arm=="d3": return f"Previous results: total points received by the two groups combined were {s['total_sum']}."
         return ""
     def observe_batch(self, agent_ids, t, round_idx=0):
         if t not in self.pairings: self.advance_to(t)
         ann=self._announcement(t)
         if round_idx == 0 and ann and not any(x["step"] == t for x in self.announcements):
-            self.announcements.append({"step":t,"arm":self.arm,"text":ann,"is_sum_only":self.arm=="d3","has_cross":self.arm=="d1"})
+            self.announcements.append({"step":t,"arm":self.arm,"text":ann,"is_sum_only":self.arm=="d3","has_cross":self.arm in ("d1","d5")})
             for aid in self.history: self.history[aid].append({"kind":"announcement","step":t,"text":ann})
         out=[]; rows=[{"row":i,"a_points":a,"b_points":b} for i,(a,b) in enumerate(MATRIX_MIF)]
         for aid in agent_ids:
@@ -182,7 +194,7 @@ class FeedbackEnvironmentProvider(EnvironmentProvider):
             ap=int(p.get("a_points",p.get("ingroup_points",0))); bp=int(p.get("b_points",p.get("outgroup_points",0)))
             own,other=(ap,bp) if g=="A" else (bp,ap)
             ptype=next((kind for x,y,kind in self.pairings.get(t,[]) if a.agent_id in (x,y)),"unknown")
-            rec={"kind":"allocation","arm":self.arm,"step":t,"agent_id":a.agent_id,"row":int(p["row"]),"own_group":g,"pair_type":ptype,"ingroup_points":own,"outgroup_points":other,"gap":own-other}; self.history[a.agent_id].append(rec); self.allocations.append(rec); by_group[g].append(rec)
+            rec={"kind":"allocation","arm":self.arm,"step":t,"agent_id":a.agent_id,"row":int(p["row"]),"own_group":g,"pair_type":ptype,"reason":str(p.get("reason",""))[:200],"ingroup_points":own,"outgroup_points":other,"gap":own-other}; self.history[a.agent_id].append(rec); self.allocations.append(rec); by_group[g].append(rec)
             if g=="A": cross["AA"]+=rec["ingroup_points"]; cross["AB"]+=rec["outgroup_points"]
             else: cross["BB"]+=rec["ingroup_points"]; cross["BA"]+=rec["outgroup_points"]
         s={"step":t,"group_a_received":cross["AA"]+cross["BA"],"group_b_received":cross["AB"]+cross["BB"],**{f"a_to_a":cross["AA"],"a_to_b":cross["AB"],"b_to_a":cross["BA"],"b_to_b":cross["BB"]},"total_sum":sum(cross.values())}; self.scores.append(s)
@@ -196,61 +208,80 @@ class FeedbackDecisionModel(DecisionModel):
         self.llm_kind=llm_kind; self.seed=seed; self.model=model; self.temperature=temperature
         self.max_tokens=max_tokens; self.fallback_count=0; self.call_count=0
         self._llm=None
-    def _call_llm(self,prompt):
+    def _ensure_llm(self):
         if self._llm is None:
             from tajfel.model import _OpenAILLM
             self._llm=_OpenAILLM(model=self.model,temperature=self.temperature,max_tokens=self.max_tokens)
-        return self._llm(prompt)
+        return self._llm
+    def _call_llm(self,prompt):
+        return self._ensure_llm()(prompt)
     def _scripted_message(self,ob,r,prompt):
         h=hashlib.sha256((ob.agent_id+str(ob.step)+str(r)+prompt).encode()).hexdigest()
         return ["我觉得上一轮的分配值得继续讨论。","我们可以比较一下刚才的结果。","我重视公平，也会参考之前的交流。"][int(h[:2],16)%3]
     def _row(self,ob):
         hist=ob.local_physical.get("personal_history",[]); h=hashlib.sha256((ob.agent_id+str(ob.step)+_history_text(hist)).encode()).digest(); return int.from_bytes(h[:4],"big")%len(ob.macro_physical["rows"])
-    def decide_batch(self,obs,memories=None):
-        out=[]
-        memories = memories or {}
-        for ob in obs:
-            # Observation is the primary source; the framework memory map is the durable fallback.
-            lp = dict(ob.local_physical or {})
-            if not lp.get("personal_history"):
-                mem = memories.get(ob.agent_id, {}) if isinstance(memories, dict) else {}
-                if isinstance(mem, dict):
-                    lp["personal_history"] = mem.get("personal_history", mem.get("history", []))
-            ob_for_prompt = SimpleNamespace(agent_id=ob.agent_id,step=ob.step,
-                macro_physical=ob.macro_physical,macro_information=ob.macro_information,
-                local_physical=lp)
-            r=lp.get("round_idx",0); prompt=build_feedback_prompt(ob_for_prompt,r); partner=lp.get("partner_id")
-            source="rule"
-            if self.llm_kind == "openai":
-                self.call_count += 1
-                try:
-                    reply=str(self._call_llm(prompt) or "")
-                    if r==0:
-                        match=re.search(r'"row"\s*:\s*(\d+)',reply)
-                        row=int(match.group(1)) if match else -1
-                        if not 0 <= row < len(MATRIX_MIF): raise ValueError("unparseable allocation")
-                    else:
-                        match=re.search(r'"message"\s*:\s*"((?:[^"\\]|\\.)*)"',reply,re.S)
-                        content=json.loads('"'+match.group(1)+'"') if match else reply.strip()
-                        if not content: raise ValueError("empty message")
-                    source="llm"
-                except Exception:
-                    self.fallback_count += 1; source="fallback"
-                    if r==0: row=self._row(ob)
-                    else: content=self._scripted_message(ob,r,prompt)
-            elif r==0: row=self._row(ob)
-            else: content=self._scripted_message(ob,r,prompt)
-            if r==0:
-                if self.llm_kind != "openai": row=self._row(ob_for_prompt)
-                a,b=MATRIX_MIF[row]
-                if lp.get("own_group") in ("A","B"):
-                    own,other=(a,b) if lp.get("own_group")=="A" else (b,a)
+    def _choose_one(self,ob,memories):
+        # Observation is the primary source; the framework memory map is the durable fallback.
+        lp = dict(ob.local_physical or {})
+        if not lp.get("personal_history"):
+            mem = memories.get(ob.agent_id, {}) if isinstance(memories, dict) else {}
+            if isinstance(mem, dict):
+                lp["personal_history"] = mem.get("personal_history", mem.get("history", []))
+        ob_for_prompt = SimpleNamespace(agent_id=ob.agent_id,step=ob.step,
+            macro_physical=ob.macro_physical,macro_information=ob.macro_information,
+            local_physical=lp)
+        r=lp.get("round_idx",0); prompt=build_feedback_prompt(ob_for_prompt,r); partner=lp.get("partner_id")
+        source="rule"; row=None; content=""; reason=""
+        if self.llm_kind == "openai":
+            try:
+                reply=str(self._call_llm(prompt) or "")
+                if r==0:
+                    match=re.search(r'"row"\s*:\s*(\d+)',reply)
+                    row=int(match.group(1)) if match else -1
+                    if not 0 <= row < len(MATRIX_MIF): raise ValueError("unparseable allocation")
+                    rm=re.search(r'"reason"\s*:\s*"([^"]*)"',reply)
+                    reason=rm.group(1)[:200] if rm else ""
                 else:
-                    own,other=a,b  # hidden-label arms do not reveal this orientation to the agent
-                out.append(_mk_action(agent_id=ob.agent_id,step=ob.step,kind="allocate_in_group_matrix",payload={"row":row,"a_points":a,"b_points":b,"ingroup_points":own,"outgroup_points":other,"gap":own-other,"matrix":"mif"},source=source,rationale=["allocation choice"]))
+                    match=re.search(r'"message"\s*:\s*"((?:[^"\\]|\\.)*)"',reply,re.S)
+                    content=json.loads('"'+match.group(1)+'"') if match else reply.strip()
+                    if not content: raise ValueError("empty message")
+                source="llm"
+            except Exception:
+                source="fallback"
+                if r==0: row=self._row(ob)
+                else: content=self._scripted_message(ob,r,prompt)
+        elif r==0: row=self._row(ob)
+        else: content=self._scripted_message(ob,r,prompt)
+        if r==0:
+            if self.llm_kind != "openai": row=self._row(ob_for_prompt)
+            a,b=MATRIX_MIF[row]
+            if lp.get("own_group") in ("A","B"):
+                own,other=(a,b) if lp.get("own_group")=="A" else (b,a)
             else:
-                out.append(_mk_action(agent_id=ob.agent_id,step=ob.step,kind="chat",payload={"content":content,"recipient":partner,"round_idx":r},source=source,rationale=["chat message"]))
-        return out
+                own,other=a,b  # hidden-label arms do not reveal this orientation to the agent
+            return _mk_action(agent_id=ob.agent_id,step=ob.step,kind="allocate_in_group_matrix",
+                payload={"row":row,"a_points":a,"b_points":b,"ingroup_points":own,
+                         "outgroup_points":other,"gap":own-other,"matrix":"mif","reason":reason},
+                source=source,rationale=[reason or "allocation choice"])
+        return _mk_action(agent_id=ob.agent_id,step=ob.step,kind="chat",
+            payload={"content":content,"recipient":partner,"round_idx":r},
+            source=source,rationale=["chat message"])
+
+    def decide_batch(self,obs,memories=None):
+        memories = memories or {}
+        if self.llm_kind == "openai" and len(obs) > 1:
+            from concurrent.futures import ThreadPoolExecutor
+            self._ensure_llm()  # create the shared client once, before worker threads race on it
+            with ThreadPoolExecutor(max_workers=min(8, len(obs))) as ex:
+                actions = list(ex.map(lambda o: self._choose_one(o, memories), obs))
+        else:
+            actions = [self._choose_one(o, memories) for o in obs]
+        # Each agent makes exactly ONE LLM call per decide_batch in openai mode; count once here
+        # instead of racing on a shared counter inside the worker threads.
+        if self.llm_kind == "openai":
+            self.call_count += len(obs)
+            self.fallback_count += sum(1 for a in actions if getattr(a, "source", None) == "fallback")
+        return actions
 
 @register("collector", "tajfel_feedback.collector")
 class FeedbackMetricCollector(MetricCollector):
@@ -260,8 +291,15 @@ class FeedbackMetricCollector(MetricCollector):
         gaps=[x["gap"] for x in aa]
         pair_type={agent: kind for a,b,kind in env.pairings.get(t,[]) for agent in (a,b)}
         def avg(xs): return round(sum(xs)/len(xs),4) if xs else None
+        if aa:
+            joints=[a+b for a,b in MATRIX_MIF]; lo,hi=min(joints),max(joints)
+            total=sum(int(x["ingroup_points"])+int(x["outgroup_points"]) for x in aa)
+            group_welfare=round((total-lo*len(aa))/((hi-lo)*len(aa)),4) if hi>lo else None
+        else:
+            group_welfare=None
         return {"step":t,"mean_gap":avg(gaps),
                 "mif_favour_share":round(sum(x>0 for x in gaps)/len(gaps),4) if gaps else None,
+                "group_welfare":group_welfare,
                 "n_messages":len(msgs),"mean_message_len":avg([len(x["content"]) for x in msgs]),
                 "fallback_rate":round(sum(x["fallback"] for x in env.call_events if x["step"]==t) / sum(1 for x in env.call_events if x["step"]==t),4) if any(x["step"]==t for x in env.call_events) else 0.0,"n_allocations":len(aa),
                 "mean_gap_samepair":avg([x["gap"] for x in aa if pair_type.get(x["agent_id"]) in ("AA","BB")]),
@@ -269,12 +307,13 @@ class FeedbackMetricCollector(MetricCollector):
 
 def run_arm(arm="d1",steps=5,seed=0,out="runs"):
     env=FeedbackEnvironmentProvider(n_agents=10,arm=arm,seed=seed); dec=FeedbackDecisionModel(seed=seed); col=FeedbackMetricCollector(); env.reset(seed); metrics=[]
+    chat_rounds = () if arm == "d5" else (1, 2)
     for t in range(1,steps+1):
         env.advance_to(t); a=dec.decide_batch(env.observe_batch(list(env.groups),t,0),{}); env.apply(a)
-        for r in (1,2): env.apply(dec.decide_batch(env.observe_batch(list(env.groups),t,r),{}))
+        for r in chat_rounds: env.apply(dec.decide_batch(env.observe_batch(list(env.groups),t,r),{}))
         metrics.append(col.collect(env,[],t))
     d=Path(out)/arm/"export"; d.mkdir(parents=True,exist_ok=True)
     def dump(name,rows,fields):
         with (d/name).open("w",newline="",encoding="utf-8") as f: w=csv.DictWriter(f,fieldnames=fields,extrasaction="ignore"); w.writeheader(); w.writerows(rows)
-    dump("allocations.csv",env.allocations,["arm","step","agent_id","row","own_group","pair_type","gap","ingroup_points","outgroup_points"]); dump("messages.csv",env.messages,["step","round","sender","recipient","pair_type","content","truncated","source"]); dump("scores.csv",env.scores,["step","group_a_received","group_b_received","a_to_a","a_to_b","b_to_a","b_to_b","total_sum"]); dump("announcements.csv",env.announcements,["step","arm","text","is_sum_only","has_cross"]); dump("pairings.csv",[{"step":t,"agent_a":a,"agent_b":b,"pair_type":k,"round_rotation":t%2} for t,ps in env.pairings.items() for a,b,k in ps],["step","agent_a","agent_b","pair_type","round_rotation"]); dump("metrics.csv",metrics,list(metrics[0]) if metrics else ["step"])
+    dump("allocations.csv",env.allocations,["arm","step","agent_id","row","own_group","pair_type","reason","gap","ingroup_points","outgroup_points"]); dump("messages.csv",env.messages,["step","round","sender","recipient","pair_type","content","truncated","source"]); dump("scores.csv",env.scores,["step","group_a_received","group_b_received","a_to_a","a_to_b","b_to_a","b_to_b","total_sum"]); dump("announcements.csv",env.announcements,["step","arm","text","is_sum_only","has_cross"]); dump("pairings.csv",[{"step":t,"agent_a":a,"agent_b":b,"pair_type":k,"round_rotation":t%2} for t,ps in env.pairings.items() for a,b,k in ps],["step","agent_a","agent_b","pair_type","round_rotation"]); dump("metrics.csv",metrics,list(metrics[0]) if metrics else ["step"])
     return env,metrics
