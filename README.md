@@ -59,8 +59,10 @@ exports under `export/`.
 ## D-series: feedback and peer chat
 
 Five arms on a fixed `mif` matrix, five steps each, most with two chat sub-rounds per step.
-`d1`/`d3` vs `d2`/`d4` isolates the public announcement, `d1`/`d2` vs `d3`/`d4` isolates label
-visibility, and `d5` vs `d1` isolates chat (it runs with no conversation at all).
+`d1`/`d2`/`d4`/`d5` form an **announcement × peer-chat** 2×2 (`d1` both, `d5` announcement only,
+`d2` chat only, `d4` neither); `d3` sits outside it as a hidden-label, sum-only-feedback
+condition. Note `d4` also hides the label, so the "neither" cell differs in two respects — read
+the main effects, and treat interaction claims with care.
 
 ```bash
 python scripts/run_feedback.py --arm all --llm scripted --steps 5 --seed 42

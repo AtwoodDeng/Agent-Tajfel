@@ -41,10 +41,30 @@ points exist without seeing who gave them to whom.
 
 ### The 2×2 these arms define
 
-`d1`/`d3` vs `d2`/`d4` isolates the **announcement**; `d1`/`d2` vs `d3`/`d4` isolates **label
-visibility**; `d5` vs `d1` isolates **chat**. This is a factorial reading, not five unrelated
-runs — but note the arms are not a complete 2×2×2, so interactions between announcement and
-chat are not identified.
+`d1`/`d2`/`d4`/`d5` form a complete **announcement × peer-chat** 2×2, and this is the cleanest
+factorial reading of the series:
+
+| | peer chat | no chat |
+|---|---|---|
+| **announcement** | `d1` | `d5` |
+| **no announcement** | `d2` | `d4` |
+
+That gives both main effects plus the interaction: `d1` − `d2` − `d5` + `d4`.
+
+**But `d4` hides the label**, so this 2×2 is not fully clean. `d1`, `d2` and `d5` show the label;
+`d4` does not. The "no announcement, no chat" cell therefore differs from the others in *two*
+respects, so an announcement × chat interaction estimated from these four arms is confounded with
+label visibility in the `d4` cell. Use this 2×2 for the main effects, where each contrast runs
+through arms with matched visibility (`d1` vs `d5`: both visible; `d1` vs `d2`: both visible), and
+be careful with any interaction claim.
+
+`d3` is the fifth arm and does not sit in the 2×2: it hides the label *and* replaces the full
+breakdown with a pooled-total announcement. It is best read as its own condition — "hidden label,
+sum-only feedback, with chat" — rather than as a cell of the factorial.
+
+If what you want is a clean announcement × chat 2×2 **with visibility held constant**, the
+D-series does not contain one: that requires `d4`-style arms with the label visible, which is a
+gap in the design rather than something a different grouping of the existing five arms can fix.
 
 ## Pairing
 
