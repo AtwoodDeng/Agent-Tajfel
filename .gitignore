@@ -6,6 +6,8 @@
 # === Run artifacts (generated data, never shipped) ===
 runs/
 runs_feedback/
+runs_communication/
+.tmp-selftest/
 **/trajectory/
 **/*.duckdb
 **/*.duckdb.wal
@@ -37,6 +39,9 @@ wheels/
 htmlcov/
 .tox/
 .nox/
+
+# === Local planning documents (not committed) ===
+/Plan/
 
 # === OS / editor ===
 .DS_Store
