@@ -13,7 +13,7 @@ for n in ("DecisionModel","EnvironmentProvider","MetricCollector","PopulationPro
 sys.modules["socioverse.engine"].register=lambda kind,key: (lambda cls: cls)
 for n in ("Action","Observation","Broadcast","EnvironmentBundle","EnvironmentLayer","InformationProgram","InteractionStructure","Persona","PopulationBundle","PropagationMode","ScheduledEvent","SimulationConfig","StudySpec"): setattr(sys.modules["socioverse.schemas"],n,Dummy)
 sys.path.insert(0,str(ROOT))
-from tajfel.feedback import ARMS, FeedbackEnvironmentProvider, FeedbackDecisionModel, FeedbackMetricCollector, build_feedback_prompt, run_arm
+from tajfel.feedback import ARMS, CHATLESS_ARMS, FeedbackEnvironmentProvider, FeedbackDecisionModel, FeedbackMetricCollector, build_feedback_prompt, run_arm
 
 def check(ok,msg):
  if not ok: raise AssertionError(msg)
@@ -28,7 +28,7 @@ def main():
    flat=[x for a,b,_ in ps for x in (a,b)]; check(len(set(flat))==10,"perfect matching")
  for arm in ARMS:
   e=FeedbackEnvironmentProvider(arm=arm,seed=17); d=FeedbackDecisionModel(); ids=list(e.groups)
-  chat_rounds = () if arm == "d5" else (1,2)
+  chat_rounds = () if arm in CHATLESS_ARMS else (1,2)
   for t in range(1,4):
    e.advance_to(t); acts=d.decide_batch(e.observe_batch(ids,t,0),{}); e.apply_allocations(acts,t)
    for r in chat_rounds: e.apply_messages(d.decide_batch(e.observe_batch(ids,t,r),{}),t,r)
@@ -37,7 +37,10 @@ def main():
   check(all(len(x['content'])<=200 for x in e.messages),"message limit")
   if arm in ('d1','d5'): check(all(x['has_cross'] for x in e.announcements),"D1/D5 complete announcements")
   if arm=='d3': check(all(x['is_sum_only'] and not any(z in x['text'].lower() for z in ('group a','group b','ingroup','outgroup')) for x in e.announcements),"D3 sum-only")
-  if arm in ('d2','d4'): check(not e.announcements,"no-announcement arm")
+  if arm in ('d2','d4','d6'): check(not e.announcements,"no-announcement arm")
+  # D6 supplies the "no announcement, no chat" cell with the label still visible, which is what
+  # makes the announcement x chat 2x2 (d1/d2/d6/d5) free of the visibility confound D4 carried.
+  if arm=='d6': check(e.label_visible and not e.messages,"D6 visible label with no chat")
   obs=e.observe_batch(ids,3,0)
   # memories argument is a functional source if an Observation omits local history.
   bare=obs[0]; bare.local_physical=dict(bare.local_physical); bare.local_physical["personal_history"]=[]
@@ -76,5 +79,17 @@ def main():
   # repeat determinism
   d1=Path(d)/'repeat1'; d2=Path(d)/'repeat2'; run_arm('d1',5,33,d1); run_arm('d1',5,33,d2)
   x=(d1/'d1/export/allocations.csv').read_bytes(); y=(d2/'d1/export/allocations.csv').read_bytes(); check(x==y,"allocation export reproducibility")
+ # The announcement x chat 2x2 must be complete WITH matched label visibility. Before D6 existed
+ # the only "no announcement, no chat" visible-label arm did not exist, so the interaction was
+ # confounded with visibility. Restrict to visible-label arms and assert one per cell: d1/d2/d6/d5.
+ cells={}
+ for arm in ARMS:
+  env=FeedbackEnvironmentProvider(arm=arm,seed=11)
+  if not env.label_visible: continue
+  cells[(arm not in ('d2','d4','d6'), arm not in CHATLESS_ARMS)]=arm
+ quad=[cells.get((ann,chat)) for ann in (True,False) for chat in (True,False)]
+ check(all(quad),f"every announcement x chat cell has a visible-label arm: {cells}")
+ check(sorted(quad)==['d1','d2','d5','d6'],f"2x2 arms are d1/d2/d6/d5: {quad}")
+ check(not FeedbackEnvironmentProvider(arm='d4',seed=11).label_visible,"D4 still hides the label")
  print('all local checks passed'); return 0
 if __name__=='__main__': raise SystemExit(main())

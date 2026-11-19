@@ -44,7 +44,11 @@ except Exception:
                      (self.carry_previous_step and m.get("step")==step-1))]
         def drain(self): return []
 
-ARMS=("d1","d2","d3","d4","d5")
+ARMS=("d1","d2","d3","d4","d5","d6")
+# d6 is the missing cell of the announcement x chat 2x2: labels visible (like d1/d2/d5) but no
+# announcement and no chat. Without it D4 is the only "no announcement, no chat" arm and it hides
+# the label, so the 2x2 interaction was confounded with label visibility.
+CHATLESS_ARMS=("d5","d6")
 N_AGENTS=10
 STEPS=5
 
@@ -84,7 +88,7 @@ def build_feedback_prompt(ob, round_idx=None):
     hist=lp.get("personal_history", []) or []
     rows=mp.get("rows", [])
     lines=["You are a participant in a multi-round allocation and communication study."]
-    visible=bool(mp.get("label_visible", arm in ("d1","d2","d5")))
+    visible=bool(mp.get("label_visible", arm in ("d1","d2","d5","d6")))
     if r==0:
         lines.append('Choose exactly one row of the matrix. Reply as JSON only: {"row": 0, "reason": "one short sentence explaining why you chose this row"}')
         for row in rows:
@@ -123,7 +127,7 @@ class FeedbackEnvironmentProvider(EnvironmentProvider):
         self.n=int(args.get("n_agents",n_agents)); self.arm=str(args.get("arm",arm))
         self.matrices=list(args.get("matrices",matrices or ["mif"]))
         self.seed=int(args.get("seed",seed)); self.groups=_groups(self.n,self.seed)
-        self.label_visible=self.arm in ("d1","d2","d5")
+        self.label_visible=self.arm in ("d1","d2","d5","d6")
         self.history={agent_id(i):[] for i in range(self.n)}
         self.pairings={}; self.messages=[]; self.allocations=[]; self.scores=[]; self.announcements=[]
         self._pending_partner={}; self.fallback_count=0; self.call_count=0; self.call_events=[]
@@ -307,7 +311,7 @@ class FeedbackMetricCollector(MetricCollector):
 
 def run_arm(arm="d1",steps=5,seed=0,out="runs"):
     env=FeedbackEnvironmentProvider(n_agents=10,arm=arm,seed=seed); dec=FeedbackDecisionModel(seed=seed); col=FeedbackMetricCollector(); env.reset(seed); metrics=[]
-    chat_rounds = () if arm == "d5" else (1, 2)
+    chat_rounds = () if arm in CHATLESS_ARMS else (1, 2)
     for t in range(1,steps+1):
         env.advance_to(t); a=dec.decide_batch(env.observe_batch(list(env.groups),t,0),{}); env.apply(a)
         for r in chat_rounds: env.apply(dec.decide_batch(env.observe_batch(list(env.groups),t,r),{}))

@@ -6,7 +6,7 @@ three cumulative series:
 | series | question | arms | module | docs |
 |---|---|---|---|---|
 | **C** | does mere categorisation produce ingroup bias? | `c1` `c2` `c3` | `tajfel/model.py` | this file |
-| **D** | does repeated feedback and peer chat change it? | `d1`–`d5` | `tajfel/feedback.py` | [docs/D-series.md](docs/D-series.md) |
+| **D** | does repeated feedback and peer chat change it? | `d1`–`d6` | `tajfel/feedback.py` | [docs/D-series.md](docs/D-series.md) |
 | **E** | does the *form* of communication change it? | 11 conditions | `tajfel/communication.py` | [docs/E-series.md](docs/E-series.md) |
 
 The D-series keeps the C-series allocator untouched and adds a public announcement channel and
@@ -58,11 +58,11 @@ exports under `export/`.
 
 ## D-series: feedback and peer chat
 
-Five arms on a fixed `mif` matrix, five steps each, most with two chat sub-rounds per step.
-`d1`/`d2`/`d4`/`d5` form an **announcement × peer-chat** 2×2 (`d1` both, `d5` announcement only,
-`d2` chat only, `d4` neither); `d3` sits outside it as a hidden-label, sum-only-feedback
-condition. Note `d4` also hides the label, so the "neither" cell differs in two respects — read
-the main effects, and treat interaction claims with care.
+Six arms on a fixed `mif` matrix, five steps each, most with two chat sub-rounds per step.
+`d1`/`d2`/`d6`/`d5` form a clean **announcement × peer-chat** 2×2 with the label held visible
+(`d1` both, `d5` announcement only, `d2` chat only, `d6` neither); `d3` and `d4` repeat the
+announcement×chat cells with the label hidden, and `d3` additionally reduces the announcement to a
+pooled total.
 
 ```bash
 python scripts/run_feedback.py --arm all --llm scripted --steps 5 --seed 42

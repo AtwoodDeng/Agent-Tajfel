@@ -23,7 +23,7 @@ cannot reuse the C-series' deterministic group split.
 
 ## Arms
 
-All five arms use `MATRIX_MIF` — the rows are the six Tajfel payoff pairs, and `gap` is always
+All six arms use `MATRIX_MIF` — the rows are the six Tajfel payoff pairs, and `gap` is always
 `own_group_points - other_group_points`.
 
 | arm | label visible | public announcement | peer chat | chat sub-rounds per step |
@@ -33,38 +33,34 @@ All five arms use `MATRIX_MIF` — the rows are the six Tajfel payoff pairs, and
 | `d3` | no | combined total only | yes | 2 |
 | `d4` | no | none | yes | 2 |
 | `d5` | yes | full breakdown | **no** | — |
+| `d6` | yes | none | **no** | — |
 
-`d5` runs with `interaction_rounds=1` instead of 3, which is what makes it the "announcement
-without conversation" cell. The four-cell breakdown (`a_to_a`, `a_to_b`, `b_to_a`, `b_to_b`) is
-what `d1` and `d5` receive; `d3` deliberately gets only the pooled total, so it can see that
-points exist without seeing who gave them to whom.
+`d5` and `d6` run with `interaction_rounds=1` instead of 3, which is what makes them the
+"no conversation" arms. The four-cell breakdown (`a_to_a`, `a_to_b`, `b_to_a`, `b_to_b`) is what
+`d1` and `d5` receive; `d3` deliberately gets only the pooled total, so it can see that points
+exist without seeing who gave them to whom.
 
 ### The 2×2 these arms define
 
-`d1`/`d2`/`d4`/`d5` form a complete **announcement × peer-chat** 2×2, and this is the cleanest
-factorial reading of the series:
+`d1`/`d2`/`d6`/`d5` form a complete **announcement × peer-chat** 2×2 with the label held visible
+throughout, which makes it the clean factorial reading of the series:
 
 | | peer chat | no chat |
 |---|---|---|
 | **announcement** | `d1` | `d5` |
-| **no announcement** | `d2` | `d4` |
+| **no announcement** | `d2` | `d6` |
 
-That gives both main effects plus the interaction: `d1` − `d2` − `d5` + `d4`.
+That gives both main effects plus an unconfounded interaction: `d1` − `d2` − `d5` + `d6`.
 
-**But `d4` hides the label**, so this 2×2 is not fully clean. `d1`, `d2` and `d5` show the label;
-`d4` does not. The "no announcement, no chat" cell therefore differs from the others in *two*
-respects, so an announcement × chat interaction estimated from these four arms is confounded with
-label visibility in the `d4` cell. Use this 2×2 for the main effects, where each contrast runs
-through arms with matched visibility (`d1` vs `d5`: both visible; `d1` vs `d2`: both visible), and
-be careful with any interaction claim.
+This is why `d6` exists. The same 2×2 can also be filled by `d1`/`d2`/`d4`/`d5`, but `d4` hides
+the label, so its "no announcement, no chat" cell would differ from the others in two respects at
+once and the interaction would be confounded with label visibility. Prefer `d6`; keep `d4` for
+the label-hidden contrast it is actually for.
 
-`d3` is the fifth arm and does not sit in the 2×2: it hides the label *and* replaces the full
-breakdown with a pooled-total announcement. It is best read as its own condition — "hidden label,
-sum-only feedback, with chat" — rather than as a cell of the factorial.
-
-If what you want is a clean announcement × chat 2×2 **with visibility held constant**, the
-D-series does not contain one: that requires `d4`-style arms with the label visible, which is a
-gap in the design rather than something a different grouping of the existing five arms can fix.
+`d3` and `d4` sit in the same announcement × chat cells as `d1` and `d2` but with the label
+hidden, so they are the label-visibility contrast rather than part of the clean 2×2. `d3`
+additionally swaps the full breakdown for a pooled total, so read it as its own condition —
+"hidden label, sum-only feedback, with chat" — not as a plain announcement cell.
 
 ## Pairing
 
@@ -124,7 +120,7 @@ exported next to the metrics.
 ## Commands
 
 ```bash
-# all five arms, pipeline only
+# all six arms, pipeline only
 python scripts/run_feedback.py --arm all --llm scripted --steps 5 --seed 42
 
 # one arm, real LLM (spends API calls; a warning line prints the call budget)
