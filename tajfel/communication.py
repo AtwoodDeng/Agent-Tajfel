@@ -305,7 +305,13 @@ class CommunicationEnvironmentProvider(EnvironmentProvider):
         key = (t, r)
         if key in self.routes:
             return self.routes[key]
-        route = self._build_route(t, r)
+        # The engine runs a fixed number of interaction rounds every step, so a chat sub-round
+        # after the final allocation still arrives here. It has no permitted senders -- nobody
+        # may speak -- which is how "no chat on the final step" is enforced under the engine.
+        if r and t >= self.steps:
+            route = Route("post-final", [], lambda s: [])
+        else:
+            route = self._build_route(t, r)
         self.routes[key] = route
         return route
 
@@ -413,8 +419,6 @@ class CommunicationEnvironmentProvider(EnvironmentProvider):
             self.announcements.append(rec)
             for aid in self.history:
                 self.history[aid].append({"kind": "announcement", "step": t, "text": ann})
-        if round_idx and t >= self.steps:
-            raise ValueError("no chat sub-rounds are allowed after the final allocation")
         route = None if round_idx == 0 else self._route_for(t, round_idx)
         rows = [{"row": i, "a_points": a, "b_points": b} for i, (a, b) in enumerate(self.matrix)]
         out = []
@@ -466,6 +470,8 @@ class CommunicationEnvironmentProvider(EnvironmentProvider):
         if not actions:
             return
         for action in actions:
+            if str(action.kind) == "chat" and not str(action.payload.get("content", "")).strip():
+                continue  # silence from a non-speaker is not a decision call
             self.call_events.append({"step": int(action.step), "kind": str(action.kind),
                                      "source": getattr(action, "source", "scripted"),
                                      "fallback": getattr(action, "source", None) == "fallback"})
@@ -513,19 +519,15 @@ class CommunicationEnvironmentProvider(EnvironmentProvider):
     def apply_messages(self, actions, t: int, round_idx: int) -> None:
         t, round_idx = int(t), int(round_idx)
         route = self._route_for(t, round_idx)
-        if self.condition == "e2-silent":
-            raise ValueError("the silent condition must not accept any chat message")
         seen: set[str] = {m["sender"] for m in self.messages
                           if int(m["step"]) == t and int(m["round"]) == round_idx}
         for a in actions:
             sender = a.agent_id
             if not route.allows(sender):
-                # The engine may hand the whole roster to a sub-round. Silence from an agent that
-                # may not speak is expected, not a message: record it and drop it. An action that
-                # is NOT silence is a routing violation and must fail loudly.
+                # The engine hands the whole roster to every sub-round. Silence from an agent the
+                # route does not permit to speak is expected and is dropped without being recorded
+                # as a rejection; a non-empty message from such an agent is a routing violation.
                 if not str(a.payload.get("content", "")).strip():
-                    self.rejections.append({"step": t, "round": round_idx, "sender": sender,
-                                            "reason": "not a permitted sender (empty action ignored)"})
                     continue
                 self.rejections.append({"step": t, "round": round_idx, "sender": sender,
                                         "reason": "sender is not allowed to speak in this condition"})
@@ -797,6 +799,12 @@ class CommunicationDecisionModel(DecisionModel):
                           rationale=[reason or "allocation choice"])
 
     def _decide_message(self, ob, r: int):
+        if not (ob.local_physical or {}).get("can_send"):
+            # The engine hands the whole roster to every sub-round; an agent the route does not
+            # permit to speak must stay silent rather than produce a message to reject.
+            return _mk_action(agent_id=ob.agent_id, step=ob.step, kind="chat",
+                              payload={"content": "", "round_idx": r}, source="rule",
+                              rationale=["not a permitted sender"])
         prompt = build_chat_prompt(ob, r)
         content, source = "", "rule"
         if self.llm_kind == "openai":

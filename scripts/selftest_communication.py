@@ -89,7 +89,7 @@ def test_routing():
 
     # E2 pair: mutual, complete matching, D-compatible mix
     env = CommunicationEnvironmentProvider(condition="e2-pair", seed=3)
-    for t in range(1, 6):
+    for t in range(1, env.steps):  # chat only on non-final steps
         env.advance_to(t)
         route = env._route_for(t, 1)
         pairs = env.pairings[t]
@@ -120,7 +120,7 @@ def test_routing():
     # E3: every A speaks to exactly one B, every B is spoken to, nobody replies
     for seed in range(6):
         env = CommunicationEnvironmentProvider(condition="e3-a-to-b", seed=seed)
-        for t in range(1, 6):
+        for t in range(1, env.steps):  # chat only on non-final steps
             env.advance_to(t)
             env._route_for(t, 1)
             pairs = env.pairings[t]
@@ -204,10 +204,14 @@ def test_enforcement():
     check(_fail(lambda: e4.apply_messages([_act(member, 1, "chat", {"content": "x", "round_idx": 1})], 1, 1),
                 ""), "ordinary member must not speak in E4")
 
-    # no chats after the final allocation
+    # no chats after the final allocation: the engine still runs a fixed number of sub-rounds,
+    # but the post-final route has no permitted senders and refuses any message
     last = CommunicationEnvironmentProvider(condition="e2-ingroup", seed=1, steps=3)
-    check(_fail(lambda: last.observe_batch(sorted(last.groups), 3, 1), ""),
-          "sub-round after the final step must raise")
+    obs = last.observe_batch(sorted(last.groups), 3, 1)
+    check(all(not (o.local_physical or {}).get("can_send") for o in obs),
+          "post-final sub-round must have no permitted senders")
+    check(_fail(lambda: last.apply_messages([_act("tj-000", 3, "chat", {"content": "x", "round_idx": 1})], 3, 1),
+                ""), "post-final message must be refused")
 
     # oversized messages are clipped and flagged
     tx = CommunicationEnvironmentProvider(condition="e2-ingroup", seed=5)
