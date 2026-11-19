@@ -157,7 +157,10 @@ def validate_condition(condition: str, n_agents: int) -> None:
 
 
 def matrix_for(condition: str) -> list[tuple[int, int]]:
-    return list(E4_MATRIX) if condition_series(condition) == "e4" else list(MATRIX_MIF)
+    # E3 shares E4's symmetric matrix: on MATRIX_MIF the B group's "favour own group" and
+    # "maximise joint" rows coincide at (10, 20), so A and B face different trade-offs. The
+    # symmetric table removes that collapse and makes the two groups comparable.
+    return list(E4_MATRIX) if condition_series(condition) in ("e3", "e4") else list(MATRIX_MIF)
 
 
 def stance_of(condition: str) -> str | None:
@@ -299,7 +302,7 @@ class CommunicationEnvironmentProvider(EnvironmentProvider):
 
     # -- round bookkeeping -----------------------------------------------------------------------
     def matrix_at(self, t: int) -> str:
-        return "e4_symmetric" if self.series == "e4" else "mif"
+        return "e_symmetric" if self.series in ("e3", "e4") else "mif"
 
     def _route_for(self, t: int, r: int) -> Route:
         key = (t, r)
