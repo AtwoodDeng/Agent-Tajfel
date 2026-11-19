@@ -1,0 +1,17 @@
+message_id,condition,series,step,round,sender,sender_group,channel,recipients,n_recipients,char_len,truncated,content,source,stance,issued_step,target_step,expected_row,commitment_row,realised_row,fulfilled
+m001-1-tj-005,e4-private-ingroup,e4,1,1,tj-005,A,private,"tj-001,tj-002,tj-007,tj-008",4,61,False,"I commit to row 1 next round, that is the fair choice for us.",rule,ingroup,1,2,0,1,3,False
+m001-1-tj-003,e4-private-ingroup,e4,1,1,tj-003,B,private,"tj-000,tj-004,tj-006,tj-009",4,61,False,"I commit to row 2 next round, that is the fair choice for us.",rule,ingroup,1,2,1,2,1,False
+m001-2-tj-005,e4-private-ingroup,e4,1,2,tj-005,A,private,"tj-001,tj-002,tj-007,tj-008",4,61,False,"I commit to row 1 next round, that is the fair choice for us.",rule,ingroup,1,2,0,1,3,False
+m001-2-tj-003,e4-private-ingroup,e4,1,2,tj-003,B,private,"tj-000,tj-004,tj-006,tj-009",4,61,False,"I commit to row 1 next round, that is the fair choice for us.",rule,ingroup,1,2,1,1,1,True
+m002-1-tj-005,e4-private-ingroup,e4,2,1,tj-005,A,private,"tj-001,tj-002,tj-007,tj-008",4,61,False,"I commit to row 1 next round, that is the fair choice for us.",rule,ingroup,2,3,0,1,1,True
+m002-1-tj-003,e4-private-ingroup,e4,2,1,tj-003,B,private,"tj-000,tj-004,tj-006,tj-009",4,61,False,"I commit to row 1 next round, that is the fair choice for us.",rule,ingroup,2,3,1,1,3,False
+m002-2-tj-005,e4-private-ingroup,e4,2,2,tj-005,A,private,"tj-001,tj-002,tj-007,tj-008",4,61,False,"I commit to row 0 next round, that is the fair choice for us.",rule,ingroup,2,3,0,0,1,False
+m002-2-tj-003,e4-private-ingroup,e4,2,2,tj-003,B,private,"tj-000,tj-004,tj-006,tj-009",4,61,False,"I commit to row 1 next round, that is the fair choice for us.",rule,ingroup,2,3,1,1,3,False
+m003-1-tj-005,e4-private-ingroup,e4,3,1,tj-005,A,private,"tj-001,tj-002,tj-007,tj-008",4,61,False,"I commit to row 1 next round, that is the fair choice for us.",rule,ingroup,3,4,0,1,0,False
+m003-1-tj-003,e4-private-ingroup,e4,3,1,tj-003,B,private,"tj-000,tj-004,tj-006,tj-009",4,61,False,"I commit to row 2 next round, that is the fair choice for us.",rule,ingroup,3,4,1,2,1,False
+m003-2-tj-005,e4-private-ingroup,e4,3,2,tj-005,A,private,"tj-001,tj-002,tj-007,tj-008",4,61,False,"I commit to row 0 next round, that is the fair choice for us.",rule,ingroup,3,4,0,0,0,True
+m003-2-tj-003,e4-private-ingroup,e4,3,2,tj-003,B,private,"tj-000,tj-004,tj-006,tj-009",4,61,False,"I commit to row 2 next round, that is the fair choice for us.",rule,ingroup,3,4,1,2,1,False
+m004-1-tj-005,e4-private-ingroup,e4,4,1,tj-005,A,private,"tj-001,tj-002,tj-007,tj-008",4,61,False,"I commit to row 1 next round, that is the fair choice for us.",rule,ingroup,4,5,0,1,0,False
+m004-1-tj-003,e4-private-ingroup,e4,4,1,tj-003,B,private,"tj-000,tj-004,tj-006,tj-009",4,61,False,"I commit to row 2 next round, that is the fair choice for us.",rule,ingroup,4,5,1,2,4,False
+m004-2-tj-005,e4-private-ingroup,e4,4,2,tj-005,A,private,"tj-001,tj-002,tj-007,tj-008",4,61,False,"I commit to row 1 next round, that is the fair choice for us.",rule,ingroup,4,5,0,1,0,False
+m004-2-tj-003,e4-private-ingroup,e4,4,2,tj-003,B,private,"tj-000,tj-004,tj-006,tj-009",4,61,False,"I commit to row 2 next round, that is the fair choice for us.",rule,ingroup,4,5,1,2,4,False

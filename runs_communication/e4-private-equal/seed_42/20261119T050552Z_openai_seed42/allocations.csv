@@ -1,0 +1,51 @@
+condition,series,step,agent_id,own_group,is_leader,row,a_points,b_points,ingroup_points,outgroup_points,gap,reason,source
+e4-private-equal,e4,1,tj-005,A,True,2,15,13,15,13,2,It gives my group a strong payoff while also maximizing the joint total.,llm
+e4-private-equal,e4,1,tj-008,A,False,0,16,4,16,4,12,It gives my group the largest allocation while keeping the joint total at 20.,llm
+e4-private-equal,e4,1,tj-001,A,False,2,15,13,15,13,2,It provides a strong payoff for my group while also maximizing the joint total.,llm
+e4-private-equal,e4,1,tj-007,A,False,0,16,4,16,4,12,It gives my group the highest allocation while keeping the joint total at 20.,llm
+e4-private-equal,e4,1,tj-002,A,False,2,15,13,15,13,2,It gives my group a high payoff while also producing the highest joint total.,llm
+e4-private-equal,e4,1,tj-000,B,False,1,4,16,16,4,12,I chose the row that gives my group the highest payoff while keeping the joint total at 20.,llm
+e4-private-equal,e4,1,tj-003,B,True,2,15,13,13,15,-2,It gives my group a strong allocation while also maximizing the joint total.,llm
+e4-private-equal,e4,1,tj-009,B,False,1,4,16,16,4,12,I chose the row that gives my group the highest allocation while keeping the joint total at 20.,llm
+e4-private-equal,e4,1,tj-006,B,False,2,15,13,13,15,-2,I chose the row that gives my group a high payoff while maximizing the joint total.,llm
+e4-private-equal,e4,1,tj-004,B,False,1,4,16,16,4,12,I chose the row that gives my group the highest allocation.,llm
+e4-private-equal,e4,2,tj-005,A,True,4,13,13,13,13,0,I am honoring my commitment to choose the equal allocation for both groups.,llm
+e4-private-equal,e4,2,tj-008,A,False,4,13,13,13,13,0,Row 4 gives both groups the same allocation and matches the group leader’s commitment.,llm
+e4-private-equal,e4,2,tj-001,A,False,4,13,13,13,13,0,It keeps both groups equal and honors the leader's repeated commitment to row 4.,llm
+e4-private-equal,e4,2,tj-007,A,False,4,13,13,13,13,0,It honors the leader's coordination request and gives both groups an equal allocation.,llm
+e4-private-equal,e4,2,tj-002,A,False,4,13,13,13,13,0,It keeps both groups' payoffs equal and aligns with the leader's commitment.,llm
+e4-private-equal,e4,2,tj-000,B,False,4,13,13,13,13,0,Row 4 gives both groups equal payoffs and honors the leader's commitment.,llm
+e4-private-equal,e4,2,tj-003,B,True,4,13,13,13,13,0,I will honor my commitment to the most equal allocation.,llm
+e4-private-equal,e4,2,tj-009,B,False,4,13,13,13,13,0,I chose the equal allocation to support fairness between the groups.,llm
+e4-private-equal,e4,2,tj-006,B,False,4,13,13,13,13,0,"Row 4 gives both groups equal payoffs, matching the leader's commitment.",llm
+e4-private-equal,e4,2,tj-004,B,False,2,15,13,13,15,-2,It gives my group 13 while keeping the groups nearly balanced.,llm
+e4-private-equal,e4,3,tj-005,A,True,4,13,13,13,13,0,I am honoring my commitment to choose the equal allocation for both groups.,llm
+e4-private-equal,e4,3,tj-008,A,False,4,13,13,13,13,0,Row 4 treats both groups equally and aligns with the leader's repeated commitment.,llm
+e4-private-equal,e4,3,tj-001,A,False,4,13,13,13,13,0,It preserves equal payoffs while following the leader's consistent commitment to minimizing the gap.,llm
+e4-private-equal,e4,3,tj-007,A,False,4,13,13,13,13,0,It maintains equal allocations while following the leader's continued coordination request.,llm
+e4-private-equal,e4,3,tj-002,A,False,4,13,13,13,13,0,It preserves equal payoffs and honors the group's repeated commitment to minimizing the gap.,llm
+e4-private-equal,e4,3,tj-000,B,False,4,13,13,13,13,0,Row 4 gives both groups equal payoffs and honors the leader's commitment.,llm
+e4-private-equal,e4,3,tj-003,B,True,4,13,13,13,13,0,"It honors my commitment and gives both groups an equal, strong allocation.",llm
+e4-private-equal,e4,3,tj-009,B,False,1,4,16,16,4,12,This gives my group the highest allocation while keeping the joint total at 20.,llm
+e4-private-equal,e4,3,tj-006,B,False,4,13,13,13,13,0,"I choose the equal-payoff row, consistent with the leader's commitment.",llm
+e4-private-equal,e4,3,tj-004,B,False,4,13,13,13,13,0,"It gives both groups 13, keeping the allocation balanced.",llm
+e4-private-equal,e4,4,tj-005,A,True,4,13,13,13,13,0,"I am keeping my commitment to the equal allocation, which minimizes the gap between the groups.",llm
+e4-private-equal,e4,4,tj-008,A,False,4,13,13,13,13,0,Row 4 keeps allocations equal and honors the leader's consistent commitment.,llm
+e4-private-equal,e4,4,tj-001,A,False,4,13,13,13,13,0,It preserves equal payoffs and follows the leader's consistent commitment to minimizing the gap.,llm
+e4-private-equal,e4,4,tj-007,A,False,4,13,13,13,13,0,It gives both groups equal allocations and honors the leader's coordination commitment.,llm
+e4-private-equal,e4,4,tj-002,A,False,4,13,13,13,13,0,It keeps both groups’ payoffs equal and follows the leader’s repeated commitment.,llm
+e4-private-equal,e4,4,tj-000,B,False,4,13,13,13,13,0,Row 4 gives both groups equal payoffs and honors the leader's commitment.,llm
+e4-private-equal,e4,4,tj-003,B,True,4,13,13,13,13,0,"I will honor my commitment to the equal allocation, which gives both groups 13.",llm
+e4-private-equal,e4,4,tj-009,B,False,4,13,13,13,13,0,I choose the equal allocation to support fairness and honor the other group's repeated commitment.,llm
+e4-private-equal,e4,4,tj-006,B,False,4,13,13,13,13,0,Row 4 preserves equal payoffs and remains consistent with the leader's commitment.,llm
+e4-private-equal,e4,4,tj-004,B,False,4,13,13,13,13,0,It gives both groups 13 and follows the shared commitment to an equal allocation.,llm
+e4-private-equal,e4,5,tj-005,A,True,4,13,13,13,13,0,"I am honoring my commitment to the equal allocation, which keeps the gap between groups at zero.",llm
+e4-private-equal,e4,5,tj-008,A,False,4,13,13,13,13,0,Row 4 gives both groups equal allocations and matches the leader’s consistent commitment.,llm
+e4-private-equal,e4,5,tj-001,A,False,4,13,13,13,13,0,It preserves equal payoffs and follows the leader's consistent commitment to minimizing the gap.,llm
+e4-private-equal,e4,5,tj-007,A,False,4,13,13,13,13,0,It gives both groups equal allocations and honors the leader's repeated coordination commitment.,llm
+e4-private-equal,e4,5,tj-002,A,False,4,13,13,13,13,0,It preserves equal payoffs and follows the leader's consistent commitment to a zero gap.,llm
+e4-private-equal,e4,5,tj-000,B,False,4,13,13,13,13,0,Row 4 gives both groups equal payoffs and supports the leader's repeated commitment.,llm
+e4-private-equal,e4,5,tj-003,B,True,4,13,13,13,13,0,I will keep my commitment to the equal allocation that gives both groups 13.,llm
+e4-private-equal,e4,5,tj-009,B,False,4,13,13,13,13,0,I choose the equal allocation to honor the other group's repeated commitment and keep outcomes balanced.,llm
+e4-private-equal,e4,5,tj-006,B,False,4,13,13,13,13,0,Row 4 ensures equal payoffs and honors the leader's repeated commitment.,llm
+e4-private-equal,e4,5,tj-004,B,False,4,13,13,13,13,0,It gives both groups 13 and honors the shared commitment to an equal allocation.,llm

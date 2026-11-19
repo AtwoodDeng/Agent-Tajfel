@@ -1,0 +1,51 @@
+condition,series,step,agent_id,own_group,is_leader,row,a_points,b_points,ingroup_points,outgroup_points,gap,reason,source
+e3-a-to-b,e3,1,tj-005,A,False,2,15,13,15,13,2,"It gives my group 15 while also providing the other group 13, for the highest joint total.",llm
+e3-a-to-b,e3,1,tj-008,A,False,0,16,4,16,4,12,It gives my group the highest payoff while keeping the joint payoff at 20.,llm
+e3-a-to-b,e3,1,tj-001,A,False,0,16,4,16,4,12,It gives my group the most while keeping the joint total at 20.,llm
+e3-a-to-b,e3,1,tj-007,A,False,0,16,4,16,4,12,It gives my group the largest allocation while keeping the joint total at 20.,llm
+e3-a-to-b,e3,1,tj-002,A,False,0,16,4,16,4,12,It gives my group the highest allocation while keeping the joint total at 20.,llm
+e3-a-to-b,e3,1,tj-000,B,False,1,4,16,16,4,12,I chose the row that gives my group the highest allocation while keeping the joint total at 20.,llm
+e3-a-to-b,e3,1,tj-003,B,False,3,13,15,15,13,2,It gives my group a high payoff while also providing a strong outcome for the other group.,llm
+e3-a-to-b,e3,1,tj-009,B,False,1,4,16,16,4,12,It gives my group the highest payoff while keeping the joint total at 20.,llm
+e3-a-to-b,e3,1,tj-006,B,False,1,4,16,16,4,12,I chose the row that gives my group the highest allocation of 16.,llm
+e3-a-to-b,e3,1,tj-004,B,False,3,13,15,15,13,2,I chose the option that gives my group the highest payoff while also producing the highest joint total.,llm
+e3-a-to-b,e3,2,tj-005,A,False,2,15,13,15,13,2,"It provides my group 15 and the other group 13, preserving a small gap while maximizing the joint total.",llm
+e3-a-to-b,e3,2,tj-008,A,False,2,15,13,15,13,2,It gives my group a slight advantage while maximizing the joint payoff.,llm
+e3-a-to-b,e3,2,tj-001,A,False,0,16,4,16,4,12,It gives my group the highest available payoff while maintaining a reasonable joint total.,llm
+e3-a-to-b,e3,2,tj-007,A,False,0,16,4,16,4,12,It gives my group the largest allocation while keeping the joint total at 20.,llm
+e3-a-to-b,e3,2,tj-002,A,False,2,15,13,15,13,2,It gives my group a strong allocation while offering the other group a substantial share and the highest joint total.,llm
+e3-a-to-b,e3,2,tj-000,B,False,2,15,13,13,15,-2,This raises the joint total while giving group A a modest advantage in keeping with its request for a fair outcome.,llm
+e3-a-to-b,e3,2,tj-003,B,False,3,13,15,15,13,2,It gives my group the highest payoff while keeping the outcome balanced.,llm
+e3-a-to-b,e3,2,tj-009,B,False,1,4,16,16,4,12,It gives my group the highest payoff while keeping the joint total at 20.,llm
+e3-a-to-b,e3,2,tj-006,B,False,1,4,16,16,4,12,This row gives my group the highest allocation of 16.,llm
+e3-a-to-b,e3,2,tj-004,B,False,3,13,15,15,13,2,It gives my group the highest payoff while maintaining the highest joint total.,llm
+e3-a-to-b,e3,3,tj-005,A,False,2,15,13,15,13,2,"It gives my group 15 and the other group 13, maximizing the joint total while keeping the gap small.",llm
+e3-a-to-b,e3,3,tj-008,A,False,2,15,13,15,13,2,It maximizes the joint payoff while preserving a modest advantage for my group.,llm
+e3-a-to-b,e3,3,tj-001,A,False,0,16,4,16,4,12,It gives my group the highest payoff while keeping the joint total at 20.,llm
+e3-a-to-b,e3,3,tj-007,A,False,0,16,4,16,4,12,It gives my group the largest allocation while keeping the joint total at 20.,llm
+e3-a-to-b,e3,3,tj-002,A,False,2,15,13,15,13,2,It gives my group the largest allocation while maintaining the highest joint total.,llm
+e3-a-to-b,e3,3,tj-000,B,False,3,13,15,15,13,2,It preserves the maximum joint total while giving my group a modest advantage.,llm
+e3-a-to-b,e3,3,tj-003,B,False,2,15,13,13,15,-2,It gives my group a strong payoff while maximizing the joint total.,llm
+e3-a-to-b,e3,3,tj-009,B,False,1,4,16,16,4,12,It gives my group the highest payoff while keeping the joint total at 20.,llm
+e3-a-to-b,e3,3,tj-006,B,False,1,4,16,16,4,12,This row gives my group the highest allocation of 16.,llm
+e3-a-to-b,e3,3,tj-004,B,False,3,13,15,15,13,2,It gives my group 15 while keeping the joint payoff at the maximum of 28.,llm
+e3-a-to-b,e3,4,tj-005,A,False,2,15,13,15,13,2,It maximizes the joint total while giving my group 15 and keeping the gap small.,llm
+e3-a-to-b,e3,4,tj-008,A,False,2,15,13,15,13,2,It maximizes the joint payoff while keeping a modest advantage for my group.,llm
+e3-a-to-b,e3,4,tj-001,A,False,0,16,4,16,4,12,It gives my group the highest payoff while keeping the joint total at 20.,llm
+e3-a-to-b,e3,4,tj-007,A,False,0,16,4,16,4,12,It gives my group the largest allocation while keeping the joint total at 20.,llm
+e3-a-to-b,e3,4,tj-002,A,False,2,15,13,15,13,2,It maximizes the joint total while giving my group the larger share and the other group a substantial allocation.,llm
+e3-a-to-b,e3,4,tj-000,B,False,3,13,15,15,13,2,It maximizes the joint total while giving my group a modest advantage and preserving a meaningful share for the other group.,llm
+e3-a-to-b,e3,4,tj-003,B,False,2,15,13,13,15,-2,It maximizes the joint total while giving my group a strong payoff and helping narrow the group gap.,llm
+e3-a-to-b,e3,4,tj-009,B,False,2,15,13,13,15,-2,It maximizes the joint total while giving my group a modest advantage.,llm
+e3-a-to-b,e3,4,tj-006,B,False,1,4,16,16,4,12,"This row gives my group the highest allocation, consistent with my previous choices.",llm
+e3-a-to-b,e3,4,tj-004,B,False,3,13,15,15,13,2,It gives my group 15 while keeping the joint payoff at the maximum of 28.,llm
+e3-a-to-b,e3,5,tj-005,A,False,2,15,13,15,13,2,It maximizes the joint total while giving my group 15 and keeping the gap small.,llm
+e3-a-to-b,e3,5,tj-008,A,False,2,15,13,15,13,2,It maximizes the joint payoff while maintaining a modest advantage for my group.,llm
+e3-a-to-b,e3,5,tj-001,A,False,0,16,4,16,4,12,It gives my group the highest payoff while keeping the joint total at 20.,llm
+e3-a-to-b,e3,5,tj-007,A,False,0,16,4,16,4,12,It gives my group the largest allocation.,llm
+e3-a-to-b,e3,5,tj-002,A,False,2,15,13,15,13,2,It offers the highest joint total while giving my group a slightly larger share and the other group a substantial allocation.,llm
+e3-a-to-b,e3,5,tj-000,B,False,3,13,15,15,13,2,It maximizes the joint total while preserving a modest advantage for my group and a meaningful share for the other group.,llm
+e3-a-to-b,e3,5,tj-003,B,False,2,15,13,13,15,-2,It maximizes the joint total and gives the group that is behind a larger share.,llm
+e3-a-to-b,e3,5,tj-009,B,False,2,15,13,13,15,-2,It maximizes the joint payoff while keeping the allocation relatively balanced.,llm
+e3-a-to-b,e3,5,tj-006,B,False,1,4,16,16,4,12,"It gives my group the highest allocation of 16, consistent with my previous choices.",llm
+e3-a-to-b,e3,5,tj-004,B,False,3,13,15,15,13,2,It gives my group 15 while preserving the maximum joint payoff of 28 and a small advantage.,llm

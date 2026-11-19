@@ -1,0 +1,51 @@
+condition,series,step,agent_id,own_group,is_leader,row,a_points,b_points,ingroup_points,outgroup_points,gap,reason,source
+e2-public,e2,1,tj-005,A,False,2,13,11,13,11,2,This row balances a strong payoff for my group with near-equal outcomes and higher joint value.,llm
+e2-public,e2,1,tj-008,A,False,2,13,11,13,11,2,This row balances a relatively high payoff for my group with near-equal outcomes and strong joint value.,llm
+e2-public,e2,1,tj-001,A,False,2,13,11,13,11,2,This row balances a relatively high payoff for my group with near-equal outcomes and strong joint value.,llm
+e2-public,e2,1,tj-007,A,False,2,13,11,13,11,2,This row balances a strong payoff for my group with near-equal outcomes and higher joint value.,llm
+e2-public,e2,1,tj-002,A,False,2,13,11,13,11,2,This row balances a strong payoff for my group with near-equal outcomes and a higher joint total.,llm
+e2-public,e2,1,tj-000,B,False,5,10,20,20,10,10,This row gives my group the largest allocation while still providing 10 to the other group.,llm
+e2-public,e2,1,tj-003,B,False,5,10,20,20,10,10,It gives my group the largest allocation while still providing 10 to the other group.,llm
+e2-public,e2,1,tj-009,B,False,5,10,20,20,10,10,This row gives my group the largest allocation while also maximizing the joint total.,llm
+e2-public,e2,1,tj-006,B,False,5,10,20,20,10,10,It gives my group the largest allocation while also maximizing the joint total.,llm
+e2-public,e2,1,tj-004,B,False,5,10,20,20,10,10,It gives my group the largest allocation while also maximizing the joint total.,llm
+e2-public,e2,2,tj-005,A,False,2,13,11,13,11,2,It preserves a strong outcome for my group while keeping the allocation nearly equal and maintaining high joint value.,llm
+e2-public,e2,2,tj-008,A,False,2,13,11,13,11,2,I choose row 2 because it keeps the groups nearly equal while providing strong payoffs and high joint value.,llm
+e2-public,e2,2,tj-001,A,False,0,15,5,15,5,10,"Group A is already behind overall, so I chose the row that best protects its payoff.",llm
+e2-public,e2,2,tj-007,A,False,2,13,11,13,11,2,Row 2 keeps the outcomes nearly equal while giving my group a strong payoff and a high joint total.,llm
+e2-public,e2,2,tj-002,A,False,3,12,14,12,14,-2,It offers the highest joint total while keeping the outcome gap modest and improving my group's payoff over the prior choice.,llm
+e2-public,e2,2,tj-000,B,False,2,13,11,11,13,-2,This row offers a near-equal allocation while modestly helping the other group address its lower cumulative total.,llm
+e2-public,e2,2,tj-003,B,False,5,10,20,20,10,10,It maximizes my group's allocation and the joint total while still giving the other group 10.,llm
+e2-public,e2,2,tj-009,B,False,2,13,11,11,13,-2,"Group B is already ahead overall, so row 2 keeps this round close while still producing a strong joint total.",llm
+e2-public,e2,2,tj-006,B,False,2,13,11,11,13,-2,"Group B currently leads overall, so this near-equal allocation modestly favors group A while preserving solid joint value.",llm
+e2-public,e2,2,tj-004,B,False,5,10,20,20,10,10,I choose row 5 because it maximizes my group’s allocation and the joint total while preserving a meaningful share for the other group.,llm
+e2-public,e2,3,tj-005,A,False,3,12,14,12,14,-2,It honors the emerging compromise while keeping the gap small and joint value high.,llm
+e2-public,e2,3,tj-008,A,False,3,12,14,12,14,-2,"Row 3 has strong joint value and a small gap, and both groups have voiced support for it as a compromise.",llm
+e2-public,e2,3,tj-001,A,False,2,13,11,13,11,2,"With cumulative totals now equal, row 2 keeps outcomes close while giving my group a strong payoff and preserving high joint value.",llm
+e2-public,e2,3,tj-007,A,False,2,13,11,13,11,2,It keeps the allocation nearly equal while giving my group 13 and maintaining a strong joint total.,llm
+e2-public,e2,3,tj-002,A,False,3,12,14,12,14,-2,It maximizes the joint total while modestly improving Group A's position and narrowing the cumulative gap.,llm
+e2-public,e2,3,tj-000,B,False,3,12,14,14,12,2,This row improves joint value while keeping the allocation close and giving my group only a modest advantage.,llm
+e2-public,e2,3,tj-003,B,False,3,12,14,14,12,2,It reflects the emerging compromise by keeping allocations close while preserving a high joint total.,llm
+e2-public,e2,3,tj-009,B,False,3,12,14,14,12,2,It gives my group a slight advantage while keeping the allocation nearly even and the joint total strong.,llm
+e2-public,e2,3,tj-006,B,False,2,13,11,11,13,-2,It preserves a high joint total while keeping outcomes nearly equal and modestly narrowing Group B’s lead.,llm
+e2-public,e2,3,tj-004,B,False,3,12,14,14,12,2,Row 3 preserves a high joint total while modestly helping Group A narrow the cumulative gap.,llm
+e2-public,e2,4,tj-005,A,False,3,12,14,12,14,-2,"It preserves the high joint value, keeps outcomes nearly equal, and modestly supports Group A.",llm
+e2-public,e2,4,tj-008,A,False,3,12,14,12,14,-2,It preserves the highest joint value while keeping outcomes nearly equal and sustaining cumulative parity.,llm
+e2-public,e2,4,tj-001,A,False,2,13,11,13,11,2,It keeps the outcomes nearly equal while providing strong payoffs and high joint value.,llm
+e2-public,e2,4,tj-007,A,False,3,12,14,12,14,-2,Row 3 preserves the highest joint value while keeping the allocation nearly equal and maintaining cumulative parity.,llm
+e2-public,e2,4,tj-002,A,False,3,12,14,12,14,-2,It preserves the highest joint value while keeping outcomes nearly equal and modestly improving Group A's position.,llm
+e2-public,e2,4,tj-000,B,False,2,13,11,11,13,-2,This near-equal allocation modestly helps the other group narrow our cumulative lead while preserving strong joint value.,llm
+e2-public,e2,4,tj-003,B,False,3,12,14,14,12,2,It sustains the emerging near-equal compromise while preserving a high joint total.,llm
+e2-public,e2,4,tj-009,B,False,3,12,14,14,12,2,"It preserves a strong joint total, keeps this round nearly even, and maintains the cumulative balance.",llm
+e2-public,e2,4,tj-006,B,False,3,12,14,14,12,2,It preserves a high joint total while keeping outcomes nearly equal and modestly helping Group A narrow the current gap.,llm
+e2-public,e2,4,tj-004,B,False,3,12,14,14,12,2,"Row 3 keeps the joint total high and the allocation nearly even, preserving the balance between groups.",llm
+e2-public,e2,5,tj-005,A,False,3,12,14,12,14,-2,"It preserves high joint value, keeps outcomes nearly equal, and modestly helps Group A restore cumulative balance.",llm
+e2-public,e2,5,tj-008,A,False,3,12,14,12,14,-2,"Row 3 keeps the groups nearly even, provides the highest joint value, and modestly helps close A's cumulative deficit.",llm
+e2-public,e2,5,tj-001,A,False,3,12,14,12,14,-2,"Row 3 keeps the outcomes nearly equal, maximizes joint value, and modestly helps Group A narrow its cumulative deficit.",llm
+e2-public,e2,5,tj-007,A,False,3,12,14,12,14,-2,Row 3 keeps joint value high and outcomes close while modestly helping my group narrow the cumulative deficit.,llm
+e2-public,e2,5,tj-002,A,False,3,12,14,12,14,-2,It keeps the joint total highest while giving Group A a modest advantage to narrow the current deficit.,llm
+e2-public,e2,5,tj-000,B,False,3,12,14,14,12,2,It preserves high joint value while keeping allocations close and maintaining a fair cumulative balance.,llm
+e2-public,e2,5,tj-003,B,False,3,12,14,14,12,2,It preserves the high joint total while keeping allocations nearly equal and sustaining the emerging compromise.,llm
+e2-public,e2,5,tj-009,B,False,2,13,11,11,13,-2,It modestly helps Group A narrow Group B's lead while preserving a strong joint total and near-equal outcome.,llm
+e2-public,e2,5,tj-006,B,False,2,13,11,11,13,-2,It keeps the allocation nearly equal with a strong joint total while modestly helping Group A close the current gap.,llm
+e2-public,e2,5,tj-004,B,False,2,13,11,11,13,-2,It gives the trailing other group a modest advantage while preserving a strong joint total.,llm

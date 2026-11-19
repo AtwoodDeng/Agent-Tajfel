@@ -1,0 +1,10 @@
+step,arm,text,is_sum_only,has_cross
+2,d5,Previous results: group A total 575; group B total 775; A-to-A 310; A-to-B 320; B-to-A 265; B-to-B 455.,False,True
+3,d5,Previous results: group A total 565; group B total 805; A-to-A 315; A-to-B 305; B-to-A 250; B-to-B 500.,False,True
+4,d5,Previous results: group A total 563; group B total 811; A-to-A 308; A-to-B 326; B-to-A 255; B-to-B 485.,False,True
+5,d5,Previous results: group A total 562; group B total 814; A-to-A 310; A-to-B 320; B-to-A 252; B-to-B 494.,False,True
+6,d5,Previous results: group A total 568; group B total 796; A-to-A 313; A-to-B 311; B-to-A 255; B-to-B 485.,False,True
+7,d5,Previous results: group A total 566; group B total 802; A-to-A 312; A-to-B 314; B-to-A 254; B-to-B 488.,False,True
+8,d5,Previous results: group A total 567; group B total 799; A-to-A 312; A-to-B 314; B-to-A 255; B-to-B 485.,False,True
+9,d5,Previous results: group A total 561; group B total 817; A-to-A 307; A-to-B 329; B-to-A 254; B-to-B 488.,False,True
+10,d5,Previous results: group A total 576; group B total 772; A-to-A 314; A-to-B 308; B-to-A 262; B-to-B 464.,False,True

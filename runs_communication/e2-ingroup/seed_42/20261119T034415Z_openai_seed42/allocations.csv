@@ -1,0 +1,51 @@
+condition,series,step,agent_id,own_group,is_leader,row,a_points,b_points,ingroup_points,outgroup_points,gap,reason,source
+e2-ingroup,e2,1,tj-005,A,False,2,13,11,13,11,2,This row balances near-equal outcomes with a relatively high joint allocation.,llm
+e2-ingroup,e2,1,tj-008,A,False,2,13,11,13,11,2,This row balances a strong payoff for my group with a relatively fair allocation and high joint value.,llm
+e2-ingroup,e2,1,tj-001,A,False,2,13,11,13,11,2,This row balances a strong outcome for my group with near-equal allocation and higher joint value.,llm
+e2-ingroup,e2,1,tj-007,A,False,2,13,11,13,11,2,This row balances a relatively high payoff for my group with a near-equal allocation and strong joint value.,llm
+e2-ingroup,e2,1,tj-002,A,False,2,13,11,13,11,2,This row balances a relatively high payoff for my group with near-equal outcomes and strong joint value.,llm
+e2-ingroup,e2,1,tj-000,B,False,5,10,20,20,10,10,This row gives my group the highest allocation.,llm
+e2-ingroup,e2,1,tj-003,B,False,5,10,20,20,10,10,This row gives my group the largest allocation while keeping the total joint amount highest.,llm
+e2-ingroup,e2,1,tj-009,B,False,5,10,20,20,10,10,This row gives my group the largest allocation while also maximizing the joint total.,llm
+e2-ingroup,e2,1,tj-006,B,False,5,10,20,20,10,10,This row gives my group the largest allocation while also producing the highest joint total.,llm
+e2-ingroup,e2,1,tj-004,B,False,5,10,20,20,10,10,This row gives my group the largest allocation while also maximizing the joint total.,llm
+e2-ingroup,e2,2,tj-005,A,False,2,13,11,13,11,2,"It keeps the allocation nearly equal, slightly helps group A address its current deficit, and preserves strong joint value.",llm
+e2-ingroup,e2,2,tj-008,A,False,1,14,8,14,8,6,Group A's current deficit justifies a stronger payoff while retaining reasonable joint value and a moderate gap.,llm
+e2-ingroup,e2,2,tj-001,A,False,1,14,8,14,8,6,This raises group A’s payoff while keeping the allocation reasonably balanced and joint value high.,llm
+e2-ingroup,e2,2,tj-007,A,False,2,13,11,13,11,2,It preserves a strong payoff for group A while keeping the allocation near-equal and jointly efficient.,llm
+e2-ingroup,e2,2,tj-002,A,False,2,13,11,13,11,2,It keeps the allocation nearly equal while preserving a strong payoff for our group and high joint value.,llm
+e2-ingroup,e2,2,tj-000,B,False,5,10,20,20,10,10,It maximizes both my group's allocation and the joint total.,llm
+e2-ingroup,e2,2,tj-003,B,False,5,10,20,20,10,10,"It maximizes my group's allocation and the joint total, consistent with my prior choice.",llm
+e2-ingroup,e2,2,tj-009,B,False,5,10,20,20,10,10,"Row 5 maximizes Group B’s allocation and the joint total, consistent with my past choices.",llm
+e2-ingroup,e2,2,tj-006,B,False,5,10,20,20,10,10,"Row 5 maximizes my group’s allocation and the joint total, consistent with my prior choice.",llm
+e2-ingroup,e2,2,tj-004,B,False,5,10,20,20,10,10,"It maximizes both my group's allocation and the joint total, consistent with our prior strategy.",llm
+e2-ingroup,e2,3,tj-005,A,False,2,13,11,13,11,2,"Row 2 keeps outcomes nearly equal, improves group A's payoff, and preserves strong joint value.",llm
+e2-ingroup,e2,3,tj-008,A,False,2,13,11,13,11,2,Row 2 preserves the highest joint value while giving my group a strong payoff and keeping the allocation nearly equal.,llm
+e2-ingroup,e2,3,tj-001,A,False,2,13,11,13,11,2,"It increases group A’s payoff, keeps the allocation nearly equal, and delivers high joint value.",llm
+e2-ingroup,e2,3,tj-007,A,False,2,13,11,13,11,2,It helps group A address its deficit while preserving a near-equal allocation and strong joint value.,llm
+e2-ingroup,e2,3,tj-002,A,False,2,13,11,13,11,2,It raises group A's payoff while keeping the allocation nearly equal and the joint total high.,llm
+e2-ingroup,e2,3,tj-000,B,False,5,10,20,20,10,10,It maximizes both my group's allocation and the joint total.,llm
+e2-ingroup,e2,3,tj-003,B,False,5,10,20,20,10,10,"It maximizes my group's allocation and the joint total, consistent with our established strategy.",llm
+e2-ingroup,e2,3,tj-009,B,False,5,10,20,20,10,10,"It maximizes my group's allocation and the joint total, consistent with our established strategy.",llm
+e2-ingroup,e2,3,tj-006,B,False,5,10,20,20,10,10,"Row 5 gives Group B the largest allocation and the highest joint total, consistent with my previous choices.",llm
+e2-ingroup,e2,3,tj-004,B,False,5,10,20,20,10,10,"Row 5 maximizes my group's allocation and the joint total, consistent with my previous choices.",llm
+e2-ingroup,e2,4,tj-005,A,False,2,13,11,13,11,2,It helps the trailing group while keeping the allocation nearly equal and preserving strong joint value.,llm
+e2-ingroup,e2,4,tj-008,A,False,2,13,11,13,11,2,Row 2 helps the trailing group while preserving a near-equal allocation and strong joint value.,llm
+e2-ingroup,e2,4,tj-001,A,False,2,13,11,13,11,2,It helps group A close its deficit while preserving a near-equal allocation and high joint value.,llm
+e2-ingroup,e2,4,tj-007,A,False,2,13,11,13,11,2,It helps group A close its deficit while preserving a near-equal allocation and strong joint value.,llm
+e2-ingroup,e2,4,tj-002,A,False,2,13,11,13,11,2,It helps group A close its deficit while preserving near-equal outcomes and strong joint value.,llm
+e2-ingroup,e2,4,tj-000,B,False,5,10,20,20,10,10,"It maximizes both my group's allocation and the joint total, consistent with our established strategy.",llm
+e2-ingroup,e2,4,tj-003,B,False,5,10,20,20,10,10,"It maximizes my group's allocation and the joint total, consistent with our established strategy.",llm
+e2-ingroup,e2,4,tj-009,B,False,5,10,20,20,10,10,"Row 5 maximizes my group's allocation and the joint total, consistent with our established strategy.",llm
+e2-ingroup,e2,4,tj-006,B,False,5,10,20,20,10,10,"Row 5 maximizes my group’s allocation and the joint total, consistent with our established strategy.",llm
+e2-ingroup,e2,4,tj-004,B,False,5,10,20,20,10,10,"It maximizes both my group's allocation and the joint total, consistent with our established strategy.",llm
+e2-ingroup,e2,5,tj-005,A,False,2,13,11,13,11,2,It improves Group A's payoff while keeping the allocation nearly equal and preserving strong joint value.,llm
+e2-ingroup,e2,5,tj-008,A,False,2,13,11,13,11,2,Row 2 helps the trailing group while keeping the allocation nearly equal and preserving strong joint value.,llm
+e2-ingroup,e2,5,tj-001,A,False,2,13,11,13,11,2,It raises our payoff while keeping the allocation nearly equal and joint value high.,llm
+e2-ingroup,e2,5,tj-007,A,False,2,13,11,13,11,2,It improves Group A’s payoff while keeping the allocation near-equal and joint value high.,llm
+e2-ingroup,e2,5,tj-002,A,False,2,13,11,13,11,2,It gives our group a strong payoff while keeping the allocation nearly equal and the joint total high.,llm
+e2-ingroup,e2,5,tj-000,B,False,5,10,20,20,10,10,"It maximizes both my group's allocation and the joint total, consistent with our established strategy.",llm
+e2-ingroup,e2,5,tj-003,B,False,5,10,20,20,10,10,"Row 5 maximizes my group's allocation and the joint total, consistent with my previous choices.",llm
+e2-ingroup,e2,5,tj-009,B,False,5,10,20,20,10,10,"Row 5 maximizes my group's allocation and the joint total, consistent with my past choices.",llm
+e2-ingroup,e2,5,tj-006,B,False,5,10,20,20,10,10,"Row 5 maximizes Group B’s allocation and the joint total, consistent with my previous choices.",llm
+e2-ingroup,e2,5,tj-004,B,False,5,10,20,20,10,10,"Row 5 maximizes my group's allocation and the joint total, consistent with our established strategy.",llm

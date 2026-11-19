@@ -1,0 +1,21 @@
+{
+  "condition": "c3",
+  "label": "rarity (label visible, own group is the 10/40 minority)",
+  "llm": "scripted",
+  "n_agents": 10,
+  "n_steps": 3,
+  "seed": 42,
+  "out": "/home/atwood/tajfel-study/runs/c3",
+  "n_allocations": 30,
+  "allocations_csv": "/home/atwood/tajfel-study/runs/c3/export/allocations.csv",
+  "metrics_csv": "/home/atwood/tajfel-study/runs/c3/export/metrics.csv",
+  "last_step": {
+    "mean_favour": 3.6,
+    "favour_parity": null,
+    "favour_mjp": null,
+    "favour_mif": 3.6,
+    "mean_gap": 3.6,
+    "mif_favour_share": 0.7,
+    "fallback_rate": 0.0
+  }
+}

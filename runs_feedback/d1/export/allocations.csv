@@ -1,0 +1,501 @@
+arm,step,agent_id,row,own_group,pair_type,reason,gap,ingroup_points,outgroup_points
+d1,1,tj-005,5,A,AA,I chose the row that gives the outgroup the most while still providing a meaningful amount to the ingroup.,-10,10,20
+d1,1,tj-031,5,A,AA,It gives my ingroup the most while also giving the outgroup the highest amount.,-10,10,20
+d1,1,tj-015,2,A,AB,This row gives my ingroup more while keeping the outgroup allocation reasonably close.,2,13,11
+d1,1,tj-009,0,A,AA,I chose the row that gives the largest allocation to my ingroup.,10,15,5
+d1,1,tj-020,5,A,AA,I chose the row that gives the outgroup the most while still allocating 10 to my ingroup.,-10,10,20
+d1,1,tj-001,5,A,AA,I chose the row that gives the outgroup the most while still providing something to the ingroup.,-10,10,20
+d1,1,tj-008,5,A,AB,This row gives the outgroup the most while retaining a fair share for the ingroup.,-10,10,20
+d1,1,tj-010,0,A,AB,I chose the option that gives my ingroup the most.,10,15,5
+d1,1,tj-044,0,A,AA,I chose the row that gives the highest allocation to my ingroup.,10,15,5
+d1,1,tj-032,0,A,AB,I chose the row that gives my ingroup the most.,10,15,5
+d1,1,tj-022,3,A,AB,This row gives the outgroup more while keeping the ingroup's allocation relatively high.,-2,12,14
+d1,1,tj-002,0,A,AB,I chose the row that gives my ingroup the highest payoff.,10,15,5
+d1,1,tj-016,0,A,AB,I chose the row that gives my ingroup the most.,10,15,5
+d1,1,tj-004,5,A,AB,I chose the row that gives the outgroup the most while still providing my ingroup with 10.,-10,10,20
+d1,1,tj-025,0,A,AB,I chose the row that gives my ingroup the most.,10,15,5
+d1,1,tj-028,0,A,AA,I chose the row that gives my group the most.,10,15,5
+d1,1,tj-034,0,A,AB,I chose the row that gives my ingroup the most.,10,15,5
+d1,1,tj-033,5,A,AB,This row gives the outgroup the most while still allocating 10 to my ingroup.,-10,10,20
+d1,1,tj-021,5,A,AB,"I chose the option that gives the outgroup the most, even though it gives my ingroup the least.",-10,10,20
+d1,1,tj-043,5,A,AB,"This row gives the ingroup 10 and the outgroup 20, maximizing the total allocation.",-10,10,20
+d1,1,tj-042,2,A,AB,This row gives both groups a substantial allocation while keeping the outcomes relatively balanced.,2,13,11
+d1,1,tj-041,0,A,AB,I chose the row that gives my ingroup the most.,10,15,5
+d1,1,tj-040,5,A,AA,I chose the row that gives the outgroup the most.,-10,10,20
+d1,1,tj-014,5,A,AA,This row gives the outgroup the most while still providing a reasonable amount to the ingroup.,-10,10,20
+d1,1,tj-046,2,A,AA,This row balances gains for both groups while keeping the ingroup ahead.,2,13,11
+d1,1,tj-048,5,B,BB,This row gives the ingroup the most while keeping the outgroup allocation at 10.,10,20,10
+d1,1,tj-045,5,B,AB,This row gives the highest ingroup allocation while keeping the outgroup allocation at 10.,10,20,10
+d1,1,tj-012,5,B,AB,This row gives my ingroup the highest allocation while still giving the outgroup 10.,10,20,10
+d1,1,tj-000,5,B,BB,This row gives the ingroup the highest allocation while still providing 10 to the outgroup.,10,20,10
+d1,1,tj-038,5,B,BB,This row gives the ingroup the most while still providing the outgroup with 10.,10,20,10
+d1,1,tj-037,0,B,AB,I chose the row that gives the outgroup the most.,-10,5,15
+d1,1,tj-029,5,B,AB,This row gives the ingroup the most while still allocating 10 to the outgroup.,10,20,10
+d1,1,tj-018,5,B,AB,This row gives my ingroup the highest allocation while still providing the outgroup with 10.,10,20,10
+d1,1,tj-003,5,B,AB,I chose the row that gives my ingroup the most while keeping the outgroup's allocation at 10.,10,20,10
+d1,1,tj-007,5,B,AB,I chose the row that gives the ingroup the most while still allocating something to the outgroup.,10,20,10
+d1,1,tj-011,5,B,AB,This row gives the highest ingroup allocation while keeping the outgroup allocation at 10.,10,20,10
+d1,1,tj-039,2,B,BB,This row provides a reasonable balance between the ingroup and outgroup allocations.,-2,11,13
+d1,1,tj-013,5,B,BB,This row gives my ingroup the highest allocation while still providing 10 to the outgroup.,10,20,10
+d1,1,tj-023,5,B,AB,I chose the row that gives my ingroup the most while keeping the outgroup allocation as high as possible.,10,20,10
+d1,1,tj-024,0,B,AB,I chose the row that gives the outgroup the largest allocation.,-10,5,15
+d1,1,tj-036,5,B,BB,I chose the row that gives my ingroup the highest allocation.,10,20,10
+d1,1,tj-026,5,B,AB,This row gives the ingroup the highest allocation while also providing 10 to the outgroup.,10,20,10
+d1,1,tj-047,0,B,BB,I chose this row to maximize the outgroup's allocation.,-10,5,15
+d1,1,tj-035,5,B,AB,This row gives the ingroup the largest allocation while still providing 10 to the outgroup.,10,20,10
+d1,1,tj-049,5,B,BB,This row gives the ingroup the highest allocation.,10,20,10
+d1,1,tj-006,5,B,BB,This row maximizes the ingroup allocation.,10,20,10
+d1,1,tj-030,5,B,BB,I chose the row that gives my ingroup the most while keeping the outgroup's allocation reasonable.,10,20,10
+d1,1,tj-017,5,B,AB,This row gives my ingroup the highest allocation.,10,20,10
+d1,1,tj-027,5,B,AB,This row gives my ingroup the highest allocation while keeping the outgroup allocation at 10.,10,20,10
+d1,1,tj-019,0,B,AB,I chose the row that gives the outgroup the most.,-10,5,15
+d1,2,tj-005,3,A,AB,This nearly equal split narrows the gap while giving both groups a substantial share.,-2,12,14
+d1,2,tj-031,5,A,AA,It gives both groups their highest available payoffs and maximizes their combined total.,-10,10,20
+d1,2,tj-015,2,A,AB,This row gives my ingroup a strong allocation while keeping the difference between groups small.,2,13,11
+d1,2,tj-009,2,A,AB,It keeps the allocation close while still giving my group slightly more.,2,13,11
+d1,2,tj-020,5,A,AB,"This gives the outgroup the most while still allocating 10 to my ingroup, consistent with my previous choice.",-10,10,20
+d1,2,tj-001,5,A,AB,I chose the option that gives the outgroup the most while still providing 10 to the ingroup.,-10,10,20
+d1,2,tj-008,3,A,AA,This row gives both groups a nearly equal share while keeping the total allocation high.,-2,12,14
+d1,2,tj-010,0,A,AB,"I chose the option that gives my ingroup the most, consistent with my previous choice.",10,15,5
+d1,2,tj-044,3,A,AB,This row keeps the allocations nearly equal while providing a higher combined benefit.,-2,12,14
+d1,2,tj-032,3,A,AA,This row raises the shared total while keeping the two groups' allocations close.,-2,12,14
+d1,2,tj-022,5,A,AB,这一行让双方获得的总收益最高，也能帮助缩小两组之间的差距。,-10,10,20
+d1,2,tj-002,5,A,AA,This row maximizes the combined payoff and gives the other group more while preserving a payoff for mine.,-10,10,20
+d1,2,tj-016,0,A,AB,"I chose the row that gives my ingroup the most, consistent with my previous choice.",10,15,5
+d1,2,tj-004,2,A,AA,It gives both groups a reasonable payoff while keeping the difference small.,2,13,11
+d1,2,tj-025,3,A,AA,It nearly equalizes both groups while providing a higher total payoff than the other equally balanced option.,-2,12,14
+d1,2,tj-028,0,A,AA,我继续优先选择本组收益最高的选项。,10,15,5
+d1,2,tj-034,0,A,AB,"I chose the row that gives my ingroup the most, consistent with my previous choice.",10,15,5
+d1,2,tj-033,2,A,AB,This row gives both groups substantial resources while keeping their allocations relatively close.,2,13,11
+d1,2,tj-021,5,A,AB,"I chose the option that gives the outgroup the most, consistent with my previous choice.",-10,10,20
+d1,2,tj-043,5,A,AA,"This row gives the highest combined allocation, continuing my previous focus on total收益.",-10,10,20
+d1,2,tj-042,3,A,AA,I chose a near-balanced allocation that slightly favors the group currently behind.,-2,12,14
+d1,2,tj-041,0,A,AB,我选择本组收益最高的选项，延续上一轮优先保障本组利益的做法。,10,15,5
+d1,2,tj-040,5,A,AA,I chose the option that maximizes the total payoff while giving the outgroup more.,-10,10,20
+d1,2,tj-014,4,A,AB,This row gives both groups substantial收益 while keeping the overall allocation reasonably balanced.,-6,11,17
+d1,2,tj-046,3,A,AB,This option raises the joint payoff while keeping the difference between groups small.,-2,12,14
+d1,2,tj-048,3,B,BB,This row keeps the allocation nearly balanced while providing a relatively high total to both groups.,2,14,12
+d1,2,tj-045,5,B,BB,"This row maximizes the ingroup allocation while keeping the outgroup allocation at 10, consistent with my previous choice.",10,20,10
+d1,2,tj-012,5,B,AB,I chose the row that gives my ingroup the highest allocation while still providing 10 to the outgroup.,10,20,10
+d1,2,tj-000,5,B,BB,I’ll continue our shared approach of maximizing the ingroup allocation while leaving the outgroup 10.,10,20,10
+d1,2,tj-038,5,B,AB,This row maximizes ingroup gains while still giving the outgroup 10.,10,20,10
+d1,2,tj-037,5,B,AB,This row provides the highest combined payoff while improving my group's outcome.,10,20,10
+d1,2,tj-029,5,B,BB,This row gives the ingroup the most while still allocating 10 to the outgroup.,10,20,10
+d1,2,tj-018,3,B,BB,This row keeps the allocation nearly equal while still giving my ingroup a slight advantage.,2,14,12
+d1,2,tj-003,5,B,AB,我选择让本群体获得最多的方案，同时另一群体仍获得10。,10,20,10
+d1,2,tj-007,4,B,AB,This row raises the outgroup's share while still giving our group a strong payoff and narrowing the gap.,6,17,11
+d1,2,tj-011,5,B,AB,我继续选择本组所得最高且外组仍能获得10的方案。,10,20,10
+d1,2,tj-039,3,B,AB,这一行适度提高组内分配，同时让组外分配保持接近。,2,14,12
+d1,2,tj-013,3,B,BB,This row raises the outgroup allocation while keeping my ingroup allocation higher.,2,14,12
+d1,2,tj-023,5,B,AB,I chose the row that maximizes my ingroup’s allocation while keeping the outgroup allocation as high as possible.,10,20,10
+d1,2,tj-024,5,B,BB,This row gives the highest combined allocation while also maximizing the ingroup's payoff.,10,20,10
+d1,2,tj-036,3,B,BB,This option gives both groups a strong allocation while keeping the difference small.,2,14,12
+d1,2,tj-026,5,B,AB,This row gives my group the highest allocation while still providing 10 to the other group.,10,20,10
+d1,2,tj-047,2,B,AB,This row keeps the allocations close while still giving the outgroup slightly more.,-2,11,13
+d1,2,tj-035,5,B,AB,This row maximizes both the ingroup allocation and the combined payoff while still giving the outgroup 10.,10,20,10
+d1,2,tj-049,5,B,AB,This row maximizes both the ingroup allocation and the combined total while preserving a meaningful outgroup allocation.,10,20,10
+d1,2,tj-006,5,B,AB,"I’m continuing to maximize the ingroup allocation, consistent with my previous choice.",10,20,10
+d1,2,tj-030,5,B,BB,I chose the row that maximizes my ingroup's allocation while preserving the approach we agreed on.,10,20,10
+d1,2,tj-017,5,B,AB,I am continuing to prioritize the highest allocation for my ingroup.,10,20,10
+d1,2,tj-027,5,B,BB,I’m keeping my previous choice because it gives my ingroup the highest allocation while still allocating 10 to the outgroup.,10,20,10
+d1,2,tj-019,3,B,AB,This row keeps the allocation nearly equal while providing a high combined benefit.,2,14,12
+d1,3,tj-005,3,A,AA,第3行让两组获得接近的收益，有助于缩小当前差距。,-2,12,14
+d1,3,tj-031,5,A,AA,"It maximizes the combined payoff for both groups, consistent with my previous choices.",-10,10,20
+d1,3,tj-015,2,A,AB,"This row keeps the allocations close while still giving my group a solid share, especially with group B currently ahead.",2,13,11
+d1,3,tj-009,3,A,AB,It keeps the allocation close while giving both groups a strong combined outcome.,-2,12,14
+d1,3,tj-020,3,A,AA,This gives both groups a strong combined payoff while narrowing the gap between them.,-2,12,14
+d1,3,tj-001,5,A,AB,I chose the option that gives the outgroup the most while still providing 10 to the ingroup.,-10,10,20
+d1,3,tj-008,2,A,AB,"This choice keeps the allocation fairly balanced while slightly favoring my group, which is currently behind.",2,13,11
+d1,3,tj-010,3,A,AA,This raises the outgroup's share to narrow the gap while keeping both groups' allocations substantial.,-2,12,14
+d1,3,tj-044,3,A,AB,这一行差距较小且总收益较高，能兼顾双方利益并避免本组回报过低。,-2,12,14
+d1,3,tj-032,4,A,AA,This row raises the shared total while moderately favoring the currently disadvantaged ingroup.,-6,11,17
+d1,3,tj-022,5,A,AB,This row maximizes the combined allocation and helps narrow the gap while B's total remains higher.,-10,10,20
+d1,3,tj-002,2,A,AB,This row favors my group slightly while improving the combined payoff and helping narrow the current group gap.,2,13,11
+d1,3,tj-016,3,A,AA,我选择第3行，在提高总收益的同时适度缩小当前两组总收益差距。,-2,12,14
+d1,3,tj-004,5,A,AB,It gives the group currently behind more while keeping the total payoff highest.,-10,10,20
+d1,3,tj-025,3,A,AB,This option gives both groups similar shares while keeping the total payoff relatively high.,-2,12,14
+d1,3,tj-028,2,A,AB,This option keeps both groups’ payoffs relatively close while giving each a substantial return.,2,13,11
+d1,3,tj-034,0,A,AB,I chose the row that maximizes my ingroup's payoff and helps address its lower published total.,10,15,5
+d1,3,tj-033,3,A,AB,This row offers a high combined allocation while slightly favoring the currently lower-total group.,-2,12,14
+d1,3,tj-021,2,A,AA,这行提高本组所得并缩小双方差距，兼顾了公平与群体收益。,2,13,11
+d1,3,tj-043,5,A,AB,"This row maximizes the combined allocation, consistent with my previous choices.",-10,10,20
+d1,3,tj-042,3,A,AA,This near-balanced allocation gives a slight advantage to the group currently behind.,-2,12,14
+d1,3,tj-041,0,A,AA,"I’m continuing to prioritize my ingroup’s payoff, as in the previous rounds.",10,15,5
+d1,3,tj-040,3,A,AB,这一行总收益较高且两组分配较均衡，有助于缩小当前差距。,-2,12,14
+d1,3,tj-014,0,A,AB,This row prioritizes the ingroup to help narrow the current gap while keeping a meaningful outgroup allocation.,10,15,5
+d1,3,tj-046,2,A,AA,This row keeps the allocation nearly equal while preserving a strong joint payoff and modestly helping the lagging ingroup catch up.,2,13,11
+d1,3,tj-048,2,B,AB,B组目前领先，选择让外群体略多得一些有助于缩小两组总额差距。,-2,11,13
+d1,3,tj-045,3,B,AB,This option narrows the gap while keeping both allocations substantial.,2,14,12
+d1,3,tj-012,0,B,AB,I chose the most balanced allocation to help narrow the gap between the groups.,-10,5,15
+d1,3,tj-000,5,B,BB,This continues our agreed approach of maximizing the ingroup allocation while leaving 10 for the outgroup.,10,20,10
+d1,3,tj-038,5,B,BB,This row maximizes both the ingroup allocation and the combined total while preserving 10 for the outgroup.,10,20,10
+d1,3,tj-037,5,B,AB,It maximizes the combined payoff while helping the currently trailing ingroup close the gap.,10,20,10
+d1,3,tj-029,5,B,BB,This row gives the ingroup the most while also maximizing the combined allocation.,10,20,10
+d1,3,tj-018,2,B,AB,This row modestly favors the other group to help narrow the cumulative gap while preserving a reasonable total allocation.,-2,11,13
+d1,3,tj-003,3,B,AB,I chose a balanced option that modestly benefits my ingroup while keeping the outgroup's allocation close.,2,14,12
+d1,3,tj-007,3,B,BB,This row offers a strong combined payoff while keeping the difference between groups small.,2,14,12
+d1,3,tj-011,4,B,BB,This keeps my group’s allocation high while giving the other group more and narrowing the gap.,6,17,11
+d1,3,tj-039,3,B,AB,This row modestly favors my ingroup while keeping the outgroup allocation close and maintaining a balanced approach.,2,14,12
+d1,3,tj-013,3,B,BB,This option gives both groups substantial allocations while narrowing the cumulative difference.,2,14,12
+d1,3,tj-023,3,B,AB,I chose this row to provide a strong total allocation while keeping the ingroup advantage modest and helping narrow the current group imbalance.,2,14,12
+d1,3,tj-024,3,B,AB,This row keeps the allocations close while still providing a strong combined total.,2,14,12
+d1,3,tj-036,2,B,BB,This row modestly favors the outgroup to help narrow the published gap while keeping both allocations substantial.,-2,11,13
+d1,3,tj-026,2,B,BB,This row supports reciprocity by keeping allocations close while modestly favoring the outgroup.,-2,11,13
+d1,3,tj-047,2,B,AB,"This row modestly favors the outgroup, helping narrow the group gap without a large tradeoff.",-2,11,13
+d1,3,tj-035,5,B,AB,This row maximizes the combined payoff while maintaining my previous choice of prioritizing the ingroup allocation.,10,20,10
+d1,3,tj-049,5,B,AB,This row maximizes our group's allocation and the combined total while still giving the outgroup a meaningful share.,10,20,10
+d1,3,tj-006,3,B,AB,这轮选择兼顾组内收益并缩小双方分配差距的方案。,2,14,12
+d1,3,tj-030,5,B,BB,I chose the row that maximizes my ingroup's allocation while preserving a reasonable amount for the outgroup.,10,20,10
+d1,3,tj-017,3,B,AB,This row narrows the gap while preserving a solid allocation for my ingroup and a high combined payoff.,2,14,12
+d1,3,tj-027,3,B,AB,This follows our coordination around a balanced option while modestly favoring my ingroup and maintaining a high combined allocation.,2,14,12
+d1,3,tj-019,3,B,BB,在保持较高总收益的同时略微偏向本组，有助于缩小当前差距。,2,14,12
+d1,4,tj-005,5,A,AB,This row maximizes total allocation while directing more to the currently disadvantaged outgroup.,-10,10,20
+d1,4,tj-031,5,A,AB,It maximizes the combined payoff for both groups while maintaining my consistent focus on mutual benefit.,-10,10,20
+d1,4,tj-015,2,A,AA,This row supports my ingroup while keeping the allocation nearly balanced and consistent with my prior choices.,2,13,11
+d1,4,tj-009,3,A,AA,It keeps the allocation nearly balanced while improving my ingroup's position and maintaining a high combined total.,-2,12,14
+d1,4,tj-020,2,A,AB,This row modestly favors my currently trailing ingroup while preserving a high combined payoff and near-balanced allocation.,2,13,11
+d1,4,tj-001,2,A,AB,This row keeps the allocation nearly equal while modestly favoring the ingroup to help narrow the published gap.,2,13,11
+d1,4,tj-008,1,A,AA,This row moderately favors the currently trailing ingroup while preserving a relatively high total allocation.,6,14,8
+d1,4,tj-010,3,A,AA,This keeps both allocations substantial while modestly favoring the currently lower-total group.,-2,12,14
+d1,4,tj-044,3,A,AB,It offers the highest combined allocation among the near-equal options while keeping both groups' shares reasonable.,-2,12,14
+d1,4,tj-032,2,A,AB,This row gives the lagging A group a modest advantage while keeping the combined payoff relatively high.,2,13,11
+d1,4,tj-022,3,A,AB,This row keeps the allocations relatively balanced while providing a strong combined return.,-2,12,14
+d1,4,tj-002,3,A,AB,This row gives the currently trailing group more while keeping both groups' payoffs close and the combined payoff high.,-2,12,14
+d1,4,tj-016,3,A,AB,I chose row 3 to modestly improve total benefits while keeping the two groups relatively balanced.,-2,12,14
+d1,4,tj-004,5,A,AA,It maximizes the total payoff while directing more to the currently trailing outgroup.,-10,10,20
+d1,4,tj-025,3,A,AB,It keeps the two groups close while providing a high combined payoff.,-2,12,14
+d1,4,tj-028,2,A,AA,This balanced option gives both groups substantial returns while helping limit the current gap.,2,13,11
+d1,4,tj-034,3,A,AB,This row nearly balances the groups while improving overall efficiency and addressing my group’s lower published total.,-2,12,14
+d1,4,tj-033,2,A,AB,"This row keeps allocations nearly equal while slightly favoring my group, which is currently behind.",2,13,11
+d1,4,tj-021,2,A,AA,This row modestly favors the currently disadvantaged ingroup while keeping both allocations balanced.,2,13,11
+d1,4,tj-043,3,A,AA,This row keeps the allocation relatively balanced while preserving a high total for both groups.,-2,12,14
+d1,4,tj-042,3,A,AA,选择第3行，在保持双方较高收益的同时适度帮助当前落后的A组。,-2,12,14
+d1,4,tj-041,2,A,AB,It gives my ingroup 13 while keeping the payoff gap small and supporting a more balanced outcome.,2,13,11
+d1,4,tj-040,3,A,AB,It provides the highest combined payoff while keeping the two groups' shares nearly equal.,-2,12,14
+d1,4,tj-014,3,A,AB,This row gives both groups a strong return while modestly favoring the outgroup to help narrow the current gap.,-2,12,14
+d1,4,tj-046,2,A,AA,This row keeps payoffs nearly equal while modestly helping the trailing ingroup catch up.,2,13,11
+d1,4,tj-048,2,B,BB,B组仍领先，选择让外群体略多且保持较高总收益，有助于兼顾公平与效率。,-2,11,13
+d1,4,tj-045,3,B,BB,This row keeps the allocation gap small while providing substantial benefits to both groups.,2,14,12
+d1,4,tj-012,1,B,AB,This row gives the outgroup a meaningful advantage to help narrow the current gap while preserving a relatively high total allocation.,-6,8,14
+d1,4,tj-000,5,B,AB,I’ll continue our established approach of maximizing the ingroup allocation while leaving 10 for the outgroup.,10,20,10
+d1,4,tj-038,3,B,AB,"This choice raises our group’s allocation while keeping the other group’s share close, helping narrow the existing gap.",2,14,12
+d1,4,tj-037,5,B,AB,It maximizes the combined payoff while directing more to the currently trailing ingroup.,10,20,10
+d1,4,tj-029,3,B,BB,This row nearly equalizes the groups while preserving a high combined allocation.,2,14,12
+d1,4,tj-018,5,B,BB,"This row maximizes total allocation while favoring my lower-total ingroup, helping narrow the cumulative gap.",10,20,10
+d1,4,tj-003,3,B,AB,This option keeps the group difference small while providing strong overall benefits to both groups.,2,14,12
+d1,4,tj-007,3,B,AB,This row keeps the allocation nearly equal while improving the combined payoff over the more balanced options.,2,14,12
+d1,4,tj-011,3,B,BB,"This row keeps total allocation high, nearly equalizes both groups, and helps narrow A's current deficit.",2,14,12
+d1,4,tj-039,2,B,AB,"This slightly favors the outgroup, which may help narrow the current group-level gap while keeping both allocations close.",-2,11,13
+d1,4,tj-013,3,B,AB,This option provides substantial allocations to both groups while favoring my ingroup slightly and narrowing the cumulative gap.,2,14,12
+d1,4,tj-023,3,B,AB,This row combines the highest total allocation with a modest ingroup advantage that can help narrow the current imbalance.,2,14,12
+d1,4,tj-024,4,B,BB,This choice raises our group's allocation while keeping the gap moderate and improving the combined total.,6,17,11
+d1,4,tj-036,2,B,BB,This option keeps both allocations substantial while modestly favoring the outgroup to narrow the current gap.,-2,11,13
+d1,4,tj-026,2,B,BB,This row keeps allocations nearly equal while modestly favoring the outgroup to support reciprocity and reduce the overall gap.,-2,11,13
+d1,4,tj-047,2,B,AB,This row modestly favors the disadvantaged outgroup while preserving a relatively high combined allocation.,-2,11,13
+d1,4,tj-035,3,B,AB,This row nearly equalizes both groups while retaining a high combined payoff.,2,14,12
+d1,4,tj-049,3,B,AB,It gives both groups substantial allocations while modestly favoring our group to help reduce the current gap.,2,14,12
+d1,4,tj-006,3,B,AB,This option narrows the allocation gap while still giving my group a substantial share.,2,14,12
+d1,4,tj-030,5,B,AB,延续既有共识，在保障本组较高收益的同时为外群体保留基本分配。,10,20,10
+d1,4,tj-017,3,B,AB,This row keeps my ingroup allocation solid while minimizing the gap and preserving a high combined payoff.,2,14,12
+d1,4,tj-027,3,B,BB,这一行总收益较高且适度提高本组分配，有助于兼顾公平与帮助落后组。,2,14,12
+d1,4,tj-019,3,B,BB,This keeps the allocation nearly balanced while giving the trailing A group a modest chance to catch up.,2,14,12
+d1,5,tj-005,3,A,AB,This row keeps both allocations substantial while limiting the difference between groups.,-2,12,14
+d1,5,tj-031,5,A,AA,It maximizes the combined payoff and remains consistent with my prior focus on mutual benefit.,-10,10,20
+d1,5,tj-015,2,A,AB,This row modestly favors my ingroup while keeping the allocation nearly balanced and consistent with my prior choices.,2,13,11
+d1,5,tj-009,3,A,AA,"It keeps the allocation close, improves the currently trailing group, and provides a higher combined total than the balanced alternative.",-2,12,14
+d1,5,tj-020,2,A,AB,This modestly favors my trailing ingroup while maintaining a high combined payoff and near-balanced allocation.,2,13,11
+d1,5,tj-001,2,A,AB,This row keeps the allocation nearly equal while modestly favoring the ingroup to help reduce the remaining cumulative gap.,2,13,11
+d1,5,tj-008,2,A,AB,A组仍落后，选第2行可适度向我方倾斜，同时保持较高的总收益。,2,13,11
+d1,5,tj-010,3,A,AA,"B still leads A, so this choice modestly favors the outgroup to help narrow the gap while keeping both allocations substantial.",-2,12,14
+d1,5,tj-044,2,A,AB,This row modestly favors the currently disadvantaged ingroup while preserving a relatively high combined allocation.,2,13,11
+d1,5,tj-032,3,A,AB,It offers a relatively high combined payoff while keeping the groups' allocations close.,-2,12,14
+d1,5,tj-022,3,A,AA,This row offers a strong combined return while keeping the allocations relatively close as A catches up.,-2,12,14
+d1,5,tj-002,3,A,AB,This option keeps both groups' payoffs close while maintaining a strong combined payoff.,-2,12,14
+d1,5,tj-016,3,A,AA,我选择第3行，在保持较高总收益的同时缩小两组差距并适度提升A组收益。,-2,12,14
+d1,5,tj-004,5,A,AA,It maximizes the total payoff while helping the still-trailing outgroup close the gap.,-10,10,20
+d1,5,tj-025,2,A,AA,It preserves the high combined payoff while modestly favoring my currently trailing ingroup to reduce the cumulative gap.,2,13,11
+d1,5,tj-028,3,A,AB,This option modestly favors the lagging group while preserving substantial returns for both groups.,-2,12,14
+d1,5,tj-034,3,A,AA,I choose the balanced row that preserves high total efficiency while helping narrow the gap between groups.,-2,12,14
+d1,5,tj-033,5,A,AB,This row maximizes total allocation while directing more resources to the currently lower-total outgroup.,-10,10,20
+d1,5,tj-021,2,A,AA,This row modestly favors my ingroup while keeping both groups' allocations relatively balanced.,2,13,11
+d1,5,tj-043,3,A,AB,This row keeps the allocation nearly balanced while maintaining a relatively high combined total.,-2,12,14
+d1,5,tj-042,3,A,AA,This row maintains relatively high allocations for both groups while modestly favoring the currently disadvantaged group.,-2,12,14
+d1,5,tj-041,2,A,AB,It preserves a strong ingroup payoff while keeping the gap small and helping reduce the existing group imbalance.,2,13,11
+d1,5,tj-040,5,A,AB,It maximizes the combined payoff while directing more to the currently trailing outgroup.,-10,10,20
+d1,5,tj-014,3,A,AB,在保持较高总收益的同时略微向外群体倾斜，有助于缩小当前的组间差距。,-2,12,14
+d1,5,tj-046,2,A,AB,This row keeps payoffs nearly equal while helping the still-trailing ingroup catch up.,2,13,11
+d1,5,tj-048,3,B,AB,This option modestly favors the currently trailing A group while keeping both allocations relatively high.,2,14,12
+d1,5,tj-045,2,B,BB,This modestly favors the currently trailing A group while keeping both allocations substantial.,-2,11,13
+d1,5,tj-012,3,B,AB,This row provides a relatively high total while modestly favoring my group to help narrow the gap.,2,14,12
+d1,5,tj-000,5,B,AB,"I’ll maintain our established choice, maximizing the ingroup allocation while leaving 10 for the outgroup.",10,20,10
+d1,5,tj-038,4,B,AB,"This row balances a high combined allocation with a moderate advantage for the ingroup, helping narrow the cumulative gap efficiently.",6,17,11
+d1,5,tj-037,5,B,AB,It maximizes the combined payoff while helping the trailing ingroup reduce the cumulative gap.,10,20,10
+d1,5,tj-029,2,B,AB,This row keeps the allocation nearly equal while modestly favoring the outgroup to support reciprocity.,-2,11,13
+d1,5,tj-018,5,B,AB,This gives my ingroup the largest allocation and helps narrow its current total deficit.,10,20,10
+d1,5,tj-003,3,B,BB,This row maintains the agreed small gap while providing the highest combined allocation among the balanced options.,2,14,12
+d1,5,tj-007,3,B,BB,This row keeps the allocation nearly equal while providing a strong combined payoff.,2,14,12
+d1,5,tj-011,3,B,BB,This keeps the allocation nearly equal while modestly helping group A reduce its remaining deficit.,2,14,12
+d1,5,tj-039,2,B,AB,It modestly favors the currently lower-total outgroup while keeping both allocations close.,-2,11,13
+d1,5,tj-013,3,B,BB,This option gives both groups substantial allocations while modestly favoring my ingroup and narrowing the cumulative gap.,2,14,12
+d1,5,tj-023,3,B,AB,This row maintains a modest ingroup advantage while preserving a relatively balanced allocation between groups.,2,14,12
+d1,5,tj-024,3,B,BB,This choice keeps allocations close while giving our group a modest advantage as it catches up.,2,14,12
+d1,5,tj-036,2,B,BB,This choice moderately favors my underrepresented ingroup while keeping both allocations high.,-2,11,13
+d1,5,tj-026,2,B,BB,"This keeps the allocation nearly even while modestly favoring the outgroup, consistent with my recent choices.",-2,11,13
+d1,5,tj-047,3,B,BB,This option narrows the gap while keeping the combined allocation relatively high.,2,14,12
+d1,5,tj-035,3,B,AB,Row 3 keeps the allocation relatively balanced while providing a strong combined payoff.,2,14,12
+d1,5,tj-049,5,B,BB,"This row maximizes the ingroup allocation and total payoff, helping reduce the remaining group gap.",10,20,10
+d1,5,tj-006,3,B,AB,This row modestly favors the currently trailing ingroup while keeping the allocation relatively balanced.,2,14,12
+d1,5,tj-030,5,B,AB,I’m continuing with the option that gives my ingroup the most while leaving the outgroup a reasonable allocation.,10,20,10
+d1,5,tj-017,3,B,AB,I choose row 3 because it maintains a strong ingroup allocation while keeping the gap small and helping rebalance the groups.,2,14,12
+d1,5,tj-027,3,B,AB,This balanced option modestly favors my ingroup while helping reduce the gap between groups.,2,14,12
+d1,5,tj-019,4,B,AB,This row provides a high total benefit while modestly helping the trailing ingroup catch up.,6,17,11
+d1,6,tj-005,3,A,AB,This nearly balanced split keeps both groups' shares substantial and continues to narrow the gap.,-2,12,14
+d1,6,tj-031,5,A,AA,"It maximizes the combined payoff for both groups, consistent with my previous choices.",-10,10,20
+d1,6,tj-015,3,A,AA,B组仍领先，我选择总收益更高且适度倾向A组的方案，以帮助缩小累计差距。,-2,12,14
+d1,6,tj-009,3,A,AB,It narrows the gap while keeping the combined allocation high and improving the currently trailing ingroup.,-2,12,14
+d1,6,tj-020,2,A,AA,This keeps the groups nearly balanced while preserving a high combined payoff and modestly improving the trailing ingroup's position.,2,13,11
+d1,6,tj-001,2,A,AB,This row modestly favors the trailing ingroup while keeping the allocation balanced and mutually beneficial.,2,13,11
+d1,6,tj-008,1,A,AA,A组仍落后，选择第1行可适度帮助追赶，同时保持较高总收益。,6,14,8
+d1,6,tj-010,3,A,AB,"B still leads A, so this keeps both allocations substantial while modestly favoring the outgroup to narrow the gap.",-2,12,14
+d1,6,tj-044,2,A,AB,It modestly favors the currently trailing A group while keeping the combined allocation relatively high.,2,13,11
+d1,6,tj-032,4,A,AB,This row maintains a high combined payoff while moderately favoring the currently disadvantaged ingroup.,-6,11,17
+d1,6,tj-022,4,A,AB,This row improves overall returns while helping the ingroup catch up without imposing an excessive loss on the outgroup.,-6,11,17
+d1,6,tj-002,2,A,AA,This row favors my group and helps narrow the cumulative gap while keeping both payoffs reasonable.,2,13,11
+d1,6,tj-016,3,A,AA,"I chose row 3 to maintain a relatively balanced, high-total allocation while modestly favoring the currently trailing outgroup.",-2,12,14
+d1,6,tj-004,5,A,AB,It maximizes the combined payoff while directing more to the trailing group.,-10,10,20
+d1,6,tj-025,2,A,AB,It gives the trailing ingroup a modest advantage while keeping the combined payoff high.,2,13,11
+d1,6,tj-028,3,A,AB,This modestly favors the lagging group while keeping both groups’ returns substantial.,-2,12,14
+d1,6,tj-034,3,A,AA,I choose the balanced option with high combined payoff to keep narrowing the gap while A remains behind.,-2,12,14
+d1,6,tj-033,3,A,AA,This row gives the currently trailing A group more while keeping the allocation gap small.,-2,12,14
+d1,6,tj-021,2,A,AB,This row modestly favors the still-disadvantaged ingroup while keeping the allocation balanced.,2,13,11
+d1,6,tj-043,3,A,AA,This row keeps the allocation nearly balanced while preserving a high combined total.,-2,12,14
+d1,6,tj-042,3,A,AB,This row preserves relatively high joint gains while modestly favoring the still-disadvantaged group A.,-2,12,14
+d1,6,tj-041,2,A,AB,It keeps the payoff gap small while giving my ingroup a modest advantage to help reduce the cumulative imbalance.,2,13,11
+d1,6,tj-040,3,A,AB,It offers a high combined payoff while keeping the groups' shares nearly balanced.,-2,12,14
+d1,6,tj-014,2,A,AB,This keeps both groups' returns high while modestly favoring A to help narrow the current gap.,2,13,11
+d1,6,tj-046,2,A,AA,This row keeps the payoffs close while maintaining a high total and helping the trailing ingroup catch up.,2,13,11
+d1,6,tj-048,3,B,BB,This modestly favors the trailing A group while keeping both allocations relatively high.,2,14,12
+d1,6,tj-045,2,B,BB,This modestly favors the trailing A group while keeping both allocations substantial.,-2,11,13
+d1,6,tj-012,5,B,AB,This gives my ingroup the largest advantage and helps narrow the persistent gap between groups.,10,20,10
+d1,6,tj-000,3,B,BB,This row narrows the group gap while keeping the combined allocation high.,2,14,12
+d1,6,tj-038,4,B,AB,This row raises our group’s allocation while preserving a high combined total and narrowing the gap.,6,17,11
+d1,6,tj-037,3,B,AB,It preserves relatively high combined payoffs while modestly narrowing the gap by helping the trailing ingroup.,2,14,12
+d1,6,tj-029,3,B,BB,It nearly equalizes the groups while keeping the combined allocation high.,2,14,12
+d1,6,tj-018,5,B,AB,This gives my ingroup the largest allocation while it remains behind overall.,10,20,10
+d1,6,tj-003,3,B,AB,This keeps the group difference small while maintaining strong combined allocations and helping narrow the cumulative gap.,2,14,12
+d1,6,tj-007,3,B,BB,This row keeps the allocation nearly balanced while providing a strong combined payoff and helping narrow the existing group gap.,2,14,12
+d1,6,tj-011,3,B,BB,This keeps total allocation high while modestly favoring group A to help reduce its cumulative deficit.,2,14,12
+d1,6,tj-039,2,B,AB,It modestly favors the currently trailing A group while keeping both allocations close.,-2,11,13
+d1,6,tj-013,4,B,AB,This row preserves a high combined allocation while moderately favoring my ingroup to help reduce its cumulative deficit.,6,17,11
+d1,6,tj-023,3,B,AB,This keeps the allocation gap modest while giving my ingroup a slight advantage as we work to narrow the cumulative imbalance.,2,14,12
+d1,6,tj-024,3,B,AB,This row maintains a high combined allocation while giving the trailing ingroup a modest advantage to narrow the cumulative gap.,2,14,12
+d1,6,tj-036,2,B,BB,This row keeps both allocations substantial while modestly favoring the trailing outgroup to reduce the cumulative gap.,-2,11,13
+d1,6,tj-026,3,B,BB,选择第3行可在保持较高总收益的同时适度提高本组分配，回应目前双方的差距。,2,14,12
+d1,6,tj-047,3,B,BB,This row modestly favors the lagging ingroup while keeping both allocations high and the immediate gap small.,2,14,12
+d1,6,tj-035,3,B,AB,Row 3 keeps the allocation balanced while maintaining a strong combined payoff.,2,14,12
+d1,6,tj-049,3,B,AB,This row gives both groups strong allocations while modestly favoring our group to help reduce the cumulative gap.,2,14,12
+d1,6,tj-006,3,B,AB,This row reduces the gap while preserving substantial allocations for both groups.,2,14,12
+d1,6,tj-030,3,B,AB,This row substantially narrows the allocation gap while preserving a relatively high combined payoff.,2,14,12
+d1,6,tj-017,3,B,BB,This keeps the gap small while giving my group a solid allocation.,2,14,12
+d1,6,tj-027,3,B,AB,This balanced option modestly favors my ingroup and helps narrow the gap with the currently leading outgroup.,2,14,12
+d1,6,tj-019,3,B,AB,This row offers a high total benefit while keeping the allocation nearly balanced and modestly helping the trailing ingroup.,2,14,12
+d1,7,tj-005,3,A,AB,This row keeps both allocations substantial while modestly favoring the currently disadvantaged outgroup.,-2,12,14
+d1,7,tj-031,5,A,AB,It maximizes the combined payoff and remains consistent with my prior focus on mutual benefit.,-10,10,20
+d1,7,tj-015,3,A,AA,This row maintains high total welfare while modestly favoring the outgroup to help narrow the persistent group gap.,-2,12,14
+d1,7,tj-009,3,A,AB,It modestly favors the trailing ingroup while preserving a high combined allocation and consistency with our coordination.,-2,12,14
+d1,7,tj-020,1,A,AB,This moderately favors the trailing ingroup while preserving a strong combined payoff and following the proposed cooperative direction.,6,14,8
+d1,7,tj-001,2,A,AB,"This row modestly favors the trailing ingroup while preserving a balanced, mutually beneficial allocation.",2,13,11
+d1,7,tj-008,1,A,AA,A组仍落后，选择第1行可适度帮助追赶，同时保持较高总收益。,6,14,8
+d1,7,tj-010,3,A,AB,"B still leads A, so this preserves substantial allocations while modestly favoring A to narrow the cumulative gap.",-2,12,14
+d1,7,tj-044,2,A,AA,This modestly favors the currently trailing A group while preserving a relatively high combined allocation.,2,13,11
+d1,7,tj-032,2,A,AB,"It gives A a slight advantage while keeping the combined payoff high, helping narrow the cumulative gap.",2,13,11
+d1,7,tj-022,3,A,AA,This row gives A a modest advantage while keeping both allocations relatively high and narrowing the cumulative gap.,-2,12,14
+d1,7,tj-002,3,A,AB,This row modestly improves balance by giving the trailing group a higher payoff while maintaining a strong combined return.,-2,12,14
+d1,7,tj-016,3,A,AB,I chose row 3 to keep total benefits high while modestly reducing the current gap between the groups.,-2,12,14
+d1,7,tj-004,5,A,AB,It maximizes the combined payoff while directing more to the still-trailing outgroup.,-10,10,20
+d1,7,tj-025,2,A,AB,It modestly favors the trailing ingroup while preserving a high combined payoff.,2,13,11
+d1,7,tj-028,3,A,AB,This option modestly favors the lagging group while preserving substantial returns for both groups.,-2,12,14
+d1,7,tj-034,3,A,AA,我选择第3行，在保持较高总收益的同时缩小组间差距并帮助A组追赶。,-2,12,14
+d1,7,tj-033,3,A,AA,This row provides a high combined allocation while modestly favoring the currently trailing group.,-2,12,14
+d1,7,tj-021,2,A,AA,This modestly favors the still-trailing A group while keeping both allocations relatively balanced.,2,13,11
+d1,7,tj-043,3,A,AB,This row keeps the allocation relatively balanced while maintaining a high combined total.,-2,12,14
+d1,7,tj-042,3,A,AB,"This row maintains high joint gains while modestly favoring group A, which remains behind overall.",-2,12,14
+d1,7,tj-041,2,A,AA,It keeps a modest advantage for my ingroup while maintaining the balanced strategy used in recent rounds.,2,13,11
+d1,7,tj-040,3,A,AA,It keeps the groups nearly balanced while providing a high combined payoff and modestly favoring the trailing outgroup.,-2,12,14
+d1,7,tj-014,2,A,AA,This row keeps both groups' returns high while modestly favoring the currently trailing ingroup.,2,13,11
+d1,7,tj-046,3,A,AB,"This row honors the coordinated choice, keeps the allocation close, and provides a higher joint payoff.",-2,12,14
+d1,7,tj-048,3,B,AB,This row modestly favors the trailing A group while maintaining relatively high allocations for both groups.,2,14,12
+d1,7,tj-045,2,B,BB,This row modestly favors the trailing group while keeping both allocations substantial and continuing the coordinated approach.,-2,11,13
+d1,7,tj-012,3,B,AB,This row favors the currently trailing A group while keeping the total allocation high.,2,14,12
+d1,7,tj-000,3,B,AB,This keeps the allocation gap small while helping the currently trailing A group without sacrificing much total allocation.,2,14,12
+d1,7,tj-038,3,B,AB,This row provides the highest combined allocation while modestly favoring the ingroup and keeping the gap small.,2,14,12
+d1,7,tj-037,3,B,AB,It gives the trailing ingroup a modest advantage while preserving a relatively high combined payoff.,2,14,12
+d1,7,tj-029,3,B,AB,This row keeps the allocation nearly equal while modestly favoring the currently trailing ingroup.,2,14,12
+d1,7,tj-018,3,B,BB,This high-total option gives the currently trailing A group a modest advantage and helps narrow the cumulative gap.,2,14,12
+d1,7,tj-003,3,B,BB,This row keeps the gap small while providing strong overall allocations and modestly improving the disadvantaged group’s position.,2,14,12
+d1,7,tj-007,2,B,BB,This slightly favors the outgroup to help narrow its cumulative lead while keeping both payoffs reasonable.,-2,11,13
+d1,7,tj-011,3,B,AB,"This keeps total allocation high, limits the gap to 2, and modestly helps the currently trailing group.",2,14,12
+d1,7,tj-039,2,B,BB,This row modestly supports the trailing outgroup while keeping allocations close and preserving a relatively high joint payoff.,-2,11,13
+d1,7,tj-013,4,B,AB,This row maintains a high total allocation while moderately favoring my ingroup to help narrow the cumulative gap.,6,17,11
+d1,7,tj-023,3,B,BB,This row preserves a high total allocation while maintaining a modest ingroup advantage and supporting a fairer balance.,2,14,12
+d1,7,tj-024,4,B,BB,This row keeps total allocation high while giving the trailing ingroup a meaningful advantage.,6,17,11
+d1,7,tj-036,2,B,AB,This row keeps both allocations substantial while modestly favoring the trailing group to reduce the cumulative gap.,-2,11,13
+d1,7,tj-026,3,B,AB,This keeps allocations balanced while modestly favoring my group to help narrow the current gap.,2,14,12
+d1,7,tj-047,3,B,BB,This row modestly favors the still-lagging ingroup while keeping both allocations high and the immediate gap small.,2,14,12
+d1,7,tj-035,3,B,BB,This row keeps both allocations relatively balanced while modestly favoring the currently trailing ingroup.,2,14,12
+d1,7,tj-049,3,B,AB,It gives both groups strong allocations while modestly favoring the ingroup to reduce the cumulative gap.,2,14,12
+d1,7,tj-006,3,B,AB,This row keeps the allocation gap small while providing the highest combined total among balanced options.,2,14,12
+d1,7,tj-030,3,B,AB,I will continue choosing the balanced row with a small gap and a high combined payoff.,2,14,12
+d1,7,tj-017,3,B,AB,This keeps the allocation gap small while giving my group a solid share and helping address its current disadvantage.,2,14,12
+d1,7,tj-027,3,B,BB,"This maintains the recent balanced approach, gives my ingroup a modest advantage, and preserves a high total allocation.",2,14,12
+d1,7,tj-019,3,B,AB,This row maintains a high combined benefit while modestly helping the trailing ingroup catch up.,2,14,12
+d1,8,tj-005,3,A,AA,This nearly balanced row modestly favors the currently trailing A group while keeping both allocations substantial.,-2,12,14
+d1,8,tj-031,5,A,AB,This row maximizes the combined payoff and has been my consistent choice.,-10,10,20
+d1,8,tj-015,3,A,AB,This row maintains strong total welfare while modestly favoring the currently trailing group to narrow the cumulative gap.,-2,12,14
+d1,8,tj-009,3,A,AB,It modestly improves the currently trailing ingroup while keeping the allocation close and the combined total high.,-2,12,14
+d1,8,tj-020,1,A,AA,This moderately favors the trailing ingroup while preserving a solid combined payoff and continuing the cooperative effort to narrow the gap.,6,14,8
+d1,8,tj-001,2,A,AB,This option keeps the allocation balanced while modestly favoring the trailing group and preserving strong combined returns.,2,13,11
+d1,8,tj-008,1,A,AA,A组仍落后，选择第1行可适度帮助追赶，同时保持较高总收益。,6,14,8
+d1,8,tj-010,3,A,AA,"B still leads A, so this keeps both allocations substantial while modestly favoring A to narrow the cumulative gap.",-2,12,14
+d1,8,tj-044,2,A,AA,It modestly favors the trailing A group while preserving a relatively high combined allocation.,2,13,11
+d1,8,tj-032,2,A,AB,"It gives A a modest advantage while keeping the combined payoff relatively high, helping narrow the cumulative gap.",2,13,11
+d1,8,tj-022,3,A,AB,This row gives A a slight advantage while keeping the allocations close and the combined return high.,-2,12,14
+d1,8,tj-002,3,A,AB,This keeps both groups' payoffs close while maintaining a high combined payoff and slightly improving A's position.,-2,12,14
+d1,8,tj-016,3,A,AA,"I’ll continue with the balanced allocation, which keeps total benefits high while modestly improving the currently trailing group’s share.",-2,12,14
+d1,8,tj-004,5,A,AB,It maximizes the combined payoff while giving more to the currently trailing A group.,-10,10,20
+d1,8,tj-025,2,A,AB,It modestly favors the trailing A group while preserving a high combined payoff.,2,13,11
+d1,8,tj-028,3,A,AB,This option continues to favor the lagging group modestly while maintaining substantial returns for both groups.,-2,12,14
+d1,8,tj-034,3,A,AB,This row maintains high combined payoff while modestly favoring the still-trailing group A.,-2,12,14
+d1,8,tj-033,3,A,AA,It provides a high combined allocation while keeping the two groups' shares relatively close.,-2,12,14
+d1,8,tj-021,2,A,AB,This balanced option modestly favors the still-trailing ingroup while keeping both allocations relatively high.,2,13,11
+d1,8,tj-043,3,A,AB,This row keeps the allocation nearly balanced while preserving a high total and helping the trailing group.,-2,12,14
+d1,8,tj-042,3,A,AB,This row keeps both allocations substantial while slightly favoring the currently disadvantaged group A.,-2,12,14
+d1,8,tj-041,3,A,AA,"It gives A a slight advantage with the smallest payoff gap, helping close the cumulative lead while keeping both payoffs substantial.",-2,12,14
+d1,8,tj-040,3,A,AB,It provides a high total payoff while keeping the groups nearly balanced and modestly favoring the trailing outgroup.,-2,12,14
+d1,8,tj-014,2,A,AA,This row keeps total returns high while modestly favoring the trailing ingroup to help narrow the gap.,2,13,11
+d1,8,tj-046,2,A,AA,This row keeps the allocation close while helping the still-trailing ingroup catch up without sacrificing much joint payoff.,2,13,11
+d1,8,tj-048,3,B,AB,This row modestly favors the still-trailing A group while maintaining relatively high allocations for both groups.,2,14,12
+d1,8,tj-045,2,B,BB,B组仍领先，因此这 row modestly favors A while keeping both allocations substantial.,-2,11,13
+d1,8,tj-012,3,B,AB,This modestly favors my group while keeping the total allocation high and narrowing the gap.,2,14,12
+d1,8,tj-000,3,B,AB,This keeps the allocation gap small while helping the currently trailing group and maintaining a high total.,2,14,12
+d1,8,tj-038,3,B,BB,This row keeps the allocation close while modestly favoring our group as we work to narrow the cumulative gap.,2,14,12
+d1,8,tj-037,3,B,BB,It modestly favors the trailing group while keeping the combined payoff high.,2,14,12
+d1,8,tj-029,3,B,AB,It keeps the allocation relatively balanced while giving the ingroup a modest advantage.,2,14,12
+d1,8,tj-018,3,B,AB,This option keeps total allocation high while giving the currently trailing A group a modest advantage.,2,14,12
+d1,8,tj-003,3,B,AB,This keeps the allocation gap small while maintaining a high combined total and helping A catch up.,2,14,12
+d1,8,tj-007,2,B,AB,This row maintains a strong combined payoff while modestly favoring the trailing group to reduce the cumulative gap.,-2,11,13
+d1,8,tj-011,3,B,AB,"This keeps the allocation relatively high while modestly favoring my group, which is currently trailing.",2,14,12
+d1,8,tj-039,2,B,AB,This row modestly supports the trailing group while keeping both allocations close and preserving a strong combined payoff.,-2,11,13
+d1,8,tj-013,4,B,AB,这一行保持较高的总分配，并适度向目前落后的A组倾斜以缩小累计差距。,6,17,11
+d1,8,tj-023,3,B,BB,This row maintains the highest total allocation while giving the ingroup a modest advantage that helps narrow the cumulative imbalance.,2,14,12
+d1,8,tj-024,2,B,AB,This row keeps the combined allocation high while slightly favoring the trailing ingroup to narrow the cumulative gap.,-2,11,13
+d1,8,tj-036,2,B,BB,This keeps both allocations substantial while modestly favoring my trailing ingroup.,-2,11,13
+d1,8,tj-026,3,B,AB,This modestly favors my group while keeping allocations close and helping narrow the persistent group gap.,2,14,12
+d1,8,tj-047,3,B,AB,This option modestly favors the lagging ingroup while keeping both allocations high and the gap small.,2,14,12
+d1,8,tj-035,2,B,BB,Row 2 offers a high combined payoff while slightly favoring the currently trailing ingroup to reduce the gap.,-2,11,13
+d1,8,tj-049,5,B,BB,It maximizes the ingroup allocation and total payoff while still providing the outgroup a meaningful share.,10,20,10
+d1,8,tj-006,3,B,BB,This row maintains the established fair balance while modestly improving my group’s position.,2,14,12
+d1,8,tj-030,3,B,AB,I choose the balanced row that keeps both allocations high while helping narrow the group gap.,2,14,12
+d1,8,tj-017,3,B,BB,"This row maintains a strong ingroup allocation, keeps the gap small, and supports the currently disadvantaged group.",2,14,12
+d1,8,tj-027,3,B,AB,"This maintains the balanced option, with high total allocation and a modest advantage for the currently trailing group.",2,14,12
+d1,8,tj-019,3,B,BB,This row preserves a high combined benefit while keeping the allocation nearly balanced and helping the trailing ingroup catch up.,2,14,12
+d1,9,tj-005,3,A,AA,This row keeps both allocations substantial while modestly favoring the still-disadvantaged outgroup.,-2,12,14
+d1,9,tj-031,5,A,AA,It maximizes the combined payoff and remains consistent with my prior choices.,-10,10,20
+d1,9,tj-015,3,A,AA,This row keeps total welfare high and allocations close while remaining consistent with my recent choices.,-2,12,14
+d1,9,tj-009,3,A,AB,It continues to support the trailing ingroup while keeping the allocation close and the combined total high.,-2,12,14
+d1,9,tj-020,1,A,AA,This continues helping the still-trailing ingroup catch up while preserving a solid combined payoff.,6,14,8
+d1,9,tj-001,2,A,AB,This row maintains high joint returns while modestly favoring the still-trailing ingroup to narrow the remaining gap.,2,13,11
+d1,9,tj-008,1,A,AA,B组仍领先60，选择第1行可继续帮助A组追赶，同时保持较高总收益。,6,14,8
+d1,9,tj-010,3,A,AB,B组仍领先，因此我选择继续适度缩小差距，同时保持双方收益可观。,-2,12,14
+d1,9,tj-044,2,A,AA,It modestly favors the still-trailing A group while preserving a relatively high combined allocation.,2,13,11
+d1,9,tj-032,2,A,AB,It modestly favors the lagging A group while keeping the combined payoff high.,2,13,11
+d1,9,tj-022,3,A,AB,This row gives the currently trailing group A a modest advantage while keeping both allocations relatively high.,-2,12,14
+d1,9,tj-002,3,A,AB,"This keeps the groups' payoffs close, supports the trailing group, and preserves a high combined payoff.",-2,12,14
+d1,9,tj-016,3,A,AB,I chose row 3 to maintain high combined benefits while modestly improving the outgroup's share.,-2,12,14
+d1,9,tj-004,5,A,AB,It maximizes the combined payoff while directing more to the currently trailing A group.,-10,10,20
+d1,9,tj-025,2,A,AA,It modestly favors the still-trailing ingroup while preserving a high combined payoff.,2,13,11
+d1,9,tj-028,3,A,AB,This option modestly favors the lagging group while maintaining substantial returns for both groups.,-2,12,14
+d1,9,tj-034,3,A,AB,I choose the high-total option that modestly favors the trailing group and sustains our balanced approach.,-2,12,14
+d1,9,tj-033,3,A,AA,This row keeps total allocation high while modestly favoring the still-trailing outgroup.,-2,12,14
+d1,9,tj-021,2,A,AB,This balanced choice modestly improves the still-trailing ingroup while keeping both groups' allocations relatively high.,2,13,11
+d1,9,tj-043,3,A,AA,This row maintains a high combined allocation while keeping the distribution nearly balanced.,-2,12,14
+d1,9,tj-042,3,A,AA,"This row maintains high joint gains while modestly favoring group A, which remains behind overall.",-2,12,14
+d1,9,tj-041,3,A,AB,"It gives A a slight advantage while keeping the payoff gap small, helping A continue to catch up.",-2,12,14
+d1,9,tj-040,3,A,AB,It offers the highest combined payoff while modestly favoring the currently trailing group.,-2,12,14
+d1,9,tj-014,2,A,AB,This row keeps the total return high while modestly favoring the trailing ingroup.,2,13,11
+d1,9,tj-046,2,A,AB,This option keeps the allocation close with a high joint payoff while helping the still-trailing ingroup catch up.,2,13,11
+d1,9,tj-048,3,B,AB,This modestly favors the trailing A group while maintaining relatively high allocations for both groups.,2,14,12
+d1,9,tj-045,2,B,AB,B组仍领先，选择差距为-2的方案可温和提高A组回报并缩小累计差距。,-2,11,13
+d1,9,tj-012,5,B,BB,"This maximizes the total allocation while favoring my ingroup, which is currently behind.",10,20,10
+d1,9,tj-000,3,B,BB,This row maintains a high total allocation while keeping the group gap small and helping the currently trailing group.,2,14,12
+d1,9,tj-038,3,B,AB,This row preserves a high combined allocation while modestly improving the disadvantaged ingroup and keeping the gap small.,2,14,12
+d1,9,tj-037,3,B,AB,It modestly favors the trailing ingroup while preserving a relatively high combined payoff.,2,14,12
+d1,9,tj-029,2,B,AB,This nearly balances the allocation while giving the currently trailing A group a modest advantage.,-2,11,13
+d1,9,tj-018,3,B,AB,This keeps total allocation high while modestly favoring the currently trailing A group.,2,14,12
+d1,9,tj-003,2,B,BB,This row gives the currently trailing A group more while keeping the allocation gap small and the combined total high.,-2,11,13
+d1,9,tj-007,2,B,BB,This row modestly favors the trailing group while keeping both payoffs reasonable.,-2,11,13
+d1,9,tj-011,3,B,AB,"This row keeps the total allocation high and, with the group allocation direction uncertain, avoids an extreme split.",2,14,12
+d1,9,tj-039,2,B,AB,This modestly favors the trailing outgroup while keeping the allocations close.,-2,11,13
+d1,9,tj-013,4,B,AB,This gives both groups strong allocations while favoring the currently trailing A group to help narrow the cumulative gap.,6,17,11
+d1,9,tj-023,3,B,AB,This row keeps the allocation balanced while giving both groups a strong total and helping A close the cumulative gap.,2,14,12
+d1,9,tj-024,2,B,AB,This keeps the allocation gap small while slightly favoring the trailing ingroup and preserving a high combined total.,-2,11,13
+d1,9,tj-036,2,B,AB,This keeps both allocations substantial while modestly favoring the trailing outgroup to narrow the cumulative gap.,-2,11,13
+d1,9,tj-026,3,B,AB,This modestly favors my group while keeping allocations close and helping narrow the persistent gap.,2,14,12
+d1,9,tj-047,5,B,BB,This row maximizes the combined allocation while helping the lagging ingroup catch up.,10,20,10
+d1,9,tj-035,3,B,BB,This row keeps the allocation balanced while maintaining a strong combined payoff.,2,14,12
+d1,9,tj-049,3,B,BB,This balanced option keeps both allocations substantial and helps narrow the remaining group gap.,2,14,12
+d1,9,tj-006,3,B,BB,This row continues the balanced approach while modestly improving the currently trailing group.,2,14,12
+d1,9,tj-030,3,B,AB,This row keeps both allocations high while maintaining the balanced approach used in recent rounds.,2,14,12
+d1,9,tj-017,3,B,BB,"This row maintains a high combined allocation, keeps the gap small, and modestly improves my group’s current disadvantage.",2,14,12
+d1,9,tj-027,3,B,AB,"This keeps the recent balanced approach, with a high combined allocation and a modest advantage for my ingroup.",2,14,12
+d1,9,tj-019,3,B,BB,This row keeps the allocation nearly balanced while giving the trailing A group a modest chance to catch up.,2,14,12
+d1,10,tj-005,3,A,AB,This row maintains substantial gains for both groups while modestly favoring the currently trailing A group.,-2,12,14
+d1,10,tj-031,5,A,AA,This row maximizes the combined payoff for both groups and is consistent with my previous choices.,-10,10,20
+d1,10,tj-015,3,A,AB,This row gives both groups a high total while modestly favoring the currently trailing A group.,-2,12,14
+d1,10,tj-009,3,A,AB,"This row keeps the allocation close, has the highest combined total, and gives the currently trailing A group slightly more.",-2,12,14
+d1,10,tj-020,1,A,AB,This moderately favors the trailing ingroup while preserving a strong combined payoff and continuing to narrow the gap.,6,14,8
+d1,10,tj-001,2,A,AB,I choose the balanced row that modestly favors the trailing ingroup while preserving high total returns.,2,13,11
+d1,10,tj-008,1,A,AB,B组仍领先60，选择第1行可适度帮助落后的A组追赶，同时保持较高总收益。,6,14,8
+d1,10,tj-010,3,A,AB,B组仍领先A组，因此我继续适度缩小差距，同时保持双方收益可观。,-2,12,14
+d1,10,tj-044,2,A,AB,It modestly favors the trailing A group while preserving a relatively high combined allocation.,2,13,11
+d1,10,tj-032,2,A,AB,It modestly favors the still-lagging ingroup while preserving a relatively high combined payoff.,2,13,11
+d1,10,tj-022,3,A,AA,This row gives the trailing group A a modest advantage while keeping both allocations relatively high.,-2,12,14
+d1,10,tj-002,3,A,AB,This row modestly favors the trailing group while preserving a high combined payoff and continuing to narrow the cumulative gap.,-2,12,14
+d1,10,tj-016,3,A,AA,I chose row 3 to maintain high combined benefits while modestly improving the currently trailing group’s share.,-2,12,14
+d1,10,tj-004,5,A,AA,It maximizes the combined payoff while helping the still-trailing A group close the gap.,-10,10,20
+d1,10,tj-025,2,A,AA,It modestly favors the still-trailing A group while preserving a high combined payoff.,2,13,11
+d1,10,tj-028,3,A,AA,This modestly favors the lagging group while keeping both groups’ returns substantial.,-2,12,14
+d1,10,tj-034,3,A,AB,I choose row 3 to maintain high combined payoff while modestly helping the trailing group close the gap.,-2,12,14
+d1,10,tj-033,5,A,AB,This row maximizes total resources while giving more to the currently trailing outgroup.,-10,10,20
+d1,10,tj-021,2,A,AB,This balanced option modestly improves the still-trailing ingroup while keeping both groups' allocations relatively high.,2,13,11
+d1,10,tj-043,3,A,AB,This near-balanced allocation maintains a high combined total and modestly helps the trailing group.,-2,12,14
+d1,10,tj-042,3,A,AA,This row maintains high allocations for both groups while modestly helping the currently disadvantaged group A.,-2,12,14
+d1,10,tj-041,3,A,AB,"It gives A a slight advantage, helping the currently trailing group catch up while keeping both payoffs substantial.",-2,12,14
+d1,10,tj-040,3,A,AA,It gives the highest combined payoff while modestly favoring the currently trailing group.,-2,12,14
+d1,10,tj-014,2,A,AA,This row keeps total returns high while modestly favoring the trailing ingroup to help narrow the cumulative gap.,2,13,11
+d1,10,tj-046,2,A,AA,This row keeps the allocation close while giving the trailing ingroup a modest boost at a high joint payoff.,2,13,11
+d1,10,tj-048,3,B,BB,This row modestly helps the trailing ingroup while preserving high total allocations.,2,14,12
+d1,10,tj-045,2,B,BB,This modestly favors the currently trailing A group while keeping both allocations substantial.,-2,11,13
+d1,10,tj-012,3,B,AB,This modestly favors my currently trailing ingroup while keeping the total allocation high.,2,14,12
+d1,10,tj-000,2,B,BB,This gives the trailing A group more while keeping the combined allocation relatively high.,-2,11,13
+d1,10,tj-038,3,B,AB,This keeps the allocation close while modestly favoring the currently trailing A group.,2,14,12
+d1,10,tj-037,3,B,AB,This modestly favors the trailing group while preserving a relatively high combined payoff.,2,14,12
+d1,10,tj-029,2,B,AB,This row keeps the allocation nearly balanced while modestly favoring the outgroup to help narrow the current group gap.,-2,11,13
+d1,10,tj-018,3,B,AB,This row keeps total allocation high while modestly favoring the currently trailing ingroup.,2,14,12
+d1,10,tj-003,2,B,AB,This modestly favors the trailing A group while keeping the combined allocation high.,-2,11,13
+d1,10,tj-007,2,B,AB,This row modestly favors the trailing group while maintaining a high combined payoff and reasonable returns for both groups.,-2,11,13
+d1,10,tj-011,3,B,AB,This row preserves a high total allocation while keeping the group difference small.,2,14,12
+d1,10,tj-039,2,B,BB,This modestly favors the trailing outgroup while keeping both allocations close.,-2,11,13
+d1,10,tj-013,4,B,AB,This option preserves a high combined allocation while moderately favoring the currently trailing A group.,6,17,11
+d1,10,tj-023,3,B,AB,This row preserves the highest total allocation while modestly favoring my ingroup as we work to narrow the cumulative imbalance.,2,14,12
+d1,10,tj-024,2,B,BB,This keeps the total allocation high while slightly favoring the trailing group to reduce the cumulative gap.,-2,11,13
+d1,10,tj-036,2,B,AB,This keeps both allocations substantial while modestly favoring the currently trailing A group.,-2,11,13
+d1,10,tj-026,3,B,BB,This row modestly favors my group while keeping allocations close and helping narrow the persistent gap.,2,14,12
+d1,10,tj-047,5,B,AB,This row maximizes the combined allocation while helping the lagging ingroup catch up.,10,20,10
+d1,10,tj-035,2,B,AB,"Row 2 gives A more than B, helping narrow B’s 60-point lead while keeping their allocations close.",-2,11,13
+d1,10,tj-049,5,B,BB,This row gives the trailing ingroup the largest allocation and the highest combined total.,10,20,10
+d1,10,tj-006,3,B,BB,This row continues the established balanced approach while modestly helping the still-trailing ingroup.,2,14,12
+d1,10,tj-030,3,B,AB,This row narrows the gap while keeping both allocations relatively high.,2,14,12
+d1,10,tj-017,3,B,AB,"This row maintains a strong ingroup allocation, keeps the gap small, and supports reducing the current group imbalance.",2,14,12
+d1,10,tj-027,3,B,BB,This balanced option keeps total allocation high while modestly helping the currently trailing group.,2,14,12
+d1,10,tj-019,3,B,BB,This row provides a high combined benefit while keeping the allocation nearly balanced and helping the trailing ingroup catch up.,2,14,12

@@ -1,0 +1,51 @@
+condition,series,step,agent_id,own_group,is_leader,row,a_points,b_points,ingroup_points,outgroup_points,gap,reason,source
+e4-public-welfare,e4,1,tj-005,A,True,0,16,4,16,4,12,I chose the option that gives my group the largest allocation.,llm
+e4-public-welfare,e4,1,tj-008,A,False,2,15,13,15,13,2,It gives my group the highest allocation while also producing the highest joint total.,llm
+e4-public-welfare,e4,1,tj-001,A,False,2,15,13,15,13,2,It gives my group the most while also maximizing the joint total.,llm
+e4-public-welfare,e4,1,tj-007,A,False,2,15,13,15,13,2,It gives my group 15 while maximizing the joint total.,llm
+e4-public-welfare,e4,1,tj-002,A,False,0,16,4,16,4,12,This row gives my group the largest allocation.,llm
+e4-public-welfare,e4,1,tj-000,B,False,2,15,13,13,15,-2,It gives my group a high payoff while also maximizing the joint total.,llm
+e4-public-welfare,e4,1,tj-003,B,True,2,15,13,13,15,-2,It gives my group 13 while maximizing the joint total at 28.,llm
+e4-public-welfare,e4,1,tj-009,B,False,1,4,16,16,4,12,It gives my group the highest payoff while keeping the joint total at 20.,llm
+e4-public-welfare,e4,1,tj-006,B,False,1,4,16,16,4,12,I chose the row that gives my group the highest allocation while keeping the joint total at 20.,llm
+e4-public-welfare,e4,1,tj-004,B,False,1,4,16,16,4,12,It gives my group the highest payoff while keeping the joint total at 20.,llm
+e4-public-welfare,e4,2,tj-005,A,True,2,15,13,15,13,2,I am honoring my commitment while maximizing the joint allocation and modestly helping group A close the current gap.,llm
+e4-public-welfare,e4,2,tj-008,A,False,0,16,4,16,4,12,It gives my group the highest allocation and the published totals show the groups are nearly even.,llm
+e4-public-welfare,e4,2,tj-001,A,False,2,15,13,15,13,2,It gives my group the most points while also maximizing the joint total.,llm
+e4-public-welfare,e4,2,tj-007,A,False,2,15,13,15,13,2,It gives my group 15 points and maximizes the joint total.,llm
+e4-public-welfare,e4,2,tj-002,A,False,0,16,4,16,4,12,"It gives my group the largest allocation, consistent with my previous choice.",llm
+e4-public-welfare,e4,2,tj-000,B,False,2,15,13,13,15,-2,It maximizes the joint total while giving my group a strong payoff.,llm
+e4-public-welfare,e4,2,tj-003,B,True,3,13,15,15,13,2,It maximizes the joint total while giving my group 15 points.,llm
+e4-public-welfare,e4,2,tj-009,B,False,2,15,13,13,15,-2,It maximizes the joint payoff and follows the group A leader's cooperative commitment.,llm
+e4-public-welfare,e4,2,tj-006,B,False,3,13,15,15,13,2,I choose the higher joint total while giving my group the larger share.,llm
+e4-public-welfare,e4,2,tj-004,B,False,2,15,13,13,15,-2,"It maximizes the joint payoff while modestly favoring the other group, supporting reciprocal cooperation.",llm
+e4-public-welfare,e4,3,tj-005,A,True,2,15,13,15,13,2,I am honoring my commitment to row 2 while maximizing the joint allocation and modestly helping group A maintain its lead.,llm
+e4-public-welfare,e4,3,tj-008,A,False,2,15,13,15,13,2,It provides a high allocation to my group while maximizing the joint total and aligns with my group's stated commitment.,llm
+e4-public-welfare,e4,3,tj-001,A,False,2,15,13,15,13,2,It maximizes the joint total while giving my group the larger share.,llm
+e4-public-welfare,e4,3,tj-007,A,False,2,15,13,15,13,2,It gives my group 15 points while maximizing the joint total.,llm
+e4-public-welfare,e4,3,tj-002,A,False,0,16,4,16,4,12,"It gives my group the largest allocation, consistent with my previous choices.",llm
+e4-public-welfare,e4,3,tj-000,B,False,2,15,13,13,15,-2,It maximizes the joint total while giving my group a strong payoff.,llm
+e4-public-welfare,e4,3,tj-003,B,True,3,13,15,15,13,2,It maximizes the joint total while giving my group 15 points.,llm
+e4-public-welfare,e4,3,tj-009,B,False,2,15,13,13,15,-2,"It maximizes the joint payoff while modestly favoring the other group, supporting continued cooperation.",llm
+e4-public-welfare,e4,3,tj-006,B,False,3,13,15,15,13,2,It maximizes the joint total while giving my group a slight advantage.,llm
+e4-public-welfare,e4,3,tj-004,B,False,2,15,13,13,15,-2,It maximizes the joint payoff while giving my group a slight advantage.,llm
+e4-public-welfare,e4,4,tj-005,A,True,2,15,13,15,13,2,"I am honoring my commitment to row 2, which maximizes the joint allocation while modestly favoring group A.",llm
+e4-public-welfare,e4,4,tj-008,A,False,2,15,13,15,13,2,It maximizes the joint total while giving my group the higher allocation.,llm
+e4-public-welfare,e4,4,tj-001,A,False,2,15,13,15,13,2,It maximizes the joint total while giving my group the larger share.,llm
+e4-public-welfare,e4,4,tj-007,A,False,2,15,13,15,13,2,It gives my group 15 points and maximizes the joint total.,llm
+e4-public-welfare,e4,4,tj-002,A,False,2,15,13,15,13,2,Row 2 maximizes the combined allocation while giving my group 15 points.,llm
+e4-public-welfare,e4,4,tj-000,B,False,2,15,13,13,15,-2,It maximizes the joint total while giving my group a strong payoff.,llm
+e4-public-welfare,e4,4,tj-003,B,True,3,13,15,15,13,2,It preserves the highest joint total while giving my group 15 points.,llm
+e4-public-welfare,e4,4,tj-009,B,False,2,15,13,13,15,-2,It maximizes the joint payoff and honors the group A leader's repeated commitment.,llm
+e4-public-welfare,e4,4,tj-006,B,False,3,13,15,15,13,2,It maximizes the joint total while giving my group the larger share.,llm
+e4-public-welfare,e4,4,tj-004,B,False,3,13,15,15,13,2,It maximizes the joint payoff while modestly favoring my group after two rounds favoring the other group.,llm
+e4-public-welfare,e4,5,tj-005,A,True,2,15,13,15,13,2,I am honoring my commitment to row 2 while maximizing the joint allocation and modestly favoring group A.,llm
+e4-public-welfare,e4,5,tj-008,A,False,2,15,13,15,13,2,It maximizes the joint total while giving my group a modest advantage consistent with its commitment.,llm
+e4-public-welfare,e4,5,tj-001,A,False,2,15,13,15,13,2,It maximizes the joint total while giving my group the larger share.,llm
+e4-public-welfare,e4,5,tj-007,A,False,2,15,13,15,13,2,It gives my group 15 points and maximizes the joint total.,llm
+e4-public-welfare,e4,5,tj-002,A,False,2,15,13,15,13,2,It maximizes the combined allocation while giving my group 15 points.,llm
+e4-public-welfare,e4,5,tj-000,B,False,2,15,13,13,15,-2,It maximizes the joint payoff while giving my group a strong return.,llm
+e4-public-welfare,e4,5,tj-003,B,True,3,13,15,15,13,2,It maximizes the joint total while giving group B 15 points.,llm
+e4-public-welfare,e4,5,tj-009,B,False,2,15,13,13,15,-2,It maximizes the joint payoff and continues my repeated commitment to cooperation.,llm
+e4-public-welfare,e4,5,tj-006,B,False,3,13,15,15,13,2,It maximizes the joint total while giving my group a slight advantage.,llm
+e4-public-welfare,e4,5,tj-004,B,False,3,13,15,15,13,2,It maximizes the joint payoff while modestly favoring my group after the previous round favored the other group.,llm

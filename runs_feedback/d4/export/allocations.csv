@@ -1,0 +1,501 @@
+arm,step,agent_id,row,own_group,pair_type,reason,gap,ingroup_points,outgroup_points
+d4,1,tj-005,3,A,AA,This row gives both people a substantial allocation while keeping the amounts relatively balanced.,-2,12,14
+d4,1,tj-031,3,A,AA,This row keeps the allocation nearly equal while providing a higher total than the other near-equal option.,-2,12,14
+d4,1,tj-015,3,A,AB,This row gives both people a substantial allocation while keeping their amounts relatively balanced.,-2,12,14
+d4,1,tj-009,5,A,AA,This row maximizes the total allocation while giving Person B the largest amount.,-10,10,20
+d4,1,tj-020,5,A,AA,This row provides the highest combined allocation.,-10,10,20
+d4,1,tj-001,3,A,AA,This row gives both people a nearly equal share while keeping the total allocation high.,-2,12,14
+d4,1,tj-008,5,A,AB,This row maximizes the total allocation between both people.,-10,10,20
+d4,1,tj-010,2,A,AB,This row keeps the allocation relatively balanced while providing a solid combined payoff.,2,13,11
+d4,1,tj-044,3,A,AA,This row gives both people a similar allocation while keeping the total relatively high.,-2,12,14
+d4,1,tj-032,2,A,AB,It keeps the allocation relatively balanced while giving both people a substantial share.,2,13,11
+d4,1,tj-022,3,A,AB,It provides a strong total while keeping the allocation fairly balanced.,-2,12,14
+d4,1,tj-002,5,A,AB,This row gives Person B the largest allocation while leaving Person A with 10.,-10,10,20
+d4,1,tj-016,2,A,AB,This row gives both people a substantial allocation while keeping the amounts relatively balanced.,2,13,11
+d4,1,tj-004,5,A,AB,This row provides the greatest combined allocation.,-10,10,20
+d4,1,tj-025,5,A,AB,This row provides the largest combined allocation to both people.,-10,10,20
+d4,1,tj-028,5,A,AA,This row gives the highest combined allocation.,-10,10,20
+d4,1,tj-034,5,A,AB,This row gives the highest combined allocation.,-10,10,20
+d4,1,tj-033,2,A,AB,This row gives both people a substantial allocation while keeping the amounts close.,2,13,11
+d4,1,tj-021,5,A,AB,This row gives Person B the most while still providing Person A a fair share.,-10,10,20
+d4,1,tj-043,3,A,AB,This row gives both people a similar share while keeping the total allocation high.,-2,12,14
+d4,1,tj-042,5,A,AB,This row maximizes the total allocation while giving Person B the largest amount.,-10,10,20
+d4,1,tj-041,3,A,AB,This row gives both people a substantial share while keeping the allocation relatively balanced.,-2,12,14
+d4,1,tj-040,5,A,AA,It gives Person B the most while leaving Person A with a fair share.,-10,10,20
+d4,1,tj-014,5,A,AA,This row gives the highest combined payoff to both people.,-10,10,20
+d4,1,tj-046,5,A,AA,This row gives Person B the most while still providing Person A with a fair share.,-10,10,20
+d4,1,tj-048,5,B,BB,This row gives the highest combined allocation.,10,20,10
+d4,1,tj-045,5,B,AB,This row gives the highest combined payoff to both people.,10,20,10
+d4,1,tj-012,3,B,AB,This row keeps both allocations relatively balanced.,2,14,12
+d4,1,tj-000,3,B,BB,This row gives both people nearly equal amounts while providing a higher total than the more equal options.,2,14,12
+d4,1,tj-038,3,B,BB,This row gives both people a substantial allocation while keeping the amounts relatively balanced.,2,14,12
+d4,1,tj-037,3,B,AB,This row gives both people a substantial allocation while keeping the split relatively balanced.,2,14,12
+d4,1,tj-029,5,B,AB,This row gives the highest combined amount to both people.,10,20,10
+d4,1,tj-018,5,B,AB,This row gives the highest combined allocation.,10,20,10
+d4,1,tj-003,5,B,AB,This row gives the highest combined amount to both people.,10,20,10
+d4,1,tj-007,5,B,AB,This row gives Person B the most while leaving Person A with a fair share.,10,20,10
+d4,1,tj-011,5,B,AB,This row gives the highest combined allocation to both people.,10,20,10
+d4,1,tj-039,3,B,BB,This row gives both people a reasonably balanced outcome.,2,14,12
+d4,1,tj-013,5,B,BB,This row gives Person B the most while leaving Person A with a substantial amount.,10,20,10
+d4,1,tj-023,5,B,AB,I chose the row that gives Person B the most while still allocating 10 to Person A.,10,20,10
+d4,1,tj-024,5,B,AB,This row gives the highest combined payoff to both people.,10,20,10
+d4,1,tj-036,5,B,BB,This row gives Person B the most while still providing Person A a substantial share.,10,20,10
+d4,1,tj-026,5,B,AB,I chose the row that gives Person B the most while still allocating 10 to Person A.,10,20,10
+d4,1,tj-047,5,B,BB,I chose the row that gives Person B the most while still providing Person A with 10.,10,20,10
+d4,1,tj-035,5,B,AB,This row gives the highest combined allocation.,10,20,10
+d4,1,tj-049,5,B,BB,It gives the highest combined allocation to both people.,10,20,10
+d4,1,tj-006,0,B,BB,I chose the row that gives Person A the most.,-10,5,15
+d4,1,tj-030,5,B,BB,This row gives the highest combined allocation to both people.,10,20,10
+d4,1,tj-017,2,B,AB,This row gives both people similar amounts while keeping the allocation reasonably balanced.,-2,11,13
+d4,1,tj-027,5,B,AB,This row gives the highest combined allocation.,10,20,10
+d4,1,tj-019,2,B,AB,This row offers a relatively balanced allocation while keeping the combined total high.,-2,11,13
+d4,2,tj-005,3,A,AB,This row maintains a near-even allocation while increasing the combined payoff for both people.,-2,12,14
+d4,2,tj-031,4,A,AA,This row raises total welfare while keeping the allocation gap moderate as a compromise between efficiency and fairness.,-6,11,17
+d4,2,tj-015,3,A,AB,This row preserves a small allocation gap while still providing a high combined payoff.,-2,12,14
+d4,2,tj-009,3,A,AB,This row keeps the allocation nearly equal while maintaining a relatively high total.,-2,12,14
+d4,2,tj-020,3,A,AB,This row keeps the allocation nearly equal while preserving a relatively high combined payoff.,-2,12,14
+d4,2,tj-001,3,A,AB,This row preserves near-equal outcomes while maintaining a high combined allocation.,-2,12,14
+d4,2,tj-008,5,A,AA,This row maximizes the total allocation and remains consistent with our shared strategy.,-10,10,20
+d4,2,tj-010,3,A,AB,This row preserves a small payoff gap while reciprocating the previous allocation by favoring Person B.,-2,12,14
+d4,2,tj-044,2,A,AB,This row keeps the allocations close while maintaining a high total.,2,13,11
+d4,2,tj-032,3,A,AA,It gives both people substantial shares while keeping the allocation reasonably balanced.,-2,12,14
+d4,2,tj-022,2,A,AB,It reverses last round’s small disadvantage to support fairness over time while keeping the allocation balanced.,2,13,11
+d4,2,tj-002,5,A,AA,"This row maximizes our combined allocation, consistent with our shared priority of increasing total收益.",-10,10,20
+d4,2,tj-016,3,A,AB,This row increases total welfare while preserving the smallest available allocation gap.,-2,12,14
+d4,2,tj-004,5,A,AA,"We both favored the highest total allocation last round, so I choose row 5 again.",-10,10,20
+d4,2,tj-025,5,A,AA,This row maximizes the combined allocation and remains consistent with our shared strategy.,-10,10,20
+d4,2,tj-028,3,A,AA,This row keeps the allocation nearly equal while preserving a relatively high combined payoff.,-2,12,14
+d4,2,tj-034,0,A,AB,This choice balances our cumulative allocations after the previous round while keeping both people’s total at 25.,10,15,5
+d4,2,tj-033,3,A,AB,This keeps the gap at 2 while giving both people a higher total allocation than row 2.,-2,12,14
+d4,2,tj-021,5,A,AB,"This row maximizes the combined payoff, and we both chose it last round.",-10,10,20
+d4,2,tj-043,3,A,AA,该方案延续双方收益接近的选择，同时比差距更小的方案带来更高总收益。,-2,12,14
+d4,2,tj-042,4,A,AA,This keeps the total allocation high while narrowing the gap between us.,-6,11,17
+d4,2,tj-041,2,A,AB,This allocation gives both people a solid share while keeping the difference small.,2,13,11
+d4,2,tj-040,2,A,AA,This row gives both people strong returns while keeping the difference small.,2,13,11
+d4,2,tj-014,5,A,AB,"This row maximizes our combined payoff, consistent with our shared priority from the previous round.",-10,10,20
+d4,2,tj-046,3,A,AB,This row raises the combined payoff while moving the allocation closer to balance.,-2,12,14
+d4,2,tj-048,5,B,BB,"This row gives the highest combined allocation, consistent with our shared priority from the previous round.",10,20,10
+d4,2,tj-045,3,B,BB,This row keeps the split nearly equal while increasing the combined payoff.,2,14,12
+d4,2,tj-012,3,B,AB,This keeps the allocation gap small while providing a higher total than the other equally balanced option.,2,14,12
+d4,2,tj-000,3,B,BB,This row maintains the smallest payoff gap while preserving a relatively high combined payoff and our established cooperative approach.,2,14,12
+d4,2,tj-038,5,B,AB,"This row maximizes the combined allocation, matching the other participant's priority while giving both people more than the balanced option.",10,20,10
+d4,2,tj-037,3,B,AB,It keeps the split relatively balanced while giving both people a substantial allocation.,2,14,12
+d4,2,tj-029,3,B,BB,This row keeps the allocation nearly equal while preserving a high combined payoff.,2,14,12
+d4,2,tj-018,5,B,BB,This row maximizes the combined allocation and matches our shared strategy.,10,20,10
+d4,2,tj-003,2,B,AB,"It offers a high combined amount while keeping the difference small, balancing our priorities.",-2,11,13
+d4,2,tj-007,3,B,AB,This row keeps the allocation nearly even while providing a strong total payoff.,2,14,12
+d4,2,tj-011,5,B,AB,"This row maximizes the combined allocation, consistent with my previous choice and our shared focus on mutual gains.",10,20,10
+d4,2,tj-039,3,B,AB,这一行总收益较高且双方差距较小，兼顾了效率与公平。,2,14,12
+d4,2,tj-013,3,B,BB,This row best balances a high total payoff with a small gap between both people.,2,14,12
+d4,2,tj-023,2,B,AB,This row raises Person A's share while keeping the allocation balanced and the total payoff high.,-2,11,13
+d4,2,tj-024,5,B,BB,This row maintains our agreement to maximize the combined payoff while favoring Person B.,10,20,10
+d4,2,tj-036,3,B,BB,This row combines a high total payoff with the smallest available gap between Person A and Person B.,2,14,12
+d4,2,tj-026,5,B,AB,"I chose the row that maximizes our combined allocation, consistent with our stated priority.",10,20,10
+d4,2,tj-047,5,B,AB,It gives the highest combined payoff while keeping Person A's share at 10.,10,20,10
+d4,2,tj-035,5,B,AB,"It gives the highest combined allocation, consistent with my previous choice and our shared priority.",10,20,10
+d4,2,tj-049,3,B,AB,This row keeps the allocation balanced while increasing the combined total.,2,14,12
+d4,2,tj-006,3,B,AB,This option gives both people a substantial share while keeping the split nearly equal.,2,14,12
+d4,2,tj-030,3,B,BB,该行在保持较高总收益的同时将双方差距缩小到2，符合我们约定的公平与效率平衡。,2,14,12
+d4,2,tj-017,2,B,AB,This keeps the allocation balanced while giving both people a solid amount.,-2,11,13
+d4,2,tj-027,3,B,BB,This row keeps the allocation nearly equal while preserving a relatively high combined total.,2,14,12
+d4,2,tj-019,3,B,AB,This row raises the combined total while keeping the difference small and fairly rotating the previous disadvantage.,2,14,12
+d4,3,tj-005,3,A,AA,It preserves the established cooperative baseline by combining the highest total payoff with a small allocation gap.,-2,12,14
+d4,3,tj-031,3,A,AA,This row preserves a high total allocation while keeping the cumulative distribution relatively balanced after prior choices.,-2,12,14
+d4,3,tj-015,5,A,AB,This row maximizes the combined payoff and follows the shared agreement to prioritize total收益.,-10,10,20
+d4,3,tj-009,3,A,AB,This row preserves the smallest allocation gap while providing a higher total than the other near-equal options.,-2,12,14
+d4,3,tj-020,3,A,AA,This row balances a high combined payoff with the smallest allocation gap.,-2,12,14
+d4,3,tj-001,3,A,AB,This row keeps the allocation nearly equal while preserving a high combined payoff.,-2,12,14
+d4,3,tj-008,5,A,AB,This row maximizes the total allocation and follows our established cooperative strategy.,-10,10,20
+d4,3,tj-010,2,A,AA,This row keeps the payoff gap small while balancing the previous round's slight advantage to Person B.,2,13,11
+d4,3,tj-044,2,A,AB,This keeps the allocations close while maintaining a high total.,2,13,11
+d4,3,tj-032,3,A,AA,It offers the highest combined payoff among the relatively balanced options.,-2,12,14
+d4,3,tj-022,3,A,AB,It offers the highest total among the nearly balanced options and offsets my previous round’s small advantage.,-2,12,14
+d4,3,tj-002,5,A,AB,This row maximizes total allocation and honors our agreement to prioritize joint gains.,-10,10,20
+d4,3,tj-016,4,A,AA,"This raises total allocation while keeping the gap moderate, balancing efficiency and fairness.",-6,11,17
+d4,3,tj-004,5,A,AB,"Row 5 preserves the highest combined allocation, consistent with our agreed priority on total gains.",-10,10,20
+d4,3,tj-025,5,A,AB,This row maximizes the combined allocation and follows the established cooperative strategy.,-10,10,20
+d4,3,tj-028,3,A,AB,This row honors our coordination by keeping the allocation nearly equal while maintaining a relatively high combined payoff.,-2,12,14
+d4,3,tj-034,3,A,AB,This gives Person B more after the earlier imbalance while keeping the combined allocation relatively high.,-2,12,14
+d4,3,tj-033,3,A,AB,This row maximizes total allocation among the options with only a two-point gap and maintains the fair pattern from prior rounds.,-2,12,14
+d4,3,tj-021,3,A,AA,This row keeps the allocation relatively balanced while improving our combined payoff.,-2,12,14
+d4,3,tj-043,3,A,AB,This row honors our coordination while keeping the allocation both fair and efficient.,-2,12,14
+d4,3,tj-042,3,A,AA,This preserves a high total allocation while narrowing the gap to support long-term fairness and reciprocity.,-2,12,14
+d4,3,tj-041,3,A,AA,This keeps both payoffs substantial and restores balance by alternating the small advantage between the two people.,-2,12,14
+d4,3,tj-040,3,A,AB,It offers the highest combined return while keeping the allocation nearly equal.,-2,12,14
+d4,3,tj-014,4,A,AB,This keeps the combined payoff high while reducing the gap to support a fairer split.,-6,11,17
+d4,3,tj-046,3,A,AA,This row has a high combined payoff while keeping the difference within two.,-2,12,14
+d4,3,tj-048,4,B,AB,This row keeps the total allocation high while reducing the gap between both people.,6,17,11
+d4,3,tj-045,4,B,AB,This row offers a high combined payoff while keeping the difference moderate.,6,17,11
+d4,3,tj-012,3,B,AB,This row maintains the smallest allocation gap while offering the highest combined payoff among equally balanced options.,2,14,12
+d4,3,tj-000,4,B,BB,这一行提高了双方总收益，同时相比总收益最高的选项差距更小。,6,17,11
+d4,3,tj-038,0,B,BB,This row nearly balances the cumulative allocations after the previous B-favoring choice.,-10,5,15
+d4,3,tj-037,3,B,AB,It maintains the established balanced choice while providing both people with substantial returns.,2,14,12
+d4,3,tj-029,3,B,BB,It keeps the allocation nearly equal while maintaining a high combined payoff.,2,14,12
+d4,3,tj-018,5,B,AB,"This row maximizes our combined allocation, and continuing it is consistent with the shared strategy.",10,20,10
+d4,3,tj-003,3,B,AB,It has the highest combined amount among the nearly balanced options.,2,14,12
+d4,3,tj-007,3,B,BB,This row offers a strong total payoff while keeping the allocation nearly equal.,2,14,12
+d4,3,tj-011,4,B,BB,This keeps the total allocation high while reducing the gap after two rounds of choosing row 5.,6,17,11
+d4,3,tj-039,3,B,AB,This option keeps the outcome fairly balanced while improving the total payoff.,2,14,12
+d4,3,tj-013,5,B,BB,"This maximizes the combined payoff, and the previous round's more balanced choice helps offset the larger gap.",10,20,10
+d4,3,tj-023,3,B,AB,This keeps the allocation nearly balanced while increasing the total payoff.,2,14,12
+d4,3,tj-024,3,B,AB,This row keeps the total payoff high while giving both people nearly equal shares.,2,14,12
+d4,3,tj-036,5,B,BB,This row offers the highest combined payoff while giving both people a substantial share.,10,20,10
+d4,3,tj-026,5,B,BB,This row maximizes the combined allocation and remains consistent with my prior choices.,10,20,10
+d4,3,tj-047,5,B,AB,第5行总收益最高，延续此前优先提高总收益的选择。,10,20,10
+d4,3,tj-035,3,B,AB,This row keeps the gap within 2 while giving both people a higher combined allocation than the other similarly balanced option.,2,14,12
+d4,3,tj-049,3,B,AB,It keeps the allocation gap small while providing the highest combined total among the balanced options.,2,14,12
+d4,3,tj-006,3,B,AB,This row keeps the allocation nearly equal while providing a higher combined payoff than the other similarly balanced option.,2,14,12
+d4,3,tj-030,3,B,BB,This row keeps the allocation fairly balanced while providing a strong combined payoff.,2,14,12
+d4,3,tj-017,2,B,AB,This keeps the allocation balanced while giving both people a solid amount.,-2,11,13
+d4,3,tj-027,2,B,AB,This row offers a strong combined allocation while keeping the difference modest.,-2,11,13
+d4,3,tj-019,2,B,BB,This alternates the small advantage while preserving a high combined payoff and long-term balance.,-2,11,13
+d4,4,tj-005,3,A,AB,"This row preserves our cooperative, near-balanced choice while providing a high combined payoff.",-2,12,14
+d4,4,tj-031,3,A,AB,该行在保持较小分配差距的同时提供较高的共同收益，符合我们兼顾公平与效率的共识。,-2,12,14
+d4,4,tj-015,5,A,AA,This row maximizes the combined allocation in line with our agreement to prioritize total收益.,-10,10,20
+d4,4,tj-009,3,A,AA,This row maintains the smallest allocation gap while offering the highest total among the near-equal options.,-2,12,14
+d4,4,tj-020,3,A,AB,This keeps the allocation relatively balanced while providing a strong combined payoff.,-2,12,14
+d4,4,tj-001,3,A,AB,This row keeps the allocation nearly equal while preserving a high combined payoff.,-2,12,14
+d4,4,tj-008,5,A,AA,I choose row 5 because it maximizes the combined allocation and is consistent with our established strategy.,-10,10,20
+d4,4,tj-010,2,A,AA,It offers the highest combined payoff among the near-balanced options and keeps the allocation gap small.,2,13,11
+d4,4,tj-044,3,A,AB,"This keeps the allocations close, raises the total, and rotates the small advantage to Person A.",-2,12,14
+d4,4,tj-032,3,A,AB,It provides the highest combined payoff among the options with only a small allocation gap.,-2,12,14
+d4,4,tj-022,2,A,AB,它在保持较高总收益和小幅差距的同时，也能补偿上一轮我少得的部分。,2,13,11
+d4,4,tj-002,3,A,AB,This row keeps total allocation high while making the split nearly equal after three rounds of larger disadvantage to Person A.,-2,12,14
+d4,4,tj-016,3,A,AB,This row best balances the allocations while maintaining a relatively high combined payoff.,-2,12,14
+d4,4,tj-004,5,A,AA,Row 5 maximizes the combined allocation and remains consistent with the agreed long-term reciprocity strategy.,-10,10,20
+d4,4,tj-025,5,A,AB,This row maximizes the combined allocation and maintains the established cooperative strategy.,-10,10,20
+d4,4,tj-028,3,A,AA,This row keeps the allocation nearly equal while maintaining a relatively high combined payoff.,-2,12,14
+d4,4,tj-034,2,A,AB,This keeps our cumulative allocations equal while maintaining a relatively high combined total.,2,13,11
+d4,4,tj-033,3,A,AB,第3行总收益较高且差距仅为2，延续此前兼顾共同收益与公平的选择。,-2,12,14
+d4,4,tj-021,3,A,AA,This keeps the allocation nearly balanced while recognizing that I previously chose options with larger gaps.,-2,12,14
+d4,4,tj-043,3,A,AA,This continues our coordinated choice while keeping the allocation relatively balanced and the total high.,-2,12,14
+d4,4,tj-042,3,A,AA,"This row offers a high total allocation while keeping the gap small, consistent with our cooperative approach.",-2,12,14
+d4,4,tj-041,2,A,AB,This continues the agreed rotation of the small advantage while keeping both payoffs substantial.,2,13,11
+d4,4,tj-040,3,A,AB,It provides the highest combined return while keeping the allocation nearly equal.,-2,12,14
+d4,4,tj-014,3,A,AB,This keeps the payoff gap small while preserving a high combined payoff.,-2,12,14
+d4,4,tj-046,3,A,AA,This row keeps the allocation nearly balanced while providing a high combined payoff.,-2,12,14
+d4,4,tj-048,3,B,BB,该行总收益较高且双方差距仅为2，兼顾效率与公平。,2,14,12
+d4,4,tj-045,4,B,BB,This row keeps the combined payoff high while maintaining a moderate difference between our shares.,6,17,11
+d4,4,tj-012,3,B,AB,This row preserves the smallest allocation gap while maintaining a relatively high combined payoff.,2,14,12
+d4,4,tj-000,3,B,AB,This row restores our established coordination while keeping the payoff gap smallest and the combined payoff relatively high.,2,14,12
+d4,4,tj-038,4,B,AB,This row offers a high combined allocation while keeping the difference moderate.,6,17,11
+d4,4,tj-037,3,B,AB,"It preserves the established strategy of substantial joint returns with a small, fair allocation gap.",2,14,12
+d4,4,tj-029,3,B,BB,This row keeps the allocation nearly equal while providing the highest combined payoff among the balanced options.,2,14,12
+d4,4,tj-018,3,B,BB,前三轮都选了第5行，这轮选第3行能兼顾较高总收益与更公平的分配。,2,14,12
+d4,4,tj-003,5,B,AB,"This row maximizes the combined amount, and I’m willing to take the smaller share this round to balance our cumulative outcomes.",10,20,10
+d4,4,tj-007,3,B,AB,This row maintains a small payoff gap while preserving a strong total allocation.,2,14,12
+d4,4,tj-011,2,B,BB,"This keeps the allocation nearly balanced while preserving a high combined total, and helps offset my lower allocations in the previous rounds.",-2,11,13
+d4,4,tj-039,5,B,AB,"This row maximizes the total payoff, consistent with our agreement to prioritize joint gains.",10,20,10
+d4,4,tj-013,3,B,AB,This keeps the allocation nearly even and slightly offsets the previous round’s larger advantage for Person B.,2,14,12
+d4,4,tj-023,2,B,AB,This keeps the allocation nearly balanced while modestly favoring Person A to improve long-term reciprocity.,-2,11,13
+d4,4,tj-024,2,B,BB,This row preserves a high combined payoff while modestly correcting the cumulative imbalance favoring Person B.,-2,11,13
+d4,4,tj-036,5,B,BB,It maximizes the combined payoff and aligns with the stated preference to prioritize total收益 while keeping both shares substantial.,10,20,10
+d4,4,tj-026,5,B,BB,"This row maximizes the combined allocation, consistent with my prior choices.",10,20,10
+d4,4,tj-047,0,B,AB,此前连续三轮偏向Person B，因此本轮选择有利于Person A的方案以改善累计公平。,-10,5,15
+d4,4,tj-035,3,B,AB,第3行差距仅为2且总收益为26，兼顾双方收益与公平。,2,14,12
+d4,4,tj-049,3,B,AB,This row keeps the allocation nearly balanced while providing a high combined total.,2,14,12
+d4,4,tj-006,3,B,AB,This row keeps the split nearly equal while providing a strong combined payoff.,2,14,12
+d4,4,tj-030,3,B,AB,This row preserves our established balance between a small payoff gap and a high combined allocation.,2,14,12
+d4,4,tj-017,2,B,AB,This maintains the established balanced strategy while giving both people solid payoffs.,-2,11,13
+d4,4,tj-027,4,B,BB,This row keeps the total allocation high while reducing the imbalance compared with the maximum-total option.,6,17,11
+d4,4,tj-019,3,B,BB,"This keeps the gap small, raises the total payoff, and rotates the advantage to Person B.",2,14,12
+d4,5,tj-005,3,A,AB,This row sustains the established cooperative baseline with the highest combined payoff and only a small allocation gap.,-2,12,14
+d4,5,tj-031,3,A,AA,This row maintains the smallest allocation gap while offering a strong combined payoff consistent with prior cooperation.,-2,12,14
+d4,5,tj-015,4,A,AB,这一行总收益较高且差距小于最高总收益方案，兼顾了双方收益与公平。,-6,11,17
+d4,5,tj-009,3,A,AA,This keeps the allocation nearly equal while providing a relatively high total.,-2,12,14
+d4,5,tj-020,3,A,AB,This row maintains the established balance between a high combined payoff and a small allocation gap.,-2,12,14
+d4,5,tj-001,3,A,AB,This row keeps the allocation close to equal while maintaining a high combined payoff.,-2,12,14
+d4,5,tj-008,5,A,AB,This row maximizes the combined allocation and remains consistent with the established cooperative strategy.,-10,10,20
+d4,5,tj-010,3,A,AA,This row maximizes the combined payoff among near-balanced options while offsetting the slight cumulative advantage to Person A.,-2,12,14
+d4,5,tj-044,2,A,AB,This keeps the gap small while rotating the slight advantage back to Person A.,2,13,11
+d4,5,tj-032,4,A,AB,It increases the combined payoff while limiting the imbalance compared with the maximum-payoff option.,-6,11,17
+d4,5,tj-022,3,A,AA,It offsets last round’s small advantage while preserving a high total and long-term balance.,-2,12,14
+d4,5,tj-002,3,A,AB,This keeps the split nearly balanced while preserving a high combined allocation.,-2,12,14
+d4,5,tj-016,3,A,AA,This preserves the smallest allocation gap while improving on the most balanced row's combined payoff.,-2,12,14
+d4,5,tj-004,3,A,AA,Row 3 offers a near-equal split while preserving a high combined allocation.,-2,12,14
+d4,5,tj-025,3,A,AA,"After repeatedly choosing maximum total value, this row preserves a high combined allocation while improving balance.",-2,12,14
+d4,5,tj-028,3,A,AB,This row sustains the established cooperative balance with a small gap and a relatively high combined allocation.,-2,12,14
+d4,5,tj-034,3,A,AA,This row keeps the allocation nearly equal while providing a relatively high combined payoff.,-2,12,14
+d4,5,tj-033,2,A,AB,This keeps the allocation gap small while balancing the recent choices that favored Person B.,2,13,11
+d4,5,tj-021,3,A,AA,This row maintains the established near-balanced allocation while providing a strong combined payoff.,-2,12,14
+d4,5,tj-043,3,A,AB,"This preserves the established fair, coordinated choice while maintaining a relatively high total allocation.",-2,12,14
+d4,5,tj-042,3,A,AA,This maintains our established cooperative balance of high total allocation and a small gap.,-2,12,14
+d4,5,tj-041,3,A,AB,This preserves the established rotation of the small advantage while keeping both payoffs substantial.,-2,12,14
+d4,5,tj-040,3,A,AB,It maximizes the combined allocation while keeping the outcome nearly equal and consistent with the cooperative norm.,-2,12,14
+d4,5,tj-014,3,A,AB,Row 3 keeps the payoff gap small while maintaining a strong combined payoff.,-2,12,14
+d4,5,tj-046,3,A,AB,This row keeps the allocation nearly balanced while providing a high combined payoff.,-2,12,14
+d4,5,tj-048,2,B,AB,该行将差距控制在2以内，同时略微补偿前几轮Person A的较低累计收益。,-2,11,13
+d4,5,tj-045,4,B,BB,This row preserves a high combined payoff while keeping the allocation gap moderate.,6,17,11
+d4,5,tj-012,3,B,AB,This row keeps the allocation gap small while providing the highest combined payoff among the balanced options.,2,14,12
+d4,5,tj-000,3,B,AB,It preserves the established cooperative choice with the smallest payoff gap and a relatively high combined payoff.,2,14,12
+d4,5,tj-038,1,B,AB,This row narrows B's cumulative lead to two points while preserving a higher joint payoff than the strongest rebalancing option.,-6,8,14
+d4,5,tj-037,3,B,AB,It preserves the established strategy of strong joint returns with only a small allocation gap.,2,14,12
+d4,5,tj-029,3,B,AB,This row keeps the allocation nearly equal while providing a high combined payoff.,2,14,12
+d4,5,tj-018,2,B,AB,第2行在保持较高总收益的同时小幅补偿此前偏向Person B的累计差额。,-2,11,13
+d4,5,tj-003,2,B,BB,It keeps the allocation nearly balanced while giving Person A a small advantage after Person B received the larger share last round.,-2,11,13
+d4,5,tj-007,3,B,BB,This row maintains a small payoff gap while preserving a strong total allocation.,2,14,12
+d4,5,tj-011,0,B,BB,This row gives Person A the strongest compensation after several rounds favoring Person B.,-10,5,15
+d4,5,tj-039,5,B,AB,"This row maximizes the joint payoff, consistent with the established agreement to prioritize total gains.",10,20,10
+d4,5,tj-013,5,B,BB,This continues the established alternation by maximizing combined payoff after the previous round's near-even allocation.,10,20,10
+d4,5,tj-023,3,B,AB,This keeps the gap small while favoring Person B after the previous round modestly favored Person A.,2,14,12
+d4,5,tj-024,0,B,BB,This row best corrects the substantial cumulative imbalance that currently favors Person B.,-10,5,15
+d4,5,tj-036,4,B,BB,This row preserves a high combined payoff while reducing the allocation gap to support long-term reciprocity.,6,17,11
+d4,5,tj-026,5,B,BB,This row maximizes the combined allocation and remains consistent with my prior choices.,10,20,10
+d4,5,tj-047,0,B,BB,此前累计收益仍偏向Person B，因此选择该行继续缩小长期差距。,-10,5,15
+d4,5,tj-035,3,B,AB,This row preserves the agreed gap of 2 while maximizing the combined allocation among similarly balanced options.,2,14,12
+d4,5,tj-049,3,B,BB,It maintains the established cooperative balance while keeping the combined allocation high.,2,14,12
+d4,5,tj-006,3,B,AB,This row maintains the established near-equal split while delivering a strong combined payoff.,2,14,12
+d4,5,tj-030,3,B,AB,This row maintains the established balance of a small payoff gap and a high combined allocation.,2,14,12
+d4,5,tj-017,3,B,AB,This row improves total welfare while keeping the payoff gap small.,2,14,12
+d4,5,tj-027,3,B,AB,This row provides the highest combined allocation among options with a gap of no more than two.,2,14,12
+d4,5,tj-019,2,B,AB,This preserves a high combined payoff while continuing the balanced alternation of the small advantage.,-2,11,13
+d4,6,tj-005,3,A,AB,"This row keeps both allocations high and nearly balanced, matching our established cooperative choice.",-2,12,14
+d4,6,tj-031,3,A,AA,This row sustains the established cooperative strategy by combining a high total payoff with the smallest allocation gap.,-2,12,14
+d4,6,tj-015,5,A,AA,"This row maximizes the total allocation and gives the lower-paid Person B more, helping balance cumulative earnings.",-10,10,20
+d4,6,tj-009,3,A,AB,This row maintains the smallest allocation gap while offering the highest total among the near-equal options.,-2,12,14
+d4,6,tj-020,3,A,AA,This row keeps the allocation relatively balanced while maintaining a strong combined payoff.,-2,12,14
+d4,6,tj-001,3,A,AB,This row keeps the allocation nearly equal while preserving a high combined payoff.,-2,12,14
+d4,6,tj-008,3,A,AA,This row preserves a high combined allocation while substantially improving fairness after several rounds of choosing row 5.,-2,12,14
+d4,6,tj-010,3,A,AB,This row offers the highest combined payoff among near-balanced options while restoring cumulative parity.,-2,12,14
+d4,6,tj-044,3,A,AB,This keeps the allocations close with a high total and gives the slight advantage to Person B to balance recent rounds.,-2,12,14
+d4,6,tj-032,3,A,AB,It yields the highest combined payoff while keeping the allocation nearly balanced.,-2,12,14
+d4,6,tj-022,2,A,AB,"It balances the allocation with a small advantage to A, compensating for the previous round while keeping the total high.",2,13,11
+d4,6,tj-002,3,A,AA,This row keeps the split balanced while preserving a relatively high combined allocation.,-2,12,14
+d4,6,tj-016,3,A,AA,This row keeps the allocation balanced while providing a strong combined payoff.,-2,12,14
+d4,6,tj-004,3,A,AB,"Row 3 keeps the split nearly even while preserving a high total, matching our shared preference for balance.",-2,12,14
+d4,6,tj-025,3,A,AB,This row maintains a high combined allocation while keeping the distribution relatively balanced.,-2,12,14
+d4,6,tj-028,3,A,AB,This row maintains the established cooperative balance with a small gap and relatively high combined payoff.,-2,12,14
+d4,6,tj-034,2,A,AA,This row restores cumulative equality while maintaining a relatively high combined allocation.,2,13,11
+d4,6,tj-033,2,A,AA,This keeps the gap small while bringing the cumulative allocation difference back into balance.,2,13,11
+d4,6,tj-021,3,A,AB,This row keeps the allocation nearly balanced while preserving a strong combined payoff.,-2,12,14
+d4,6,tj-043,3,A,AA,"It keeps the allocation nearly balanced while maintaining a high total, consistent with our coordinated choice.",-2,12,14
+d4,6,tj-042,0,A,AB,我累计收益落后较多，这一轮选择有利于A的方案来平衡长期分配。,10,15,5
+d4,6,tj-041,2,A,AB,This continues the alternating small advantage while keeping both payoffs high and the allocation balanced.,2,13,11
+d4,6,tj-040,3,A,AB,It keeps the allocation balanced while providing the highest total return among the nearly equal options.,-2,12,14
+d4,6,tj-014,3,A,AB,This preserves the established balance of a high combined payoff and a small allocation gap.,-2,12,14
+d4,6,tj-046,2,A,AA,This keeps the payoff gap small while giving Person A a slight advantage after my recent repeated concessions.,2,13,11
+d4,6,tj-048,2,B,BB,This row keeps the per-round gap small while helping offset Person B's higher cumulative allocation.,-2,11,13
+d4,6,tj-045,3,B,BB,This keeps the split close and gives A a modest advantage to help balance our cumulative outcomes.,2,14,12
+d4,6,tj-012,3,B,AB,This row keeps the allocation gap smallest while providing the highest total payoff among the most balanced options.,2,14,12
+d4,6,tj-000,3,B,BB,It maintains the established cooperative baseline with the smallest payoff gap and a relatively high combined payoff.,2,14,12
+d4,6,tj-038,3,B,AB,This row gives both people high allocations with only a small difference while preserving a strong joint payoff.,2,14,12
+d4,6,tj-037,3,B,AB,"It keeps both allocations substantial and relatively balanced, consistent with our established choice.",2,14,12
+d4,6,tj-029,3,B,BB,It keeps the allocation nearly equal while preserving a high combined payoff.,2,14,12
+d4,6,tj-018,2,B,AB,This row offers a near-balanced split with a strong total and helps offset the earlier advantage to Person B.,-2,11,13
+d4,6,tj-003,5,B,AB,"This maximizes the combined total, and Person B has consistently accepted the smaller share in earlier rounds.",10,20,10
+d4,6,tj-007,3,B,BB,This row keeps the allocation nearly equal while providing a strong total payoff.,2,14,12
+d4,6,tj-011,2,B,BB,"This offers a high combined allocation with a small gap, while avoiding another extreme compensation swing.",-2,11,13
+d4,6,tj-039,5,B,AB,"This row maximizes the joint payoff, consistent with our agreement to prioritize total gains.",10,20,10
+d4,6,tj-013,3,B,AB,This keeps the allocation nearly even after my previous high-gap choice while preserving a strong combined payoff.,2,14,12
+d4,6,tj-023,3,B,AB,"This keeps the gap small, favors Person B after the previous round favored Person A, and preserves a high total payoff.",2,14,12
+d4,6,tj-024,0,B,AB,This row exactly offsets the remaining cumulative 10-point advantage favoring Person B.,-10,5,15
+d4,6,tj-036,4,B,BB,This row balances a high combined payoff with a moderate gap that supports long-term reciprocity.,6,17,11
+d4,6,tj-026,5,B,BB,This row maximizes the combined allocation and remains consistent with my established priority.,10,20,10
+d4,6,tj-047,2,B,BB,"It offers a solid combined payoff while slightly favoring Person A, who is behind in cumulative earnings.",-2,11,13
+d4,6,tj-035,3,B,AB,This row maintains the agreed gap of 2 while offering the highest combined allocation among the balanced options.,2,14,12
+d4,6,tj-049,3,B,AB,This row keeps the allocation nearly balanced while providing a high combined total.,2,14,12
+d4,6,tj-006,3,B,AB,This row keeps the split nearly equal while providing the highest combined payoff.,2,14,12
+d4,6,tj-030,3,B,AB,This row preserves our established balance of a small payoff gap and a high combined allocation.,2,14,12
+d4,6,tj-017,3,B,BB,This row keeps the payoff gap small while improving total welfare.,2,14,12
+d4,6,tj-027,3,B,AB,This row keeps the allocation balanced while providing a strong combined total.,2,14,12
+d4,6,tj-019,3,B,AB,This gives Person B a small advantage to honor their recent concessions while keeping the allocation balanced.,2,14,12
+d4,7,tj-005,3,A,AB,I choose row 3 because it preserves our established balance while providing a high combined payoff.,-2,12,14
+d4,7,tj-031,3,A,AB,This row maintains a small allocation gap while providing a strong combined payoff and sustaining our established fair strategy.,-2,12,14
+d4,7,tj-015,5,A,AA,"This row maximizes the combined allocation while giving Person B the largest share, supporting both total welfare and cumulative balance.",-10,10,20
+d4,7,tj-009,3,A,AB,This row keeps the allocation nearly balanced while providing the highest total among the fairest options.,-2,12,14
+d4,7,tj-020,3,A,AB,第3行在保持较高总收益的同时分配较均衡，可避免一方长期承担较大差距。,-2,12,14
+d4,7,tj-001,3,A,AB,This row keeps the allocation nearly equal while preserving a high combined payoff.,-2,12,14
+d4,7,tj-008,3,A,AA,I choose row 3 because it maintains a high combined allocation while keeping the distribution relatively fair.,-2,12,14
+d4,7,tj-010,2,A,AB,This row keeps the allocation balanced while delivering the highest total payoff among the near-equal options.,2,13,11
+d4,7,tj-044,3,A,AA,This keeps the allocation close and the total high while giving Person B the slight advantage to balance recent rounds.,-2,12,14
+d4,7,tj-032,3,A,AB,It keeps the allocation nearly balanced while providing the highest combined payoff among the balanced options.,-2,12,14
+d4,7,tj-022,2,A,AA,It keeps the allocation nearly even while providing the highest total among the balanced options.,2,13,11
+d4,7,tj-002,3,A,AB,"This keeps the split nearly balanced while maintaining a high combined allocation, consistent with our recent agreement.",-2,12,14
+d4,7,tj-016,3,A,AB,This row offers a strong combined payoff while keeping the allocation gap small.,-2,12,14
+d4,7,tj-004,3,A,AB,Row 3 keeps the split nearly even while providing a strong combined allocation.,-2,12,14
+d4,7,tj-025,5,A,AB,"This row maximizes our combined allocation, and we can revisit balance in a later round.",-10,10,20
+d4,7,tj-028,3,A,AB,This keeps our established small-gap choice while maintaining a relatively high combined allocation.,-2,12,14
+d4,7,tj-034,3,A,AA,This keeps the cumulative allocation nearly balanced while providing a relatively high combined payoff.,-2,12,14
+d4,7,tj-033,4,A,AA,"This gives both people more than the near-equal options, and its gap favors Person B after several choices favored Person A.",-6,11,17
+d4,7,tj-021,3,A,AA,"This keeps the allocation nearly balanced with a strong combined payoff, while balancing our recent choices.",-2,12,14
+d4,7,tj-043,3,A,AB,It continues our coordinated choice while keeping the allocation nearly balanced and the total high.,-2,12,14
+d4,7,tj-042,1,A,AB,This gives Person A a modest advantage to help balance earlier concessions while keeping the total allocation high.,6,14,8
+d4,7,tj-041,3,A,AA,This keeps both payoffs high and gives Person B the small advantage in line with the alternating pattern.,-2,12,14
+d4,7,tj-040,3,A,AA,It keeps the allocation nearly equal while maximizing the combined return.,-2,12,14
+d4,7,tj-014,3,A,AA,第3行延续了近期较均衡的选择，同时保持双方总收益较高。,-2,12,14
+d4,7,tj-046,3,A,AB,This keeps the payoffs close and the total high while giving Person B a slight advantage after my recent advantage.,-2,12,14
+d4,7,tj-048,2,B,AB,This keeps the gap small while giving Person A more to help balance the higher cumulative allocation to Person B.,-2,11,13
+d4,7,tj-045,3,B,BB,This keeps the split nearly equal while maintaining a strong combined payoff.,2,14,12
+d4,7,tj-012,3,B,AB,This row keeps the allocation gap small while providing the highest total payoff among the most balanced options.,2,14,12
+d4,7,tj-000,3,B,AB,It preserves the established cooperative baseline with the smallest payoff gap and a relatively high combined payoff.,2,14,12
+d4,7,tj-038,2,B,AB,This row keeps both allocations substantial while reducing B's cumulative lead from four points to two.,-2,11,13
+d4,7,tj-037,3,B,AB,It maintains the established balance while giving both people substantial allocations.,2,14,12
+d4,7,tj-029,3,B,AB,"It maintains a small gap while providing a high combined payoff, consistent with my recent choices.",2,14,12
+d4,7,tj-018,2,B,BB,Row 2 keeps the split nearly balanced while preserving a strong total allocation.,-2,11,13
+d4,7,tj-003,3,B,BB,"It provides the highest total among the nearly balanced options, while keeping the difference small.",2,14,12
+d4,7,tj-007,3,B,BB,This row keeps the allocation nearly equal while providing a strong total payoff.,2,14,12
+d4,7,tj-011,2,B,AB,"This keeps the allocation nearly balanced with a high combined total, consistent with our recent choices and focus on fairness.",-2,11,13
+d4,7,tj-039,5,B,BB,"This row maximizes the joint payoff, consistent with our agreement to prioritize total gains.",10,20,10
+d4,7,tj-013,5,B,AB,This alternates back to the highest joint payoff after the previous balanced choice.,10,20,10
+d4,7,tj-023,2,B,BB,"This keeps the allocation nearly balanced, modestly favors A after the previous round favored B, and maintains a high total payoff.",-2,11,13
+d4,7,tj-024,5,B,BB,"This row maximizes the combined payoff, and its advantage to Person B rotates the benefit after our cumulative payoffs were balanced.",10,20,10
+d4,7,tj-036,4,B,AB,This keeps the total payoff high while maintaining a moderate gap in line with our preference for long-term reciprocity.,6,17,11
+d4,7,tj-026,5,B,AB,This row maximizes our combined allocation and is consistent with my prior choices.,10,20,10
+d4,7,tj-047,2,B,BB,"It modestly favors Person A, who remains behind in cumulative earnings, while keeping the total payoff high.",-2,11,13
+d4,7,tj-035,3,B,BB,This row preserves our agreed small gap while providing the highest combined allocation among the balanced options.,2,14,12
+d4,7,tj-049,3,B,AB,This row preserves the established balance while providing the highest combined allocation among the near-equal options.,2,14,12
+d4,7,tj-006,3,B,AB,This row keeps the split nearly equal while providing the highest combined payoff.,2,14,12
+d4,7,tj-030,3,B,AB,This row preserves our established balance of high combined payoff and a small gap while giving Person B the slight advantage this round.,2,14,12
+d4,7,tj-017,3,B,AB,This continues the established strategy of improving total welfare while keeping the payoff gap small.,2,14,12
+d4,7,tj-027,3,B,BB,This row maintains a high combined allocation with only a small difference between participants.,2,14,12
+d4,7,tj-019,2,B,AB,This continues the balanced alternation of small advantages while keeping the combined payoff high.,-2,11,13
+d4,8,tj-005,3,A,AA,It preserves our established balance while providing a high combined payoff.,-2,12,14
+d4,8,tj-031,3,A,AB,"This row offers a strong combined payoff while keeping the allocation gap small, consistent with our agreed approach.",-2,12,14
+d4,8,tj-015,5,A,AB,"This row maximizes the combined allocation and gives Person B the largest share, consistent with prioritizing total收益 while considering cumulative balance.",-10,10,20
+d4,8,tj-009,3,A,AB,This row maintains the smallest allocation gap while preserving a relatively high total allocation.,-2,12,14
+d4,8,tj-020,3,A,AA,This row keeps the allocation relatively balanced while providing a strong combined payoff.,-2,12,14
+d4,8,tj-001,3,A,AB,This row maintains the established cooperative balance while preserving a high combined payoff.,-2,12,14
+d4,8,tj-008,3,A,AA,"Row 3 keeps the allocation relatively fair while maintaining a high combined total, matching our recent choices.",-2,12,14
+d4,8,tj-010,3,A,AA,This row restores cumulative parity while offering the highest combined payoff among the near-balanced options.,-2,12,14
+d4,8,tj-044,2,A,AA,This keeps the allocation close with a high total and rotates the slight advantage to Person A.,2,13,11
+d4,8,tj-032,3,A,AB,It offers the highest combined payoff among the options with a small allocation gap.,-2,12,14
+d4,8,tj-022,3,A,AB,"It keeps the total high and offsets our recent small advantages to A, restoring long-term balance.",-2,12,14
+d4,8,tj-002,3,A,AB,"Row 3 maintains a relatively high combined allocation with a small gap, consistent with our recent agreement.",-2,12,14
+d4,8,tj-016,3,A,AA,This row maintains a small allocation gap while providing a strong combined payoff.,-2,12,14
+d4,8,tj-004,3,A,AB,Row 3 maintains our agreed balance while providing a strong combined allocation.,-2,12,14
+d4,8,tj-025,3,A,AB,This row keeps the combined allocation high while limiting the gap to two points.,-2,12,14
+d4,8,tj-028,3,A,AB,This maintains our established small-gap choice while preserving a relatively high combined allocation.,-2,12,14
+d4,8,tj-034,2,A,AB,前几轮累计分配中A略少，选第2行可让A多得2，同时保持双方累计相等。,2,13,11
+d4,8,tj-033,3,A,AA,This keeps the gap small while slightly favoring A to balance the previous round's allocation favoring B.,-2,12,14
+d4,8,tj-021,3,A,AB,This row keeps the allocation nearly balanced while preserving a strong combined payoff.,-2,12,14
+d4,8,tj-043,3,A,AB,"This preserves the established coordinated choice, keeping the allocation nearly balanced while maintaining a high total.",-2,12,14
+d4,8,tj-042,2,A,AB,"This keeps the allocation gap small while slightly favoring A, whose cumulative total still trails.",2,13,11
+d4,8,tj-041,2,A,AA,This continues the alternating advantage while keeping the allocation balanced and both payoffs high.,2,13,11
+d4,8,tj-040,3,A,AB,It provides the highest combined return while keeping the allocation nearly equal.,-2,12,14
+d4,8,tj-014,3,A,AA,This maintains the recent balance of a small payoff gap and a strong combined payoff.,-2,12,14
+d4,8,tj-046,3,A,AA,"This keeps the payoffs close and the total high while preserving the established pattern of fair, efficient choices.",-2,12,14
+d4,8,tj-048,2,B,AB,This row keeps the allocation nearly equal while modestly reducing Person B's cumulative lead.,-2,11,13
+d4,8,tj-045,2,B,BB,This row gives A a modest advantage to reduce the cumulative gap while preserving a solid combined payoff.,-2,11,13
+d4,8,tj-012,3,B,AB,This row keeps the allocations balanced while providing the highest total payoff among the most balanced options.,2,14,12
+d4,8,tj-000,3,B,AB,Row 3 preserves our established balance of a small payoff gap and relatively high total earnings.,2,14,12
+d4,8,tj-038,3,B,BB,This row keeps the allocation nearly balanced while giving both people a strong combined total.,2,14,12
+d4,8,tj-037,3,B,BB,It maintains the established strategy of relatively high joint returns with a small allocation gap.,2,14,12
+d4,8,tj-029,3,B,AB,This keeps the allocation nearly equal while maintaining a high combined payoff.,2,14,12
+d4,8,tj-018,2,B,AB,Row 2 keeps the allocation nearly balanced while maintaining a high combined total.,-2,11,13
+d4,8,tj-003,3,B,AB,It gives the highest combined total among the nearly balanced options and slightly favors Person B after recent small advantages for Person A.,2,14,12
+d4,8,tj-007,3,B,AB,Row 3 keeps the allocation nearly equal while providing a strong total payoff.,2,14,12
+d4,8,tj-011,5,B,AB,This maximizes our combined allocation and offsets the cumulative advantage Person A has received so far.,10,20,10
+d4,8,tj-039,5,B,AB,"This row maximizes the joint payoff, consistent with my recent choices to prioritize total gains.",10,20,10
+d4,8,tj-013,3,B,AB,This keeps the allocation nearly balanced while maintaining a high combined payoff.,2,14,12
+d4,8,tj-023,3,B,BB,"This keeps the gap small, modestly favors Person B after the previous round favored Person A, and maximizes total payoff among near-balanced options.",2,14,12
+d4,8,tj-024,3,B,AB,This row keeps the total payoff high while keeping the allocation nearly equal.,2,14,12
+d4,8,tj-036,3,B,BB,This row gives both people a strong combined payoff while keeping the difference small.,2,14,12
+d4,8,tj-026,5,B,AB,This row maximizes the combined allocation and remains consistent with my established priority.,10,20,10
+d4,8,tj-047,1,B,AB,This row exactly balances the cumulative earnings of Person A and Person B.,-6,8,14
+d4,8,tj-035,3,B,BB,This row keeps the agreed small gap while providing the highest total allocation among the balanced options.,2,14,12
+d4,8,tj-049,3,B,BB,This row preserves our established balance while providing a high combined allocation.,2,14,12
+d4,8,tj-006,3,B,BB,This row keeps the split nearly equal while providing a high combined payoff.,2,14,12
+d4,8,tj-030,3,B,AB,This row keeps the payoff gap small while maintaining a strong combined allocation.,2,14,12
+d4,8,tj-017,3,B,BB,"Row 3 preserves the small payoff gap while increasing total welfare, consistent with my recent choices.",2,14,12
+d4,8,tj-027,3,B,AB,This row preserves a high combined allocation while keeping the difference small and favoring Person B to balance my recent choices.,2,14,12
+d4,8,tj-019,3,B,BB,This keeps the difference small while giving Person B the advantage after my recent turns favored Person A.,2,14,12
+d4,9,tj-005,3,A,AA,This row preserves the established balance while providing a high combined payoff.,-2,12,14
+d4,9,tj-031,3,A,AA,"This row keeps the allocation gap small while providing a strong combined payoff, consistent with our established approach.",-2,12,14
+d4,9,tj-015,5,A,AA,"This row maximizes the combined allocation and gives Person B the largest share, consistent with prioritizing total welfare.",-10,10,20
+d4,9,tj-009,3,A,AB,This keeps the allocation nearly balanced while preserving a relatively high total.,-2,12,14
+d4,9,tj-020,3,A,AA,This row keeps the allocation balanced while preserving a relatively high combined payoff.,-2,12,14
+d4,9,tj-001,3,A,AB,This row keeps the allocation nearly equal while preserving a high combined payoff.,-2,12,14
+d4,9,tj-008,3,A,AA,"Row 3 maintains a relatively high combined allocation while keeping the distribution fair, consistent with our recent choices.",-2,12,14
+d4,9,tj-010,2,A,AB,This near-balanced option provides the highest total payoff among the choices with a small gap and continues my pattern of alternating the slight advantage.,2,13,11
+d4,9,tj-044,3,A,AA,This keeps the allocations close with a high total and rotates the slight advantage to Person B.,-2,12,14
+d4,9,tj-032,3,A,AB,It delivers the highest combined payoff while keeping the allocation nearly balanced.,-2,12,14
+d4,9,tj-022,3,A,AB,It keeps the allocation nearly balanced while providing the highest combined total.,-2,12,14
+d4,9,tj-002,3,A,AB,"This row keeps the allocation nearly balanced while preserving a relatively high combined total, consistent with our recent choices.",-2,12,14
+d4,9,tj-016,3,A,AB,This row offers a strong combined payoff while keeping the allocation gap small.,-2,12,14
+d4,9,tj-004,3,A,AB,"Row 3 offers a strong combined allocation with a small gap, matching our agreed preference for balance.",-2,12,14
+d4,9,tj-025,3,A,AA,"This row keeps the total allocation high while keeping the gap small, consistent with our recent choices.",-2,12,14
+d4,9,tj-028,3,A,AB,This preserves our established near-equal allocation while keeping the combined payoff relatively high.,-2,12,14
+d4,9,tj-034,5,A,AB,"This row maximizes the combined allocation, with its imbalance available for correction in later rounds.",-10,10,20
+d4,9,tj-033,2,A,AA,This keeps the gap small and favors A to help balance B’s cumulative lead.,2,13,11
+d4,9,tj-021,3,A,AB,This row keeps the allocation nearly balanced while maintaining a strong combined payoff.,-2,12,14
+d4,9,tj-043,3,A,AA,"This continues our coordinated choice, keeping the allocation nearly balanced while maintaining a high total.",-2,12,14
+d4,9,tj-042,3,A,AA,It keeps the total allocation high and the gap small while continuing the cooperative balance we have maintained.,-2,12,14
+d4,9,tj-041,3,A,AB,This continues the alternating small advantage while keeping both payoffs high and the allocation balanced.,-2,12,14
+d4,9,tj-040,3,A,AB,This row preserves our cooperative pattern with the highest total return among the nearly equal options.,-2,12,14
+d4,9,tj-014,3,A,AB,Row 3 keeps the payoff gap small while maintaining a strong combined payoff.,-2,12,14
+d4,9,tj-046,2,A,AB,This keeps the payoff gap small while giving Person A modest compensation for their substantial cumulative concessions.,2,13,11
+d4,9,tj-048,2,B,AB,"This row keeps the allocation nearly equal while maintaining a high total, consistent with my recent choices.",-2,11,13
+d4,9,tj-045,2,B,AB,This gives A a modest advantage to help narrow the cumulative gap while keeping the combined payoff high.,-2,11,13
+d4,9,tj-012,3,B,BB,This row keeps the allocation gap smallest while offering a high combined payoff.,2,14,12
+d4,9,tj-000,3,B,BB,It maintains our agreed balance of a small payoff gap and relatively high total earnings.,2,14,12
+d4,9,tj-038,3,B,AB,This option gives both people substantial allocations while keeping the difference small.,2,14,12
+d4,9,tj-037,3,B,AB,It maintains a high combined allocation while keeping the split relatively balanced.,2,14,12
+d4,9,tj-029,3,B,AB,This row keeps the allocation nearly equal while maintaining a high combined payoff.,2,14,12
+d4,9,tj-018,0,B,AB,This row gives Person A the strongest compensation for the remaining cumulative disadvantage.,-10,5,15
+d4,9,tj-003,3,B,BB,It offers the highest combined total among the nearly balanced options while keeping the allocation difference small.,2,14,12
+d4,9,tj-007,3,B,BB,Row 3 maintains the established balance of near-equal payoffs and a strong total allocation.,2,14,12
+d4,9,tj-011,2,B,AB,This keeps the allocation nearly balanced while modestly compensating Person A for Person B's cumulative advantage.,-2,11,13
+d4,9,tj-039,3,B,AB,I agreed to prioritize the more balanced row this round after several consecutive choices favoring total gains.,2,14,12
+d4,9,tj-013,5,B,AB,This maximizes the combined payoff after the previous near-balanced choice while preserving our alternating approach.,10,20,10
+d4,9,tj-023,2,B,AB,This keeps the allocation nearly balanced and gives a slight advantage to A after the previous round favored B.,-2,11,13
+d4,9,tj-024,2,B,AB,This row keeps the combined payoff high while modestly correcting the remaining cumulative advantage favoring Person B.,-2,11,13
+d4,9,tj-036,3,B,AB,"This row provides strong combined returns while keeping the allocation nearly equal, consistent with our recent choices.",2,14,12
+d4,9,tj-026,5,B,AB,"Row 5 maximizes the combined allocation, consistent with my prior choices and stated priority.",10,20,10
+d4,9,tj-047,3,B,BB,"It offers a high combined payoff with only a small advantage for Person A, supporting the balance reached so far.",2,14,12
+d4,9,tj-035,3,B,BB,"This row keeps the allocation gap small while providing a high combined total, consistent with our agreed approach.",2,14,12
+d4,9,tj-049,3,B,BB,It continues our cooperative pattern with a small allocation gap and a high combined total.,2,14,12
+d4,9,tj-006,3,B,BB,This row keeps the allocation nearly equal while providing the highest combined payoff.,2,14,12
+d4,9,tj-030,3,B,AB,This row continues the established balance of a small payoff gap and a high combined allocation.,2,14,12
+d4,9,tj-017,3,B,BB,Row 3 keeps the payoff gap small while giving both people more than the more balanced alternatives.,2,14,12
+d4,9,tj-027,3,B,AB,This row keeps the allocation balanced while providing a strong combined total.,2,14,12
+d4,9,tj-019,2,B,BB,"This keeps the allocation balanced and the combined payoff high, while giving Person A the small advantage after my recent turns favored Person B.",-2,11,13
+d4,10,tj-005,3,A,AB,Row 3 maintains our established near-balanced choice while providing a high combined payoff.,-2,12,14
+d4,10,tj-031,3,A,AA,This row maintains the established balance of a high combined payoff and the smallest allocation gap.,-2,12,14
+d4,10,tj-015,5,A,AB,"This row maximizes the combined allocation and gives Person B the largest share, consistent with my recent choices.",-10,10,20
+d4,10,tj-009,3,A,AB,This row keeps the allocation nearly balanced while providing a relatively high total.,-2,12,14
+d4,10,tj-020,3,A,AB,Row 3 keeps the allocation relatively balanced while providing a strong combined payoff.,-2,12,14
+d4,10,tj-001,3,A,AB,This row preserves the established near-equal allocation while keeping the combined payoff relatively high.,-2,12,14
+d4,10,tj-008,3,A,AB,"Row 3 maintains a high combined allocation while keeping the distribution relatively fair, consistent with our recent choices.",-2,12,14
+d4,10,tj-010,2,A,AB,This keeps the payoff gap small while offering the highest total among the near-balanced options.,2,13,11
+d4,10,tj-044,2,A,AB,This keeps the allocation close with a high total and gives Person A the slight advantage to balance recent rounds.,2,13,11
+d4,10,tj-032,3,A,AB,It provides the highest combined payoff while keeping the allocation nearly balanced.,-2,12,14
+d4,10,tj-022,2,A,AA,"It maintains a high total with a small advantage to A, continuing the fair balance of recent rounds.",2,13,11
+d4,10,tj-002,3,A,AB,"Row 3 keeps the allocation nearly balanced while providing a relatively high combined total, consistent with our recent choices.",-2,12,14
+d4,10,tj-016,2,A,AA,This reverses the recent allocation gap and helps balance cumulative outcomes while keeping the total payoff high.,2,13,11
+d4,10,tj-004,3,A,AA,Row 3 preserves our shared preference for a strong total allocation with a small difference between us.,-2,12,14
+d4,10,tj-025,3,A,AA,This row preserves a high combined allocation while keeping the distribution nearly balanced.,-2,12,14
+d4,10,tj-028,3,A,AA,This continues our agreed near-equal choice while preserving a relatively high combined allocation.,-2,12,14
+d4,10,tj-034,0,A,AB,"Person A is behind by 10 cumulatively, so this row restores equality.",10,15,5
+d4,10,tj-033,2,A,AB,This keeps the gap small and favors A to help balance B’s cumulative lead.,2,13,11
+d4,10,tj-021,3,A,AB,This row continues our near-balanced choice while providing a strong combined payoff.,-2,12,14
+d4,10,tj-043,3,A,AB,"This keeps the allocation nearly balanced while maintaining a high total, consistent with our coordinated choice.",-2,12,14
+d4,10,tj-042,2,A,AA,This keeps the gap small while modestly favoring A to reduce the remaining cumulative imbalance.,2,13,11
+d4,10,tj-041,2,A,AB,"This keeps both payoffs high and continues the alternating small advantage, favoring Person A this round.",2,13,11
+d4,10,tj-040,3,A,AA,It offers the highest combined return while keeping the allocation nearly equal.,-2,12,14
+d4,10,tj-014,2,A,AA,This gives A a modest turn of advantage while keeping the payoff gap small.,2,13,11
+d4,10,tj-046,3,A,AA,This keeps the payoffs close and total high while giving Person B a slight advantage.,-2,12,14
+d4,10,tj-048,2,B,BB,"This row keeps the allocation nearly equal while providing a high total, consistent with my recent choices.",-2,11,13
+d4,10,tj-045,1,B,BB,This gives A a modest advantage to help narrow the cumulative gap while preserving a solid combined payoff.,-6,8,14
+d4,10,tj-012,3,B,AB,This row preserves our consistent preference for balanced allocations while providing a strong combined payoff.,2,14,12
+d4,10,tj-000,3,B,BB,"Row 3 keeps the payoff gap smallest while maintaining a relatively high total, consistent with our established choice.",2,14,12
+d4,10,tj-038,3,B,AB,"This gives both people substantial allocations with only a small difference, continuing the balanced, high-total approach.",2,14,12
+d4,10,tj-037,3,B,AB,This maintains the established balance while giving both people substantial allocations.,2,14,12
+d4,10,tj-029,3,B,AB,This row keeps the allocation nearly equal while providing a high combined payoff.,2,14,12
+d4,10,tj-018,2,B,AB,This row preserves a high combined allocation while continuing to reduce Person A's cumulative disadvantage.,-2,11,13
+d4,10,tj-003,3,B,AB,It keeps the allocation nearly balanced while providing the highest combined total among the small-gap options.,2,14,12
+d4,10,tj-007,3,B,AB,Row 3 keeps the allocation nearly equal while providing a strong total payoff.,2,14,12
+d4,10,tj-011,0,B,AB,This gives Person B the strongest compensation and reduces Person A's cumulative advantage.,-10,5,15
+d4,10,tj-039,3,B,BB,This maintains the balanced outcome we agreed to continue after the previous round.,2,14,12
+d4,10,tj-013,3,B,AB,This keeps the allocation nearly balanced after my previous high-gap choice while maintaining a strong combined payoff.,2,14,12
+d4,10,tj-023,2,B,AB,This keeps the allocation near-balanced and maintains a high total while favoring A after the previous round favored B.,-2,11,13
+d4,10,tj-024,0,B,BB,This offsets the cumulative 10-point advantage to Person A while keeping the allocation balanced over time.,-10,5,15
+d4,10,tj-036,3,B,AB,This row keeps the allocation nearly equal while providing a high combined payoff.,2,14,12
+d4,10,tj-026,5,B,BB,Row 5 maximizes the combined allocation and is consistent with my prior choices.,10,20,10
+d4,10,tj-047,2,B,AB,"It slightly favors Person A, bringing the cumulative earnings back into balance while keeping the total payoff high.",-2,11,13
+d4,10,tj-035,3,B,AB,"This row keeps the allocation gap small while providing a high combined total, consistent with our agreed approach.",2,14,12
+d4,10,tj-049,3,B,BB,This keeps our established cooperative balance while providing a high combined allocation.,2,14,12
+d4,10,tj-006,3,B,BB,This row keeps the split nearly equal while providing the highest total payoff.,2,14,12
+d4,10,tj-030,3,B,AB,This row keeps the payoff gap small while maintaining a strong combined allocation.,2,14,12
+d4,10,tj-017,3,B,AB,This keeps the payoff gap small while providing the highest total payoff among the balanced options.,2,14,12
+d4,10,tj-027,3,B,BB,This row keeps allocations nearly equal while providing a strong combined total.,2,14,12
+d4,10,tj-019,3,B,BB,This keeps the difference small and gives Person B the advantage after my recent choice favored Person A.,2,14,12

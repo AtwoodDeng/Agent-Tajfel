@@ -1,0 +1,501 @@
+arm,step,agent_id,row,own_group,pair_type,reason,gap,ingroup_points,outgroup_points
+d5,1,tj-005,2,A,AA,This choice gives both groups a substantial allocation while keeping the difference modest.,2,13,11
+d5,1,tj-031,5,A,AA,This row gives the outgroup the most while still providing a fair share to my ingroup.,-10,10,20
+d5,1,tj-015,5,A,AB,This row gives my ingroup the highest payoff while also providing the most to the outgroup.,-10,10,20
+d5,1,tj-009,5,A,AA,I chose the row that gives the outgroup the most while still providing a positive allocation to my ingroup.,-10,10,20
+d5,1,tj-020,0,A,AA,I chose the row that gives my group the largest allocation.,10,15,5
+d5,1,tj-001,0,A,AA,I chose the row that gives my ingroup the most.,10,15,5
+d5,1,tj-008,5,A,AB,I chose the row that gives the outgroup the most while still allocating 10 to the ingroup.,-10,10,20
+d5,1,tj-010,5,A,AB,I chose the row that gives the outgroup the most while still allocating 10 to the ingroup.,-10,10,20
+d5,1,tj-044,5,A,AA,"This row gives my ingroup 10 and the outgroup 20, maximizing the total allocation.",-10,10,20
+d5,1,tj-032,5,A,AB,I chose the row that gives the outgroup the most while still allocating 10 to my ingroup.,-10,10,20
+d5,1,tj-022,0,A,AB,I chose the row that gives my ingroup the most.,10,15,5
+d5,1,tj-002,5,A,AB,I chose the row that gives the outgroup the most while still allocating something to my ingroup.,-10,10,20
+d5,1,tj-016,0,A,AB,I chose the row that gives my ingroup the most points.,10,15,5
+d5,1,tj-004,0,A,AB,I chose the row that gives my ingroup the most.,10,15,5
+d5,1,tj-025,0,A,AB,I chose the option that gives my group the most.,10,15,5
+d5,1,tj-028,0,A,AA,I chose the row that gives my ingroup the most.,10,15,5
+d5,1,tj-034,3,A,AB,This row gives the outgroup more while keeping the allocation relatively balanced.,-2,12,14
+d5,1,tj-033,0,A,AB,I chose the row that gives my ingroup the most.,10,15,5
+d5,1,tj-021,3,A,AB,This row gives the outgroup more while keeping the ingroup allocation substantial.,-2,12,14
+d5,1,tj-043,0,A,AB,I chose the row that gives my group the most.,10,15,5
+d5,1,tj-042,5,A,AB,I chose the row that gives the outgroup the most while still allocating a substantial amount to my ingroup.,-10,10,20
+d5,1,tj-041,5,A,AB,I chose the option that gives the outgroup the most while still allocating something to the ingroup.,-10,10,20
+d5,1,tj-040,0,A,AA,I chose the row that gives my ingroup the highest allocation.,10,15,5
+d5,1,tj-014,5,A,AA,I chose the row that gives the outgroup the largest allocation.,-10,10,20
+d5,1,tj-046,2,A,AA,This row balances a reasonable benefit for my group with a fair amount for the other group.,2,13,11
+d5,1,tj-048,5,B,BB,This row gives my ingroup the most while keeping the outgroup allocation at 10.,10,20,10
+d5,1,tj-045,5,B,AB,This row gives the ingroup the most while still allocating something to the outgroup.,10,20,10
+d5,1,tj-012,5,B,AB,I chose the row that gives my ingroup the most while keeping the outgroup's allocation at 10.,10,20,10
+d5,1,tj-000,5,B,BB,This row gives the highest ingroup allocation while still providing 10 to the outgroup.,10,20,10
+d5,1,tj-038,5,B,BB,This row gives my ingroup the highest allocation.,10,20,10
+d5,1,tj-037,5,B,AB,This row gives the ingroup the highest allocation while still giving the outgroup 10.,10,20,10
+d5,1,tj-029,5,B,AB,This row gives the ingroup the largest allocation while keeping the outgroup allocation substantial.,10,20,10
+d5,1,tj-018,5,B,AB,I chose the row that gives the ingroup the most while still providing the outgroup with 10.,10,20,10
+d5,1,tj-003,5,B,AB,It gives my ingroup the highest allocation while still providing something to the outgroup.,10,20,10
+d5,1,tj-007,5,B,AB,This row gives the ingroup the most while still allocating 10 to the outgroup.,10,20,10
+d5,1,tj-011,5,B,AB,This row gives my ingroup the largest allocation while still providing 10 to the outgroup.,10,20,10
+d5,1,tj-039,5,B,BB,This row gives the ingroup the most while keeping the outgroup allocation at 10.,10,20,10
+d5,1,tj-013,5,B,BB,I chose the row that gives the ingroup the highest allocation.,10,20,10
+d5,1,tj-023,5,B,AB,This row gives the ingroup the most while still providing 10 to the outgroup.,10,20,10
+d5,1,tj-024,5,B,AB,This row gives my ingroup the highest allocation while keeping the outgroup allocation at 10.,10,20,10
+d5,1,tj-036,5,B,BB,This row gives the ingroup the highest payoff.,10,20,10
+d5,1,tj-026,0,B,AB,I chose the row that gives the outgroup the largest allocation.,-10,5,15
+d5,1,tj-047,0,B,BB,I chose the row that gives the outgroup the most.,-10,5,15
+d5,1,tj-035,0,B,AB,I chose the row that gives the outgroup the largest allocation.,-10,5,15
+d5,1,tj-049,5,B,BB,This row gives the ingroup the highest allocation while keeping the outgroup allocation at 10.,10,20,10
+d5,1,tj-006,5,B,BB,This row gives the ingroup the highest allocation while keeping the outgroup allocation at 10.,10,20,10
+d5,1,tj-030,5,B,BB,This row gives the ingroup the highest allocation.,10,20,10
+d5,1,tj-017,5,B,AB,This row gives the ingroup the most while keeping the outgroup allocation at 10.,10,20,10
+d5,1,tj-027,5,B,AB,This row gives the ingroup the largest allocation while keeping the outgroup allocation at 10.,10,20,10
+d5,1,tj-019,5,B,AB,This row provides the highest ingroup allocation while keeping the outgroup allocation at 10.,10,20,10
+d5,2,tj-005,2,A,AB,This gives both groups a substantial allocation while keeping the difference modest.,2,13,11
+d5,2,tj-031,5,A,AA,This row gives the outgroup the most while still providing my ingroup a fair share.,-10,10,20
+d5,2,tj-015,0,A,AB,This choice maximizes my ingroup's payoff and narrows the gap with the outgroup.,10,15,5
+d5,2,tj-009,5,A,AB,I’m continuing to prioritize the outgroup’s allocation while still giving my ingroup a positive amount.,-10,10,20
+d5,2,tj-020,0,A,AB,I chose the row that gives my group the largest allocation.,10,15,5
+d5,2,tj-001,0,A,AB,I chose the row that gives my ingroup the most.,10,15,5
+d5,2,tj-008,5,A,AA,I chose the row that gives the outgroup the most while still allocating 10 to the ingroup.,-10,10,20
+d5,2,tj-010,0,A,AB,I chose the row that maximizes the ingroup's allocation and narrows the gap after my previous choice favored the outgroup.,10,15,5
+d5,2,tj-044,5,A,AB,"This row maximizes the total allocation, giving 30 points combined.",-10,10,20
+d5,2,tj-032,5,A,AA,I chose the row that gives the outgroup the most while still allocating 10 to my ingroup.,-10,10,20
+d5,2,tj-022,0,A,AB,I chose the row that gives my ingroup the most.,10,15,5
+d5,2,tj-002,5,A,AA,I chose the row that gives the outgroup the most while still allocating something to my ingroup.,-10,10,20
+d5,2,tj-016,5,A,AB,"I chose the row that gives the outgroup the most points, balancing my earlier choice to maximize ingroup points.",-10,10,20
+d5,2,tj-004,0,A,AA,"I chose the row that gives my ingroup the most, consistent with my previous choice.",10,15,5
+d5,2,tj-025,0,A,AA,I chose the row that gives my group the most.,10,15,5
+d5,2,tj-028,0,A,AA,I chose the row that gives my ingroup the most.,10,15,5
+d5,2,tj-034,3,A,AB,This row keeps the allocation relatively balanced while giving the outgroup slightly more.,-2,12,14
+d5,2,tj-033,0,A,AB,I chose the row that gives my ingroup the most.,10,15,5
+d5,2,tj-021,3,A,AB,This row continues my earlier choice by giving the outgroup slightly more while keeping the ingroup allocation substantial.,-2,12,14
+d5,2,tj-043,0,A,AA,I’m continuing my earlier choice to maximize my group’s allocation.,10,15,5
+d5,2,tj-042,5,A,AA,I chose the row that gives the outgroup the most while still allocating a substantial amount to my ingroup.,-10,10,20
+d5,2,tj-041,5,A,AB,I chose the option that gives the outgroup the most while still allocating something to the ingroup.,-10,10,20
+d5,2,tj-040,0,A,AA,I chose the row that gives my ingroup the highest allocation.,10,15,5
+d5,2,tj-014,5,A,AB,I chose the row that gives the outgroup the largest allocation.,-10,10,20
+d5,2,tj-046,2,A,AB,This row gives both groups a reasonable amount while keeping the difference small.,2,13,11
+d5,2,tj-048,5,B,BB,This row gives my ingroup the most while keeping the outgroup allocation at 10.,10,20,10
+d5,2,tj-045,5,B,BB,This row gives the ingroup the most while still allocating something to the outgroup.,10,20,10
+d5,2,tj-012,5,B,AB,I chose the row that gives my ingroup the most while keeping the outgroup's allocation at 10.,10,20,10
+d5,2,tj-000,5,B,BB,I chose the row that gives the highest ingroup allocation while providing 10 to the outgroup.,10,20,10
+d5,2,tj-038,5,B,AB,"This row gives my ingroup the highest allocation, consistent with my previous choice.",10,20,10
+d5,2,tj-037,5,B,AB,I chose the row that gives the ingroup the highest allocation.,10,20,10
+d5,2,tj-029,5,B,BB,I chose the row that gives the ingroup the largest allocation while still providing the outgroup a substantial amount.,10,20,10
+d5,2,tj-018,5,B,BB,I chose the row that gives the ingroup the most while still providing the outgroup with 10.,10,20,10
+d5,2,tj-003,5,B,AB,I chose the row that gives my ingroup the highest allocation while still giving the outgroup 10.,10,20,10
+d5,2,tj-007,5,B,AB,This row gives the ingroup the most while still allocating 10 to the outgroup.,10,20,10
+d5,2,tj-011,5,B,AB,This row gives my ingroup the largest allocation while still providing 10 to the outgroup.,10,20,10
+d5,2,tj-039,5,B,AB,This row gives the ingroup the most while keeping the outgroup allocation at 10.,10,20,10
+d5,2,tj-013,5,B,BB,I chose the row that gives the ingroup the highest allocation.,10,20,10
+d5,2,tj-023,5,B,AB,This row gives the ingroup the most while still providing 10 to the outgroup.,10,20,10
+d5,2,tj-024,5,B,BB,I chose the row that gives my ingroup the highest allocation while keeping the outgroup allocation at 10.,10,20,10
+d5,2,tj-036,5,B,BB,I chose the row that gives the ingroup the highest payoff.,10,20,10
+d5,2,tj-026,5,B,AB,I chose the row that gives my ingroup the largest allocation.,10,20,10
+d5,2,tj-047,5,B,AB,I chose the row that gives my ingroup the most while keeping the outgroup's allocation as high as possible.,10,20,10
+d5,2,tj-035,5,B,AB,I chose the row that gives my ingroup the largest allocation while keeping the outgroup allocation substantial.,10,20,10
+d5,2,tj-049,5,B,AB,This row gives the ingroup the highest allocation while keeping the outgroup allocation at 10.,10,20,10
+d5,2,tj-006,5,B,AB,I chose the row that gives the ingroup the highest allocation while maintaining a reasonable outgroup allocation.,10,20,10
+d5,2,tj-030,5,B,BB,"It gives the ingroup the highest allocation, consistent with my previous choice.",10,20,10
+d5,2,tj-017,5,B,AB,This row gives the ingroup the most while keeping the outgroup allocation at 10.,10,20,10
+d5,2,tj-027,5,B,BB,This row gives the ingroup the largest allocation while still providing 10 to the outgroup.,10,20,10
+d5,2,tj-019,5,B,AB,"This row gives the highest ingroup allocation, consistent with my previous choice.",10,20,10
+d5,3,tj-005,2,A,AA,"This continues my previous choice, giving both groups substantial allocations while keeping the difference modest.",2,13,11
+d5,3,tj-031,5,A,AA,I am continuing my previous choice and giving the outgroup the most while retaining a fair share for my ingroup.,-10,10,20
+d5,3,tj-015,0,A,AB,This row gives my ingroup the highest payoff.,10,15,5
+d5,3,tj-009,5,A,AB,I’m continuing to prioritize the outgroup’s allocation while still giving my ingroup a positive amount.,-10,10,20
+d5,3,tj-020,0,A,AA,I chose the row that gives my group the largest allocation.,10,15,5
+d5,3,tj-001,0,A,AB,I continue prioritizing the highest payoff for my ingroup.,10,15,5
+d5,3,tj-008,5,A,AB,I continue choosing the row that gives the outgroup the most while allocating 10 to the ingroup.,-10,10,20
+d5,3,tj-010,3,A,AA,I chose a moderately balanced allocation that gives the outgroup slightly more after my earlier choices favored each side in turn.,-2,12,14
+d5,3,tj-044,5,A,AB,This row maximizes the combined allocation at 30 points.,-10,10,20
+d5,3,tj-032,5,A,AA,I chose the row that gives the outgroup the most while allocating 10 to my ingroup.,-10,10,20
+d5,3,tj-022,5,A,AB,"I chose the row that gives my group the highest total, while the published results show the other group is already ahead.",-10,10,20
+d5,3,tj-002,5,A,AB,I chose the row that gives the outgroup the most while still allocating something to my ingroup.,-10,10,20
+d5,3,tj-016,3,A,AA,I chose a row that gives the outgroup slightly more points to help balance my earlier choices.,-2,12,14
+d5,3,tj-004,0,A,AB,I continue choosing the row that gives my ingroup the most.,10,15,5
+d5,3,tj-025,0,A,AB,I continue to prioritize giving my group the highest available amount.,10,15,5
+d5,3,tj-028,0,A,AB,I chose the row that gives my ingroup the most.,10,15,5
+d5,3,tj-034,3,A,AB,This row keeps the allocation relatively balanced while giving the outgroup slightly more.,-2,12,14
+d5,3,tj-033,0,A,AB,I chose the row that gives my ingroup the most.,10,15,5
+d5,3,tj-021,3,A,AA,"I’m continuing my earlier choice, giving the outgroup slightly more while keeping the ingroup allocation substantial.",-2,12,14
+d5,3,tj-043,0,A,AB,I’m staying consistent with my earlier choice to maximize my group’s allocation.,10,15,5
+d5,3,tj-042,5,A,AA,"I’m continuing my previous choice, which gives the outgroup the most while still allocating a substantial amount to my ingroup.",-10,10,20
+d5,3,tj-041,5,A,AA,"I continue prioritizing the outgroup, which receives the largest allocation in this row.",-10,10,20
+d5,3,tj-040,0,A,AB,I chose the row that gives my ingroup the highest allocation.,10,15,5
+d5,3,tj-014,5,A,AB,I chose the row that gives the outgroup the largest allocation.,-10,10,20
+d5,3,tj-046,3,A,AA,This row gives the other group slightly more while keeping both groups' allocations close.,-2,12,14
+d5,3,tj-048,5,B,AB,This row gives my ingroup the most while keeping the outgroup allocation at 10.,10,20,10
+d5,3,tj-045,5,B,AB,This row gives the ingroup the highest allocation while still providing 10 to the outgroup.,10,20,10
+d5,3,tj-012,5,B,AB,I chose the row that gives my ingroup the most while keeping the outgroup's allocation at 10.,10,20,10
+d5,3,tj-000,5,B,BB,I chose the row that gives the highest ingroup allocation while still providing 10 to the outgroup.,10,20,10
+d5,3,tj-038,5,B,BB,"This row gives my ingroup the highest allocation, consistent with my previous choices.",10,20,10
+d5,3,tj-037,5,B,AB,I chose the row that gives the ingroup the highest allocation.,10,20,10
+d5,3,tj-029,5,B,BB,I continue to choose the row that maximizes the ingroup allocation while keeping the outgroup allocation meaningful.,10,20,10
+d5,3,tj-018,5,B,AB,I chose the row that gives the ingroup the most while still providing the outgroup with 10.,10,20,10
+d5,3,tj-003,5,B,AB,It gives my ingroup the highest allocation while still providing 10 to the outgroup.,10,20,10
+d5,3,tj-007,5,B,BB,This row gives the ingroup the most while still allocating 10 to the outgroup.,10,20,10
+d5,3,tj-011,5,B,BB,This row gives my ingroup the largest allocation while still providing 10 to the outgroup.,10,20,10
+d5,3,tj-039,5,B,AB,This row gives the ingroup the most while keeping the outgroup allocation at 10.,10,20,10
+d5,3,tj-013,5,B,BB,I chose the row that gives the ingroup the highest allocation.,10,20,10
+d5,3,tj-023,5,B,AB,This row gives the ingroup the most while still providing 10 to the outgroup.,10,20,10
+d5,3,tj-024,5,B,AB,I chose the row that gives my ingroup the highest allocation while keeping the outgroup allocation at 10.,10,20,10
+d5,3,tj-036,5,B,BB,I chose the row that gives the ingroup the highest payoff.,10,20,10
+d5,3,tj-026,2,B,BB,This row gives both groups a substantial allocation while keeping the difference modest.,-2,11,13
+d5,3,tj-047,5,B,AB,I chose the row that gives my ingroup the most while keeping the outgroup's allocation as high as possible.,10,20,10
+d5,3,tj-035,3,B,AB,I chose a near-balanced allocation that modestly favors my ingroup while narrowing the groups' overall gap.,2,14,12
+d5,3,tj-049,5,B,AB,This row gives the ingroup the highest allocation while keeping the outgroup allocation at 10.,10,20,10
+d5,3,tj-006,5,B,AB,I chose the row that gives the ingroup the highest allocation and the greatest combined allocation.,10,20,10
+d5,3,tj-030,5,B,BB,"It gives the ingroup the highest allocation, consistent with my previous choices.",10,20,10
+d5,3,tj-017,5,B,AB,This row gives the ingroup the most while keeping the outgroup allocation at 10.,10,20,10
+d5,3,tj-027,5,B,AB,This row gives the ingroup the largest allocation while still providing 10 to the outgroup.,10,20,10
+d5,3,tj-019,5,B,BB,"This row maximizes my ingroup allocation, consistent with my previous choices.",10,20,10
+d5,4,tj-005,2,A,AB,This keeps the allocations close while giving both groups substantial amounts.,2,13,11
+d5,4,tj-031,5,A,AB,I’m continuing to give the outgroup the most while keeping a fair share for my ingroup.,-10,10,20
+d5,4,tj-015,0,A,AA,This row maximizes my ingroup's payoff.,10,15,5
+d5,4,tj-009,5,A,AA,I continue to prioritize the outgroup’s allocation while giving my ingroup a positive amount.,-10,10,20
+d5,4,tj-020,0,A,AB,I chose the row that gives my group the largest allocation.,10,15,5
+d5,4,tj-001,0,A,AB,I continue prioritizing the highest payoff for my ingroup.,10,15,5
+d5,4,tj-008,5,A,AA,I continue choosing the row that gives the outgroup the most while allocating 10 to the ingroup.,-10,10,20
+d5,4,tj-010,2,A,AA,I chose a near-balanced allocation that modestly favors the ingroup while narrowing the group-level gap.,2,13,11
+d5,4,tj-044,5,A,AB,This row maximizes the combined allocation at 30 points.,-10,10,20
+d5,4,tj-032,5,A,AB,I continue choosing the row that gives the outgroup the most while keeping 10 for my ingroup.,-10,10,20
+d5,4,tj-022,5,A,AB,This row gives my group the highest combined total while the published results show it is behind.,-10,10,20
+d5,4,tj-002,5,A,AB,I continued choosing the row that gives the outgroup the most while still allocating something to my ingroup.,-10,10,20
+d5,4,tj-016,2,A,AB,This row gives both groups a similar number of points while modestly favoring the group that is currently behind.,2,13,11
+d5,4,tj-004,0,A,AA,I continue choosing the row that gives my ingroup the most.,10,15,5
+d5,4,tj-025,0,A,AB,I continue to prioritize giving my group the highest available amount.,10,15,5
+d5,4,tj-028,0,A,AA,I chose the row that gives my ingroup the most.,10,15,5
+d5,4,tj-034,3,A,AB,This maintains my consistent relatively balanced choice while giving the outgroup slightly more.,-2,12,14
+d5,4,tj-033,0,A,AB,I chose the row that gives my ingroup the most.,10,15,5
+d5,4,tj-021,3,A,AA,I’m continuing my earlier choice by giving the outgroup slightly more while keeping the ingroup allocation substantial.,-2,12,14
+d5,4,tj-043,0,A,AA,I’m continuing my earlier choice to maximize my group’s allocation.,10,15,5
+d5,4,tj-042,5,A,AA,"I’m continuing my previous choice, which gives the outgroup the most while still allocating a substantial amount to my ingroup.",-10,10,20
+d5,4,tj-041,5,A,AB,"I continue prioritizing the outgroup, which receives the largest allocation in this row.",-10,10,20
+d5,4,tj-040,0,A,AB,I chose the row that gives my ingroup the highest allocation.,10,15,5
+d5,4,tj-014,5,A,AB,"I continued my previous choice, which gives the outgroup the largest allocation.",-10,10,20
+d5,4,tj-046,3,A,AA,This row keeps both allocations close while modestly favoring the other group.,-2,12,14
+d5,4,tj-048,5,B,BB,This row gives my ingroup the most while keeping the outgroup allocation at 10.,10,20,10
+d5,4,tj-045,5,B,BB,This row gives the ingroup the highest allocation while still providing 10 to the outgroup.,10,20,10
+d5,4,tj-012,5,B,AB,I chose the row that gives my ingroup the most while keeping the outgroup's allocation at 10.,10,20,10
+d5,4,tj-000,5,B,AB,I chose the row that gives the highest ingroup allocation while still providing 10 to the outgroup.,10,20,10
+d5,4,tj-038,5,B,AB,"This row gives my ingroup the highest allocation, consistent with my previous choices.",10,20,10
+d5,4,tj-037,5,B,AB,I chose the row that gives the ingroup the highest allocation.,10,20,10
+d5,4,tj-029,5,B,BB,I chose the row that gives the ingroup the largest allocation while keeping the outgroup allocation substantial.,10,20,10
+d5,4,tj-018,5,B,BB,I’m keeping my previous choice because it gives the ingroup the most while still providing the outgroup with 10.,10,20,10
+d5,4,tj-003,5,B,AB,I continue to prioritize the highest allocation for my ingroup while still giving the outgroup 10.,10,20,10
+d5,4,tj-007,5,B,AB,This row gives the ingroup the most while still allocating 10 to the outgroup.,10,20,10
+d5,4,tj-011,5,B,BB,This row gives my ingroup the largest allocation while still providing 10 to the outgroup.,10,20,10
+d5,4,tj-039,5,B,AB,This row gives the ingroup the most while keeping the outgroup allocation at 10.,10,20,10
+d5,4,tj-013,5,B,AB,I continue to prioritize the highest allocation to my ingroup.,10,20,10
+d5,4,tj-023,5,B,AB,This row gives the ingroup the most while still providing 10 to the outgroup.,10,20,10
+d5,4,tj-024,5,B,BB,I chose the row that gives my ingroup the highest allocation while keeping the outgroup allocation at 10.,10,20,10
+d5,4,tj-036,5,B,BB,I chose the row that gives the ingroup the highest payoff.,10,20,10
+d5,4,tj-026,3,B,BB,It gives both groups substantial allocations while keeping the difference small.,2,14,12
+d5,4,tj-047,5,B,AB,I chose the row that gives my ingroup the most while keeping the outgroup's allocation as high as possible.,10,20,10
+d5,4,tj-035,5,B,AB,I chose the row that maximizes my ingroup's allocation while still giving the outgroup 10.,10,20,10
+d5,4,tj-049,5,B,AB,I am continuing my previous choice to give the ingroup the highest allocation.,10,20,10
+d5,4,tj-006,5,B,AB,I chose the row that gives the ingroup the highest allocation and the greatest combined total.,10,20,10
+d5,4,tj-030,5,B,AB,"It gives the ingroup the highest allocation, consistent with my previous choices.",10,20,10
+d5,4,tj-017,5,B,AB,This row gives the ingroup the most while keeping the outgroup allocation at 10.,10,20,10
+d5,4,tj-027,5,B,BB,This row gives the ingroup the largest allocation while keeping the outgroup allocation at 10.,10,20,10
+d5,4,tj-019,5,B,BB,"This row maximizes my ingroup allocation, consistent with my previous choices.",10,20,10
+d5,5,tj-005,2,A,AB,"I’m continuing my previous choice, keeping the allocations relatively close while giving both groups substantial amounts.",2,13,11
+d5,5,tj-031,5,A,AA,I’m continuing my previous choice and giving the outgroup the most while retaining a fair share for my ingroup.,-10,10,20
+d5,5,tj-015,0,A,AB,This row gives my ingroup the highest payoff.,10,15,5
+d5,5,tj-009,5,A,AA,I continue to prioritize the outgroup's allocation while giving my ingroup a positive amount.,-10,10,20
+d5,5,tj-020,0,A,AB,"I chose the row that gives my group the largest allocation, consistent with my previous choices.",10,15,5
+d5,5,tj-001,0,A,AB,I continue prioritizing the highest payoff for my ingroup.,10,15,5
+d5,5,tj-008,5,A,AB,I continue choosing the row that gives the outgroup the most while allocating 10 to the ingroup.,-10,10,20
+d5,5,tj-010,1,A,AA,I chose a moderately balanced allocation that favors the ingroup while keeping the gap small.,6,14,8
+d5,5,tj-044,5,A,AB,This row maximizes the combined allocation at 30 points.,-10,10,20
+d5,5,tj-032,5,A,AB,I continue prioritizing the outgroup while keeping 10 for my ingroup.,-10,10,20
+d5,5,tj-022,5,A,AA,This row gives my group the highest combined total while the published results show it is behind.,-10,10,20
+d5,5,tj-002,5,A,AB,I continued choosing the row that gives the outgroup the most while still allocating something to my ingroup.,-10,10,20
+d5,5,tj-016,0,A,AA,"My ingroup is behind, so I chose the row that gives it the most points.",10,15,5
+d5,5,tj-004,0,A,AA,I continue choosing the row that gives my ingroup the most.,10,15,5
+d5,5,tj-025,0,A,AA,I continue to prioritize giving my group the highest available amount.,10,15,5
+d5,5,tj-028,0,A,AB,I chose the row that gives my ingroup the most.,10,15,5
+d5,5,tj-034,3,A,AA,This keeps the allocation relatively balanced while giving the outgroup slightly more.,-2,12,14
+d5,5,tj-033,0,A,AB,I am continuing to prioritize the highest possible ingroup payoff.,10,15,5
+d5,5,tj-021,3,A,AA,I’m continuing my earlier choice by giving the outgroup slightly more while keeping the ingroup allocation substantial.,-2,12,14
+d5,5,tj-043,0,A,AB,I’m continuing my earlier choice to maximize my group’s allocation.,10,15,5
+d5,5,tj-042,5,A,AA,"I’m continuing my previous choice, which gives the outgroup the most while still allocating a substantial amount to my ingroup.",-10,10,20
+d5,5,tj-041,5,A,AB,"I continue prioritizing the outgroup, which receives the largest allocation in this row.",-10,10,20
+d5,5,tj-040,0,A,AB,I chose the row that gives my ingroup the highest allocation.,10,15,5
+d5,5,tj-014,5,A,AB,"I’m continuing my previous choice, which gives the outgroup the largest allocation.",-10,10,20
+d5,5,tj-046,3,A,AB,This row keeps both allocations close while modestly favoring the other group.,-2,12,14
+d5,5,tj-048,5,B,AB,This row gives my ingroup the highest allocation.,10,20,10
+d5,5,tj-045,5,B,BB,This row gives the ingroup the highest allocation while still providing 10 to the outgroup.,10,20,10
+d5,5,tj-012,5,B,AB,This row gives my ingroup the highest allocation while keeping the outgroup allocation at 10.,10,20,10
+d5,5,tj-000,5,B,AB,I chose the row that gives the highest ingroup allocation while still providing 10 to the outgroup.,10,20,10
+d5,5,tj-038,5,B,AB,"This row gives my ingroup the highest allocation, consistent with my previous choices.",10,20,10
+d5,5,tj-037,5,B,AB,I chose the row that gives the ingroup the highest allocation.,10,20,10
+d5,5,tj-029,5,B,AB,I continue to choose the row that maximizes the ingroup allocation while keeping the outgroup allocation substantial.,10,20,10
+d5,5,tj-018,5,B,AB,I’m keeping row 5 because it gives the ingroup the most while still providing the outgroup with 10.,10,20,10
+d5,5,tj-003,5,B,BB,It gives my ingroup the highest allocation while still providing 10 to the outgroup.,10,20,10
+d5,5,tj-007,5,B,BB,This row gives the ingroup the most while still allocating 10 to the outgroup.,10,20,10
+d5,5,tj-011,5,B,BB,This row gives my ingroup the largest allocation while still providing 10 to the outgroup.,10,20,10
+d5,5,tj-039,5,B,AB,"It gives the ingroup the highest allocation, consistent with my previous choices.",10,20,10
+d5,5,tj-013,5,B,BB,I continue to prioritize the highest allocation to my ingroup.,10,20,10
+d5,5,tj-023,5,B,AB,This row gives the ingroup the most while still providing 10 to the outgroup.,10,20,10
+d5,5,tj-024,5,B,BB,I chose the row that gives my ingroup the highest allocation.,10,20,10
+d5,5,tj-036,5,B,BB,This row gives the ingroup the highest payoff.,10,20,10
+d5,5,tj-026,2,B,BB,It allocates substantially to both groups while keeping the difference small.,-2,11,13
+d5,5,tj-047,5,B,BB,I continue choosing the row that maximizes my ingroup's allocation.,10,20,10
+d5,5,tj-035,3,B,AB,I chose a near-balanced allocation that modestly favors my ingroup while narrowing the groups' overall gap.,2,14,12
+d5,5,tj-049,5,B,BB,I am continuing my previous choice to give the ingroup the highest allocation.,10,20,10
+d5,5,tj-006,5,B,AB,I chose the row that gives the ingroup the highest allocation.,10,20,10
+d5,5,tj-030,5,B,AB,"It gives the ingroup the highest allocation, consistent with my previous choices.",10,20,10
+d5,5,tj-017,5,B,AB,I chose the row that gives the ingroup the most while keeping the outgroup allocation at 10.,10,20,10
+d5,5,tj-027,5,B,AB,This row gives the ingroup the largest allocation while keeping the outgroup allocation at 10.,10,20,10
+d5,5,tj-019,5,B,AB,"This row maximizes my ingroup allocation, consistent with my previous choices.",10,20,10
+d5,6,tj-005,2,A,AB,This maintains my consistent choice of giving both groups substantial allocations while keeping the difference modest.,2,13,11
+d5,6,tj-031,5,A,AA,"I’m continuing my previous choice, giving the outgroup the most while keeping a fair share for my ingroup.",-10,10,20
+d5,6,tj-015,0,A,AA,This row gives my ingroup the highest payoff.,10,15,5
+d5,6,tj-009,5,A,AB,I continue to prioritize the outgroup's allocation while giving my ingroup a positive amount.,-10,10,20
+d5,6,tj-020,0,A,AA,"I chose the row that gives my group the largest allocation, consistent with my previous choices.",10,15,5
+d5,6,tj-001,0,A,AB,I continue prioritizing the highest payoff for my ingroup.,10,15,5
+d5,6,tj-008,5,A,AA,I continue choosing the row that gives the outgroup the most while allocating 10 to the ingroup.,-10,10,20
+d5,6,tj-010,2,A,AB,I chose a near-balanced allocation that modestly favors the ingroup while keeping both sides' totals in view.,2,13,11
+d5,6,tj-044,5,A,AB,This row maximizes the combined allocation at 30 points.,-10,10,20
+d5,6,tj-032,5,A,AB,I continue choosing the row that gives the outgroup the most while keeping 10 for my ingroup.,-10,10,20
+d5,6,tj-022,5,A,AB,This row gives my group the highest combined total while the published results show it is behind.,-10,10,20
+d5,6,tj-002,5,A,AA,I’m continuing to prioritize the largest allocation to the outgroup while still giving something to my ingroup.,-10,10,20
+d5,6,tj-016,0,A,AA,"My ingroup is behind, so I chose the row that gives it the most points.",10,15,5
+d5,6,tj-004,0,A,AB,I continue choosing the row that gives my ingroup the most.,10,15,5
+d5,6,tj-025,0,A,AB,I continue to prioritize giving my group the highest available amount.,10,15,5
+d5,6,tj-028,0,A,AB,I chose the row that gives my ingroup the most.,10,15,5
+d5,6,tj-034,3,A,AA,This keeps the allocation relatively balanced while giving the outgroup slightly more.,-2,12,14
+d5,6,tj-033,0,A,AA,I am continuing to prioritize the highest possible ingroup payoff.,10,15,5
+d5,6,tj-021,3,A,AB,"I’m continuing my previous choice, giving the outgroup slightly more while keeping the ingroup allocation substantial.",-2,12,14
+d5,6,tj-043,0,A,AA,I chose the row that gives my group the most.,10,15,5
+d5,6,tj-042,5,A,AB,I’m maintaining my previous choice because it allocates the most to the outgroup while still giving a substantial amount to my ingroup.,-10,10,20
+d5,6,tj-041,5,A,AB,I choose the row that gives the outgroup the largest allocation while still providing something to the ingroup.,-10,10,20
+d5,6,tj-040,0,A,AB,I chose the row that gives my ingroup the highest allocation.,10,15,5
+d5,6,tj-014,5,A,AB,"I’m continuing my previous choice, which gives the outgroup the largest allocation.",-10,10,20
+d5,6,tj-046,3,A,AA,This row keeps the allocations close while modestly favoring the other group.,-2,12,14
+d5,6,tj-048,5,B,BB,This row gives my ingroup the highest allocation.,10,20,10
+d5,6,tj-045,5,B,BB,This row gives the ingroup the highest allocation while still providing 10 to the outgroup.,10,20,10
+d5,6,tj-012,5,B,AB,This row gives my ingroup the highest allocation while keeping the outgroup allocation at 10.,10,20,10
+d5,6,tj-000,5,B,BB,I chose the row that gives the highest ingroup allocation while still providing 10 to the outgroup.,10,20,10
+d5,6,tj-038,5,B,AB,"This row gives my ingroup the highest allocation, consistent with my previous choices.",10,20,10
+d5,6,tj-037,5,B,AB,I chose the row that gives the ingroup the highest allocation.,10,20,10
+d5,6,tj-029,5,B,BB,I continue to choose the row that maximizes the ingroup allocation while keeping the outgroup allocation substantial.,10,20,10
+d5,6,tj-018,5,B,AB,I’m keeping row 5 because it gives the ingroup the most while still providing the outgroup with 10.,10,20,10
+d5,6,tj-003,5,B,AB,It gives my ingroup the highest allocation while still providing 10 to the outgroup.,10,20,10
+d5,6,tj-007,5,B,BB,This row maximizes the ingroup allocation while still giving the outgroup 10.,10,20,10
+d5,6,tj-011,5,B,BB,This row gives my ingroup the largest allocation while still providing 10 to the outgroup.,10,20,10
+d5,6,tj-039,5,B,AB,"It gives the ingroup the highest allocation, consistent with my previous choices.",10,20,10
+d5,6,tj-013,5,B,AB,I continue to prioritize the highest allocation to my ingroup.,10,20,10
+d5,6,tj-023,5,B,AB,This row gives the ingroup the highest allocation while still providing 10 to the outgroup.,10,20,10
+d5,6,tj-024,5,B,AB,It gives my ingroup the highest allocation while keeping the outgroup allocation at 10.,10,20,10
+d5,6,tj-036,5,B,BB,This row gives the ingroup the highest payoff.,10,20,10
+d5,6,tj-026,3,B,BB,It gives both groups substantial allocations while keeping the difference small.,2,14,12
+d5,6,tj-047,5,B,BB,I continue choosing the row that maximizes my ingroup's allocation.,10,20,10
+d5,6,tj-035,3,B,AB,I chose a nearly balanced allocation that modestly favors my ingroup.,2,14,12
+d5,6,tj-049,5,B,AB,I am continuing to give the ingroup the highest allocation.,10,20,10
+d5,6,tj-006,5,B,AB,I chose the row that gives the ingroup the highest allocation.,10,20,10
+d5,6,tj-030,5,B,AB,"It gives the ingroup the highest allocation, consistent with my previous choices.",10,20,10
+d5,6,tj-017,5,B,BB,This row maximizes the ingroup allocation and maintains consistency with my previous choices.,10,20,10
+d5,6,tj-027,5,B,AB,This row gives the ingroup the largest allocation while keeping the outgroup allocation at 10.,10,20,10
+d5,6,tj-019,5,B,AB,"This row maximizes the ingroup allocation, consistent with my previous choices.",10,20,10
+d5,7,tj-005,2,A,AB,"This continues my consistent choice, giving both groups substantial amounts while keeping the difference modest.",2,13,11
+d5,7,tj-031,5,A,AB,"I’m continuing my previous choice, giving the outgroup the most while keeping a fair share for my ingroup.",-10,10,20
+d5,7,tj-015,0,A,AA,This row maximizes my ingroup's payoff.,10,15,5
+d5,7,tj-009,5,A,AB,It gives the outgroup the most while still providing a positive allocation to my ingroup.,-10,10,20
+d5,7,tj-020,0,A,AB,"I chose the row that gives my group the largest allocation, consistent with my previous choices.",10,15,5
+d5,7,tj-001,0,A,AB,I continue prioritizing the highest payoff for my ingroup.,10,15,5
+d5,7,tj-008,5,A,AA,I continue choosing the row that gives the outgroup the most while allocating 10 to the ingroup.,-10,10,20
+d5,7,tj-010,2,A,AB,I chose a near-balanced allocation that modestly favors the ingroup while keeping both groups' totals in view.,2,13,11
+d5,7,tj-044,5,A,AA,This row maximizes the combined allocation at 30 points.,-10,10,20
+d5,7,tj-032,5,A,AB,I continue choosing the row that maximizes the outgroup allocation while retaining 10 for my ingroup.,-10,10,20
+d5,7,tj-022,5,A,AA,This row gives my group the highest combined total while it remains behind in the published results.,-10,10,20
+d5,7,tj-002,5,A,AB,I am continuing to maximize the outgroup allocation while still allocating to my ingroup.,-10,10,20
+d5,7,tj-016,0,A,AB,"My ingroup is behind, so I chose the row that gives it the most points.",10,15,5
+d5,7,tj-004,0,A,AB,"I choose the row that gives my ingroup the most, consistent with my past choices.",10,15,5
+d5,7,tj-025,0,A,AB,I continue to prioritize giving my group the highest available amount.,10,15,5
+d5,7,tj-028,0,A,AB,I chose the row that gives my ingroup the most.,10,15,5
+d5,7,tj-034,3,A,AA,This maintains my consistent relatively balanced choice while giving the outgroup slightly more.,-2,12,14
+d5,7,tj-033,0,A,AA,I continue to prioritize the highest possible ingroup payoff.,10,15,5
+d5,7,tj-021,3,A,AA,This maintains a consistent balance by giving the outgroup slightly more while preserving a substantial ingroup allocation.,-2,12,14
+d5,7,tj-043,0,A,AB,I chose the row that gives my group the most.,10,15,5
+d5,7,tj-042,5,A,AB,I’m maintaining my consistent choice because it maximizes the outgroup allocation while preserving a substantial ingroup allocation.,-10,10,20
+d5,7,tj-041,5,A,AA,I continue maximizing the outgroup allocation while preserving a positive allocation for the ingroup.,-10,10,20
+d5,7,tj-040,0,A,AA,I chose the row that gives my ingroup the highest allocation.,10,15,5
+d5,7,tj-014,5,A,AA,"I’m continuing my previous choice, which gives the outgroup the largest allocation.",-10,10,20
+d5,7,tj-046,3,A,AB,This row keeps the allocations close while modestly favoring the other group.,-2,12,14
+d5,7,tj-048,5,B,AB,I continue choosing the row that gives my ingroup the highest allocation.,10,20,10
+d5,7,tj-045,5,B,BB,This row gives the ingroup the highest allocation while still providing 10 to the outgroup.,10,20,10
+d5,7,tj-012,5,B,AB,This row maintains my prior strategy and gives the ingroup the highest allocation.,10,20,10
+d5,7,tj-000,5,B,AB,This row maximizes the ingroup allocation while still allocating 10 to the outgroup.,10,20,10
+d5,7,tj-038,5,B,AB,"This row gives my ingroup the highest allocation, consistent with my previous choices.",10,20,10
+d5,7,tj-037,5,B,AB,I chose the row that gives the ingroup the highest allocation.,10,20,10
+d5,7,tj-029,5,B,AB,I continue to choose the row that maximizes the ingroup allocation while keeping the outgroup allocation substantial.,10,20,10
+d5,7,tj-018,5,B,BB,I chose row 5 because it maximizes the ingroup allocation while still giving the outgroup 10.,10,20,10
+d5,7,tj-003,5,B,BB,It gives my ingroup the highest allocation while still providing 10 to the outgroup.,10,20,10
+d5,7,tj-007,5,B,BB,This row gives the ingroup the most while still allocating 10 to the outgroup.,10,20,10
+d5,7,tj-011,5,B,AB,This row maximizes the ingroup allocation while maintaining the same consistent strategy as prior rounds.,10,20,10
+d5,7,tj-039,5,B,BB,"It gives the ingroup the highest allocation, consistent with my previous choices.",10,20,10
+d5,7,tj-013,5,B,AB,I continue to prioritize the highest allocation to my ingroup.,10,20,10
+d5,7,tj-023,5,B,BB,This row maximizes the ingroup allocation while still giving 10 to the outgroup.,10,20,10
+d5,7,tj-024,5,B,BB,I chose the row that gives my ingroup the highest allocation.,10,20,10
+d5,7,tj-036,5,B,AB,This row gives the ingroup the highest payoff.,10,20,10
+d5,7,tj-026,2,B,AB,It gives both groups substantial allocations while keeping the difference small.,-2,11,13
+d5,7,tj-047,5,B,BB,I continue choosing the row that maximizes my ingroup's allocation.,10,20,10
+d5,7,tj-035,3,B,BB,I chose a near-balanced allocation that modestly favors my ingroup.,2,14,12
+d5,7,tj-049,5,B,AB,I am continuing to give the ingroup the highest allocation.,10,20,10
+d5,7,tj-006,5,B,AB,I chose the row that gives the ingroup the highest allocation.,10,20,10
+d5,7,tj-030,5,B,AB,"It gives the ingroup the highest allocation, consistent with my previous choices.",10,20,10
+d5,7,tj-017,5,B,AB,This row gives the ingroup the most and keeps my choices consistent.,10,20,10
+d5,7,tj-027,5,B,BB,This row gives the ingroup the largest allocation while keeping the outgroup allocation at 10.,10,20,10
+d5,7,tj-019,5,B,AB,"This maximizes the ingroup allocation, consistent with my previous choices.",10,20,10
+d5,8,tj-005,2,A,AA,"This continues my consistent choice, giving both groups substantial allocations while keeping the difference modest.",2,13,11
+d5,8,tj-031,5,A,AB,"I’m continuing my previous choice, giving the outgroup the most while keeping a fair share for my ingroup.",-10,10,20
+d5,8,tj-015,0,A,AB,This row maximizes my ingroup's payoff.,10,15,5
+d5,8,tj-009,5,A,AB,It gives the outgroup the most while still providing a positive allocation to my ingroup.,-10,10,20
+d5,8,tj-020,0,A,AA,"I chose the row that gives my group the largest allocation, consistent with my previous choices.",10,15,5
+d5,8,tj-001,0,A,AB,I continue prioritizing the highest payoff for my ingroup.,10,15,5
+d5,8,tj-008,5,A,AA,I continue choosing the row that gives the outgroup the most while allocating 10 to the ingroup.,-10,10,20
+d5,8,tj-010,2,A,AA,I chose a near-balanced allocation that modestly favors the ingroup while keeping both groups' totals in view.,2,13,11
+d5,8,tj-044,5,A,AA,This row maximizes the combined allocation at 30 points.,-10,10,20
+d5,8,tj-032,5,A,AB,I choose the row that maximizes the outgroup allocation while keeping 10 for my ingroup.,-10,10,20
+d5,8,tj-022,5,A,AB,This row gives my group the highest combined total while it remains behind in the published results.,-10,10,20
+d5,8,tj-002,5,A,AB,I continue to prioritize the largest outgroup allocation while still giving something to my ingroup.,-10,10,20
+d5,8,tj-016,5,A,AA,"My ingroup is behind overall, so I chose the row that gives it the most points.",-10,10,20
+d5,8,tj-004,0,A,AB,"I chose the row that gives my ingroup the most, consistent with my past choices.",10,15,5
+d5,8,tj-025,0,A,AB,I continue to prioritize giving my group the highest available amount.,10,15,5
+d5,8,tj-028,0,A,AB,I chose the row that gives my ingroup the most.,10,15,5
+d5,8,tj-034,3,A,AB,This keeps the allocation relatively balanced while giving the outgroup slightly more.,-2,12,14
+d5,8,tj-033,0,A,AA,I chose the row that gives my ingroup the highest payoff.,10,15,5
+d5,8,tj-021,3,A,AB,"I’m continuing my previous choice, giving the outgroup slightly more while keeping the ingroup allocation substantial.",-2,12,14
+d5,8,tj-043,0,A,AB,I chose the row that gives my group the most.,10,15,5
+d5,8,tj-042,5,A,AB,I’m maintaining my consistent choice because it gives the outgroup the most while preserving a substantial ingroup allocation.,-10,10,20
+d5,8,tj-041,5,A,AA,I continue choosing the row that gives the outgroup the largest allocation while leaving a positive amount for the ingroup.,-10,10,20
+d5,8,tj-040,0,A,AB,I chose the row that gives my ingroup the highest allocation.,10,15,5
+d5,8,tj-014,5,A,AA,"I’m continuing my previous choice, which gives the outgroup the largest allocation.",-10,10,20
+d5,8,tj-046,3,A,AA,This row keeps the allocations close while modestly favoring the other group.,-2,12,14
+d5,8,tj-048,5,B,AB,This row gives my ingroup the highest allocation.,10,20,10
+d5,8,tj-045,5,B,BB,This row gives the ingroup the highest allocation while still providing 10 to the outgroup.,10,20,10
+d5,8,tj-012,5,B,AB,This row gives my ingroup the highest allocation while keeping the outgroup allocation at 10.,10,20,10
+d5,8,tj-000,5,B,AB,I continue choosing the row that maximizes the ingroup allocation while giving the outgroup 10.,10,20,10
+d5,8,tj-038,5,B,BB,"This row gives my ingroup the highest allocation, consistent with my previous choices.",10,20,10
+d5,8,tj-037,5,B,BB,I chose the row that gives the ingroup the highest allocation.,10,20,10
+d5,8,tj-029,5,B,AB,This row maximizes the ingroup allocation while still giving the outgroup a substantial amount.,10,20,10
+d5,8,tj-018,5,B,AB,I chose row 5 because it maximizes the ingroup allocation while still giving the outgroup 10.,10,20,10
+d5,8,tj-003,5,B,AB,It gives my ingroup the highest allocation while still providing 10 to the outgroup.,10,20,10
+d5,8,tj-007,5,B,AB,This row maintains the prior strategy by maximizing the ingroup allocation while still giving the outgroup 10.,10,20,10
+d5,8,tj-011,5,B,AB,This row gives my ingroup the largest allocation while keeping the established strategy consistent.,10,20,10
+d5,8,tj-039,5,B,AB,"It gives the ingroup the highest allocation, consistent with my previous choices.",10,20,10
+d5,8,tj-013,5,B,AB,I continue to prioritize the highest allocation to my ingroup.,10,20,10
+d5,8,tj-023,5,B,BB,This row maximizes the ingroup allocation while still giving 10 to the outgroup.,10,20,10
+d5,8,tj-024,5,B,AB,It continues the consistent choice that maximizes the ingroup allocation.,10,20,10
+d5,8,tj-036,5,B,BB,This row gives the ingroup the highest payoff.,10,20,10
+d5,8,tj-026,3,B,AB,It keeps the allocations close while giving both groups a substantial amount.,2,14,12
+d5,8,tj-047,5,B,AB,I continue choosing the row that maximizes my ingroup's allocation.,10,20,10
+d5,8,tj-035,3,B,BB,I chose a near-balanced allocation that modestly favors my ingroup while preserving a strong outgroup allocation.,2,14,12
+d5,8,tj-049,5,B,BB,I am continuing to give the ingroup the highest allocation.,10,20,10
+d5,8,tj-006,5,B,BB,I chose the row that gives the ingroup the highest allocation.,10,20,10
+d5,8,tj-030,5,B,AB,"It gives the ingroup the highest allocation, consistent with my previous choices.",10,20,10
+d5,8,tj-017,5,B,BB,This row maximizes the ingroup allocation and remains consistent with my previous choices.,10,20,10
+d5,8,tj-027,5,B,AB,This row gives the ingroup the largest allocation while still providing 10 to the outgroup.,10,20,10
+d5,8,tj-019,5,B,BB,"This row maximizes the ingroup allocation, consistent with my previous choices.",10,20,10
+d5,9,tj-005,2,A,AA,This maintains a balanced allocation while giving both groups substantial amounts.,2,13,11
+d5,9,tj-031,5,A,AA,I am continuing my consistent choice of maximizing the outgroup allocation while preserving a fair ingroup share.,-10,10,20
+d5,9,tj-015,0,A,AA,This row maximizes my ingroup's payoff.,10,15,5
+d5,9,tj-009,5,A,AB,It gives the outgroup the most while still providing a positive allocation to my ingroup.,-10,10,20
+d5,9,tj-020,0,A,AA,"I chose the row that gives my group the largest allocation, consistent with my previous choices.",10,15,5
+d5,9,tj-001,0,A,AB,I continue prioritizing the highest payoff for my ingroup.,10,15,5
+d5,9,tj-008,5,A,AA,I continue choosing the row that maximizes the outgroup allocation while giving 10 to the ingroup.,-10,10,20
+d5,9,tj-010,0,A,AB,I chose the row that most favors the ingroup to help offset its persistent deficit in the published totals.,10,15,5
+d5,9,tj-044,5,A,AA,This row maximizes the combined allocation at 30 points.,-10,10,20
+d5,9,tj-032,5,A,AB,I continue maximizing the outgroup allocation while retaining 10 for my ingroup.,-10,10,20
+d5,9,tj-022,5,A,AB,This row maximizes the combined allocation while directing more to the group that remains behind.,-10,10,20
+d5,9,tj-002,5,A,AB,I continue to maximize the outgroup allocation while still allocating to my ingroup.,-10,10,20
+d5,9,tj-016,0,A,AB,"The ingroup remains substantially behind in the published totals, so this row directs it the most points.",10,15,5
+d5,9,tj-004,0,A,AB,"I continue choosing the row that gives my ingroup the most, consistent with my past choices.",10,15,5
+d5,9,tj-025,0,A,AA,I continue to prioritize giving my group the highest available amount.,10,15,5
+d5,9,tj-028,0,A,AB,I chose the row that gives my ingroup the most.,10,15,5
+d5,9,tj-034,3,A,AB,This maintains a relatively balanced allocation while giving the outgroup slightly more.,-2,12,14
+d5,9,tj-033,0,A,AA,I continue to prioritize the highest possible ingroup payoff.,10,15,5
+d5,9,tj-021,3,A,AB,"I’m continuing my previous choice, giving the outgroup slightly more while keeping the ingroup allocation substantial.",-2,12,14
+d5,9,tj-043,0,A,AA,I’m continuing to choose the row that gives my group the most.,10,15,5
+d5,9,tj-042,5,A,AA,I’m maintaining my consistent choice because it maximizes the outgroup allocation while preserving a substantial ingroup allocation.,-10,10,20
+d5,9,tj-041,5,A,AB,I continue maximizing the outgroup allocation while preserving a positive allocation for the ingroup.,-10,10,20
+d5,9,tj-040,0,A,AB,I chose the row that gives my ingroup the highest allocation.,10,15,5
+d5,9,tj-014,5,A,AB,"I’m continuing my previous choice, which gives the outgroup the largest allocation.",-10,10,20
+d5,9,tj-046,3,A,AB,This row keeps the allocations close while modestly favoring the other group.,-2,12,14
+d5,9,tj-048,5,B,AB,This row gives my ingroup the highest allocation.,10,20,10
+d5,9,tj-045,5,B,AB,This row gives the ingroup the highest allocation while still providing 10 to the outgroup.,10,20,10
+d5,9,tj-012,5,B,BB,This row maintains my prior strategy and gives the ingroup the highest allocation.,10,20,10
+d5,9,tj-000,5,B,BB,This row maximizes the ingroup allocation while still providing 10 to the outgroup.,10,20,10
+d5,9,tj-038,5,B,AB,"This row gives my ingroup the highest allocation, consistent with my previous choices.",10,20,10
+d5,9,tj-037,5,B,AB,This row gives the ingroup the highest allocation while maintaining a positive outgroup allocation.,10,20,10
+d5,9,tj-029,5,B,AB,This row maximizes the ingroup allocation while still providing a substantial allocation to the outgroup.,10,20,10
+d5,9,tj-018,5,B,AB,I chose row 5 because it gives the ingroup the most while still providing the outgroup with 10.,10,20,10
+d5,9,tj-003,5,B,BB,It gives my ingroup the highest allocation while still providing 10 to the outgroup.,10,20,10
+d5,9,tj-007,5,B,BB,This row maximizes the ingroup allocation while still giving the outgroup 10.,10,20,10
+d5,9,tj-011,5,B,AB,This row maximizes the ingroup allocation and maintains the consistent strategy used in prior rounds.,10,20,10
+d5,9,tj-039,5,B,AB,"It gives the ingroup the highest allocation, consistent with my previous choices.",10,20,10
+d5,9,tj-013,5,B,AB,I chose the row that gives the ingroup the highest allocation.,10,20,10
+d5,9,tj-023,5,B,AB,This row maintains the established choice of maximizing the ingroup allocation while still giving 10 to the outgroup.,10,20,10
+d5,9,tj-024,5,B,AB,It maintains the consistent choice that maximizes the ingroup allocation.,10,20,10
+d5,9,tj-036,5,B,AB,"This row gives the ingroup the highest payoff, consistent with my previous choices.",10,20,10
+d5,9,tj-026,3,B,AB,It keeps the allocations close while giving both groups a substantial amount.,2,14,12
+d5,9,tj-047,5,B,BB,I continue choosing the row that maximizes my ingroup's allocation.,10,20,10
+d5,9,tj-035,3,B,BB,This near-balanced choice modestly favors my ingroup while preserving a substantial allocation for the outgroup.,2,14,12
+d5,9,tj-049,5,B,BB,I am continuing to give the ingroup the highest allocation.,10,20,10
+d5,9,tj-006,0,B,BB,This row maximizes the outgroup allocation to help reduce the persistent disparity between the groups.,-10,5,15
+d5,9,tj-030,5,B,AB,"It gives the ingroup the highest allocation, consistent with my previous choices.",10,20,10
+d5,9,tj-017,5,B,BB,This row maximizes the ingroup allocation and remains consistent with my previous choices.,10,20,10
+d5,9,tj-027,2,B,AB,This row maximizes the combined allocation while keeping the distribution nearly equal.,-2,11,13
+d5,9,tj-019,5,B,BB,"This row maximizes the ingroup allocation, consistent with my previous choices.",10,20,10
+d5,10,tj-005,2,A,AB,This maintains a balanced allocation while giving both groups substantial amounts.,2,13,11
+d5,10,tj-031,5,A,AA,I am maintaining my consistent choice of maximizing the outgroup allocation while preserving a fair ingroup share.,-10,10,20
+d5,10,tj-015,0,A,AB,This row maximizes my ingroup's payoff.,10,15,5
+d5,10,tj-009,5,A,AB,It gives the outgroup the most while still providing a positive allocation to my ingroup.,-10,10,20
+d5,10,tj-020,0,A,AB,"I chose the row that gives my group the largest allocation, consistent with my previous choices.",10,15,5
+d5,10,tj-001,0,A,AB,I continue prioritizing the highest payoff for my ingroup.,10,15,5
+d5,10,tj-008,5,A,AB,I continue choosing the row that maximizes the outgroup allocation while giving 10 to the ingroup.,-10,10,20
+d5,10,tj-010,0,A,AB,I chose the row that most favors the ingroup to continue reducing its persistent deficit in the published totals.,10,15,5
+d5,10,tj-044,5,A,AB,This row maximizes the combined allocation at 30 points.,-10,10,20
+d5,10,tj-032,5,A,AB,I continue maximizing the outgroup allocation while keeping 10 for my ingroup.,-10,10,20
+d5,10,tj-022,5,A,AA,This row maximizes the combined allocation while giving more to the group that remains behind.,-10,10,20
+d5,10,tj-002,5,A,AB,I continue to maximize the outgroup allocation while still allocating to my ingroup.,-10,10,20
+d5,10,tj-016,0,A,AA,"The ingroup remains behind overall, so I chose the row that gives it the most points.",10,15,5
+d5,10,tj-004,0,A,AA,"I continue choosing the row that gives my ingroup the most, consistent with my past choices.",10,15,5
+d5,10,tj-025,0,A,AA,I continue to prioritize giving my group the highest available amount.,10,15,5
+d5,10,tj-028,0,A,AA,I chose the row that gives my ingroup the most.,10,15,5
+d5,10,tj-034,3,A,AB,I’m keeping my consistent choice of a relatively balanced allocation that gives the outgroup slightly more.,-2,12,14
+d5,10,tj-033,0,A,AB,I continue to prioritize the highest possible ingroup payoff.,10,15,5
+d5,10,tj-021,3,A,AB,This maintains a consistent balance by giving the outgroup slightly more while preserving a substantial ingroup allocation.,-2,12,14
+d5,10,tj-043,0,A,AB,I chose the row that gives my group the most.,10,15,5
+d5,10,tj-042,5,A,AA,I’m maintaining my consistent choice because it maximizes the outgroup allocation while preserving a substantial ingroup allocation.,-10,10,20
+d5,10,tj-041,5,A,AB,I continue maximizing the outgroup allocation while preserving a positive allocation for the ingroup.,-10,10,20
+d5,10,tj-040,0,A,AA,I continue to prioritize the highest allocation to my ingroup.,10,15,5
+d5,10,tj-014,5,A,AA,"I’m continuing my previous choice, which gives the outgroup the largest allocation.",-10,10,20
+d5,10,tj-046,3,A,AA,This keeps the allocations close while modestly favoring the other group.,-2,12,14
+d5,10,tj-048,5,B,BB,This row gives my ingroup the highest allocation.,10,20,10
+d5,10,tj-045,5,B,BB,This row gives the ingroup the highest allocation while still providing 10 to the outgroup.,10,20,10
+d5,10,tj-012,5,B,AB,This row gives my ingroup the highest allocation and continues my consistent prior strategy.,10,20,10
+d5,10,tj-000,5,B,BB,I chose the row that maximizes the ingroup allocation while still providing 10 to the outgroup.,10,20,10
+d5,10,tj-038,5,B,AB,"This row gives my ingroup the highest allocation, consistent with my previous choices.",10,20,10
+d5,10,tj-037,5,B,AB,This row gives the ingroup the highest allocation while preserving a positive outgroup allocation.,10,20,10
+d5,10,tj-029,5,B,AB,This row maximizes the ingroup allocation while still providing a substantial allocation to the outgroup.,10,20,10
+d5,10,tj-018,5,B,AB,I chose row 5 because it gives the ingroup the most while still providing the outgroup with 10.,10,20,10
+d5,10,tj-003,5,B,AB,It gives my ingroup the highest allocation while still providing 10 to the outgroup.,10,20,10
+d5,10,tj-007,5,B,AB,This continues my previous strategy of maximizing the ingroup allocation while giving the outgroup 10.,10,20,10
+d5,10,tj-011,5,B,AB,This row gives my ingroup the largest allocation while keeping the established strategy consistent.,10,20,10
+d5,10,tj-039,5,B,BB,"It gives the ingroup the highest allocation, consistent with my previous choices.",10,20,10
+d5,10,tj-013,5,B,AB,I continue to prioritize the highest allocation to my ingroup.,10,20,10
+d5,10,tj-023,5,B,AB,This row maximizes the ingroup allocation while still giving 10 to the outgroup.,10,20,10
+d5,10,tj-024,5,B,BB,I chose the row that gives my ingroup the highest allocation.,10,20,10
+d5,10,tj-036,5,B,AB,"This row gives the ingroup the highest payoff, consistent with my previous choices.",10,20,10
+d5,10,tj-026,5,B,BB,This maximizes the ingroup allocation and may help reduce its persistent cumulative disadvantage.,10,20,10
+d5,10,tj-047,5,B,AB,I continue choosing the row that maximizes my ingroup's allocation.,10,20,10
+d5,10,tj-035,3,B,AB,I chose a near-balanced allocation that modestly favors my ingroup while preserving a substantial outgroup allocation.,2,14,12
+d5,10,tj-049,5,B,BB,I am continuing to give the ingroup the highest allocation.,10,20,10
+d5,10,tj-006,0,B,BB,I chose the row that maximizes the outgroup allocation and reduces the persistent disparity between groups.,-10,5,15
+d5,10,tj-030,5,B,AB,"It gives the ingroup the highest allocation, consistent with my previous choices.",10,20,10
+d5,10,tj-017,5,B,AB,This row maximizes the ingroup allocation and stays consistent with my previous choices.,10,20,10
+d5,10,tj-027,5,B,BB,This row maximizes the combined allocation while giving the ingroup the largest amount.,10,20,10
+d5,10,tj-019,5,B,BB,"This row maximizes the ingroup allocation, consistent with my previous choices.",10,20,10

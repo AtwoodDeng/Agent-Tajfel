@@ -1,0 +1,5 @@
+step,mean_favour,favour_parity,favour_mjp,favour_mif,mean_gap,gap_parity,mif_favour_share,mean_joint,mean_ingroup_points,mean_outgroup_points,n_allocations,n_agents,fallback_rate,events
+0,,,,,,,,,,,0,0,0.0,
+1,1.2,1.2,,,1.2,1.2,,20,10.6,9.4,10,10,0.0,t=1 opens with the first matrix type
+2,0.0,,0.0,,0,,,26.2,13.1,13.1,10,10,0.0,
+3,0.0,,,0.0,0,,0.4,25.6,12.8,12.8,10,10,0.0,

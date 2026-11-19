@@ -1,0 +1,67 @@
+{
+  "study_id": "tajfel",
+  "layers": [
+    {
+      "name": "allocation_matrix",
+      "modality": "physical",
+      "scope": "macro",
+      "dynamics": "scheduled",
+      "source": null,
+      "schema_ref": null,
+      "description": "the 13-point payoff matrix currently on the desk"
+    },
+    {
+      "name": "own_group",
+      "modality": "physical",
+      "scope": "local",
+      "dynamics": "static",
+      "source": null,
+      "schema_ref": null,
+      "description": "this agent's group + the condition's label visibility"
+    },
+    {
+      "name": "framing",
+      "modality": "information",
+      "scope": "macro",
+      "dynamics": "scheduled",
+      "source": null,
+      "schema_ref": null,
+      "description": "the condition's one-line restatement of the cover story"
+    }
+  ],
+  "scheduled_events": [
+    {
+      "at_step": 1,
+      "target_layer": "allocation_matrix",
+      "op": "set",
+      "selector": {},
+      "property_name": "matrix_kind",
+      "value": "parity",
+      "note": "t=1 opens with the first matrix type"
+    }
+  ],
+  "information_program": {
+    "broadcasts": [
+      {
+        "message_id": "c1-framing",
+        "content": "You and another participant were assigned to groups by a trivial criterion. The matrix below shows your group's column and the other group's column.",
+        "channel": "instructions",
+        "at_step": 0,
+        "ttl": 99,
+        "audience": "all",
+        "note": "condition c1: label visible (classic minimal group)"
+      }
+    ]
+  },
+  "provider_ref": "tajfel.env",
+  "provider_args": {
+    "n_agents": 10,
+    "condition": "c1",
+    "matrices": [
+      "parity",
+      "mjp",
+      "mif"
+    ],
+    "label_visible": true
+  }
+}

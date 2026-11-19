@@ -1,0 +1,14 @@
+{
+  "condition": "e4-public-equal",
+  "series": "e4",
+  "steps": 5,
+  "seed": 42,
+  "n_agents": 10,
+  "llm_kind": "openai",
+  "model": null,
+  "driver": "engine",
+  "chat_subrounds": [
+    1,
+    2
+  ]
+}

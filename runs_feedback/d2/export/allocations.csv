@@ -1,0 +1,501 @@
+arm,step,agent_id,row,own_group,pair_type,reason,gap,ingroup_points,outgroup_points
+d2,1,tj-005,0,A,AA,I chose the row that gives my ingroup the most.,10,15,5
+d2,1,tj-031,5,A,AA,I chose the row that gives the outgroup the most while still allocating 10 to my ingroup.,-10,10,20
+d2,1,tj-015,3,A,AB,This row gives the outgroup more while keeping the ingroup allocation substantial.,-2,12,14
+d2,1,tj-009,5,A,AA,I chose the row that gives the outgroup the most while still providing a positive allocation to my ingroup.,-10,10,20
+d2,1,tj-020,5,A,AA,I chose the row that gives the outgroup the largest allocation.,-10,10,20
+d2,1,tj-001,0,A,AA,I chose the row that gives the highest allocation to my ingroup.,10,15,5
+d2,1,tj-008,0,A,AB,I chose the row that gives the highest allocation to the ingroup.,10,15,5
+d2,1,tj-010,0,A,AB,I chose the row that gives my ingroup the most.,10,15,5
+d2,1,tj-044,0,A,AA,I chose the row that gives my ingroup the most.,10,15,5
+d2,1,tj-032,5,A,AB,I chose the row that gives the outgroup the most while retaining a fair share for my ingroup.,-10,10,20
+d2,1,tj-022,0,A,AB,I chose the row that gives my ingroup the most.,10,15,5
+d2,1,tj-002,5,A,AB,I chose the row that gives the outgroup the most while still providing something to the ingroup.,-10,10,20
+d2,1,tj-016,5,A,AB,"I chose the row that gives the outgroup the most, even though it gives my ingroup the least.",-10,10,20
+d2,1,tj-004,5,A,AB,This row gives my ingroup the largest available allocation.,-10,10,20
+d2,1,tj-025,0,A,AB,I chose the row that gives my ingroup the most.,10,15,5
+d2,1,tj-028,0,A,AA,I chose the row that gives my ingroup the most.,10,15,5
+d2,1,tj-034,5,A,AB,I chose the row that gives the outgroup the most while preserving a substantial allocation for my ingroup.,-10,10,20
+d2,1,tj-033,5,A,AB,This row gives the outgroup the most while still allocating 10 to my ingroup.,-10,10,20
+d2,1,tj-021,5,A,AB,I chose the row that gives the outgroup the most while still allocating 10 to my ingroup.,-10,10,20
+d2,1,tj-043,2,A,AB,I chose a balanced option that gives both groups a substantial amount.,2,13,11
+d2,1,tj-042,0,A,AB,I chose the row that gives my ingroup the most.,10,15,5
+d2,1,tj-041,0,A,AB,I chose the row that gives my group the most points.,10,15,5
+d2,1,tj-040,5,A,AA,I chose the row that gives the outgroup the most while still allocating 10 to my ingroup.,-10,10,20
+d2,1,tj-014,0,A,AA,I chose the row that gives my ingroup the most.,10,15,5
+d2,1,tj-046,3,A,AA,I chose a balanced allocation that gives both groups a substantial share.,-2,12,14
+d2,1,tj-048,5,B,BB,I chose the row that gives the ingroup the highest allocation.,10,20,10
+d2,1,tj-045,5,B,AB,This row gives the ingroup the highest allocation while keeping the outgroup allocation at 10.,10,20,10
+d2,1,tj-012,5,B,AB,I chose the row that gives the ingroup the highest allocation.,10,20,10
+d2,1,tj-000,5,B,BB,This row gives the ingroup the highest allocation while still providing the outgroup 10.,10,20,10
+d2,1,tj-038,5,B,BB,I chose the row that gives the largest total allocation.,10,20,10
+d2,1,tj-037,5,B,AB,This row gives the highest ingroup allocation and the lowest outgroup allocation.,10,20,10
+d2,1,tj-029,5,B,AB,I chose the row that gives the highest allocation to my ingroup.,10,20,10
+d2,1,tj-018,5,B,AB,This row gives the highest allocation to my ingroup.,10,20,10
+d2,1,tj-003,5,B,AB,This row gives my ingroup the highest allocation while keeping the outgroup allocation at 10.,10,20,10
+d2,1,tj-007,5,B,AB,This row gives my ingroup the highest allocation while still providing 10 to the outgroup.,10,20,10
+d2,1,tj-011,5,B,AB,I chose the row that gives my ingroup the most while still providing something to the outgroup.,10,20,10
+d2,1,tj-039,5,B,BB,I chose the row that gives my ingroup the most while keeping the outgroup's allocation at 10.,10,20,10
+d2,1,tj-013,5,B,BB,This row gives the highest ingroup allocation.,10,20,10
+d2,1,tj-023,5,B,AB,I chose the row that gives the ingroup the most while keeping the outgroup allocation at 10.,10,20,10
+d2,1,tj-024,5,B,AB,It gives the highest ingroup allocation while still providing 10 to the outgroup.,10,20,10
+d2,1,tj-036,5,B,BB,This row gives the highest allocation to my ingroup.,10,20,10
+d2,1,tj-026,5,B,AB,I chose the row with the highest ingroup allocation.,10,20,10
+d2,1,tj-047,5,B,BB,This row gives the highest ingroup allocation.,10,20,10
+d2,1,tj-035,5,B,AB,This row gives the ingroup the most and the outgroup the least.,10,20,10
+d2,1,tj-049,5,B,BB,I chose the row that gives the ingroup the most while keeping the outgroup allocation at 10.,10,20,10
+d2,1,tj-006,5,B,BB,I chose the row that gives my ingroup the most.,10,20,10
+d2,1,tj-030,5,B,BB,This row gives the ingroup the highest allocation.,10,20,10
+d2,1,tj-017,5,B,AB,I chose the row that gives the ingroup the highest allocation.,10,20,10
+d2,1,tj-027,5,B,AB,This row gives the ingroup the most while keeping the outgroup allocation at 10.,10,20,10
+d2,1,tj-019,5,B,AB,This row gives the ingroup the highest allocation while keeping the outgroup allocation at 10.,10,20,10
+d2,2,tj-005,2,A,AB,This row preserves a modest ingroup advantage while substantially narrowing the gap in response to the cooperative exchange.,2,13,11
+d2,2,tj-031,3,A,AA,This row keeps the allocation nearly equal while providing a strong combined payoff to both groups.,-2,12,14
+d2,2,tj-015,3,A,AB,This row keeps the allocation balanced while providing a high combined payoff.,-2,12,14
+d2,2,tj-009,3,A,AB,This option keeps the allocation nearly equal while providing both groups with positive outcomes.,-2,12,14
+d2,2,tj-020,2,A,AB,This row keeps the allocations nearly equal while modestly favoring the ingroup.,2,13,11
+d2,2,tj-001,3,A,AB,This row keeps the allocations close while providing a relatively high combined benefit to both groups.,-2,12,14
+d2,2,tj-008,2,A,AA,This row keeps the allocation nearly balanced while preserving a slight advantage for the ingroup.,2,13,11
+d2,2,tj-010,0,A,AB,延续上轮优先最大化内群收益的选择。,10,15,5
+d2,2,tj-044,2,A,AB,This row keeps the allocation nearly equal while preserving a slight advantage for my ingroup.,2,13,11
+d2,2,tj-032,5,A,AA,It maximizes the combined allocation while still giving the ingroup a reasonable share.,-10,10,20
+d2,2,tj-022,2,A,AB,This row preserves a modest ingroup advantage while substantially narrowing the gap for a more stable reciprocal outcome.,2,13,11
+d2,2,tj-002,5,A,AA,This gives the outgroup the most while still providing a positive payoff to the ingroup.,-10,10,20
+d2,2,tj-016,3,A,AB,This row keeps both groups' payoffs close while providing a solid outcome for each.,-2,12,14
+d2,2,tj-004,2,A,AA,这一行在保持较高本群体分配的同时，也更接近平衡，兼顾双方利益。,2,13,11
+d2,2,tj-025,0,A,AA,"I chose the row that gives my ingroup the most, consistent with my previous choice.",10,15,5
+d2,2,tj-028,2,A,AA,I chose this balanced row because it provides both groups solid benefits while keeping the difference small.,2,13,11
+d2,2,tj-034,2,A,AB,This option gives both groups substantial shares with only a small difference between them.,2,13,11
+d2,2,tj-033,3,A,AB,This row gives both groups a reasonable share while keeping the allocation gap small.,-2,12,14
+d2,2,tj-021,2,A,AB,This row keeps the allocation nearly equal while preserving a solid combined payoff.,2,13,11
+d2,2,tj-043,3,A,AA,This row keeps the allocation nearly equal while slightly favoring the other group in response to our discussion.,-2,12,14
+d2,2,tj-042,0,A,AA,我延续上一步的选择，优先让自己所在群体获得最多分配。,10,15,5
+d2,2,tj-041,0,A,AB,我继续优先选择让本组获得最高分的方案。,10,15,5
+d2,2,tj-040,3,A,AA,This row nearly equalizes outcomes while still providing substantial benefits to both groups.,-2,12,14
+d2,2,tj-014,3,A,AB,This nearly balanced allocation gives both groups a substantial share.,-2,12,14
+d2,2,tj-046,2,A,AB,This row offers the most balanced allocation while still providing both groups with substantial benefits.,2,13,11
+d2,2,tj-048,5,B,BB,"This row gives our group the highest allocation, consistent with my previous choice.",10,20,10
+d2,2,tj-045,5,B,BB,This row maximizes the ingroup allocation while keeping the outgroup allocation at 10.,10,20,10
+d2,2,tj-012,3,B,AB,This row gives our group a strong allocation while keeping the difference small.,2,14,12
+d2,2,tj-000,5,B,BB,This row gives our group the highest allocation while keeping the outgroup allocation at 10.,10,20,10
+d2,2,tj-038,3,B,AB,This row raises the total allocation while keeping the difference between groups small.,2,14,12
+d2,2,tj-037,5,B,AB,"This row gives the highest allocation to my group, consistent with my previous choice.",10,20,10
+d2,2,tj-029,3,B,BB,This row offers a high total allocation while keeping the two groups' outcomes relatively balanced.,2,14,12
+d2,2,tj-018,5,B,BB,"This row gives my ingroup the highest allocation, consistent with my previous choice.",10,20,10
+d2,2,tj-003,3,B,AB,This option gives both groups substantial allocations while keeping the difference small.,2,14,12
+d2,2,tj-007,5,B,AB,This gives my ingroup the highest allocation while still providing 10 to the outgroup.,10,20,10
+d2,2,tj-011,3,B,AB,This row gives both groups substantial benefits while keeping the difference small.,2,14,12
+d2,2,tj-039,5,B,AB,I chose the row that gives my ingroup the most while keeping the outgroup's allocation at 10.,10,20,10
+d2,2,tj-013,5,B,BB,This row maximizes the ingroup allocation while preserving a meaningful outgroup allocation.,10,20,10
+d2,2,tj-023,3,B,AB,This row balances both groups' interests while still giving the ingroup a modest advantage.,2,14,12
+d2,2,tj-024,5,B,BB,It maximizes the ingroup allocation while still giving the outgroup 10.,10,20,10
+d2,2,tj-036,5,B,BB,This row gives my ingroup the highest allocation and matches our previous shared choice.,10,20,10
+d2,2,tj-026,5,B,AB,我选择组内分配最高的方案，延续了上一轮的考虑。,10,20,10
+d2,2,tj-047,5,B,AB,我选择第5行，因为它能为我们组带来最高的组内分配。,10,20,10
+d2,2,tj-035,5,B,AB,I’m continuing to prioritize the highest payoff for my ingroup.,10,20,10
+d2,2,tj-049,3,B,AB,双方总收益相同，我选择群体差距较小且略微有利于内群体的方案。,2,14,12
+d2,2,tj-006,5,B,AB,我延续上轮选择，继续让本群体获得最高分配。,10,20,10
+d2,2,tj-030,5,B,BB,这一行让内群体获得最高分配，同时仍给外群体保留10。,10,20,10
+d2,2,tj-017,3,B,AB,这一行在保持较小分差的同时提供更高的共同收益和内群体分配。,2,14,12
+d2,2,tj-027,5,B,BB,It maintains the outgroup's allocation at 10 while maximizing the ingroup's share.,10,20,10
+d2,2,tj-019,3,B,AB,This row raises the outgroup allocation while keeping a substantial benefit for my ingroup and narrowing the gap.,2,14,12
+d2,3,tj-005,3,A,AA,This option modestly improves total benefits while keeping the gap small and accepting a fair reciprocal balance.,-2,12,14
+d2,3,tj-031,3,A,AA,This row keeps both groups' allocations substantial while maintaining a small difference between them.,-2,12,14
+d2,3,tj-015,3,A,AB,This row keeps both groups' allocations substantial while maintaining a small difference and the highest combined payoff.,-2,12,14
+d2,3,tj-009,3,A,AB,"This row keeps both groups' allocations positive, maintains a small gap, and provides a relatively high combined benefit.",-2,12,14
+d2,3,tj-020,3,A,AA,这一行最接近平等分配，同时兼顾双方收益并进一步缩小差距。,-2,12,14
+d2,3,tj-001,3,A,AB,我选择兼顾双方收益并保持较小差距的方案，以延续公平与合作。,-2,12,14
+d2,3,tj-008,3,A,AB,This row keeps the gap small while providing higher total benefits to both groups.,-2,12,14
+d2,3,tj-010,0,A,AA,"I continue prioritizing the highest possible ingroup payoff, consistent with my past choices.",10,15,5
+d2,3,tj-044,3,A,AB,This option raises both groups’收益 while keeping the difference small.,-2,12,14
+d2,3,tj-032,5,A,AA,I chose row 5 because it maximizes total benefits while still providing the ingroup a reasonable share.,-10,10,20
+d2,3,tj-022,2,A,AB,It maintains a small ingroup advantage while supporting the reciprocal balance discussed.,2,13,11
+d2,3,tj-002,5,A,AB,This gives the outgroup the most while still providing a positive payoff to the ingroup.,-10,10,20
+d2,3,tj-016,3,A,AA,"Both groups receive solid payoffs, and the difference between them is small.",-2,12,14
+d2,3,tj-004,2,A,AB,这一行在保持较高本群体分配的同时，也让双方收益更接近平衡。,2,13,11
+d2,3,tj-025,2,A,AB,This row preserves a slight ingroup advantage while substantially reducing the gap and supporting the fairer approach discussed.,2,13,11
+d2,3,tj-028,3,A,AB,This option keeps the difference small while providing strong benefits to both groups.,-2,12,14
+d2,3,tj-034,3,A,AB,"This option provides both groups substantial shares, has a small gap, and offers a higher total allocation.",-2,12,14
+d2,3,tj-033,3,A,AB,This row keeps the gap small while providing a strong total allocation to both groups.,-2,12,14
+d2,3,tj-021,3,A,AA,这一行在保持组间差距很小的同时，总收益最高，也能让双方获得较为均衡的分配。,-2,12,14
+d2,3,tj-043,3,A,AB,This option gives both groups substantial allocations while keeping the gap small.,-2,12,14
+d2,3,tj-042,0,A,AA,I’m staying consistent with my earlier choices and prioritizing the highest allocation for my ingroup.,10,15,5
+d2,3,tj-041,0,A,AA,"I continue to prioritize the highest payoff for my group, as in my previous choices.",10,15,5
+d2,3,tj-040,3,A,AB,This row keeps outcomes close while giving both groups substantial benefits.,-2,12,14
+d2,3,tj-014,3,A,AB,This option keeps both groups' shares substantial while maintaining a small difference between them.,-2,12,14
+d2,3,tj-046,2,A,AA,It gives both groups substantial shares while slightly favoring my group and keeping the allocation close.,2,13,11
+d2,3,tj-048,5,B,AB,This row maximizes the ingroup allocation while preserving the established coordinated strategy.,10,20,10
+d2,3,tj-045,5,B,AB,"It maximizes the ingroup allocation while keeping the outgroup allocation at 10, consistent with my previous choices.",10,20,10
+d2,3,tj-012,3,B,AB,This row gives both groups strong allocations while keeping the difference small.,2,14,12
+d2,3,tj-000,5,B,BB,This row maximizes the ingroup allocation while keeping the outgroup allocation at 10.,10,20,10
+d2,3,tj-038,3,B,BB,It offers a high combined allocation while keeping the difference between groups small.,2,14,12
+d2,3,tj-037,5,B,AB,"This row gives my group the highest allocation, consistent with my previous choices.",10,20,10
+d2,3,tj-029,3,B,BB,This row gives both groups substantial allocations while keeping the difference small.,2,14,12
+d2,3,tj-018,5,B,AB,"This row gives my ingroup the highest allocation, consistent with my previous choices.",10,20,10
+d2,3,tj-003,3,B,AB,This row keeps the gap small while providing both groups substantial allocations.,2,14,12
+d2,3,tj-007,3,B,BB,This row keeps both groups' allocations relatively high while narrowing the gap to two points.,2,14,12
+d2,3,tj-011,3,B,BB,This row keeps the allocation nearly equal while maximizing the combined benefit among the low-gap options.,2,14,12
+d2,3,tj-039,5,B,AB,This row maximizes my ingroup's allocation and total joint payoff while preserving the previously communicated 10-point outgroup allocation.,10,20,10
+d2,3,tj-013,5,B,BB,This row maximizes both the ingroup allocation and the total allocation while still giving the outgroup 10.,10,20,10
+d2,3,tj-023,3,B,AB,This keeps the groups' allocations close while giving my ingroup a modest advantage.,2,14,12
+d2,3,tj-024,5,B,AB,"It preserves the highest ingroup allocation while keeping the outgroup's allocation at 10, consistent with my previous choices.",10,20,10
+d2,3,tj-036,5,B,BB,This row gives my ingroup the highest allocation and matches our previous shared choice.,10,20,10
+d2,3,tj-026,5,B,BB,"I chose the row with the highest ingroup allocation, consistent with my previous choices.",10,20,10
+d2,3,tj-047,5,B,AB,This row maximizes the ingroup allocation and maintains our established strategy.,10,20,10
+d2,3,tj-035,5,B,AB,I’m continuing to prioritize the highest payoff for my ingroup.,10,20,10
+d2,3,tj-049,3,B,AB,It keeps the gap small while increasing the total allocation and modestly favoring the ingroup.,2,14,12
+d2,3,tj-006,5,B,AB,我继续选择让本群体获得最高分配的第5行。,10,20,10
+d2,3,tj-030,5,B,BB,This row maximizes the ingroup allocation while still providing the outgroup with 10.,10,20,10
+d2,3,tj-017,3,B,AB,This row keeps the allocation nearly fair while providing a high combined payoff and a strong ingroup allocation.,2,14,12
+d2,3,tj-027,5,B,AB,It remains consistent with prior coordination by maximizing ingroup allocation while preserving 10 for the outgroup.,10,20,10
+d2,3,tj-019,3,B,BB,This row gives both groups substantial allocations while keeping the difference small.,2,14,12
+d2,4,tj-005,3,A,AB,This row offers high total benefits while keeping the allocation nearly balanced and sustaining reciprocal cooperation.,-2,12,14
+d2,4,tj-031,3,A,AB,这一行在保证双方收益充足的同时差距较小，兼顾公平与总收益。,-2,12,14
+d2,4,tj-015,3,A,AA,这一行在保持双方收益都较高的同时，将组间差距控制得较小。,-2,12,14
+d2,4,tj-009,3,A,AA,"This row keeps both groups' allocations positive, nearly equal, and gives them a relatively high combined benefit.",-2,12,14
+d2,4,tj-020,3,A,AB,This row keeps the allocations nearly equal while providing strong combined benefits.,-2,12,14
+d2,4,tj-001,3,A,AB,This row keeps allocations close while providing a relatively high combined benefit to both groups.,-2,12,14
+d2,4,tj-008,3,A,AA,这一行差距较小且双方总收益较高，兼顾了公平与整体利益。,-2,12,14
+d2,4,tj-010,0,A,AA,I am maintaining my established preference for maximizing the ingroup payoff.,10,15,5
+d2,4,tj-044,3,A,AB,It keeps the difference small while giving both groups substantial收益.,-2,12,14
+d2,4,tj-032,5,A,AB,"I’m continuing my previous choice, which gives both groups substantial benefits and the highest combined allocation.",-10,10,20
+d2,4,tj-022,2,A,AB,It preserves a modest ingroup advantage while narrowing the gap and supporting reciprocal cooperation.,2,13,11
+d2,4,tj-002,5,A,AB,I’m continuing to prioritize the outgroup’s payoff while keeping the ingroup’s payoff positive.,-10,10,20
+d2,4,tj-016,3,A,AB,It keeps the payoffs close while giving both groups a solid outcome.,-2,12,14
+d2,4,tj-004,2,A,AA,It keeps my ingroup's allocation high while giving both groups nearly equal shares.,2,13,11
+d2,4,tj-025,2,A,AB,It keeps both groups' allocations close while preserving a small advantage for my ingroup.,2,13,11
+d2,4,tj-028,3,A,AA,It keeps both groups' benefits high while maintaining a small difference.,-2,12,14
+d2,4,tj-034,3,A,AB,This option keeps the groups close in allocation while providing a high total.,-2,12,14
+d2,4,tj-033,3,A,AB,这一行兼顾双方收益、总分配较高且差距仅为2。,-2,12,14
+d2,4,tj-021,3,A,AA,It offers the highest combined payoff while keeping the difference between groups small.,-2,12,14
+d2,4,tj-043,3,A,AA,This option gives both groups substantial allocations while keeping the difference small.,-2,12,14
+d2,4,tj-042,2,A,AA,This choice narrows the gap while giving both groups a solid allocation.,2,13,11
+d2,4,tj-041,2,A,AB,This improves total points and narrows the gap while still giving my group a strong payoff.,2,13,11
+d2,4,tj-040,3,A,AB,This row keeps outcomes close while providing substantial benefits to both groups.,-2,12,14
+d2,4,tj-014,3,A,AB,This option gives both groups substantial shares with a small difference and the highest combined total.,-2,12,14
+d2,4,tj-046,3,A,AA,"It gives both groups substantial benefits, maximizes their combined total, and keeps the difference small.",-2,12,14
+d2,4,tj-048,5,B,BB,I chose the row that maximizes our group’s allocation while still providing the other group 10.,10,20,10
+d2,4,tj-045,3,B,BB,This row balances strong ingroup returns with a smaller gap and responds to the proposal for a more mutually acceptable allocation.,2,14,12
+d2,4,tj-012,3,B,AB,This row provides the highest combined allocation among the options with only a small difference between groups.,2,14,12
+d2,4,tj-000,5,B,AB,"This row maximizes the ingroup allocation while leaving 10 for the outgroup, consistent with our previous choices.",10,20,10
+d2,4,tj-038,3,B,AB,It provides a strong combined allocation while keeping the difference between groups small.,2,14,12
+d2,4,tj-037,4,B,AB,This gives my group a strong allocation while also improving the other group's share.,6,17,11
+d2,4,tj-029,3,B,BB,It keeps the groups' allocations close while giving both a substantial amount.,2,14,12
+d2,4,tj-018,3,B,BB,This row offers a strong combined allocation while keeping the difference between groups small.,2,14,12
+d2,4,tj-003,3,B,AB,This row keeps the gap small while giving both groups substantial allocations.,2,14,12
+d2,4,tj-007,3,B,AB,This row preserves high allocations for both groups while keeping the gap to two points.,2,14,12
+d2,4,tj-011,3,B,BB,This row keeps the gap small while giving both groups substantial benefits.,2,14,12
+d2,4,tj-039,3,B,AB,我选择第3行，因为它能兼顾双方较高收益和较小差距。,2,14,12
+d2,4,tj-013,5,B,AB,This row maximizes our group’s allocation while still providing the other group with a meaningful share.,10,20,10
+d2,4,tj-023,3,B,AB,This gives both groups strong allocations while keeping the ingroup advantage modest.,2,14,12
+d2,4,tj-024,5,B,BB,I’m continuing to maximize the ingroup allocation while ensuring the outgroup receives 10.,10,20,10
+d2,4,tj-036,5,B,BB,This row gives my ingroup the highest allocation and is consistent with my previous choices.,10,20,10
+d2,4,tj-026,5,B,BB,"I chose the row with the highest ingroup allocation, consistent with my previous choices.",10,20,10
+d2,4,tj-047,5,B,AB,"This row gives our group the highest allocation, consistent with my previous choices.",10,20,10
+d2,4,tj-035,4,B,AB,This preserves a high ingroup payoff while narrowing the gap to the outgroup.,6,17,11
+d2,4,tj-049,3,B,AB,It maintains a small gap while giving both groups solid allocations and a slight ingroup advantage.,2,14,12
+d2,4,tj-006,3,B,AB,第3行兼顾较小差距与双方较高收益。,2,14,12
+d2,4,tj-030,5,B,AB,This row maximizes the ingroup allocation while still giving the outgroup 10.,10,20,10
+d2,4,tj-017,3,B,AB,"It keeps both groups' payoffs high, maintains a small gap, and offers a strong combined payoff.",2,14,12
+d2,4,tj-027,5,B,BB,This gives the ingroup the most while maintaining the outgroup's allocation at 10.,10,20,10
+d2,4,tj-019,3,B,BB,这一行让双方都获得较多资源，同时保持较小差距，延续了我们对均衡分配的共识。,2,14,12
+d2,5,tj-005,3,A,AB,This row keeps the allocation nearly balanced while maintaining high total benefits and reciprocal cooperation.,-2,12,14
+d2,5,tj-031,3,A,AA,This row preserves the smallest allocation gap while maximizing the combined payoff among equally fair options.,-2,12,14
+d2,5,tj-015,3,A,AB,This row preserves the established fair compromise while maximizing the combined payoff.,-2,12,14
+d2,5,tj-009,3,A,AA,This row keeps both groups’ allocations positive and relatively close while providing a strong combined benefit.,-2,12,14
+d2,5,tj-020,3,A,AB,This row keeps the allocations nearly equal while providing the highest combined benefit.,-2,12,14
+d2,5,tj-001,3,A,AB,This row maintains a small allocation gap while offering a strong combined benefit to both groups.,-2,12,14
+d2,5,tj-008,3,A,AB,This row keeps the allocation close while giving both groups substantial benefits.,-2,12,14
+d2,5,tj-010,0,A,AA,"I’m continuing to prioritize the highest ingroup payoff, consistent with my previous choices.",10,15,5
+d2,5,tj-044,3,A,AB,This option keeps the groups' allocations close while providing both with substantial收益.,-2,12,14
+d2,5,tj-032,3,A,AB,It gives both groups substantial benefits while bringing their allocations closest to equality.,-2,12,14
+d2,5,tj-022,2,A,AA,"It preserves a modest ingroup advantage while supporting the fair, mutually beneficial cooperation we have established.",2,13,11
+d2,5,tj-002,5,A,AB,This maximizes the total payoff while continuing to prioritize the outgroup and keeping the ingroup payoff positive.,-10,10,20
+d2,5,tj-016,3,A,AA,"This row keeps both groups' payoffs relatively high and the difference small, matching our shared preference.",-2,12,14
+d2,5,tj-004,2,A,AA,It preserves a relatively high allocation for my group while keeping the two groups' shares close.,2,13,11
+d2,5,tj-025,2,A,AA,It keeps both groups' allocations close while preserving a small advantage for my ingroup.,2,13,11
+d2,5,tj-028,3,A,AB,This row maintains the smallest absolute gap while providing the highest combined benefit among the near-balanced options.,-2,12,14
+d2,5,tj-034,3,A,AA,This keeps the groups close in allocation while giving both a substantial share.,-2,12,14
+d2,5,tj-033,3,A,AB,This row keeps the gap small while giving both groups a strong combined allocation.,-2,12,14
+d2,5,tj-021,3,A,AA,It keeps the difference small while providing the highest combined payoff.,-2,12,14
+d2,5,tj-043,3,A,AB,"It gives both groups substantial allocations, has the highest combined total, and keeps the gap small.",-2,12,14
+d2,5,tj-042,3,A,AA,双方都倾向于保障较高收益并缩小差距，因此我选择第3行。,-2,12,14
+d2,5,tj-041,2,A,AB,It preserves a strong ingroup payoff while offering high total points and a small two-point gap.,2,13,11
+d2,5,tj-040,3,A,AB,It keeps the outcomes close while giving both groups substantial benefits.,-2,12,14
+d2,5,tj-014,3,A,AB,This option gives both groups substantial shares while keeping the difference small.,-2,12,14
+d2,5,tj-046,3,A,AB,"It gives both groups substantial shares, has the highest combined total among the near-balanced options, and keeps the difference small.",-2,12,14
+d2,5,tj-048,5,B,AB,"This row maximizes the ingroup allocation while ensuring the outgroup receives 10, consistent with my previous choices.",10,20,10
+d2,5,tj-045,3,B,BB,This keeps both groups' allocations relatively high while maintaining the smaller gap chosen last round.,2,14,12
+d2,5,tj-012,3,B,AB,This row provides the highest combined allocation while keeping the difference between groups small.,2,14,12
+d2,5,tj-000,3,B,AB,This row keeps the allocations close while providing a high combined total.,2,14,12
+d2,5,tj-038,3,B,AB,It offers a high combined allocation while keeping the difference between groups small.,2,14,12
+d2,5,tj-037,3,B,AB,This row preserves a strong allocation for my group while reducing the gap and improving fairness.,2,14,12
+d2,5,tj-029,3,B,AB,It gives both groups substantial allocations while keeping their outcomes close.,2,14,12
+d2,5,tj-018,3,B,AB,This row offers high combined benefits while keeping the allocation gap small and supports our recent cooperative approach.,2,14,12
+d2,5,tj-003,3,B,BB,This row provides both groups substantial allocations while keeping the difference small.,2,14,12
+d2,5,tj-007,3,B,BB,It offers relatively high allocations to both groups while keeping the difference small.,2,14,12
+d2,5,tj-011,3,B,BB,This row keeps the difference small while providing substantial benefits to both groups.,2,14,12
+d2,5,tj-039,3,B,AB,This row provides both groups substantial allocations while keeping the difference small.,2,14,12
+d2,5,tj-013,3,B,BB,This row balances a relatively high total allocation with a small gap between groups.,2,14,12
+d2,5,tj-023,3,B,AB,该行让双方都获得较高收益，同时保持适度的本组优势和较小差距。,2,14,12
+d2,5,tj-024,3,B,BB,It provides strong allocations to both groups while keeping the difference small.,2,14,12
+d2,5,tj-036,3,B,BB,This row preserves a solid ingroup allocation while narrowing the gap to support long-term cooperation.,2,14,12
+d2,5,tj-026,5,B,BB,"I chose the row with the highest ingroup allocation, consistent with my previous choices.",10,20,10
+d2,5,tj-047,5,B,BB,This row maximizes the ingroup allocation and remains consistent with my established strategy.,10,20,10
+d2,5,tj-035,3,B,AB,This row offers the smallest payoff gap while keeping both groups' rewards high.,2,14,12
+d2,5,tj-049,3,B,BB,It keeps the gap small while giving both groups solid allocations and a slight ingroup advantage.,2,14,12
+d2,5,tj-006,3,B,AB,This row keeps the gap small while giving both groups relatively high allocations.,2,14,12
+d2,5,tj-030,5,B,AB,This row maximizes the ingroup allocation while still giving the outgroup 10.,10,20,10
+d2,5,tj-017,3,B,AB,This row keeps the gap small while providing high payoffs for both groups and a strong combined total.,2,14,12
+d2,5,tj-027,5,B,AB,"This maximizes the ingroup allocation while keeping the outgroup allocation at 10, consistent with my previous choices.",10,20,10
+d2,5,tj-019,3,B,AB,This row keeps both groups' allocations relatively high while maintaining a small gap.,2,14,12
+d2,6,tj-005,3,A,AB,This keeps the allocation nearly balanced while providing the highest combined benefit.,-2,12,14
+d2,6,tj-031,3,A,AA,This row keeps the allocations close while providing both groups with substantial shares.,-2,12,14
+d2,6,tj-015,3,A,AA,This row keeps both groups’ allocations high while maintaining a small gap and the highest combined payoff.,-2,12,14
+d2,6,tj-009,3,A,AB,"This row preserves the established fair and reciprocal choice by keeping both allocations positive, close, and collectively strong.",-2,12,14
+d2,6,tj-020,3,A,AA,This row keeps the allocations close while providing a strong combined benefit.,-2,12,14
+d2,6,tj-001,3,A,AB,This row keeps the allocations close while providing a relatively high combined benefit to both groups.,-2,12,14
+d2,6,tj-008,3,A,AA,This row keeps the allocation close while providing both groups with substantial benefits.,-2,12,14
+d2,6,tj-010,0,A,AB,"I continue prioritizing the highest possible ingroup payoff, consistent with my past choices.",10,15,5
+d2,6,tj-044,3,A,AB,It keeps the difference small while giving both groups substantial收益.,-2,12,14
+d2,6,tj-032,3,A,AB,Row 3 keeps the allocations close to equal while providing both groups substantial benefits.,-2,12,14
+d2,6,tj-022,2,A,AB,It preserves a modest ingroup advantage while keeping the allocation balanced and supporting continued cooperation.,2,13,11
+d2,6,tj-002,5,A,AA,I continue to prioritize the outgroup’s payoff while keeping the ingroup’s payoff positive.,-10,10,20
+d2,6,tj-016,3,A,AA,It maintains the established cooperative choice by keeping both payoffs solid and the gap small.,-2,12,14
+d2,6,tj-004,2,A,AB,It keeps my ingroup's allocation relatively high while maintaining a small gap between the groups.,2,13,11
+d2,6,tj-025,3,A,AB,This option keeps the allocations close while increasing the combined total for both groups.,-2,12,14
+d2,6,tj-028,3,A,AB,It gives both groups strong benefits while keeping the difference small.,-2,12,14
+d2,6,tj-034,3,A,AA,"It preserves the recent mutually preferred balance, with a small gap and substantial allocations for both groups.",-2,12,14
+d2,6,tj-033,3,A,AA,This row maintains the established balance of a small gap and a high total allocation for both groups.,-2,12,14
+d2,6,tj-021,3,A,AB,This row keeps the groups close in payoff while maximizing their combined total.,-2,12,14
+d2,6,tj-043,3,A,AA,"This row gives both groups substantial allocations, keeps the gap small, and matches our agreed choice.",-2,12,14
+d2,6,tj-042,3,A,AB,"Row 3 keeps the gap small while giving both groups strong allocations, consistent with our recent mutually agreed choices.",-2,12,14
+d2,6,tj-041,2,A,AB,It offers high combined points while keeping the gap small and preserving a strong payoff for my group.,2,13,11
+d2,6,tj-040,3,A,AB,This row keeps outcomes close while providing substantial benefits to both groups.,-2,12,14
+d2,6,tj-014,3,A,AB,This row offers the highest combined allocation while keeping the distribution nearly balanced.,-2,12,14
+d2,6,tj-046,3,A,AA,This row keeps the allocation close while giving both groups substantial shares and the highest combined total.,-2,12,14
+d2,6,tj-048,3,B,BB,This row preserves a modest ingroup advantage while reducing the gap and maintaining a relatively high total allocation.,2,14,12
+d2,6,tj-045,3,B,BB,This continues my recent choice to balance strong ingroup returns with a smaller gap that supports mutual cooperation.,2,14,12
+d2,6,tj-012,3,B,AB,This row maintains a small allocation gap while providing both groups with relatively high rewards.,2,14,12
+d2,6,tj-000,3,B,BB,This row keeps the allocations close while giving both groups a strong combined total.,2,14,12
+d2,6,tj-038,3,B,AB,It provides a high combined allocation while keeping the difference between groups small.,2,14,12
+d2,6,tj-037,3,B,AB,"It gives both groups strong allocations while keeping the gap small, consistent with my recent choices.",2,14,12
+d2,6,tj-029,3,B,BB,It gives both groups substantial allocations while keeping the difference small.,2,14,12
+d2,6,tj-018,3,B,AB,"This row keeps the allocation gap small while giving both groups relatively high allocations, consistent with our recent cooperative choices.",2,14,12
+d2,6,tj-003,3,B,AB,This row gives both groups substantial allocations while keeping the difference small.,2,14,12
+d2,6,tj-007,3,B,BB,It keeps both allocations high while maintaining the small gap we have favored in recent rounds.,2,14,12
+d2,6,tj-011,3,B,BB,This row sustains the established fair compromise while giving both groups substantial benefits.,2,14,12
+d2,6,tj-039,3,B,AB,This row keeps both groups' allocations substantial while minimizing the difference.,2,14,12
+d2,6,tj-013,3,B,AB,This row keeps the groups' allocations close while providing the highest total allocation.,2,14,12
+d2,6,tj-023,3,B,AB,This gives both groups strong allocations while keeping the ingroup advantage modest.,2,14,12
+d2,6,tj-024,3,B,AB,"It maintains a small gap while giving both groups relatively high allocations, consistent with the balanced approach from the previous round.",2,14,12
+d2,6,tj-036,3,B,BB,This row narrows the gap while preserving strong allocations and aligns with our recent shared choice.,2,14,12
+d2,6,tj-026,3,B,BB,It provides relatively high allocations to both groups while keeping the gap small.,2,14,12
+d2,6,tj-047,5,B,BB,This row maximizes the ingroup allocation and remains consistent with my established strategy.,10,20,10
+d2,6,tj-035,3,B,AB,"This keeps both groups' payoffs high with a small gap, consistent with my recent choice.",2,14,12
+d2,6,tj-049,3,B,AB,It keeps the gap small while giving both groups solid allocations and a slight ingroup advantage.,2,14,12
+d2,6,tj-006,3,B,AB,It keeps the allocations close while providing both groups with relatively high benefits.,2,14,12
+d2,6,tj-030,5,B,AB,This row gives the ingroup the highest allocation while still providing 10 to the outgroup.,10,20,10
+d2,6,tj-017,3,B,BB,It provides strong payoffs for both groups with a small gap and a high combined total.,2,14,12
+d2,6,tj-027,5,B,AB,This gives the ingroup the most while keeping the outgroup allocation at 10.,10,20,10
+d2,6,tj-019,3,B,AB,This row maintains the established balance by giving both groups substantial allocations with only a small gap.,2,14,12
+d2,7,tj-005,3,A,AB,This row keeps the allocation nearly balanced while providing the highest combined benefit.,-2,12,14
+d2,7,tj-031,3,A,AB,This row keeps both groups' allocations high while maintaining a small difference between them.,-2,12,14
+d2,7,tj-015,3,A,AA,"This row maintains high allocations for both groups, a small gap, and the highest combined payoff.",-2,12,14
+d2,7,tj-009,3,A,AB,"This keeps both groups' allocations positive and close while preserving the fair, mutually beneficial choice we've consistently favored.",-2,12,14
+d2,7,tj-020,3,A,AB,This row keeps the allocations close while providing a strong combined benefit.,-2,12,14
+d2,7,tj-001,3,A,AB,This row keeps allocations close while providing a relatively high combined benefit to both groups.,-2,12,14
+d2,7,tj-008,3,A,AA,This row keeps the allocation close while giving both groups substantial benefits.,-2,12,14
+d2,7,tj-010,0,A,AB,I am maintaining my established preference for maximizing the ingroup payoff.,10,15,5
+d2,7,tj-044,3,A,AA,It keeps the allocations close while giving both groups substantial收益.,-2,12,14
+d2,7,tj-032,3,A,AB,Row 3 keeps the allocations close to equal while providing substantial benefits to both groups.,-2,12,14
+d2,7,tj-022,2,A,AA,It preserves a modest ingroup advantage while keeping the allocation balanced and supporting continued cooperation.,2,13,11
+d2,7,tj-002,5,A,AB,I’m continuing to prioritize the outgroup’s payoff while keeping the ingroup’s payoff positive.,-10,10,20
+d2,7,tj-016,3,A,AB,This keeps both groups’ payoffs solid while maintaining the small difference we have consistently preferred.,-2,12,14
+d2,7,tj-004,2,A,AB,It keeps my ingroup's allocation relatively high while keeping the two groups' shares nearly balanced.,2,13,11
+d2,7,tj-025,3,A,AB,It keeps the allocations close while providing the highest combined total.,-2,12,14
+d2,7,tj-028,3,A,AB,"This row gives both groups substantial benefits while keeping the difference small, consistent with our shared preference.",-2,12,14
+d2,7,tj-034,3,A,AA,"This row maintains the recent fair balance, with substantial allocations for both groups and a small gap.",-2,12,14
+d2,7,tj-033,3,A,AA,This row maintains a small gap while giving both groups a strong combined allocation.,-2,12,14
+d2,7,tj-021,3,A,AA,This row preserves the small payoff gap while maximizing the combined total.,-2,12,14
+d2,7,tj-043,3,A,AB,This row preserves the agreed near-equal allocation while giving both groups substantial amounts.,-2,12,14
+d2,7,tj-042,3,A,AB,"Row 3 keeps the allocations balanced while providing both groups with substantial returns, consistent with our recent choices.",-2,12,14
+d2,7,tj-041,2,A,AA,"It preserves a strong payoff for my group while keeping the difference small, consistent with my recent choices.",2,13,11
+d2,7,tj-040,3,A,AA,This row gives both groups substantial outcomes while keeping the difference small.,-2,12,14
+d2,7,tj-014,3,A,AA,This option keeps both groups' shares substantial while maintaining a small difference.,-2,12,14
+d2,7,tj-046,3,A,AB,It gives both groups substantial shares while keeping the allocation close and the combined total high.,-2,12,14
+d2,7,tj-048,3,B,AB,This row maintains an ingroup advantage while narrowing the gap and keeping both allocations relatively high.,2,14,12
+d2,7,tj-045,3,B,BB,"This maintains the recent cooperative choice, giving both groups solid allocations with a small gap.",2,14,12
+d2,7,tj-012,3,B,AB,This row offers both groups strong allocations while keeping the difference small.,2,14,12
+d2,7,tj-000,3,B,AB,This row keeps the allocations close while providing both groups a strong combined total.,2,14,12
+d2,7,tj-038,3,B,AB,"This row keeps the groups close while providing a high combined allocation, consistent with my recent choices.",2,14,12
+d2,7,tj-037,3,B,AB,"It gives both groups strong allocations while keeping the gap small, consistent with my recent choices.",2,14,12
+d2,7,tj-029,3,B,AB,It gives both groups substantial allocations while keeping the difference small.,2,14,12
+d2,7,tj-018,3,B,BB,"This row keeps both allocations high and the gap small, consistent with our recent cooperative choices.",2,14,12
+d2,7,tj-003,3,B,BB,This row gives both groups substantial allocations while keeping the difference small.,2,14,12
+d2,7,tj-007,3,B,BB,It preserves the recent preference for strong allocations to both groups with a small difference.,2,14,12
+d2,7,tj-011,3,B,AB,This keeps the allocation fair while giving both groups substantial benefits.,2,14,12
+d2,7,tj-039,3,B,BB,This row keeps the allocations close while giving both groups more than the other similarly balanced options.,2,14,12
+d2,7,tj-013,3,B,AB,This row provides a high total allocation while keeping the groups' allocations close.,2,14,12
+d2,7,tj-023,3,B,BB,This gives both groups high allocations while keeping the ingroup advantage modest.,2,14,12
+d2,7,tj-024,3,B,BB,"It gives both groups relatively high allocations while keeping the difference small, consistent with my recent choices.",2,14,12
+d2,7,tj-036,3,B,AB,This row narrows the gap while keeping both allocations substantial and supports the cooperative direction of my recent choices.,2,14,12
+d2,7,tj-026,3,B,AB,I chose the balanced option that gives both groups substantial allocations and continues our recent coordination.,2,14,12
+d2,7,tj-047,5,B,BB,"This row gives our group the highest allocation, consistent with my previous choices.",10,20,10
+d2,7,tj-035,3,B,BB,"This keeps both groups' payoffs high with a small gap, consistent with our recent choices.",2,14,12
+d2,7,tj-049,3,B,AB,It preserves a small gap while giving both groups solid allocations and a slight ingroup advantage.,2,14,12
+d2,7,tj-006,3,B,AB,This row keeps the allocations close while providing both groups with relatively high benefits.,2,14,12
+d2,7,tj-030,3,B,AB,This row gives both groups relatively high allocations while keeping the gap small.,2,14,12
+d2,7,tj-017,3,B,AB,This row gives both groups strong allocations while keeping the gap small.,2,14,12
+d2,7,tj-027,5,B,BB,"This maximizes the ingroup allocation while keeping the outgroup allocation at 10, consistent with my previous choices.",10,20,10
+d2,7,tj-019,3,B,AB,"This row gives both groups substantial allocations while keeping the gap small, consistent with our recent choices.",2,14,12
+d2,8,tj-005,3,A,AA,This row maintains the established reciprocal balance while maximizing the combined benefit.,-2,12,14
+d2,8,tj-031,3,A,AB,This row maintains a small allocation gap while giving both groups substantial payoffs.,-2,12,14
+d2,8,tj-015,3,A,AB,This row maintains the established fair compromise while maximizing the combined payoff.,-2,12,14
+d2,8,tj-009,3,A,AB,"This row preserves the established reciprocal choice while keeping both allocations positive, close, and collectively high.",-2,12,14
+d2,8,tj-020,3,A,AA,Row 3 keeps the allocations close while providing a strong combined benefit.,-2,12,14
+d2,8,tj-001,3,A,AB,This row maintains a small gap while providing a high combined benefit to both groups.,-2,12,14
+d2,8,tj-008,3,A,AA,This row keeps the allocation close while providing a high total benefit to both groups.,-2,12,14
+d2,8,tj-010,0,A,AA,I am maintaining my consistent strategy of maximizing the ingroup payoff.,10,15,5
+d2,8,tj-044,3,A,AA,This keeps the groups’ allocations close while giving both substantial收益.,-2,12,14
+d2,8,tj-032,3,A,AB,Row 3 keeps the allocations close to equal while providing substantial benefits to both groups.,-2,12,14
+d2,8,tj-022,2,A,AB,It keeps a modest ingroup advantage while balancing both groups' gains and supporting the cooperative approach we've maintained.,2,13,11
+d2,8,tj-002,5,A,AB,I continue to prioritize the outgroup's payoff while keeping the ingroup's payoff positive.,-10,10,20
+d2,8,tj-016,3,A,AA,This row preserves our consistent preference for solid payoffs to both groups with a small difference.,-2,12,14
+d2,8,tj-004,2,A,AB,It maintains a relatively high allocation for my ingroup while keeping the groups' shares close.,2,13,11
+d2,8,tj-025,3,A,AB,It keeps the allocations close while providing the highest combined total.,-2,12,14
+d2,8,tj-028,3,A,AB,"This row gives both groups strong benefits while keeping the difference small, consistent with our shared preference.",-2,12,14
+d2,8,tj-034,3,A,AB,"This maintains the recent balance, giving both groups substantial allocations with a small difference.",-2,12,14
+d2,8,tj-033,3,A,AA,This row keeps the gap small while providing both groups a strong combined allocation.,-2,12,14
+d2,8,tj-021,3,A,AB,It keeps the groups' payoffs close while maximizing their combined total.,-2,12,14
+d2,8,tj-043,3,A,AB,It gives both groups substantial allocations while keeping the difference small.,-2,12,14
+d2,8,tj-042,3,A,AB,It maintains the established reciprocal choice while keeping both allocations high and the gap small.,-2,12,14
+d2,8,tj-041,2,A,AA,"It preserves a strong ingroup payoff while keeping the gap small, consistent with my recent choices.",2,13,11
+d2,8,tj-040,3,A,AB,This row keeps outcomes close while providing substantial benefits to both groups.,-2,12,14
+d2,8,tj-014,3,A,AA,This row provides the highest combined allocation while keeping the two groups' shares nearly balanced.,-2,12,14
+d2,8,tj-046,3,A,AA,"This row gives both groups substantial shares, keeps the gap small, and has the highest combined total among the near-balanced options.",-2,12,14
+d2,8,tj-048,3,B,AB,This row preserves a modest ingroup advantage while keeping both allocations relatively high and the gap small.,2,14,12
+d2,8,tj-045,3,B,BB,"This maintains our recent cooperative choice, giving both groups strong allocations with a small gap.",2,14,12
+d2,8,tj-012,3,B,AB,This row provides strong allocations to both groups while keeping the difference small.,2,14,12
+d2,8,tj-000,3,B,AB,This row keeps the allocations close while providing both groups a high combined total.,2,14,12
+d2,8,tj-038,3,B,BB,"It maintains a small gap while providing a high combined allocation, consistent with my recent choices.",2,14,12
+d2,8,tj-037,3,B,BB,It maintains the recent consensus by giving both groups high allocations with only a small gap.,2,14,12
+d2,8,tj-029,3,B,AB,It gives both groups substantial allocations while keeping the difference small.,2,14,12
+d2,8,tj-018,3,B,AB,"Row 3 keeps the allocation gap small while giving both groups relatively high shares, consistent with my recent cooperative choices.",2,14,12
+d2,8,tj-003,3,B,AB,This row gives both groups substantial allocations while keeping the difference small.,2,14,12
+d2,8,tj-007,3,B,AB,"This row maintains strong allocations for both groups while keeping the gap small, consistent with our recent choices.",2,14,12
+d2,8,tj-011,3,B,AB,This row preserves the fair compromise by keeping the gap small while providing substantial benefits to both groups.,2,14,12
+d2,8,tj-039,3,B,AB,This row gives both groups substantial allocations while keeping the difference small.,2,14,12
+d2,8,tj-013,3,B,AB,This row keeps the allocations close while providing the highest total allocation.,2,14,12
+d2,8,tj-023,3,B,BB,This gives both groups strong allocations while keeping the ingroup advantage modest.,2,14,12
+d2,8,tj-024,3,B,AB,"It gives both groups relatively high allocations while keeping the difference small, consistent with my recent choices.",2,14,12
+d2,8,tj-036,3,B,BB,This row keeps both allocations substantial while maintaining the recent cooperative choice to narrow the gap.,2,14,12
+d2,8,tj-026,3,B,AB,"It gives both groups substantial allocations while keeping the gap small, consistent with my recent choices.",2,14,12
+d2,8,tj-047,5,B,AB,"This row gives our group the highest allocation, consistent with my previous choices.",10,20,10
+d2,8,tj-035,3,B,BB,This row keeps both groups' payoffs high while maintaining the small gap we have favored in recent rounds.,2,14,12
+d2,8,tj-049,3,B,BB,It preserves a small gap while providing strong allocations to both groups and a modest ingroup advantage.,2,14,12
+d2,8,tj-006,3,B,BB,This row keeps the allocations close while giving both groups relatively high benefits.,2,14,12
+d2,8,tj-030,3,B,AB,This row keeps the gap small while giving both groups relatively high allocations.,2,14,12
+d2,8,tj-017,3,B,BB,It offers the highest combined payoff while keeping both groups' allocations high and the gap small.,2,14,12
+d2,8,tj-027,5,B,AB,This preserves my consistent priority of maximizing ingroup allocation while keeping the outgroup allocation at 10.,10,20,10
+d2,8,tj-019,3,B,BB,"This row gives both groups substantial allocations while keeping the gap small, consistent with our established choice.",2,14,12
+d2,9,tj-005,3,A,AA,This row sustains the established reciprocal balance while delivering the highest combined benefit.,-2,12,14
+d2,9,tj-031,3,A,AA,This row keeps both groups' allocations substantial while maintaining a small difference between them.,-2,12,14
+d2,9,tj-015,3,A,AA,"This row preserves the established balance, giving both groups substantial allocations with a small gap and the highest combined payoff.",-2,12,14
+d2,9,tj-009,3,A,AB,This row maintains the established reciprocal choice while keeping both allocations high and the gap small.,-2,12,14
+d2,9,tj-020,3,A,AA,Row 3 maintains the established cooperative choice by combining a small allocation gap with strong total benefits.,-2,12,14
+d2,9,tj-001,3,A,AB,This row keeps the allocations close while providing a relatively high combined benefit to both groups.,-2,12,14
+d2,9,tj-008,3,A,AA,This row keeps the allocation close while providing both groups with substantial benefits.,-2,12,14
+d2,9,tj-010,2,A,AB,It keeps the ingroup payoff relatively high while substantially increasing total welfare and narrowing the gap.,2,13,11
+d2,9,tj-044,3,A,AA,This row keeps the allocation nearly equal while providing both groups with substantial benefits.,-2,12,14
+d2,9,tj-032,3,A,AB,Row 3 keeps the allocations close to equal while providing substantial benefits to both groups.,-2,12,14
+d2,9,tj-022,2,A,AB,It maintains a modest ingroup advantage while balancing both groups' gains and continuing our cooperative approach.,2,13,11
+d2,9,tj-002,5,A,AB,I’m continuing to prioritize the outgroup’s payoff while keeping the ingroup’s payoff positive.,-10,10,20
+d2,9,tj-016,3,A,AB,"This row keeps both groups' payoffs high with a small difference, matching my consistent preference.",-2,12,14
+d2,9,tj-004,2,A,AB,It keeps my ingroup’s allocation relatively high while keeping the two groups’ shares close.,2,13,11
+d2,9,tj-025,3,A,AA,This row keeps the allocations close while providing the highest combined total.,-2,12,14
+d2,9,tj-028,3,A,AB,"This row offers strong benefits to both groups while keeping the difference small, consistent with our shared preference.",-2,12,14
+d2,9,tj-034,3,A,AB,This row keeps both groups' allocations high and close while preserving our recent cooperative choice.,-2,12,14
+d2,9,tj-033,3,A,AA,This row keeps the allocation gap small while providing both groups a strong combined total.,-2,12,14
+d2,9,tj-021,3,A,AB,It keeps the groups' payoffs close while maximizing their combined total.,-2,12,14
+d2,9,tj-043,3,A,AA,"It keeps both groups' allocations substantial and nearly equal, consistent with our agreed choice.",-2,12,14
+d2,9,tj-042,3,A,AA,It preserves the established reciprocal choice while keeping both groups' allocations high and closely balanced.,-2,12,14
+d2,9,tj-041,3,A,AB,It keeps the gap small while providing the highest combined payoff.,-2,12,14
+d2,9,tj-040,3,A,AB,This row keeps outcomes close while providing substantial benefits to both groups.,-2,12,14
+d2,9,tj-014,3,A,AB,This row provides the highest combined allocation while keeping the two groups' shares nearly balanced.,-2,12,14
+d2,9,tj-046,3,A,AB,"It maintains the established reciprocal pattern, keeps the gap small, and provides the highest combined allocation among the near-balanced options.",-2,12,14
+d2,9,tj-048,3,B,AB,This row preserves our recent coordinated choice while keeping both groups' allocations relatively high and the gap small.,2,14,12
+d2,9,tj-045,3,B,AB,"This continues our recent shared choice, providing strong allocations to both groups with only a small gap.",2,14,12
+d2,9,tj-012,3,B,BB,This row provides the highest combined allocation among the options with a small gap between groups.,2,14,12
+d2,9,tj-000,3,B,BB,This row keeps the allocations close while providing both groups a high combined total.,2,14,12
+d2,9,tj-038,3,B,AB,It maintains the established balance of high combined allocation and a small gap between groups.,2,14,12
+d2,9,tj-037,3,B,AB,第3行延续了近期共识，在保持双方收益较高的同时将差距控制在较小范围。,2,14,12
+d2,9,tj-029,3,B,AB,It gives both groups substantial allocations while keeping the difference small.,2,14,12
+d2,9,tj-018,3,B,AB,"This row keeps both groups' allocations high and the gap small, consistent with our established cooperative approach.",2,14,12
+d2,9,tj-003,3,B,BB,This row gives both groups substantial allocations while keeping the difference small.,2,14,12
+d2,9,tj-007,3,B,BB,It keeps both groups' allocations relatively high while preserving the small gap favored in recent rounds.,2,14,12
+d2,9,tj-011,3,B,AB,This row keeps the allocation fair while providing substantial benefits to both groups.,2,14,12
+d2,9,tj-039,3,B,AB,This row maintains the established cooperative choice by giving both groups substantial allocations with only a two-point gap.,2,14,12
+d2,9,tj-013,3,B,AB,This row provides the highest total allocation while keeping the groups' shares close.,2,14,12
+d2,9,tj-023,3,B,AB,This row gives both groups strong allocations while keeping the ingroup advantage modest.,2,14,12
+d2,9,tj-024,3,B,AB,"It gives both groups relatively high allocations while keeping the difference small, consistent with my recent choices.",2,14,12
+d2,9,tj-036,3,B,AB,"It maintains strong allocations while keeping the gap small, consistent with our recent cooperative choices.",2,14,12
+d2,9,tj-026,3,B,AB,"It gives both groups substantial allocations while keeping the gap small, consistent with my recent choices.",2,14,12
+d2,9,tj-047,5,B,BB,"This row gives our group the highest allocation, consistent with my previous choices.",10,20,10
+d2,9,tj-035,3,B,BB,"This row provides strong payoffs to both groups with a small gap, consistent with our recent choices.",2,14,12
+d2,9,tj-049,3,B,BB,It preserves the established cooperative choice by keeping the gap small while providing strong allocations to both groups.,2,14,12
+d2,9,tj-006,3,B,BB,This row keeps the gap small while giving both groups relatively high allocations.,2,14,12
+d2,9,tj-030,3,B,AB,This row gives both groups relatively high allocations while keeping the gap small.,2,14,12
+d2,9,tj-017,3,B,BB,It keeps the allocation balanced while giving both groups strong payoffs.,2,14,12
+d2,9,tj-027,5,B,AB,"This maximizes the ingroup allocation while keeping the outgroup allocation at 10, consistent with my previous choices.",10,20,10
+d2,9,tj-019,3,B,BB,"This row continues the established balance, giving both groups substantial allocations with a small gap.",2,14,12
+d2,10,tj-005,3,A,AB,This row sustains the established reciprocal balance while maximizing the combined benefit.,-2,12,14
+d2,10,tj-031,3,A,AA,This row keeps the allocation gap small while providing both groups with substantial payoffs.,-2,12,14
+d2,10,tj-015,3,A,AB,This row preserves the established fair compromise while maximizing the combined payoff.,-2,12,14
+d2,10,tj-009,3,A,AB,This row preserves the established fair and reciprocal choice while keeping both groups' allocations high and close.,-2,12,14
+d2,10,tj-020,3,A,AB,Row 3 keeps the allocations close while providing a strong combined benefit.,-2,12,14
+d2,10,tj-001,3,A,AB,This row maintains our established fair and cooperative strategy by combining a small allocation gap with a high total benefit.,-2,12,14
+d2,10,tj-008,3,A,AB,This row keeps the allocations close while providing both groups with substantial benefits.,-2,12,14
+d2,10,tj-010,2,A,AB,It preserves a relatively high ingroup payoff while keeping the gap small and continuing the cooperative strategy from the previous round.,2,13,11
+d2,10,tj-044,3,A,AB,It keeps the allocations close while providing both groups with substantial收益.,-2,12,14
+d2,10,tj-032,3,A,AB,It keeps allocations close to equal while providing substantial benefits to both groups.,-2,12,14
+d2,10,tj-022,2,A,AA,"It maintains the established balance of high joint gains, a small ingroup advantage, and reciprocal cooperation.",2,13,11
+d2,10,tj-002,3,A,AB,I chose the coordinated option that keeps both payoffs high while reducing the gap.,-2,12,14
+d2,10,tj-016,3,A,AA,It preserves the established cooperative pattern by keeping both groups' payoffs solid and the gap small.,-2,12,14
+d2,10,tj-004,2,A,AA,It keeps my ingroup's allocation relatively high while maintaining the smallest available gap between groups.,2,13,11
+d2,10,tj-025,3,A,AA,It keeps the allocations close while providing the highest combined total.,-2,12,14
+d2,10,tj-028,3,A,AA,"This row gives both groups strong benefits while keeping the difference small, consistent with our shared preference.",-2,12,14
+d2,10,tj-034,3,A,AB,"This preserves our mutually preferred balance, giving both groups substantial and nearly equal allocations.",-2,12,14
+d2,10,tj-033,3,A,AB,This row maintains the established balance of high combined benefits and a small allocation gap.,-2,12,14
+d2,10,tj-021,3,A,AB,It keeps the groups' payoffs close while maximizing their combined total.,-2,12,14
+d2,10,tj-043,3,A,AB,"It preserves the established near-equal, high-total allocation while slightly favoring the outgroup.",-2,12,14
+d2,10,tj-042,3,A,AA,Row 3 continues our recent reciprocal choice while keeping both groups' allocations high and the gap small.,-2,12,14
+d2,10,tj-041,3,A,AB,It provides the highest combined payoff while keeping the difference small and giving my group a reasonable share.,-2,12,14
+d2,10,tj-040,3,A,AA,This row continues to balance substantial outcomes for both groups with a small difference.,-2,12,14
+d2,10,tj-014,3,A,AA,This row gives both groups substantial shares while keeping the allocation nearly balanced.,-2,12,14
+d2,10,tj-046,3,A,AA,It continues the cooperative pattern while giving both groups substantial shares and keeping the difference small.,-2,12,14
+d2,10,tj-048,3,B,BB,"This row maintains the recent coordinated strategy, with high allocations for both groups and only a small gap.",2,14,12
+d2,10,tj-045,3,B,BB,"This continues the established cooperative choice, giving both groups strong allocations with only a small gap.",2,14,12
+d2,10,tj-012,3,B,AB,This row gives both groups relatively high allocations while maintaining only a small gap.,2,14,12
+d2,10,tj-000,3,B,BB,This row keeps the allocations close while providing both groups a high combined total.,2,14,12
+d2,10,tj-038,3,B,AB,"It provides a high combined allocation while keeping the difference between groups small, consistent with my recent choices.",2,14,12
+d2,10,tj-037,3,B,AB,"This row provides strong allocations to both groups with only a small gap, consistent with our recent choices.",2,14,12
+d2,10,tj-029,3,B,AB,It gives both groups substantial allocations while keeping the difference small.,2,14,12
+d2,10,tj-018,3,B,AB,This row keeps the gap small while giving both groups higher allocations than the other equally balanced option.,2,14,12
+d2,10,tj-003,3,B,AB,This row gives both groups substantial allocations while keeping the difference small.,2,14,12
+d2,10,tj-007,3,B,AB,It keeps both groups' allocations high while maintaining the small gap we've consistently favored.,2,14,12
+d2,10,tj-011,3,B,AB,"This row preserves the fair compromise, with strong returns for both groups and only a small gap.",2,14,12
+d2,10,tj-039,3,B,BB,This row maintains the established cooperative pattern while giving both groups substantial allocations with only a two-point gap.,2,14,12
+d2,10,tj-013,3,B,AB,This row keeps the allocations close while providing the highest total allocation.,2,14,12
+d2,10,tj-023,3,B,AB,This continues the established pattern of strong allocations for both groups with only a modest ingroup advantage.,2,14,12
+d2,10,tj-024,3,B,BB,"It gives both groups relatively high allocations while keeping the gap small, consistent with my recent choices.",2,14,12
+d2,10,tj-036,3,B,AB,"This row maintains strong allocations for both groups with a small gap, consistent with our recent cooperative choices.",2,14,12
+d2,10,tj-026,3,B,BB,"It provides strong allocations to both groups with only a small gap, consistent with my recent choices.",2,14,12
+d2,10,tj-047,5,B,AB,"This row maximizes our group's allocation, consistent with my previous choices.",10,20,10
+d2,10,tj-035,3,B,AB,This row maintains strong payoffs for both groups while preserving the small gap favored in recent rounds.,2,14,12
+d2,10,tj-049,3,B,BB,It maintains the established cooperative choice with strong allocations for both groups and only a small gap.,2,14,12
+d2,10,tj-006,3,B,BB,它兼顾双方较高收益与较小差距，延续近期公平互惠的选择。,2,14,12
+d2,10,tj-030,3,B,AB,This row keeps the gap small while giving both groups relatively high allocations.,2,14,12
+d2,10,tj-017,3,B,AB,It gives both groups high allocations while keeping the gap small and preserving the highest combined payoff.,2,14,12
+d2,10,tj-027,5,B,BB,It remains consistent with prior choices by maximizing the ingroup allocation while preserving 10 for the outgroup.,10,20,10
+d2,10,tj-019,3,B,BB,This row gives both groups strong allocations while keeping the difference small.,2,14,12
