@@ -41,6 +41,8 @@ import tajfel as tajfel_study  # noqa: E402,F401  (registers the four providers)
 from tajfel.model import (  # noqa: E402
     CONDITION_LABELS,
     CONDITIONS,
+    LLM_PROVIDERS,
+    is_llm_kind,
     matrix_for,
     row_count,
 )
@@ -59,8 +61,9 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     ap.add_argument("--condition", choices=CONDITIONS, default="c1",
                     help="c1 = label visible, c2 = label hidden, c3 = rarity (minority group)")
     ap.add_argument("--all", action="store_true", help="run every condition in sequence")
-    ap.add_argument("--llm", choices=["scripted", "openai"], default="scripted",
-                    help="scripted = offline noisy stub (pipeline smoke test); openai = real LLM calls")
+    ap.add_argument("--llm", choices=["scripted", *LLM_PROVIDERS], default="scripted",
+                    help="scripted = offline noisy stub (pipeline smoke test); "
+                         "any LLM provider key in LLM_PROVIDERS = real LLM calls")
     ap.add_argument("--n-agents", type=int, default=10,
                     help="pool size (10 = smoke test, 50 = full design)")
     ap.add_argument("--n-steps", type=int, default=3,
@@ -194,9 +197,9 @@ def main(argv: list[str] | None = None) -> int:
     conds = list(CONDITIONS) if args.all else [args.condition]
     t0 = time.time()
 
-    if args.llm == "openai":
+    if is_llm_kind(args.llm):
         print("=" * 78)
-        print("NOTE: openai mode spends real LLM calls "
+        print(f"NOTE: {args.llm} mode spends real LLM calls "
               f"({args.n_agents} agents x {args.n_steps} steps x {len(conds)} arm(s))")
         print("=" * 78)
 

@@ -51,9 +51,10 @@ except Exception:  # pragma: no cover - stub path
     DecisionModel = EnvironmentProvider = MetricCollector = PopulationProvider = object
 
 try:
-    from tajfel.model import MATRIX_MIF
+    from tajfel.model import MATRIX_MIF, is_llm_kind
 except Exception:  # pragma: no cover
     MATRIX_MIF = [(15, 5), (14, 8), (13, 11), (12, 14), (11, 17), (10, 20)]
+    def is_llm_kind(kind): return kind == "openai"
 
 # --- shared protocol defaults ------------------------------------------------------------------
 N_AGENTS = 10
@@ -737,7 +738,7 @@ class CommunicationDecisionModel(DecisionModel):
     def _call_llm(self, prompt: str) -> str:
         if self._llm is None:
             from tajfel.model import _OpenAILLM
-            self._llm = _OpenAILLM(model=self.model, temperature=self.temperature, max_tokens=self.max_tokens)
+            self._llm = _OpenAILLM(model=self.model, temperature=self.temperature, max_tokens=self.max_tokens, provider=self.llm_kind)
         return self._llm(prompt)
 
     # -- scripted helpers (validation only) ------------------------------------------------------
@@ -781,7 +782,7 @@ class CommunicationDecisionModel(DecisionModel):
     def _decide_allocation(self, ob):
         prompt = build_allocation_prompt(ob)
         row, reason, source = None, "", "rule"
-        if self.llm_kind == "openai":
+        if is_llm_kind(self.llm_kind):
             try:
                 reply = str(self._call_llm(prompt) or "")
                 m = re.search(r'"row"\s*:\s*(\d+)', reply)
@@ -810,7 +811,7 @@ class CommunicationDecisionModel(DecisionModel):
                               rationale=["not a permitted sender"])
         prompt = build_chat_prompt(ob, r)
         content, source = "", "rule"
-        if self.llm_kind == "openai":
+        if is_llm_kind(self.llm_kind):
             try:
                 reply = str(self._call_llm(prompt) or "")
                 m = re.search(r'"message"\s*:\s*"((?:[^"\\]|\\.)*)"', reply, re.S)
@@ -832,14 +833,14 @@ class CommunicationDecisionModel(DecisionModel):
         obs = list(obs)
         if not obs:
             return []
-        if self.llm_kind == "openai" and len(obs) > 1:
+        if is_llm_kind(self.llm_kind) and len(obs) > 1:
             from concurrent.futures import ThreadPoolExecutor
             llm = self._llm
             with ThreadPoolExecutor(max_workers=min(8, len(obs))) as ex:
                 actions = list(ex.map(lambda o: self._choose_one(o, memories), obs))
         else:
             actions = [self._choose_one(o, memories) for o in obs]
-        if self.llm_kind == "openai":
+        if is_llm_kind(self.llm_kind):
             self.call_count += len(obs)
             self.fallback_count += sum(1 for a in actions if getattr(a, "source", None) == "fallback")
         return actions

@@ -43,9 +43,9 @@ from tajfel.communication import (
     ENV_REF, POPULATION_REF, SERIES_OF, STEPS, N_AGENTS, CommunicationEnvironmentProvider,
     CommunicationDecisionModel, CommunicationMetricCollector, export_run, run_condition,
 )
-from tajfel.model import make_tajfel_bundles
+from tajfel.model import make_tajfel_bundles, LLM_PROVIDERS, is_llm_kind
 
-LLM_KINDS = ("scripted", "openai")
+LLM_KINDS = ("scripted", *LLM_PROVIDERS)
 
 
 def _parse_seeds(text: str) -> list[int]:
@@ -127,7 +127,7 @@ def main(argv=None) -> int:
     p.add_argument("--series", choices=["e2", "e3", "e4"], default=None,
                    help="shorthand for --condition <series>")
     p.add_argument("--llm", choices=LLM_KINDS, default="scripted")
-    p.add_argument("--model", default=None, help="LLM model id (only with --llm openai)")
+    p.add_argument("--model", default=None, help="LLM model id override (real LLM modes only)")
     p.add_argument("--steps", type=int, default=STEPS)
     p.add_argument("--seed", type=int, default=None, help="single seed (kept for compatibility)")
     p.add_argument("--seeds", default=None, help="seed list, e.g. 0-9 or 1,4,7")
@@ -149,8 +149,8 @@ def main(argv=None) -> int:
     seeds = _parse_seeds(a.seeds) if a.seeds else [42 if a.seed is None else a.seed]
     out = Path(a.out)
     planned = [(c, s) for c in conditions for s in seeds]
-    if a.llm == "openai":
-        print(f"WARNING: real LLM run -- {len(planned)} condition/seed pairs, {a.steps} steps, "
+    if is_llm_kind(a.llm):
+        print(f"WARNING: real LLM run ({a.llm}) -- {len(planned)} condition/seed pairs, {a.steps} steps, "
               f"{a.n_agents} agents, model={a.model or 'env default'}")
     print(f"conditions={len(conditions)} seeds={seeds} driver={a.driver} llm={a.llm} "
           f"-> {out}/<condition>/seed_<seed>/")

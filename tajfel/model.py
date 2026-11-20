@@ -411,21 +411,64 @@ def _load_dotenv(root: Path | None = None) -> None:
     load(root)
 
 
-class _OpenAILLM:
-    """Thin OpenAI-compatible client over the SV_LLM channel, lazily connected."""
+# --- LLM providers ------------------------------------------------------------------------------
+# One OpenAI-compatible client behind each `llm_kind` value. `openai` keeps the legacy SV_LLM_*
+# environment variables; additional slots read SV_LLM2_* / SV_LLM3_* so several providers can be
+# configured side by side (each with its own base URL, model and API key). Add a slot here plus the
+# matching SV_LLM<N>_* lines in .env to register another provider.
+LLM_PROVIDERS: dict[str, dict[str, str]] = {
+    "openai": {"prefix": "SV_LLM", "default_base_url": "https://api.openai.com/v1",
+               "default_model": "gpt-4o"},
+    "llm2": {"prefix": "SV_LLM2", "default_base_url": "", "default_model": ""},
+    "llm3": {"prefix": "SV_LLM3", "default_base_url": "", "default_model": ""},
+}
 
-    def __init__(self, model: str | None = None, temperature: float = 0.7, max_tokens: int = 160):
+
+def is_llm_kind(kind: str) -> bool:
+    """True for any kind that resolves to a real LLM client (as opposed to `scripted`)."""
+    return kind in LLM_PROVIDERS
+
+
+def _provider_env(provider: str) -> tuple[str, str, str]:
+    """(api_key, base_url, model) resolved from the environment for one provider slot."""
+    cfg = LLM_PROVIDERS[provider]
+    prefix = cfg["prefix"]
+    api_key = os.environ.get(f"{prefix}_API_KEY") or ""
+    if provider == "openai":
+        api_key = api_key or os.environ.get("OPENAI_API_KEY", "")
+    base_url = os.environ.get(f"{prefix}_BASE_URL") or cfg["default_base_url"]
+    model = os.environ.get(f"{prefix}_MODEL") or cfg["default_model"]
+    return api_key, base_url, model
+
+
+class _OpenAILLM:
+    """Thin OpenAI-compatible client over one registered provider slot, lazily connected."""
+
+    def __init__(self, model: str | None = None, temperature: float = 0.7, max_tokens: int = 160,
+                 provider: str = "openai"):
         _load_dotenv()
-        self.model = model or os.environ.get("SV_LLM_MODEL", "gpt-4o")
+        self.provider = provider
+        api_key, base_url, default_model = _provider_env(provider)
+        self.model = model or default_model
+        self.api_key = api_key
+        self.base_url = base_url
         self.temperature, self.max_tokens = temperature, max_tokens
         self._client = None
 
     def _ensure(self):
         if self._client is None:
+            prefix = LLM_PROVIDERS[self.provider]["prefix"]
+            if not self.api_key:
+                raise RuntimeError(
+                    f"no API key for LLM provider {self.provider!r}; set {prefix}_API_KEY in .env")
+            if not self.base_url:
+                raise RuntimeError(
+                    f"no base URL for LLM provider {self.provider!r}; set {prefix}_BASE_URL in .env")
+            if not self.model:
+                raise RuntimeError(
+                    f"no model for LLM provider {self.provider!r}; set {prefix}_MODEL in .env")
             from openai import OpenAI
-            self._client = OpenAI(
-                api_key=os.environ.get("SV_LLM_API_KEY") or os.environ.get("OPENAI_API_KEY"),
-                base_url=os.environ.get("SV_LLM_BASE_URL", "https://api.openai.com/v1"))
+            self._client = OpenAI(api_key=self.api_key, base_url=self.base_url)
         return self._client
 
     def __call__(self, prompt: str) -> str:
@@ -438,8 +481,8 @@ class _OpenAILLM:
 def _make_llm(kind: str, **kw) -> Callable[[str], str] | None:
     if kind == "scripted":
         return None
-    if kind == "openai":
-        return _OpenAILLM(**kw)
+    if is_llm_kind(kind):
+        return _OpenAILLM(provider=kind, **kw)
     raise ValueError(f"unknown llm_kind: {kind!r}")
 
 
@@ -557,7 +600,10 @@ class TajfelDecisionModel(DecisionModel):
       - noise (float)         per-agent scripted randomness (0..1)
       - label_gain (float)    how strongly the SCRIPTED stub responds to a visible label
       - rarity_gain (float)   extra scripted drift when the agent's own group is the minority
-      - llm_kind, model, temperature, max_tokens, max_workers, prompt_lang
+      - llm_kind              `scripted` (default) or any key in LLM_PROVIDERS
+                              (`openai`, `llm2`, `llm3`); each provider reads its own
+                              SV_LLM* / SV_LLM2* / SV_LLM3* env vars from .env
+      - model, temperature, max_tokens, max_workers, prompt_lang
     """
 
     def __init__(self, matrix_bias: float = 0.65, noise: float = 0.5, label_gain: float = 0.3,
@@ -631,7 +677,7 @@ class TajfelDecisionModel(DecisionModel):
         if n_rows == 0:
             return 0, "", ["empty matrix"]
         rule_row = self._scripted_row(ob, n_rows)
-        if self.llm_kind != "openai" or self.llm is None:
+        if self.llm is None:
             return rule_row, "rule", [f"scripted~{rule_row}/{n_rows - 1}"]
 
         try:
@@ -649,7 +695,7 @@ class TajfelDecisionModel(DecisionModel):
         # `memories` is intentionally unused for C1-C3: each allocation is an independent
         # single-shot decision (see build_tajfel_prompt). The D-series study reuses this model
         # with a memory-aware prompt; do NOT "fix" this without that spec.
-        if self.llm_kind == "openai" and len(obs) > 1:
+        if self.llm is not None and len(obs) > 1:
             from concurrent.futures import ThreadPoolExecutor
             if hasattr(self.llm, "_ensure"):
                 self.llm._ensure()
