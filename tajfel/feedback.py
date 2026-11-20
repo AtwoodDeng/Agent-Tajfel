@@ -22,7 +22,7 @@ except Exception:  # Windows selftest imports this module with framework stubs
     Persona = SimpleNamespace
 
 try:
-    from tajfel.model import MATRIX_MIF, agent_id, agent_index, group_of, group_sizes, other_group
+    from tajfel.model import MATRIX_MIF, agent_id, agent_index, group_of, group_sizes, other_group, is_llm_kind
 except Exception:
     MATRIX_MIF=[(15,5),(14,8),(13,11),(12,14),(11,17),(10,20)]
     def agent_id(i): return f"tj-{i:03d}"
@@ -30,6 +30,7 @@ except Exception:
     def group_of(i,n,condition="c1"): return "A" if i < n//2 else "B"
     def other_group(g): return "B" if g=="A" else "A"
     def group_sizes(n,condition): return (n//2,n-n//2)
+    def is_llm_kind(kind): return kind == "openai"
 
 try:
     from socioverse.engine.messaging import InMemoryMessageBus
@@ -215,7 +216,7 @@ class FeedbackDecisionModel(DecisionModel):
     def _ensure_llm(self):
         if self._llm is None:
             from tajfel.model import _OpenAILLM
-            self._llm=_OpenAILLM(model=self.model,temperature=self.temperature,max_tokens=self.max_tokens)
+            self._llm=_OpenAILLM(model=self.model,temperature=self.temperature,max_tokens=self.max_tokens,provider=self.llm_kind)
         return self._llm
     def _call_llm(self,prompt):
         return self._ensure_llm()(prompt)
@@ -236,7 +237,7 @@ class FeedbackDecisionModel(DecisionModel):
             local_physical=lp)
         r=lp.get("round_idx",0); prompt=build_feedback_prompt(ob_for_prompt,r); partner=lp.get("partner_id")
         source="rule"; row=None; content=""; reason=""
-        if self.llm_kind == "openai":
+        if is_llm_kind(self.llm_kind):
             try:
                 reply=str(self._call_llm(prompt) or "")
                 if r==0:
@@ -257,7 +258,7 @@ class FeedbackDecisionModel(DecisionModel):
         elif r==0: row=self._row(ob)
         else: content=self._scripted_message(ob,r,prompt)
         if r==0:
-            if self.llm_kind != "openai": row=self._row(ob_for_prompt)
+            if not is_llm_kind(self.llm_kind): row=self._row(ob_for_prompt)
             a,b=MATRIX_MIF[row]
             if lp.get("own_group") in ("A","B"):
                 own,other=(a,b) if lp.get("own_group")=="A" else (b,a)
@@ -273,7 +274,7 @@ class FeedbackDecisionModel(DecisionModel):
 
     def decide_batch(self,obs,memories=None):
         memories = memories or {}
-        if self.llm_kind == "openai" and len(obs) > 1:
+        if is_llm_kind(self.llm_kind) and len(obs) > 1:
             from concurrent.futures import ThreadPoolExecutor
             self._ensure_llm()  # create the shared client once, before worker threads race on it
             with ThreadPoolExecutor(max_workers=min(8, len(obs))) as ex:
@@ -282,7 +283,7 @@ class FeedbackDecisionModel(DecisionModel):
             actions = [self._choose_one(o, memories) for o in obs]
         # Each agent makes exactly ONE LLM call per decide_batch in openai mode; count once here
         # instead of racing on a shared counter inside the worker threads.
-        if self.llm_kind == "openai":
+        if is_llm_kind(self.llm_kind):
             self.call_count += len(obs)
             self.fallback_count += sum(1 for a in actions if getattr(a, "source", None) == "fallback")
         return actions

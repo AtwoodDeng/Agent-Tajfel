@@ -85,6 +85,7 @@ def check_runner_args(failures: list[str], taj) -> None:
                 # the names run_tajfel imports from the study module, supplied directly
                 "CONDITIONS": taj.CONDITIONS,
                 "CONDITION_LABELS": taj.CONDITION_LABELS,
+                "LLM_PROVIDERS": taj.LLM_PROVIDERS,
                 "matrix_for": taj.matrix_for,
                 "row_count": taj.row_count,
                 "STUDIES_ROOT": HERE, "REF_STUDY_ID": "tajfel"}

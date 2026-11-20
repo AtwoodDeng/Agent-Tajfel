@@ -6,7 +6,7 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path: sys.path.insert(0,str(ROOT))
 import tajfel  # registers the parent population provider
-from tajfel.model import make_tajfel_bundles
+from tajfel.model import make_tajfel_bundles, LLM_PROVIDERS, is_llm_kind
 import tajfel.feedback as feedback  # registers D-series providers
 from socioverse.engine import build_simulator
 
@@ -33,10 +33,10 @@ def run_one(arm,llm,steps,seed,out,model=None,n_agents=10):
  return rows
 
 def main(argv=None):
- p=argparse.ArgumentParser(); p.add_argument('--arm',choices=[*feedback.ARMS,'all'],default='all'); p.add_argument('--llm',choices=['scripted','openai'],default='scripted'); p.add_argument('--steps',type=int,default=5); p.add_argument('--seed',type=int,default=42); p.add_argument('--out',default='runs_feedback'); p.add_argument('--model',default=None); p.add_argument('--n-agents',type=int,default=10); a=p.parse_args(argv)
+ p=argparse.ArgumentParser(); p.add_argument('--arm',choices=[*feedback.ARMS,'all'],default='all'); p.add_argument('--llm',choices=['scripted',*LLM_PROVIDERS],default='scripted'); p.add_argument('--steps',type=int,default=5); p.add_argument('--seed',type=int,default=42); p.add_argument('--out',default='runs_feedback'); p.add_argument('--model',default=None); p.add_argument('--n-agents',type=int,default=10); a=p.parse_args(argv)
  arms=feedback.ARMS if a.arm=='all' else (a.arm,)
  for arm in arms:
-  if a.llm=='openai': print(f'WARNING: real LLM run: {arm}, {a.steps} steps, {a.n_agents} agents x {1 if arm in feedback.CHATLESS_ARMS else 3} rounds')
+  if is_llm_kind(a.llm): print(f'WARNING: real LLM run ({a.llm}): {arm}, {a.steps} steps, {a.n_agents} agents x {1 if arm in feedback.CHATLESS_ARMS else 3} rounds')
   rows=run_one(arm,a.llm,a.steps,a.seed,a.out,a.model,a.n_agents); last=rows[-1] if rows else {}; print(f"{arm}: final mean_gap={last.get('mean_gap')}")
  return 0
 if __name__=='__main__': raise SystemExit(main())
