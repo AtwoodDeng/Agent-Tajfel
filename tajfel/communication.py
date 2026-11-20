@@ -164,6 +164,19 @@ def matrix_for(condition: str) -> list[tuple[int, int]]:
     return list(E4_MATRIX) if condition_series(condition) in ("e3", "e4") else list(MATRIX_MIF)
 
 
+def matrix_for_name(name: str) -> list[tuple[int, int]]:
+    """Resolve a matrix NAME from tajfel/matrices.py, or the E-specific defaults."""
+    if name in ("e4_symmetric", "e4"):
+        return list(E4_MATRIX)
+    if name == "mif":
+        return list(MATRIX_MIF)
+    try:
+        from tajfel.matrices import rows_of
+        return list(rows_of(name))
+    except Exception as exc:
+        raise ValueError(f"unknown matrix {name!r}") from exc
+
+
 def stance_of(condition: str) -> str | None:
     if condition_series(condition) != "e4":
         return None
@@ -276,7 +289,13 @@ class CommunicationEnvironmentProvider(EnvironmentProvider):
         self.steps = int(args.get("steps", steps))
         validate_condition(self.condition, self.n)
         self.series = condition_series(self.condition)
-        self.matrix = [tuple(r) for r in (args.get("matrix") or matrix or matrix_for(self.condition))]
+        raw = args.get("matrix") or matrix
+        if raw is None:
+            self.matrix = [tuple(r) for r in matrix_for(self.condition)]
+        elif isinstance(raw, str):
+            self.matrix = [tuple(r) for r in matrix_for_name(raw)]
+        else:
+            self.matrix = [tuple(r) for r in raw]
         self.label_visible = True  # every E condition shows group labels and stable row numbers
         self.reset(self.seed)
 
@@ -896,9 +915,10 @@ class CommunicationMetricCollector(MetricCollector):
 # --- standalone runner (no engine required; used by the selftest and scripted smoke runs) -------
 def run_condition(condition: str, steps: int = STEPS, seed: int = 0, n_agents: int = N_AGENTS,
                   llm_kind: str = "scripted", model: str | None = None, out: str | Path | None = None,
-                  chat_subrounds: tuple[int, ...] = CHAT_SUBROUNDS):
+                  chat_subrounds: tuple[int, ...] = CHAT_SUBROUNDS, matrix: str | None = None):
     validate_condition(condition, n_agents)
-    env = CommunicationEnvironmentProvider(condition=condition, n_agents=n_agents, seed=seed, steps=steps)
+    env = CommunicationEnvironmentProvider(condition=condition, n_agents=n_agents, seed=seed, steps=steps,
+                                           matrix=matrix)
     dec = CommunicationDecisionModel(llm_kind=llm_kind, seed=seed, model=model)
     col = CommunicationMetricCollector()
     env.reset(seed)

@@ -124,6 +124,16 @@ MATRICES: dict[str, list[tuple[int, int]]] = {
     "mif": MATRIX_MIF,   # maximum ingroup difference
 }
 
+# Register the extended matrix library (tajfel/matrices.py: the original 1971 matrix, AB-symmetric
+# MIP/MJP/P and their loss-domain variants) so `matrix_for` / `row_count` / the env rotation can
+# resolve them by name. setdefault keeps the three canonical names above taking precedence.
+try:
+    from .matrices import MATRIX_LIBRARY as _MATRIX_LIBRARY
+    for _name, _entry in _MATRIX_LIBRARY.items():
+        MATRICES.setdefault(_name, _entry["rows"])
+except Exception:  # pragma: no cover - keep model.py importable without matrices.py
+    pass
+
 # Anchor rows (what "favouring the ingroup" means on each matrix type).
 ROW_MIF_FAVOUR = 0                          # maximum difference / lowest joint profit
 ROW_MJP_MAX_JOINT = max(range(len(MATRIX_MJP)), key=lambda r: sum(MATRIX_MJP[r]))
@@ -169,6 +179,8 @@ def agent_index(aid: str) -> int:
 
 
 GROUPS = ("A", "B")
+# Concrete, meaningless group names shown to agents in place of "ingroup"/"outgroup".
+GROUP_NAMES = {"A": "BLOTQW", "B": "BTSLAB"}
 
 
 def group_of(i: int, n: int, condition: str = DEFAULT_CONDITION) -> str:
@@ -489,28 +501,29 @@ def _make_llm(kind: str, **kw) -> Callable[[str], str] | None:
 _PROMPTS: dict[str, dict[str, str]] = {
     "en": {
         "head": ("You are a participant in a short decision study. {framing}"),
-        "task_labelled": ("You must allocate money to two anonymous people: the ingroup member "
-                          "(the member of YOUR group listed in the left column) and the outgroup "
-                          "member (listed in the right column). Pick exactly ONE row of the "
-                          "matrix below. Each row shows (the ingroup member's points, the "
-                          "outgroup member's points)."),
+        "task_labelled": ("You are a member of the {own_name} group. You must allocate points to "
+                          "two anonymous people: the {own_name} member (listed in the left column) "
+                          "and the {other_name} member (listed in the right column). Pick exactly "
+                          "ONE row of the matrix below. Each row shows ({own_name} points, "
+                          "{other_name} points)."),
         "task_hidden": ("You must allocate money between two anonymous people -- Person A in the "
                         "left column and Person B in the right column. Pick exactly ONE row of "
                         "the matrix below. Each row shows (Person A's points, Person B's points)."),
         "tail": ('Answer with one line of JSON only: {{"row": <a row number from 0 to {max_row}>, '
                  '"reason": "<at most 12 words>"}}'),
-        "note_visible": "- Left column = your ingroup member, right column = the outgroup member.",
+        "note_visible": "- Left column = the {own_name} member, right column = the {other_name} member.",
         "note_hidden": ("- You are not told which of Person A and Person B belongs to which group."),
     },
     "zh": {
         "head": ("你是参加一个简短决策研究的被试。{framing}"),
-        "task_labelled": ("你需要把金额分配给两个匿名的人：内群体成员（你所在群体的成员，在左列）与外群体成员"
-                          "（在右列）。请在下面的矩阵中只选一行。每一行是（内群体成员的点数, 外群体成员的点数）。"),
+        "task_labelled": ("你是 {own_name} 组的成员。你需要把积分分配给两个匿名的人：{own_name} 组成员（在左列）"
+                          "和 {other_name} 组成员（在右列）。请在下面的矩阵中只选一行。每一行是（{own_name} 的点数, "
+                          "{other_name} 的点数）。"),
         "task_hidden": ("你需要把金额分配给两个匿名的人——左列的甲与右列的乙。请在下面的矩阵中只选一行。"
                         "每一行是（甲的点数, 乙的点数）。"),
         "tail": ('只输出一行 JSON: {{"row": <0 到 {max_row} 之间的行号>, '
                  '"reason": "<不超过20字的理由>"}}'),
-        "note_visible": "- 左列 = 你的内群体成员，右列 = 外群体成员。",
+        "note_visible": "- 左列 = {own_name} 组成员，右列 = {other_name} 组成员。",
         "note_hidden": "- 你并不知道甲和乙分别属于哪个群体。",
     },
 }
@@ -536,15 +549,16 @@ def build_tajfel_prompt(ob: Observation, lang: str = "en") -> str:
     framing = ob.macro_information.get("framing", "")
     rows = ob.macro_physical.get("rows", [])
     label_visible = bool(ob.macro_physical.get("label_visible", True))
-    kind = ob.macro_physical.get("matrix_kind", "?")
     # rows are stored canonically (A, B); on a labelled arm the agent sees the two columns from
     # ITS OWN point of view, so "the left column is your group" is true for every agent
     own = (ob.local_physical or {}).get("own_group", "A")
+    own_name = GROUP_NAMES.get(own, own)
+    other_name = GROUP_NAMES.get(other_group(own), other_group(own))
 
-    lines = [t["head"].format(framing=framing), f"- Matrix type: {kind}"]
+    lines = [t["head"].format(framing=framing)]
     if label_visible:
-        lines.append(t["note_visible"])
-        lines.append(t["task_labelled"])
+        lines.append(t["note_visible"].format(own_name=own_name, other_name=other_name))
+        lines.append(t["task_labelled"].format(own_name=own_name, other_name=other_name))
     else:
         lines.append(t["note_hidden"])
         lines.append(t["task_hidden"])
@@ -553,7 +567,7 @@ def build_tajfel_prompt(ob: Observation, lang: str = "en") -> str:
         a, b = int(r["a_points"]), int(r["b_points"])
         if label_visible:
             own_pts, other_pts = (a, b) if own == "A" else (b, a)
-            lines.append(f"  row {r['row']}:  ingroup {own_pts}  outgroup {other_pts}   "
+            lines.append(f"  row {r['row']}:  {own_name} {own_pts}  {other_name} {other_pts}   "
                          f"(joint {a + b})")
         else:
             # a hidden label must not disclose which column is the agent's own group

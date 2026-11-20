@@ -67,7 +67,11 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     ap.add_argument("--n-agents", type=int, default=10,
                     help="pool size (10 = smoke test, 50 = full design)")
     ap.add_argument("--n-steps", type=int, default=3,
-                    help="steps = allocation rounds; steps rotate parity -> MJP -> MIF")
+                    help="steps = allocation rounds; one matrix per step, rotating through --matrices")
+    ap.add_argument("--matrices", default=None,
+                    help="comma-separated matrix kinds to rotate through, e.g. "
+                         "original_1971,parity_sym,mjp_sym,mip_sym,parity_neg "
+                         "(default: parity,mjp,mif)")
     ap.add_argument("--seed", type=int, default=42)
     ap.add_argument("--model", default=None, help="LLM model id (default: SV_LLM_MODEL)")
     ap.add_argument("--prompt-lang", choices=["en", "zh"], default="en")
@@ -95,12 +99,18 @@ def run_dir_for(args: argparse.Namespace, condition: str) -> Path:
 def build_config(args: argparse.Namespace, condition: str
                  ) -> tuple[object, object, object, SimulationConfig]:
     """Fresh bundles for one arm, with the run-time switches folded into the args."""
+    matrices = None
+    if getattr(args, "matrices", None):
+        matrices = [m.strip() for m in args.matrices.split(",") if m.strip()]
+        for m in matrices:
+            matrix_for(m)  # fail fast on a typo, before any API call
     study, env_bundle, pop_bundle, sim = tajfel_study.make_tajfel_bundles(
         study_id=REF_STUDY_ID,
         condition=condition,
         n_agents=args.n_agents,
         n_steps=args.n_steps,
         seed=args.seed,
+        matrices=matrices,
     )
     # arm-specific provider args (the condition flag the providers read)
     sim = sim.model_copy(update={
