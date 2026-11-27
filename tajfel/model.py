@@ -98,41 +98,22 @@ _log = logging.getLogger(__name__)
 # direction to the joint profit: walking up the table buys the ingroup a bigger relative
 # advantage while shrinking the total paid out. That sacrifice is what the matrix measures.
 
-MATRIX_PARITY: list[tuple[int, int]] = [
-    (19, 1), (17, 3), (15, 5), (13, 7), (11, 9),
-    (9, 11), (7, 13), (5, 15), (3, 17), (1, 19),
-]
-# Type 3 (MIF): the gap GROWS as the joint profit FALLS, which is the real maximum-difference
-# trade-off: row 0 is the maximum-difference row (biggest gap, lowest joint profit), the last
-# row is the maximum-joint row (biggest total, own group behind). No row dominates another --
-# own-group points fall monotonically while the other group's rise -- so every one of the four
-# Tajfel strategies (max joint / max own / max difference / fair) lands on a different row.
-MATRIX_MIF: list[tuple[int, int]] = [
-    (15, 5), (14, 8), (13, 11), (12, 14), (11, 17), (10, 20),
-]
-# Type 2 (MJP): joint profit peaks INTERIOR to the table and the gap falls away at the high end,
-# so a joint-profit maximiser lands mid-table while an ingroup-favouring agent drifts toward the
-# low rows (accepting a smaller joint profit to keep the ingroup ahead). The interior peak is what
-# makes this a trade-off matrix rather than a monotone one.
-MATRIX_MJP: list[tuple[int, int]] = [
-    (7, 1), (10, 5), (11, 10), (12, 15), (10, 19), (8, 21),
-]
+# Matrices live in ONE global library (`tajfel/matrices.py`) shared by the C-series (this module)
+# and the D-series (`tajfel/feedback.py`); both resolve them through `matrix_for` / `MATRICES`.
+try:
+    from .matrices import MATRIX_LIBRARY, MATRIX_MIF, MATRIX_MJP, MATRIX_PARITY
+except ImportError:  # pragma: no cover - selftest loads model.py flat, outside the package
+    import importlib.util as _ilu
+    _spec = _ilu.spec_from_file_location(
+        "tajfel_matrices", Path(__file__).parent / "matrices.py")
+    _mod = _ilu.module_from_spec(_spec)
+    _spec.loader.exec_module(_mod)
+    MATRIX_LIBRARY = _mod.MATRIX_LIBRARY
+    MATRIX_MIF, MATRIX_MJP, MATRIX_PARITY = _mod.MATRIX_MIF, _mod.MATRIX_MJP, _mod.MATRIX_PARITY
 
 MATRICES: dict[str, list[tuple[int, int]]] = {
-    "parity": MATRIX_PARITY,
-    "mjp": MATRIX_MJP,   # maximum joint profit
-    "mif": MATRIX_MIF,   # maximum ingroup difference
+    name: entry["rows"] for name, entry in MATRIX_LIBRARY.items()
 }
-
-# Register the extended matrix library (tajfel/matrices.py: the original 1971 matrix, AB-symmetric
-# MIP/MJP/P and their loss-domain variants) so `matrix_for` / `row_count` / the env rotation can
-# resolve them by name. setdefault keeps the three canonical names above taking precedence.
-try:
-    from .matrices import MATRIX_LIBRARY as _MATRIX_LIBRARY
-    for _name, _entry in _MATRIX_LIBRARY.items():
-        MATRICES.setdefault(_name, _entry["rows"])
-except Exception:  # pragma: no cover - keep model.py importable without matrices.py
-    pass
 
 # Anchor rows (what "favouring the ingroup" means on each matrix type).
 ROW_MIF_FAVOUR = 0                          # maximum difference / lowest joint profit

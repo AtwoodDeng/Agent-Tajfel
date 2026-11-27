@@ -139,8 +139,9 @@ def main() -> int:
         print(f"  {'':7}              joints={joints}")
         if len(v) < 2:
             failures.append(f"{k}: needs >= 2 rows")
-        if any(a < 0 or b < 0 for a, b in v):
-            failures.append(f"{k}: negative payoff")
+        valence = taj.MATRIX_LIBRARY.get(k, {}).get("valence", "gain")
+        if valence == "gain" and any(a < 0 or b < 0 for a, b in v):
+            failures.append(f"{k}: negative payoff in a gain matrix")
     # parity: joint profit constant, gap sweeps sign
     if len({a + b for a, b in taj.MATRIX_PARITY}) != 1:
         failures.append("parity: joint profit must be constant across rows")

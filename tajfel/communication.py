@@ -51,10 +51,18 @@ except Exception:  # pragma: no cover - stub path
     DecisionModel = EnvironmentProvider = MetricCollector = PopulationProvider = object
 
 try:
-    from tajfel.model import MATRIX_MIF, is_llm_kind
+    from tajfel.model import is_llm_kind
+    from tajfel.matrices import rows_of
+    E4_MATRIX: list[tuple[int, int]] = [tuple(r) for r in rows_of("e_symmetric")]
 except Exception:  # pragma: no cover
-    MATRIX_MIF = [(15, 5), (14, 8), (13, 11), (12, 14), (11, 17), (10, 20)]
     def is_llm_kind(kind): return kind == "openai"
+    def rows_of(name):
+        if name == "mif":
+            return [(15, 5), (14, 8), (13, 11), (12, 14), (11, 17), (10, 20)]
+        if name == "e_symmetric":
+            return [(16, 4), (4, 16), (15, 13), (13, 15), (13, 13)]
+        raise KeyError(name)
+    E4_MATRIX = [(16, 4), (4, 16), (15, 13), (13, 15), (13, 13)]
 
 # --- shared protocol defaults ------------------------------------------------------------------
 N_AGENTS = 10
@@ -91,10 +99,10 @@ CONDITION_LABELS = {
     "e4-public-equal": "public bulletin, both leaders commit to minimising the A-B difference",
 }
 
-# E4 uses its own symmetric matrix: on the D MIF table the B group's "favour own group" row and
-# its "maximise joint" row coincide at (10, 20), which would collapse two conditions into one
-# recommendation. Rows are (A points, B points).
-E4_MATRIX: list[tuple[int, int]] = [(16, 4), (4, 16), (15, 13), (13, 15), (13, 13)]
+# E3 and E4 share the E-series symmetric matrix (single source of truth: tajfel/matrices.py,
+# key "e_symmetric"). On the D MIF table the B group's "favour own group" row and its "maximise
+# joint" row coincide at (10, 20), which would collapse two conditions into one recommendation.
+# Rows are (A points, B points).
 E4_TIE_RULE = "maximise the joint total; if rows tie, prefer the row with more own-group points"
 
 
@@ -158,21 +166,26 @@ def validate_condition(condition: str, n_agents: int) -> None:
 
 
 def matrix_for(condition: str) -> list[tuple[int, int]]:
-    # E3 shares E4's symmetric matrix: on MATRIX_MIF the B group's "favour own group" and
-    # "maximise joint" rows coincide at (10, 20), so A and B face different trade-offs. The
-    # symmetric table removes that collapse and makes the two groups comparable.
-    return list(E4_MATRIX) if condition_series(condition) in ("e3", "e4") else list(MATRIX_MIF)
+    """Return the designed matrix for a condition.
+
+    E2 keeps the D-series MIF table. E3 and E4 share the symmetric E matrix ("e_symmetric"):
+    on MATRIX_MIF the B group's "favour own group" and "maximise joint" rows coincide at
+    (10, 20), so A and B would face different trade-offs; the symmetric table removes that
+    collapse and makes the two groups comparable.
+    """
+    name = "e_symmetric" if condition_series(condition) in ("e3", "e4") else "mif"
+    return matrix_for_name(name)
 
 
 def matrix_for_name(name: str) -> list[tuple[int, int]]:
-    """Resolve a matrix NAME from tajfel/matrices.py, or the E-specific defaults."""
+    """Resolve a matrix NAME from tajfel/matrices.py (the single source of truth).
+
+    "e4" / "e4_symmetric" are kept as aliases for the canonical "e_symmetric" key.
+    """
     if name in ("e4_symmetric", "e4"):
-        return list(E4_MATRIX)
-    if name == "mif":
-        return list(MATRIX_MIF)
+        name = "e_symmetric"
     try:
-        from tajfel.matrices import rows_of
-        return list(rows_of(name))
+        return [tuple(r) for r in rows_of(name)]
     except Exception as exc:
         raise ValueError(f"unknown matrix {name!r}") from exc
 
