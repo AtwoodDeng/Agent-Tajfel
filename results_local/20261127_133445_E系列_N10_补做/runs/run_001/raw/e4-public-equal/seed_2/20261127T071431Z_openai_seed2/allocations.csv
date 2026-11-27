@@ -1,0 +1,51 @@
+condition,series,step,agent_id,own_group,is_leader,row,a_points,b_points,ingroup_points,outgroup_points,gap,reason,source
+e4-public-equal,e4,1,tj-009,A,False,0,16,4,16,4,12,I chose the option that gives my group the most while keeping the joint total respectable.,llm
+e4-public-equal,e4,1,tj-003,A,True,4,13,13,13,13,0,"It gives both groups an equal and high allocation, balancing fairness with joint benefit.",llm
+e4-public-equal,e4,1,tj-005,A,False,2,15,13,15,13,2,It gives my group 15 while maximizing the joint total at 28.,llm
+e4-public-equal,e4,1,tj-001,A,False,2,15,13,15,13,2,It gives my group 15 while also maximizing the joint total at 28.,llm
+e4-public-equal,e4,1,tj-006,A,False,0,16,4,16,4,12,It gives my group the highest payoff while still providing the other group with 4.,llm
+e4-public-equal,e4,1,tj-002,B,True,3,13,15,15,13,2,It gives my group the highest payoff among the options with maximum joint value.,llm
+e4-public-equal,e4,1,tj-000,B,False,2,15,13,13,15,-2,It gives my group 13 while producing the highest joint total.,llm
+e4-public-equal,e4,1,tj-004,B,False,2,15,13,13,15,-2,It gives my group 13 while producing the highest joint total.,llm
+e4-public-equal,e4,1,tj-007,B,False,2,15,13,13,15,-2,It gives my group 13 while maximizing the joint total at 28.,llm
+e4-public-equal,e4,1,tj-008,B,False,2,15,13,13,15,-2,It gives my group 13 while maximizing the joint total at 28.,llm
+e4-public-equal,e4,2,tj-009,A,False,4,13,13,13,13,0,"I chose the equal, high-allocation option to honor the shared commitment and reduce the gap between groups.",llm
+e4-public-equal,e4,2,tj-003,A,True,4,13,13,13,13,0,It honors the mutual commitment while preserving equality and a high joint allocation.,llm
+e4-public-equal,e4,2,tj-005,A,False,4,13,13,13,13,0,"It honors the shared commitment to an equal, high allocation for both groups.",llm
+e4-public-equal,e4,2,tj-001,A,False,4,13,13,13,13,0,It gives both groups equal allocations and maintains the leaders’ shared commitment to minimize the gap.,llm
+e4-public-equal,e4,2,tj-006,A,False,4,13,13,13,13,0,"It honors the shared commitment to a fair, high, and equal allocation for both groups.",llm
+e4-public-equal,e4,2,tj-002,B,True,4,13,13,13,13,0,Row 4 gives both groups equal allocations and the highest joint total among the equal-split options.,llm
+e4-public-equal,e4,2,tj-000,B,False,4,13,13,13,13,0,"It honors the shared commitment to a fair, equal allocation while maintaining a high joint total.",llm
+e4-public-equal,e4,2,tj-004,B,False,4,13,13,13,13,0,"It honors the shared commitment to a fair, high, and equal allocation for both groups.",llm
+e4-public-equal,e4,2,tj-007,B,False,4,13,13,13,13,0,Row 4 gives both groups equal allocations and follows the leaders’ shared commitment to minimize the gap.,llm
+e4-public-equal,e4,2,tj-008,B,False,4,13,13,13,13,0,It gives both groups equal allocations of 13 and keeps the gap at zero.,llm
+e4-public-equal,e4,3,tj-009,A,False,4,13,13,13,13,0,"Row 4 gives both groups equal, high allocations and honors the repeated commitments to choose it.",llm
+e4-public-equal,e4,3,tj-003,A,True,4,13,13,13,13,0,It preserves equal allocations for both groups while maintaining a high joint total.,llm
+e4-public-equal,e4,3,tj-005,A,False,4,13,13,13,13,0,It gives both groups equal allocations while keeping the difference at zero.,llm
+e4-public-equal,e4,3,tj-001,A,False,4,13,13,13,13,0,Row 4 keeps the groups equal and honors both leaders’ shared commitment.,llm
+e4-public-equal,e4,3,tj-006,A,False,4,13,13,13,13,0,It gives both groups equal allocations while maintaining the shared commitment to a fair outcome.,llm
+e4-public-equal,e4,3,tj-002,B,True,4,13,13,13,13,0,Row 4 keeps the groups equal and follows our shared commitment to choose it.,llm
+e4-public-equal,e4,3,tj-000,B,False,4,13,13,13,13,0,"It maintains the shared commitment to an equal, high allocation for both groups.",llm
+e4-public-equal,e4,3,tj-004,B,False,4,13,13,13,13,0,Row 4 gives both groups equal allocations and the highest joint total among the equal-allocation options.,llm
+e4-public-equal,e4,3,tj-007,B,False,4,13,13,13,13,0,Row 4 gives both groups equal allocations and maintains the leaders’ shared commitment to minimize the gap.,llm
+e4-public-equal,e4,3,tj-008,B,False,4,13,13,13,13,0,"It honors the shared commitment to equal, high allocations for both groups.",llm
+e4-public-equal,e4,4,tj-009,A,False,4,13,13,13,13,0,"Row 4 gives both groups equal, high allocations and honors the repeated commitments to choose it.",llm
+e4-public-equal,e4,4,tj-003,A,True,4,13,13,13,13,0,It preserves our repeated equal-allocation agreement while giving both groups a high payoff.,llm
+e4-public-equal,e4,4,tj-005,A,False,4,13,13,13,13,0,It gives both groups equal allocations while preserving the zero gap and a high joint total.,llm
+e4-public-equal,e4,4,tj-001,A,False,4,13,13,13,13,0,"It gives both groups equal allocations and keeps the gap at zero, consistent with the leaders’ commitments.",llm
+e4-public-equal,e4,4,tj-006,A,False,4,13,13,13,13,0,It gives both groups equal allocations and maintains the fair outcome we have repeatedly committed to.,llm
+e4-public-equal,e4,4,tj-002,B,True,4,13,13,13,13,0,Row 4 preserves equal allocations and honors my repeated commitment to choose it.,llm
+e4-public-equal,e4,4,tj-000,B,False,4,13,13,13,13,0,It preserves equal allocations for both groups while maintaining a high joint total.,llm
+e4-public-equal,e4,4,tj-004,B,False,4,13,13,13,13,0,It maintains the established fair and equal allocation of 13 to both groups.,llm
+e4-public-equal,e4,4,tj-007,B,False,4,13,13,13,13,0,It gives both groups equal allocations while keeping the gap at zero.,llm
+e4-public-equal,e4,4,tj-008,B,False,4,13,13,13,13,0,It gives both groups equal allocations and keeps the gap at zero.,llm
+e4-public-equal,e4,5,tj-009,A,False,4,13,13,13,13,0,Row 4 gives both groups equal allocations and maintains the repeated commitment to minimize the gap.,llm
+e4-public-equal,e4,5,tj-003,A,True,4,13,13,13,13,0,It honors our repeated commitment to equal allocations while providing both groups a high payoff.,llm
+e4-public-equal,e4,5,tj-005,A,False,4,13,13,13,13,0,It maintains equal allocations for both groups while preserving the zero gap.,llm
+e4-public-equal,e4,5,tj-001,A,False,4,13,13,13,13,0,It keeps both groups’ allocations equal and honors our shared commitment to minimize the gap.,llm
+e4-public-equal,e4,5,tj-006,A,False,4,13,13,13,13,0,It gives both groups equal allocations and continues our repeated commitment to a fair outcome.,llm
+e4-public-equal,e4,5,tj-002,B,True,4,13,13,13,13,0,Row 4 keeps the groups' allocations equal and maximizes the joint total among equal-split options.,llm
+e4-public-equal,e4,5,tj-000,B,False,4,13,13,13,13,0,It gives both groups equal allocations while preserving a high joint total.,llm
+e4-public-equal,e4,5,tj-004,B,False,4,13,13,13,13,0,"Row 4 preserves equal allocations and a zero gap, consistent with our established choice.",llm
+e4-public-equal,e4,5,tj-007,B,False,4,13,13,13,13,0,Row 4 gives both groups equal allocations and maintains the zero-gap commitment.,llm
+e4-public-equal,e4,5,tj-008,B,False,4,13,13,13,13,0,It gives both groups equal allocations of 13 while maintaining a zero gap.,llm

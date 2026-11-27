@@ -1,0 +1,51 @@
+condition,series,step,agent_id,own_group,is_leader,row,a_points,b_points,ingroup_points,outgroup_points,gap,reason,source
+e2-public,e2,1,tj-006,A,False,5,10,20,10,20,-10,It maximizes the total allocation.,llm
+e2-public,e2,1,tj-003,A,False,0,15,5,15,5,10,I chose the option that gives my group the highest allocation.,llm
+e2-public,e2,1,tj-000,A,False,5,10,20,10,20,-10,This row provides the greatest joint total while still giving my group 10.,llm
+e2-public,e2,1,tj-007,A,False,0,15,5,15,5,10,I chose the option that gives my group the most.,llm
+e2-public,e2,1,tj-005,A,False,5,10,20,10,20,-10,It gives the other group the most while still providing my group with 10.,llm
+e2-public,e2,1,tj-008,B,False,5,10,20,20,10,10,This row gives my group the largest allocation while still providing 10 to the other group.,llm
+e2-public,e2,1,tj-004,B,False,5,10,20,20,10,10,This row gives my group the largest allocation while also maximizing the joint total.,llm
+e2-public,e2,1,tj-002,B,False,5,10,20,20,10,10,This row gives my group the largest allocation while keeping the joint total highest.,llm
+e2-public,e2,1,tj-009,B,False,5,10,20,20,10,10,It gives my group the largest allocation while also maximizing the joint total.,llm
+e2-public,e2,1,tj-001,B,False,5,10,20,20,10,10,This row gives my group the largest allocation while still providing the other group with 10.,llm
+e2-public,e2,2,tj-006,A,False,5,10,20,10,20,-10,It maximizes the joint allocation and matches my previous choice.,llm
+e2-public,e2,2,tj-003,A,False,0,15,5,15,5,10,I chose the option that gives my group the highest allocation.,llm
+e2-public,e2,2,tj-000,A,False,5,10,20,10,20,-10,It maximizes the joint allocation while still giving my group 10.,llm
+e2-public,e2,2,tj-007,A,False,0,15,5,15,5,10,"I chose the row that gives my group the largest allocation, consistent with my previous choice.",llm
+e2-public,e2,2,tj-005,A,False,5,10,20,10,20,-10,It preserves my previous choice and gives the other group the most while keeping 10 for my group.,llm
+e2-public,e2,2,tj-008,B,False,5,10,20,20,10,10,It gives my group the largest allocation and maximizes the joint total.,llm
+e2-public,e2,2,tj-004,B,False,5,10,20,20,10,10,Row 5 maximizes my group’s allocation and the joint total.,llm
+e2-public,e2,2,tj-002,B,False,5,10,20,20,10,10,It maximizes my group's allocation and the joint total.,llm
+e2-public,e2,2,tj-009,B,False,5,10,20,20,10,10,It gives my group the largest allocation and maximizes the joint total.,llm
+e2-public,e2,2,tj-001,B,False,5,10,20,20,10,10,It maximizes my group's allocation and the joint total while leaving the other group 10.,llm
+e2-public,e2,3,tj-006,A,False,5,10,20,10,20,-10,It maximizes the joint allocation while leaving 10 for my group.,llm
+e2-public,e2,3,tj-003,A,False,0,15,5,15,5,10,"I’m continuing to prioritize my group’s allocation, which is highest in row 0.",llm
+e2-public,e2,3,tj-000,A,False,5,10,20,10,20,-10,It maximizes the joint total and gives group B the most while leaving group A 10.,llm
+e2-public,e2,3,tj-007,A,False,0,15,5,15,5,10,"It gives my group the largest allocation, consistent with my previous choices.",llm
+e2-public,e2,3,tj-005,A,False,5,10,20,10,20,-10,It maximizes the joint total and gives the other group the most while preserving 10 for my group.,llm
+e2-public,e2,3,tj-008,B,False,5,10,20,20,10,10,Row 5 gives my group the largest allocation and maximizes the joint total while leaving 10 for the other group.,llm
+e2-public,e2,3,tj-004,B,False,5,10,20,20,10,10,Row 5 gives my group the largest allocation and maximizes the joint total.,llm
+e2-public,e2,3,tj-002,B,False,5,10,20,20,10,10,Row 5 maximizes my group's allocation and the joint total.,llm
+e2-public,e2,3,tj-009,B,False,5,10,20,20,10,10,It gives my group the largest allocation while also maximizing the joint total.,llm
+e2-public,e2,3,tj-001,B,False,5,10,20,20,10,10,It gives my group the largest allocation and maximizes the joint total while leaving 10 for the other group.,llm
+e2-public,e2,4,tj-006,A,False,0,15,5,15,5,10,It maximizes my group's allocation and helps reduce the existing disparity.,llm
+e2-public,e2,4,tj-003,A,False,0,15,5,15,5,10,"Row 0 maximizes my group's allocation, consistent with my prior choices and our group trailing overall.",llm
+e2-public,e2,4,tj-000,A,False,0,15,5,15,5,10,I am prioritizing my group's outcome because group A continues to trail group B overall.,llm
+e2-public,e2,4,tj-007,A,False,0,15,5,15,5,10,It gives my group the largest allocation and is consistent with my previous choices.,llm
+e2-public,e2,4,tj-005,A,False,5,10,20,10,20,-10,I will maintain my previous choice because row 5 maximizes the joint total while guaranteeing my group 10.,llm
+e2-public,e2,4,tj-008,B,False,5,10,20,20,10,10,It maximizes the joint total and gives my group the largest allocation while leaving the other group 10.,llm
+e2-public,e2,4,tj-004,B,False,5,10,20,20,10,10,Row 5 gives my group the largest allocation while maximizing the joint total.,llm
+e2-public,e2,4,tj-002,B,False,5,10,20,20,10,10,Row 5 maximizes my group's allocation and the joint total while leaving the other group 10.,llm
+e2-public,e2,4,tj-009,B,False,5,10,20,20,10,10,It gives my group the largest allocation and maximizes the joint total.,llm
+e2-public,e2,4,tj-001,B,False,5,10,20,20,10,10,It gives my group the largest allocation and maximizes the joint total while leaving 10 for the other group.,llm
+e2-public,e2,5,tj-006,A,False,0,15,5,15,5,10,It gives group A the largest allocation and helps narrow its overall deficit.,llm
+e2-public,e2,5,tj-003,A,False,0,15,5,15,5,10,"Row 0 gives my group the highest allocation, consistent with my prior choices while we trail overall.",llm
+e2-public,e2,5,tj-000,A,False,0,15,5,15,5,10,"Group A still trails overall, so this gives my group the largest allocation and helps narrow the gap.",llm
+e2-public,e2,5,tj-007,A,False,0,15,5,15,5,10,It gives my group the largest allocation and is consistent with my previous choices.,llm
+e2-public,e2,5,tj-005,A,False,0,15,5,15,5,10,"Group A still trails overall, so row 0 gives it the largest allocation and helps narrow the gap.",llm
+e2-public,e2,5,tj-008,B,False,5,10,20,20,10,10,Row 5 gives my group the largest allocation and maximizes the joint total while leaving 10 for the other group.,llm
+e2-public,e2,5,tj-004,B,False,5,10,20,20,10,10,"Row 5 gives my group the largest allocation and maximizes the joint total, consistent with my previous choices.",llm
+e2-public,e2,5,tj-002,B,False,5,10,20,20,10,10,It maximizes my group's allocation and the joint total while leaving the other group 10.,llm
+e2-public,e2,5,tj-009,B,False,5,10,20,20,10,10,It gives my group the largest allocation while maximizing the joint total.,llm
+e2-public,e2,5,tj-001,B,False,5,10,20,20,10,10,Row 5 gives my group the largest allocation and maximizes the joint total while leaving 10 for the other group.,llm

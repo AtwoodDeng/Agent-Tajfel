@@ -1,0 +1,51 @@
+condition,series,step,agent_id,own_group,is_leader,row,a_points,b_points,ingroup_points,outgroup_points,gap,reason,source
+e2-silent,e2,1,tj-009,A,False,2,13,11,13,11,2,It balances benefits between both groups while increasing the joint total.,llm
+e2-silent,e2,1,tj-003,A,False,5,10,20,10,20,-10,It gives the other group the most while still allocating 10 to my group.,llm
+e2-silent,e2,1,tj-005,A,False,5,10,20,10,20,-10,This row gives the highest combined total while still allocating 10 to my group.,llm
+e2-silent,e2,1,tj-001,A,False,0,15,5,15,5,10,I chose the row that gives my group the largest allocation.,llm
+e2-silent,e2,1,tj-006,A,False,5,10,20,10,20,-10,It gives the groups the highest combined allocation.,llm
+e2-silent,e2,1,tj-002,B,False,5,10,20,20,10,10,This row gives my group the largest allocation while also maximizing the joint total.,llm
+e2-silent,e2,1,tj-000,B,False,5,10,20,20,10,10,It gives my group the largest allocation while also producing the highest joint total.,llm
+e2-silent,e2,1,tj-004,B,False,5,10,20,20,10,10,It gives my group the largest allocation while keeping the joint total highest.,llm
+e2-silent,e2,1,tj-007,B,False,5,10,20,20,10,10,It gives my group the largest allocation and maximizes the joint total.,llm
+e2-silent,e2,1,tj-008,B,False,5,10,20,20,10,10,It gives my group the largest allocation while also producing the highest joint total.,llm
+e2-silent,e2,2,tj-009,A,False,5,10,20,10,20,-10,It raises the joint total the most and narrows the cumulative gap between the groups.,llm
+e2-silent,e2,2,tj-003,A,False,5,10,20,10,20,-10,"I’m continuing my previous choice, which gives the other group the most while keeping 10 for my group.",llm
+e2-silent,e2,2,tj-005,A,False,5,10,20,10,20,-10,It gives the highest combined total while still allocating 10 to my group.,llm
+e2-silent,e2,2,tj-001,A,False,0,15,5,15,5,10,I chose the row that gives my group the largest allocation.,llm
+e2-silent,e2,2,tj-006,A,False,5,10,20,10,20,-10,It gives both groups the highest combined allocation.,llm
+e2-silent,e2,2,tj-002,B,False,5,10,20,20,10,10,This row gives my group the largest allocation and highest joint total.,llm
+e2-silent,e2,2,tj-000,B,False,5,10,20,20,10,10,It maximizes both my group's allocation and the joint total.,llm
+e2-silent,e2,2,tj-004,B,False,5,10,20,20,10,10,It gives my group the largest allocation and the highest joint total.,llm
+e2-silent,e2,2,tj-007,B,False,5,10,20,20,10,10,It gives my group the largest allocation and the highest joint total.,llm
+e2-silent,e2,2,tj-008,B,False,5,10,20,20,10,10,It maximizes both my group's allocation and the joint total while my group trails overall.,llm
+e2-silent,e2,3,tj-009,A,False,0,15,5,15,5,10,It helps offset the cumulative disadvantage to my group while preserving a positive outcome for both groups.,llm
+e2-silent,e2,3,tj-003,A,False,5,10,20,10,20,-10,I’m maintaining my consistent choice to maximize the joint allocation and the other group’s outcome.,llm
+e2-silent,e2,3,tj-005,A,False,5,10,20,10,20,-10,I choose row 5 because it maximizes the joint total while giving my group 10.,llm
+e2-silent,e2,3,tj-001,A,False,0,15,5,15,5,10,I chose the row that gives my group the largest allocation.,llm
+e2-silent,e2,3,tj-006,A,False,5,10,20,10,20,-10,I choose the row that maximizes the combined allocation for both groups.,llm
+e2-silent,e2,3,tj-002,B,False,5,10,20,20,10,10,This row gives my group the largest allocation and the highest joint total.,llm
+e2-silent,e2,3,tj-000,B,False,5,10,20,20,10,10,It gives my group the largest allocation and produces the highest joint total.,llm
+e2-silent,e2,3,tj-004,B,False,5,10,20,20,10,10,It gives my group the largest allocation and the highest joint total.,llm
+e2-silent,e2,3,tj-007,B,False,5,10,20,20,10,10,It maximizes both my group's allocation and the joint total.,llm
+e2-silent,e2,3,tj-008,B,False,5,10,20,20,10,10,It maximizes both my group's allocation and the joint total while reducing my group's cumulative disadvantage.,llm
+e2-silent,e2,4,tj-009,A,False,0,15,5,15,5,10,It prioritizes the disadvantaged group and counters the persistent imbalance in the published totals.,llm
+e2-silent,e2,4,tj-003,A,False,5,10,20,10,20,-10,I’m maintaining my consistent choice to maximize the joint allocation and the other group’s outcome.,llm
+e2-silent,e2,4,tj-005,A,False,5,10,20,10,20,-10,It maximizes the joint total while still allocating 10 to my group.,llm
+e2-silent,e2,4,tj-001,A,False,0,15,5,15,5,10,I chose the row that gives my group the largest allocation.,llm
+e2-silent,e2,4,tj-006,A,False,5,10,20,10,20,-10,It gives both groups the highest combined allocation.,llm
+e2-silent,e2,4,tj-002,B,False,5,10,20,20,10,10,It gives my group the largest allocation and maximizes the joint total.,llm
+e2-silent,e2,4,tj-000,B,False,5,10,20,20,10,10,It maximizes my group’s allocation and the joint total.,llm
+e2-silent,e2,4,tj-004,B,False,5,10,20,20,10,10,It gives my group the largest allocation and the highest joint total.,llm
+e2-silent,e2,4,tj-007,B,False,5,10,20,20,10,10,It gives my group the largest allocation and maximizes the joint total.,llm
+e2-silent,e2,4,tj-008,B,False,5,10,20,20,10,10,It maximizes my group's allocation and the joint total while my group remains behind overall.,llm
+e2-silent,e2,5,tj-009,A,False,0,15,5,15,5,10,"My group remains behind in the published totals, so I choose the option that gives it the largest advantage.",llm
+e2-silent,e2,5,tj-003,A,False,5,10,20,10,20,-10,I’m continuing to maximize the joint allocation and the other group’s outcome while keeping 10 for my group.,llm
+e2-silent,e2,5,tj-005,A,False,5,10,20,10,20,-10,I continue choosing the row that maximizes the joint total while giving my group 10.,llm
+e2-silent,e2,5,tj-001,A,False,0,15,5,15,5,10,I chose the row that gives my group the largest allocation.,llm
+e2-silent,e2,5,tj-006,A,False,5,10,20,10,20,-10,It maximizes the combined allocation for both groups.,llm
+e2-silent,e2,5,tj-002,B,False,5,10,20,20,10,10,This row gives my group the largest allocation and the highest joint total.,llm
+e2-silent,e2,5,tj-000,B,False,5,10,20,20,10,10,It maximizes both my group's allocation and the joint total.,llm
+e2-silent,e2,5,tj-004,B,False,5,10,20,20,10,10,It gives my group the largest allocation and the highest joint total.,llm
+e2-silent,e2,5,tj-007,B,False,5,10,20,20,10,10,It gives my group the largest allocation and maximizes the joint total.,llm
+e2-silent,e2,5,tj-008,B,False,5,10,20,20,10,10,It maximizes my group's allocation and the joint total while my group remains behind overall.,llm

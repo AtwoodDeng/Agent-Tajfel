@@ -1,0 +1,51 @@
+condition,series,step,agent_id,own_group,is_leader,row,a_points,b_points,ingroup_points,outgroup_points,gap,reason,source
+e2-public,e2,1,tj-009,A,False,5,10,20,10,20,-10,It gives the other group the most while still providing my group 10.,llm
+e2-public,e2,1,tj-008,A,False,5,10,20,10,20,-10,It gives the two groups the highest combined allocation.,llm
+e2-public,e2,1,tj-001,A,False,2,13,11,13,11,2,It balances both groups' outcomes while achieving a relatively high joint total.,llm
+e2-public,e2,1,tj-004,A,False,5,10,20,10,20,-10,"It maximizes the joint total, benefiting both groups most.",llm
+e2-public,e2,1,tj-000,A,False,0,15,5,15,5,10,It gives my group the largest allocation.,llm
+e2-public,e2,1,tj-006,B,False,5,10,20,20,10,10,It gives my group the largest allocation while also maximizing the joint total.,llm
+e2-public,e2,1,tj-003,B,False,5,10,20,20,10,10,This row gives my group the largest allocation while also maximizing the joint total.,llm
+e2-public,e2,1,tj-005,B,False,5,10,20,20,10,10,This row gives my group the largest allocation while also maximizing the joint total.,llm
+e2-public,e2,1,tj-002,B,False,5,10,20,20,10,10,It gives my group the largest allocation while still providing 10 to the other group.,llm
+e2-public,e2,1,tj-007,B,False,5,10,20,20,10,10,This row gives my group the largest allocation while also maximizing the joint total.,llm
+e2-public,e2,2,tj-009,A,False,5,10,20,10,20,-10,It maximizes the joint total and continues my commitment to prioritizing the other group’s allocation.,llm
+e2-public,e2,2,tj-008,A,False,5,10,20,10,20,-10,It maximizes the joint allocation and gives the other group the larger share.,llm
+e2-public,e2,2,tj-001,A,False,5,10,20,10,20,-10,It maximizes the joint total while still allocating 10 to my group.,llm
+e2-public,e2,2,tj-004,A,False,5,10,20,10,20,-10,It maximizes the joint total and continues my prior choice while leaving the other group a substantial allocation.,llm
+e2-public,e2,2,tj-000,A,False,2,13,11,13,11,2,It offers the most balanced allocation while still improving the joint total.,llm
+e2-public,e2,2,tj-006,B,False,5,10,20,20,10,10,It gives my group the largest allocation while also maximizing the joint total.,llm
+e2-public,e2,2,tj-003,B,False,5,10,20,20,10,10,It gives my group the largest allocation while also maximizing the joint total.,llm
+e2-public,e2,2,tj-005,B,False,5,10,20,20,10,10,It maximizes both my group's allocation and the joint total.,llm
+e2-public,e2,2,tj-002,B,False,5,10,20,20,10,10,It gives my group the largest allocation and maximizes the joint total.,llm
+e2-public,e2,2,tj-007,B,False,5,10,20,20,10,10,It maximizes my group’s allocation and the joint total while leaving the other group 10.,llm
+e2-public,e2,3,tj-009,A,False,0,15,5,15,5,10,"Group B leads substantially, so I’ll favor my group this round to help narrow the cumulative gap.",llm
+e2-public,e2,3,tj-008,A,False,0,15,5,15,5,10,"Group A trails substantially, so I chose the row that maximizes its allocation and helps narrow the cumulative imbalance.",llm
+e2-public,e2,3,tj-001,A,False,0,15,5,15,5,10,It maximizes my group's allocation to help correct the substantial cumulative imbalance.,llm
+e2-public,e2,3,tj-004,A,False,0,15,5,15,5,10,"Group A trails substantially, so this choice helps narrow the cumulative imbalance.",llm
+e2-public,e2,3,tj-000,A,False,0,15,5,15,5,10,It maximizes group A's allocation to help correct the substantial cumulative imbalance.,llm
+e2-public,e2,3,tj-006,B,False,0,15,5,5,15,-10,It favors the trailing group and helps reduce the large cumulative imbalance.,llm
+e2-public,e2,3,tj-003,B,False,3,12,14,14,12,2,"With group B already far ahead and still favoring itself, row 3 shifts more to group A while retaining a relatively high joint total.",llm
+e2-public,e2,3,tj-005,B,False,0,15,5,5,15,-10,It prioritizes the other group to help reduce the large cumulative imbalance.,llm
+e2-public,e2,3,tj-002,B,False,2,13,11,11,13,-2,It modestly favors the trailing group while preserving a relatively high joint total.,llm
+e2-public,e2,3,tj-007,B,False,0,15,5,5,15,-10,It favors group A to help reduce the substantial cumulative imbalance.,llm
+e2-public,e2,4,tj-009,A,False,5,10,20,10,20,-10,"Group A now leads 145–65, so row 5 narrows the gap while maximizing the joint total.",llm
+e2-public,e2,4,tj-008,A,False,5,10,20,10,20,-10,"Group A now leads substantially, so this maximizes the joint allocation while helping Group B narrow the gap.",llm
+e2-public,e2,4,tj-001,A,False,5,10,20,10,20,-10,It preserves the highest joint total while directing more to the currently trailing group.,llm
+e2-public,e2,4,tj-004,A,False,5,10,20,10,20,-10,"It keeps the joint total highest while directing more to the other group, which is currently behind.",llm
+e2-public,e2,4,tj-000,A,False,5,10,20,10,20,-10,It keeps the joint total at 30 while giving more to group B to narrow A's current lead.,llm
+e2-public,e2,4,tj-006,B,False,0,15,5,5,15,-10,"Group B leads substantially, so row 0 most strongly favors the trailing group and helps reduce the cumulative imbalance.",llm
+e2-public,e2,4,tj-003,B,False,0,15,5,5,15,-10,"Group A now leads substantially, so I’ll favor group B to help narrow the cumulative imbalance.",llm
+e2-public,e2,4,tj-005,B,False,5,10,20,20,10,10,Row 5 maximizes my group's allocation and the joint total while helping address our cumulative deficit.,llm
+e2-public,e2,4,tj-002,B,False,5,10,20,20,10,10,It maximizes my group’s allocation and the joint total while still giving the other group 10.,llm
+e2-public,e2,4,tj-007,B,False,5,10,20,20,10,10,It maximizes my group's allocation and joint value while helping reduce the current cumulative deficit.,llm
+e2-public,e2,5,tj-009,A,False,0,15,5,15,5,10,"Group A trails 110–170, so this choice narrows the gap by maximizing A's allocation.",llm
+e2-public,e2,5,tj-008,A,False,0,15,5,15,5,10,"Group A trails 110 to 170, so this choice gives A the largest allocation and helps narrow the cumulative imbalance.",llm
+e2-public,e2,5,tj-001,A,False,0,15,5,15,5,10,It maximizes my group's allocation to narrow the latest 60-point cumulative deficit.,llm
+e2-public,e2,5,tj-004,A,False,0,15,5,15,5,10,"My group trails 110 to 170, so this choice directly narrows the cumulative imbalance.",llm
+e2-public,e2,5,tj-000,A,False,5,10,20,10,20,-10,It preserves the highest joint total and favors group B to help correct A's current lead.,llm
+e2-public,e2,5,tj-006,B,False,5,10,20,20,10,10,"The latest results show A leading B, so row 5 keeps the joint total highest while giving B the larger share to narrow the gap.",llm
+e2-public,e2,5,tj-003,B,False,5,10,20,20,10,10,"It maximizes the joint total, and a balanced split helps narrow the reported cumulative gap without repeating the prior extreme swing.",llm
+e2-public,e2,5,tj-005,B,False,5,10,20,20,10,10,"Row 5 maximizes the joint total and favors my group, which helps rebalance the latest outcome where my group trailed.",llm
+e2-public,e2,5,tj-002,B,False,2,13,11,11,13,-2,It modestly favors the trailing group while preserving a relatively high joint total.,llm
+e2-public,e2,5,tj-007,B,False,5,10,20,20,10,10,It maximizes the joint total and favors group B to narrow the cumulative imbalance.,llm

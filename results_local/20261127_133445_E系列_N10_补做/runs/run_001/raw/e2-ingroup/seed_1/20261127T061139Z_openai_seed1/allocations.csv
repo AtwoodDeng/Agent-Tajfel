@@ -1,0 +1,51 @@
+condition,series,step,agent_id,own_group,is_leader,row,a_points,b_points,ingroup_points,outgroup_points,gap,reason,source
+e2-ingroup,e2,1,tj-006,A,False,5,10,20,10,20,-10,It maximizes the joint allocation.,llm
+e2-ingroup,e2,1,tj-003,A,False,5,10,20,10,20,-10,It gives the other group the most while keeping my allocation substantial.,llm
+e2-ingroup,e2,1,tj-000,A,False,5,10,20,10,20,-10,It gives the other group the most while still providing my group a fair share.,llm
+e2-ingroup,e2,1,tj-007,A,False,5,10,20,10,20,-10,It gives the highest combined allocation.,llm
+e2-ingroup,e2,1,tj-005,A,False,5,10,20,10,20,-10,It gives the other group the most while still providing my group with 10.,llm
+e2-ingroup,e2,1,tj-008,B,False,5,10,20,20,10,10,This row gives my group the largest allocation while also producing the highest joint total.,llm
+e2-ingroup,e2,1,tj-004,B,False,5,10,20,20,10,10,This row gives my group the largest allocation and maximizes the joint total.,llm
+e2-ingroup,e2,1,tj-002,B,False,5,10,20,20,10,10,This row gives my group the largest allocation while also maximizing the joint total.,llm
+e2-ingroup,e2,1,tj-009,B,False,5,10,20,20,10,10,This row gives my group the largest allocation while also maximizing the joint total.,llm
+e2-ingroup,e2,1,tj-001,B,False,5,10,20,20,10,10,This row gives my group the highest allocation while also producing the largest joint total.,llm
+e2-ingroup,e2,2,tj-006,A,False,5,10,20,10,20,-10,Row 5 maximizes the joint allocation while preserving 10 for my group.,llm
+e2-ingroup,e2,2,tj-003,A,False,5,10,20,10,20,-10,It maximizes the joint allocation while leaving my group 10.,llm
+e2-ingroup,e2,2,tj-000,A,False,5,10,20,10,20,-10,It maximizes the joint allocation and remains consistent with the group's cooperative strategy.,llm
+e2-ingroup,e2,2,tj-007,A,False,5,10,20,10,20,-10,It maximizes the joint allocation and remains consistent with the group's cooperative strategy.,llm
+e2-ingroup,e2,2,tj-005,A,False,5,10,20,10,20,-10,It maximizes the joint allocation while still giving my group 10.,llm
+e2-ingroup,e2,2,tj-008,B,False,5,10,20,20,10,10,Row 5 gives my group the largest allocation and maximizes the joint total.,llm
+e2-ingroup,e2,2,tj-004,B,False,5,10,20,20,10,10,Row 5 gives group B the largest allocation and maximizes the joint total.,llm
+e2-ingroup,e2,2,tj-002,B,False,5,10,20,20,10,10,This row gives my group the largest allocation while also maximizing the joint total.,llm
+e2-ingroup,e2,2,tj-009,B,False,5,10,20,20,10,10,Row 5 gives my group the largest allocation and maximizes the joint total.,llm
+e2-ingroup,e2,2,tj-001,B,False,5,10,20,20,10,10,It gives my group the largest allocation and maximizes the joint total.,llm
+e2-ingroup,e2,3,tj-006,A,False,2,13,11,13,11,2,It modestly favors my group to reduce the existing imbalance while preserving a strong joint allocation.,llm
+e2-ingroup,e2,3,tj-003,A,False,2,13,11,13,11,2,It nearly equalizes the groups while preserving a strong joint allocation.,llm
+e2-ingroup,e2,3,tj-000,A,False,2,13,11,13,11,2,It rebalances outcomes toward my group while preserving a strong joint allocation.,llm
+e2-ingroup,e2,3,tj-007,A,False,2,13,11,13,11,2,It best rebalances the groups while preserving a strong joint allocation.,llm
+e2-ingroup,e2,3,tj-005,A,False,2,13,11,13,11,2,It modestly favors group A to reduce the imbalance while preserving a strong joint allocation.,llm
+e2-ingroup,e2,3,tj-008,B,False,5,10,20,20,10,10,Row 5 gives my group the largest allocation while also maximizing the joint total.,llm
+e2-ingroup,e2,3,tj-004,B,False,5,10,20,20,10,10,"This row maximizes both my group's allocation and the joint total, consistent with prior choices.",llm
+e2-ingroup,e2,3,tj-002,B,False,5,10,20,20,10,10,This row gives my group the largest allocation while also maximizing the joint total.,llm
+e2-ingroup,e2,3,tj-009,B,False,5,10,20,20,10,10,Row 5 gives my group the largest allocation and maximizes the joint total.,llm
+e2-ingroup,e2,3,tj-001,B,False,5,10,20,20,10,10,"Row 5 maximizes my group's allocation and the joint total, consistent with my previous choices.",llm
+e2-ingroup,e2,4,tj-006,A,False,2,13,11,13,11,2,It continues the coordinated effort to reduce the imbalance while preserving a strong joint allocation.,llm
+e2-ingroup,e2,4,tj-003,A,False,2,13,11,13,11,2,It continues the coordinated effort to reduce the imbalance while preserving a strong joint allocation.,llm
+e2-ingroup,e2,4,tj-000,A,False,2,13,11,13,11,2,It continues the coordinated effort to reduce Group A's deficit while preserving a strong joint allocation.,llm
+e2-ingroup,e2,4,tj-007,A,False,2,13,11,13,11,2,It continues the coordinated rebalancing toward our group while preserving a strong joint allocation.,llm
+e2-ingroup,e2,4,tj-005,A,False,2,13,11,13,11,2,It continues the coordinated effort to reduce the imbalance while preserving a strong joint allocation.,llm
+e2-ingroup,e2,4,tj-008,B,False,5,10,20,20,10,10,"Row 5 maximizes my group's allocation and the joint total, consistent with prior rounds.",llm
+e2-ingroup,e2,4,tj-004,B,False,5,10,20,20,10,10,"This row maximizes both my group's allocation and the joint total, consistent with prior choices.",llm
+e2-ingroup,e2,4,tj-002,B,False,5,10,20,20,10,10,"It maximizes both my group's allocation and the joint total, consistent with our prior choices.",llm
+e2-ingroup,e2,4,tj-009,B,False,5,10,20,20,10,10,"Row 5 maximizes my group’s allocation and the joint total, consistent with our prior choices.",llm
+e2-ingroup,e2,4,tj-001,B,False,5,10,20,20,10,10,"Row 5 maximizes my group's allocation and the joint total, consistent with our previous choices.",llm
+e2-ingroup,e2,5,tj-006,A,False,2,13,11,13,11,2,It modestly favors my group while preserving a strong joint allocation and continuing our coordinated effort to narrow the imbalance.,llm
+e2-ingroup,e2,5,tj-003,A,False,2,13,11,13,11,2,Row 2 modestly favors my group while maintaining a strong joint allocation and the coordinated approach.,llm
+e2-ingroup,e2,5,tj-000,A,False,2,13,11,13,11,2,It modestly favors my group while preserving a strong joint allocation and continuing our coordinated strategy.,llm
+e2-ingroup,e2,5,tj-007,A,False,2,13,11,13,11,2,Row 2 modestly favors our group while preserving a strong joint allocation and continuing our coordinated strategy.,llm
+e2-ingroup,e2,5,tj-005,A,False,2,13,11,13,11,2,It modestly favors A to keep narrowing the imbalance while preserving a strong joint allocation.,llm
+e2-ingroup,e2,5,tj-008,B,False,5,10,20,20,10,10,"Row 5 maximizes my group's allocation and the joint total, consistent with prior rounds.",llm
+e2-ingroup,e2,5,tj-004,B,False,5,10,20,20,10,10,"Row 5 maximizes my group's allocation and the joint total, consistent with our prior choices.",llm
+e2-ingroup,e2,5,tj-002,B,False,5,10,20,20,10,10,"Row 5 maximizes my group’s allocation and the joint total, consistent with our coordinated prior choices.",llm
+e2-ingroup,e2,5,tj-009,B,False,5,10,20,20,10,10,"Row 5 maximizes my group’s allocation and the joint total, consistent with our coordinated strategy.",llm
+e2-ingroup,e2,5,tj-001,B,False,5,10,20,20,10,10,"Row 5 maximizes my group's allocation and the joint total, consistent with our previous choices.",llm

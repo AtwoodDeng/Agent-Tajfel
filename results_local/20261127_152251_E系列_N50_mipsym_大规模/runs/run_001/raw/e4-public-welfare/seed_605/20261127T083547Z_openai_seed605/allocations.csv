@@ -1,0 +1,251 @@
+condition,series,step,agent_id,own_group,is_leader,row,a_points,b_points,ingroup_points,outgroup_points,gap,reason,source
+e4-public-welfare,e4,1,tj-036,A,False,0,19,10,19,10,9,It gives my group the highest allocation while keeping the other group's allocation at 10.,llm
+e4-public-welfare,e4,1,tj-043,A,False,0,19,10,19,10,9,It gives my group the highest payoff while also maximizing the joint total.,llm
+e4-public-welfare,e4,1,tj-026,A,False,0,19,10,19,10,9,It gives my group the highest allocation while also maximizing the joint total.,llm
+e4-public-welfare,e4,1,tj-048,A,False,0,19,10,19,10,9,It gives my group the largest allocation while also maximizing the joint total.,llm
+e4-public-welfare,e4,1,tj-019,A,False,0,19,10,19,10,9,It gives my group the highest payoff while keeping the other group's payoff at 10.,llm
+e4-public-welfare,e4,1,tj-038,A,False,0,19,10,19,10,9,It gives my group the highest payoff while keeping the other group’s payoff at 10.,llm
+e4-public-welfare,e4,1,tj-021,A,True,0,19,10,19,10,9,This maximizes my group's allocation while giving the other group 10.,llm
+e4-public-welfare,e4,1,tj-016,A,False,0,19,10,19,10,9,It gives my group the highest allocation while also maximizing the joint total.,llm
+e4-public-welfare,e4,1,tj-002,A,False,0,19,10,19,10,9,It gives my group the most while producing the highest joint total.,llm
+e4-public-welfare,e4,1,tj-031,A,False,0,19,10,19,10,9,It gives my group the largest allocation while still providing the other group 10.,llm
+e4-public-welfare,e4,1,tj-037,A,False,0,19,10,19,10,9,It gives my group the highest payoff while also maximizing the joint total.,llm
+e4-public-welfare,e4,1,tj-030,A,False,0,19,10,19,10,9,It gives my group the highest allocation while keeping the other group's allocation at 10.,llm
+e4-public-welfare,e4,1,tj-024,A,False,0,19,10,19,10,9,It gives my group the largest allocation while also maximizing the joint total.,llm
+e4-public-welfare,e4,1,tj-014,A,False,0,19,10,19,10,9,It gives my group the highest allocation while also maximizing the joint total.,llm
+e4-public-welfare,e4,1,tj-025,A,False,0,19,10,19,10,9,It gives my group the largest allocation while also maximizing the joint total.,llm
+e4-public-welfare,e4,1,tj-018,A,False,0,19,10,19,10,9,It gives my group the highest payoff while also maximizing the joint total.,llm
+e4-public-welfare,e4,1,tj-042,A,False,0,19,10,19,10,9,This row gives my group the highest allocation while also maximizing the joint total.,llm
+e4-public-welfare,e4,1,tj-040,A,False,0,19,10,19,10,9,This row gives my group the most while keeping the joint total at its maximum.,llm
+e4-public-welfare,e4,1,tj-020,A,False,0,19,10,19,10,9,It maximizes the amount allocated to my group while also achieving the highest joint total.,llm
+e4-public-welfare,e4,1,tj-010,A,False,0,19,10,19,10,9,It gives my group the largest allocation while still providing 10 to the other group.,llm
+e4-public-welfare,e4,1,tj-029,A,False,0,19,10,19,10,9,It gives my group the highest allocation while keeping the other group's allocation at 10.,llm
+e4-public-welfare,e4,1,tj-017,A,False,0,19,10,19,10,9,It gives my group the largest allocation while also maximizing the joint total.,llm
+e4-public-welfare,e4,1,tj-035,A,False,0,19,10,19,10,9,It gives my group the highest payoff while keeping the other group’s payoff at 10.,llm
+e4-public-welfare,e4,1,tj-032,A,False,0,19,10,19,10,9,It gives my group the highest payoff while also maximizing the joint total.,llm
+e4-public-welfare,e4,1,tj-000,A,False,0,19,10,19,10,9,It gives my group the highest allocation while keeping the other group's allocation at 10.,llm
+e4-public-welfare,e4,1,tj-046,B,False,10,10,19,19,10,9,"This row gives my group the largest payoff, 19.",llm
+e4-public-welfare,e4,1,tj-033,B,False,10,10,19,19,10,9,It gives my group the highest allocation while keeping the joint total maximal.,llm
+e4-public-welfare,e4,1,tj-023,B,False,5,10,10,10,10,0,I chose the equal split to treat both groups fairly.,llm
+e4-public-welfare,e4,1,tj-011,B,False,10,10,19,19,10,9,It gives my group the highest allocation while maximizing the joint total.,llm
+e4-public-welfare,e4,1,tj-009,B,False,10,10,19,19,10,9,It gives my group the largest allocation while keeping the joint total highest.,llm
+e4-public-welfare,e4,1,tj-034,B,False,0,19,10,10,19,-9,It maximizes the joint allocation while keeping my group's allocation at 10.,llm
+e4-public-welfare,e4,1,tj-022,B,False,10,10,19,19,10,9,"This row gives my group the largest allocation, 19.",llm
+e4-public-welfare,e4,1,tj-003,B,False,0,19,10,10,19,-9,It maximizes the joint allocation while keeping my group's allocation at 10.,llm
+e4-public-welfare,e4,1,tj-006,B,False,10,10,19,19,10,9,This maximizes my group’s allocation while keeping the joint total at its maximum.,llm
+e4-public-welfare,e4,1,tj-007,B,False,5,10,10,10,10,0,I chose the equal allocation to treat both groups fairly.,llm
+e4-public-welfare,e4,1,tj-004,B,False,0,19,10,10,19,-9,It maximizes the joint total while keeping my group’s allocation at 10.,llm
+e4-public-welfare,e4,1,tj-001,B,False,0,19,10,10,19,-9,It maximizes the joint total while giving my group 10.,llm
+e4-public-welfare,e4,1,tj-045,B,False,0,19,10,10,19,-9,It gives my group 10 and maximizes the joint total.,llm
+e4-public-welfare,e4,1,tj-013,B,False,10,10,19,19,10,9,It gives my group the highest allocation while also maximizing the joint total.,llm
+e4-public-welfare,e4,1,tj-012,B,True,10,10,19,19,10,9,I chose the option that gives my group the most while keeping the joint total at its maximum.,llm
+e4-public-welfare,e4,1,tj-047,B,False,0,19,10,10,19,-9,It maximizes the joint total while keeping my group's allocation at 10.,llm
+e4-public-welfare,e4,1,tj-015,B,False,0,19,10,10,19,-9,It maximizes the joint total while keeping my group's allocation at 10.,llm
+e4-public-welfare,e4,1,tj-041,B,False,10,10,19,19,10,9,This row gives my group the highest allocation.,llm
+e4-public-welfare,e4,1,tj-039,B,False,0,19,10,10,19,-9,It maximizes the joint total while keeping my group's allocation at 10.,llm
+e4-public-welfare,e4,1,tj-005,B,False,10,10,19,19,10,9,This row maximizes my group's allocation while also maximizing the joint total.,llm
+e4-public-welfare,e4,1,tj-028,B,False,10,10,19,19,10,9,It maximizes my group's allocation while also maximizing the joint total.,llm
+e4-public-welfare,e4,1,tj-049,B,False,0,19,10,10,19,-9,This row maximizes the joint allocation while keeping my group’s allocation at 10.,llm
+e4-public-welfare,e4,1,tj-008,B,False,10,10,19,19,10,9,This maximizes my group's allocation while also maximizing the joint total.,llm
+e4-public-welfare,e4,1,tj-044,B,False,0,19,10,10,19,-9,It maximizes the joint allocation while preserving my group’s allocation at 10.,llm
+e4-public-welfare,e4,1,tj-027,B,False,5,10,10,10,10,0,It gives both groups the same amount while keeping the combined allocation relatively high.,llm
+e4-public-welfare,e4,2,tj-036,A,False,10,10,19,10,19,-9,It maximizes joint value while helping reduce the current allocation gap between the groups.,llm
+e4-public-welfare,e4,2,tj-043,A,False,0,19,10,19,10,9,It maximizes my group’s payoff and ties for the highest joint total.,llm
+e4-public-welfare,e4,2,tj-026,A,False,10,10,19,10,19,-9,It maximizes the joint total while helping reduce the current imbalance between groups.,llm
+e4-public-welfare,e4,2,tj-048,A,False,10,10,19,10,19,-9,It maximizes the joint total while helping reduce the current disparity between the groups.,llm
+e4-public-welfare,e4,2,tj-019,A,False,10,10,19,10,19,-9,It maximizes the joint payoff while helping reduce the large advantage currently held by group A.,llm
+e4-public-welfare,e4,2,tj-038,A,False,10,10,19,10,19,-9,It maximizes the joint payoff while helping reduce group B's current disadvantage.,llm
+e4-public-welfare,e4,2,tj-021,A,True,10,10,19,10,19,-9,I am honoring my latest commitment while maximizing the joint allocation.,llm
+e4-public-welfare,e4,2,tj-016,A,False,10,10,19,10,19,-9,It maximizes the joint total while helping reduce group B's current disadvantage.,llm
+e4-public-welfare,e4,2,tj-002,A,False,10,10,19,10,19,-9,It maximizes the joint total and reciprocates the other group's commitment.,llm
+e4-public-welfare,e4,2,tj-031,A,False,0,19,10,19,10,9,I choose the largest allocation for my group while keeping the other group's allocation at 10.,llm
+e4-public-welfare,e4,2,tj-037,A,False,0,19,10,19,10,9,It gives my group the highest payoff while also tying for the maximum joint total.,llm
+e4-public-welfare,e4,2,tj-030,A,False,10,10,19,10,19,-9,It maximizes the joint total while helping reduce the current gap between the groups.,llm
+e4-public-welfare,e4,2,tj-024,A,False,10,10,19,10,19,-9,It maximizes the joint total while helping reduce the current imbalance between the groups.,llm
+e4-public-welfare,e4,2,tj-014,A,False,10,10,19,10,19,-9,It maximizes the joint total while balancing my previous choice that favored my group.,llm
+e4-public-welfare,e4,2,tj-025,A,False,10,10,19,10,19,-9,It maximizes the joint total while helping reduce the current gap between the groups.,llm
+e4-public-welfare,e4,2,tj-018,A,False,0,19,10,19,10,9,It gives my group the highest payoff while tying for the highest joint total.,llm
+e4-public-welfare,e4,2,tj-042,A,False,0,19,10,19,10,9,Row 0 gives my group the most points and maximizes the joint total.,llm
+e4-public-welfare,e4,2,tj-040,A,False,0,19,10,19,10,9,I choose the option that gives my group the highest payoff while preserving the maximum joint total.,llm
+e4-public-welfare,e4,2,tj-020,A,False,10,10,19,10,19,-9,"Both group leaders committed to row 10, which maximizes the joint total.",llm
+e4-public-welfare,e4,2,tj-010,A,False,0,19,10,19,10,9,It gives my group the largest allocation while still providing 10 to the other group.,llm
+e4-public-welfare,e4,2,tj-029,A,False,10,10,19,10,19,-9,It maximizes the joint total while supporting the other group and following the latest cooperative commitment.,llm
+e4-public-welfare,e4,2,tj-017,A,False,10,10,19,10,19,-9,It maximizes the joint total while helping reduce the current disparity between the groups.,llm
+e4-public-welfare,e4,2,tj-035,A,False,10,10,19,10,19,-9,It maximizes the joint payoff while helping reduce group B's current disadvantage.,llm
+e4-public-welfare,e4,2,tj-032,A,False,10,10,19,10,19,-9,"It maximizes the joint total, and both group leaders have committed to it.",llm
+e4-public-welfare,e4,2,tj-000,A,False,10,10,19,10,19,-9,It maximizes the joint allocation while helping reduce group A's current lead.,llm
+e4-public-welfare,e4,2,tj-046,B,False,10,10,19,19,10,9,This row maximizes both my group's payoff and the joint total.,llm
+e4-public-welfare,e4,2,tj-033,B,False,10,10,19,19,10,9,It maximizes my group's allocation while preserving the maximum joint total.,llm
+e4-public-welfare,e4,2,tj-023,B,False,10,10,19,19,10,9,"Row 10 gives my group the most points, and both leaders say they will choose it.",llm
+e4-public-welfare,e4,2,tj-011,B,False,10,10,19,19,10,9,It gives my group the highest allocation and maximizes the joint total.,llm
+e4-public-welfare,e4,2,tj-009,B,False,10,10,19,19,10,9,It gives my group the largest allocation while also maximizing the joint total.,llm
+e4-public-welfare,e4,2,tj-034,B,False,10,10,19,19,10,9,It maximizes the joint allocation and gives my group 19 points.,llm
+e4-public-welfare,e4,2,tj-022,B,False,10,10,19,19,10,9,This row maximizes my group's allocation while also achieving the highest joint total.,llm
+e4-public-welfare,e4,2,tj-003,B,False,10,10,19,19,10,9,"It maximizes the joint allocation and my group's allocation, consistent with the latest commitments.",llm
+e4-public-welfare,e4,2,tj-006,B,False,10,10,19,19,10,9,This maximizes my group's allocation and the joint total.,llm
+e4-public-welfare,e4,2,tj-007,B,False,10,10,19,19,10,9,Row 10 maximizes the joint total and gives my group the largest allocation.,llm
+e4-public-welfare,e4,2,tj-004,B,False,10,10,19,19,10,9,It gives my group the highest allocation while still maximizing the joint total.,llm
+e4-public-welfare,e4,2,tj-001,B,False,0,19,10,10,19,-9,It maximizes the joint total while directing more points to the group currently behind.,llm
+e4-public-welfare,e4,2,tj-045,B,False,0,19,10,10,19,-9,It maximizes the joint total while helping reduce the large gap between the groups.,llm
+e4-public-welfare,e4,2,tj-013,B,False,10,10,19,19,10,9,It gives my group the highest allocation and maximizes the joint total.,llm
+e4-public-welfare,e4,2,tj-012,B,True,10,10,19,19,10,9,I am honoring my commitment while maximizing both group B's allocation and the joint total.,llm
+e4-public-welfare,e4,2,tj-047,B,False,10,10,19,19,10,9,It maximizes both my group's allocation and the joint total.,llm
+e4-public-welfare,e4,2,tj-015,B,False,10,10,19,19,10,9,It maximizes the joint total while reciprocating the leaders' stated commitment to row 10.,llm
+e4-public-welfare,e4,2,tj-041,B,False,10,10,19,19,10,9,Row 10 gives my group the highest allocation and also maximizes the joint total.,llm
+e4-public-welfare,e4,2,tj-039,B,False,0,19,10,10,19,-9,It maximizes the joint total while directing more points to the currently trailing group.,llm
+e4-public-welfare,e4,2,tj-005,B,False,10,10,19,19,10,9,"This maximizes my group's allocation and the joint total, consistent with my previous choice.",llm
+e4-public-welfare,e4,2,tj-028,B,False,10,10,19,19,10,9,It maximizes my group's allocation while preserving the maximum joint total.,llm
+e4-public-welfare,e4,2,tj-049,B,False,10,10,19,19,10,9,Row 10 maximizes the joint allocation and gives my group 19 points.,llm
+e4-public-welfare,e4,2,tj-008,B,False,10,10,19,19,10,9,This maximizes my group's allocation while preserving the highest possible joint total.,llm
+e4-public-welfare,e4,2,tj-044,B,False,0,19,10,10,19,-9,It maximizes the joint allocation while directing more points to the currently disadvantaged group.,llm
+e4-public-welfare,e4,2,tj-027,B,False,10,10,19,19,10,9,It maximizes the joint allocation and gives my group the larger share.,llm
+e4-public-welfare,e4,3,tj-036,A,False,10,10,19,10,19,-9,"It maximizes joint value while directing more points to group B, which trails group A in the latest published totals.",llm
+e4-public-welfare,e4,3,tj-043,A,False,0,19,10,19,10,9,It maximizes my group's payoff while tying for the highest joint total.,llm
+e4-public-welfare,e4,3,tj-026,A,False,0,19,10,19,10,9,It maximizes the joint total while helping offset group B's current lead.,llm
+e4-public-welfare,e4,3,tj-048,A,False,0,19,10,19,10,9,It maximizes the joint total while giving my group the larger share.,llm
+e4-public-welfare,e4,3,tj-019,A,False,10,10,19,10,19,-9,It maximizes the joint payoff and helps reduce the existing advantage held by group A.,llm
+e4-public-welfare,e4,3,tj-038,A,False,0,19,10,19,10,9,It maximizes the joint payoff while giving my group the higher payoff this round.,llm
+e4-public-welfare,e4,3,tj-021,A,True,0,19,10,19,10,9,It gives my group the highest allocation while preserving the maximum joint total.,llm
+e4-public-welfare,e4,3,tj-016,A,False,0,19,10,19,10,9,It maximizes the joint total while giving my group the largest allocation.,llm
+e4-public-welfare,e4,3,tj-002,A,False,0,19,10,19,10,9,It achieves the highest joint total while giving my group the larger share.,llm
+e4-public-welfare,e4,3,tj-031,A,False,0,19,10,19,10,9,It gives my group the largest allocation while keeping the other group's allocation at 10.,llm
+e4-public-welfare,e4,3,tj-037,A,False,0,19,10,19,10,9,It maximizes my group’s payoff and ties for the highest joint total.,llm
+e4-public-welfare,e4,3,tj-030,A,False,0,19,10,19,10,9,It maximizes the joint total and restores the choice to the other side of the allocation pattern after my previous row 10.,llm
+e4-public-welfare,e4,3,tj-024,A,False,0,19,10,19,10,9,It maximizes the joint total while favoring my group after I favored the other group last round.,llm
+e4-public-welfare,e4,3,tj-014,A,False,0,19,10,19,10,9,It maximizes the joint total while balancing my previous choice that favored the other group.,llm
+e4-public-welfare,e4,3,tj-025,A,False,0,19,10,19,10,9,It maximizes my group's allocation while also achieving the highest joint total.,llm
+e4-public-welfare,e4,3,tj-018,A,False,0,19,10,19,10,9,It gives my group the highest payoff while tying for the highest joint total.,llm
+e4-public-welfare,e4,3,tj-042,A,False,0,19,10,19,10,9,Row 0 gives my group the highest allocation while also maximizing the joint total.,llm
+e4-public-welfare,e4,3,tj-040,A,False,0,19,10,19,10,9,This row maximizes both my group's payoff and the joint total.,llm
+e4-public-welfare,e4,3,tj-020,A,False,0,19,10,19,10,9,It gives my group more points than row 10 while producing the same joint total.,llm
+e4-public-welfare,e4,3,tj-010,A,False,0,19,10,19,10,9,It gives my group the largest allocation while still providing 10 to the other group.,llm
+e4-public-welfare,e4,3,tj-029,A,False,10,10,19,10,19,-9,It maximizes the joint total and follows my latest cooperative commitment.,llm
+e4-public-welfare,e4,3,tj-017,A,False,0,19,10,19,10,9,"It maximizes the joint total and favors group A, which is currently behind.",llm
+e4-public-welfare,e4,3,tj-035,A,False,5,10,10,10,10,0,"It gives both groups the same payoff, avoiding further imbalance.",llm
+e4-public-welfare,e4,3,tj-032,A,False,0,19,10,19,10,9,It maximizes my group's payoff and the joint total while counterbalancing the previous round's choice.,llm
+e4-public-welfare,e4,3,tj-000,A,False,0,19,10,19,10,9,It maximizes the joint allocation while giving my group the larger share.,llm
+e4-public-welfare,e4,3,tj-046,B,False,10,10,19,19,10,9,It gives my group the highest payoff while also maximizing the joint total.,llm
+e4-public-welfare,e4,3,tj-033,B,False,10,10,19,19,10,9,It maximizes my group's allocation while also achieving the highest joint total.,llm
+e4-public-welfare,e4,3,tj-023,B,False,0,19,10,10,19,-9,Row 0 maximizes the joint total while reciprocating the other group's sacrifice after my previous self-favoring choice.,llm
+e4-public-welfare,e4,3,tj-011,B,False,0,19,10,10,19,-9,It maximizes the joint total while reciprocating the other group's cooperative commitment.,llm
+e4-public-welfare,e4,3,tj-009,B,False,10,10,19,19,10,9,It maximizes my group's allocation while tying for the highest joint total.,llm
+e4-public-welfare,e4,3,tj-034,B,False,10,10,19,19,10,9,It maximizes the joint allocation and gives my group the highest allocation.,llm
+e4-public-welfare,e4,3,tj-022,B,False,10,10,19,19,10,9,Row 10 gives my group the largest allocation and ties for the highest joint total.,llm
+e4-public-welfare,e4,3,tj-003,B,False,0,19,10,10,19,-9,It maximizes the joint allocation while honoring group A's latest commitment and balancing my prior row 10 choice.,llm
+e4-public-welfare,e4,3,tj-006,B,False,10,10,19,19,10,9,This maximizes my group's allocation while also maximizing the joint total.,llm
+e4-public-welfare,e4,3,tj-007,B,False,10,10,19,19,10,9,It maximizes the joint total while giving my group the largest allocation.,llm
+e4-public-welfare,e4,3,tj-004,B,False,0,19,10,10,19,-9,It maximizes the joint total and reciprocates the alternating cooperative pattern.,llm
+e4-public-welfare,e4,3,tj-001,B,False,0,19,10,10,19,-9,It maximizes the joint total while favoring the group with the lower cumulative total.,llm
+e4-public-welfare,e4,3,tj-045,B,False,0,19,10,10,19,-9,It maximizes the joint total while maintaining my group’s 10 points.,llm
+e4-public-welfare,e4,3,tj-013,B,False,10,10,19,19,10,9,It gives my group the highest allocation while maximizing the joint total.,llm
+e4-public-welfare,e4,3,tj-012,B,True,10,10,19,19,10,9,I am honoring my commitment while maximizing group B's allocation and the joint total.,llm
+e4-public-welfare,e4,3,tj-047,B,False,0,19,10,10,19,-9,It maximizes the joint total and balances my previous row 10 choice by favoring the other group.,llm
+e4-public-welfare,e4,3,tj-015,B,False,0,19,10,10,19,-9,It maximizes the joint total while reciprocating group A's repeated commitment to row 0.,llm
+e4-public-welfare,e4,3,tj-041,B,False,10,10,19,19,10,9,This row maximizes both my group's allocation and the joint total.,llm
+e4-public-welfare,e4,3,tj-039,B,False,0,19,10,10,19,-9,It maximizes the joint total and remains consistent with my prior cooperative choices.,llm
+e4-public-welfare,e4,3,tj-005,B,False,10,10,19,19,10,9,This remains consistent with my prior choices and maximizes both my group's allocation and the joint total.,llm
+e4-public-welfare,e4,3,tj-028,B,False,10,10,19,19,10,9,It maximizes my group's allocation while tying for the highest joint total.,llm
+e4-public-welfare,e4,3,tj-049,B,False,0,19,10,10,19,-9,Row 0 maximizes the joint allocation and balances my previous choice by favoring the other group.,llm
+e4-public-welfare,e4,3,tj-008,B,False,10,10,19,19,10,9,Row 10 maximizes my group's allocation and the joint total.,llm
+e4-public-welfare,e4,3,tj-044,B,False,0,19,10,10,19,-9,It maximizes the joint allocation and consistently favors the group with the lower cumulative total.,llm
+e4-public-welfare,e4,3,tj-027,B,False,0,19,10,10,19,-9,It maximizes the joint allocation while honoring the latest cooperative commitment to benefit the other group.,llm
+e4-public-welfare,e4,4,tj-036,A,False,10,10,19,10,19,-9,"It maximizes the joint allocation and directs more points to group B, which trails group A overall.",llm
+e4-public-welfare,e4,4,tj-043,A,False,0,19,10,19,10,9,It maximizes my group's payoff and ties for the highest joint total.,llm
+e4-public-welfare,e4,4,tj-026,A,False,0,19,10,19,10,9,It maximizes my group's allocation and the joint total.,llm
+e4-public-welfare,e4,4,tj-048,A,False,0,19,10,19,10,9,It maximizes the joint total while giving my group the larger share.,llm
+e4-public-welfare,e4,4,tj-019,A,False,10,10,19,10,19,-9,It maximizes the joint payoff while reducing the gap between the groups.,llm
+e4-public-welfare,e4,4,tj-038,A,False,10,10,19,10,19,-9,It maximizes the joint payoff and helps balance the groups after the latest results favored group A.,llm
+e4-public-welfare,e4,4,tj-021,A,True,0,19,10,19,10,9,I am honoring my commitment and choosing the row that maximizes the combined allocation.,llm
+e4-public-welfare,e4,4,tj-016,A,False,10,10,19,10,19,-9,It maximizes the joint total while helping narrow group A's lead.,llm
+e4-public-welfare,e4,4,tj-002,A,False,0,19,10,19,10,9,It maximizes both my group’s payoff and the joint total.,llm
+e4-public-welfare,e4,4,tj-031,A,False,0,19,10,19,10,9,It maximizes my group's allocation while keeping the other group's allocation at 10.,llm
+e4-public-welfare,e4,4,tj-037,A,False,0,19,10,19,10,9,It maximizes my group's payoff while tying for the highest joint total.,llm
+e4-public-welfare,e4,4,tj-030,A,False,10,10,19,10,19,-9,It maximizes the joint total and exactly balances the cumulative allocations from my past choices.,llm
+e4-public-welfare,e4,4,tj-024,A,False,10,10,19,10,19,-9,"It maximizes the joint total and balances my previous choices, which favored my group.",llm
+e4-public-welfare,e4,4,tj-014,A,False,10,10,19,10,19,-9,I choose row 10 to balance my previous row 0 choice while preserving the maximum joint total.,llm
+e4-public-welfare,e4,4,tj-025,A,False,10,10,19,10,19,-9,It maximizes the joint total while balancing my prior choices across both groups.,llm
+e4-public-welfare,e4,4,tj-018,A,False,0,19,10,19,10,9,It gives my group the highest payoff while also maximizing the joint total.,llm
+e4-public-welfare,e4,4,tj-042,A,False,0,19,10,19,10,9,Row 0 maximizes both my group's allocation and the joint total.,llm
+e4-public-welfare,e4,4,tj-040,A,False,0,19,10,19,10,9,Row 0 gives my group the highest payoff while preserving the maximum joint total.,llm
+e4-public-welfare,e4,4,tj-020,A,False,0,19,10,19,10,9,It maximizes my group's allocation while tying for the highest joint total.,llm
+e4-public-welfare,e4,4,tj-010,A,False,0,19,10,19,10,9,It maximizes my group’s allocation while still giving the other group 10.,llm
+e4-public-welfare,e4,4,tj-029,A,False,10,10,19,10,19,-9,It maximizes the joint total and follows the latest cooperative commitment.,llm
+e4-public-welfare,e4,4,tj-017,A,False,0,19,10,19,10,9,"It maximizes the joint total and favors group A, which is currently behind.",llm
+e4-public-welfare,e4,4,tj-035,A,False,5,10,10,10,10,0,It gives both groups equal payoffs and avoids widening the imbalance.,llm
+e4-public-welfare,e4,4,tj-032,A,False,10,10,19,10,19,-9,It maximizes the joint total and balances my prior choices across the two groups.,llm
+e4-public-welfare,e4,4,tj-000,A,False,10,10,19,10,19,-9,It maximizes the joint allocation and balances my previous choices across the two groups.,llm
+e4-public-welfare,e4,4,tj-046,B,False,10,10,19,19,10,9,It maximizes my group's payoff and the joint total.,llm
+e4-public-welfare,e4,4,tj-033,B,False,10,10,19,19,10,9,It maximizes my group's allocation while preserving the maximum joint total.,llm
+e4-public-welfare,e4,4,tj-023,B,False,10,10,19,19,10,9,Row 10 maximizes my group's points and ties for the highest joint total after my previous choice favored the other group.,llm
+e4-public-welfare,e4,4,tj-011,B,False,10,10,19,19,10,9,It gives my group the highest allocation while maximizing the joint total.,llm
+e4-public-welfare,e4,4,tj-009,B,False,10,10,19,19,10,9,It maximizes my group's allocation while tying for the highest joint total.,llm
+e4-public-welfare,e4,4,tj-034,B,False,10,10,19,19,10,9,It maximizes the joint allocation while giving my group the highest allocation.,llm
+e4-public-welfare,e4,4,tj-022,B,False,10,10,19,19,10,9,Row 10 gives my group the largest allocation and ties for the highest joint total.,llm
+e4-public-welfare,e4,4,tj-003,B,False,10,10,19,19,10,9,It maximizes the joint allocation and balances my previous choice of row 0.,llm
+e4-public-welfare,e4,4,tj-006,B,False,10,10,19,19,10,9,It maximizes my group’s allocation while tying for the highest joint total.,llm
+e4-public-welfare,e4,4,tj-007,B,False,10,10,19,19,10,9,It maximizes the joint total while securing the largest allocation for my group.,llm
+e4-public-welfare,e4,4,tj-004,B,False,10,10,19,19,10,9,It maximizes the joint total and continues the alternating pattern while giving my group 19.,llm
+e4-public-welfare,e4,4,tj-001,B,False,0,19,10,10,19,-9,"It maximizes the joint total while directing more points to group B, which trails cumulatively.",llm
+e4-public-welfare,e4,4,tj-045,B,False,0,19,10,10,19,-9,It maximizes the joint total while keeping my group at 10 points.,llm
+e4-public-welfare,e4,4,tj-013,B,False,10,10,19,19,10,9,It gives my group the highest allocation while maximizing the joint total.,llm
+e4-public-welfare,e4,4,tj-012,B,True,10,10,19,19,10,9,I am honoring my commitment while maximizing group B's allocation and the joint total.,llm
+e4-public-welfare,e4,4,tj-047,B,False,10,10,19,19,10,9,It maximizes the joint total while balancing my past choices equally between the groups.,llm
+e4-public-welfare,e4,4,tj-015,B,False,0,19,10,10,19,-9,It maximizes the joint total and follows group A's repeated commitment to row 0.,llm
+e4-public-welfare,e4,4,tj-041,B,False,10,10,19,19,10,9,Row 10 gives my group the highest allocation and maximizes the joint total.,llm
+e4-public-welfare,e4,4,tj-039,B,False,0,19,10,10,19,-9,It maximizes the joint total while keeping my group's allocation at 10.,llm
+e4-public-welfare,e4,4,tj-005,B,False,10,10,19,19,10,9,"Row 10 maximizes my group's allocation and the joint total, consistent with my previous choices.",llm
+e4-public-welfare,e4,4,tj-028,B,False,10,10,19,19,10,9,It maximizes my group's allocation while tying for the highest joint total.,llm
+e4-public-welfare,e4,4,tj-049,B,False,10,10,19,19,10,9,This row maximizes the joint allocation and gives my group 19 points.,llm
+e4-public-welfare,e4,4,tj-008,B,False,10,10,19,19,10,9,This maximizes my group's allocation while preserving the highest joint total.,llm
+e4-public-welfare,e4,4,tj-044,B,False,0,19,10,10,19,-9,It maximizes the joint allocation and directs more points to the group with the lower cumulative total.,llm
+e4-public-welfare,e4,4,tj-027,B,False,10,10,19,19,10,9,It maximizes the joint allocation while reciprocating the other group's repeated commitment to this row.,llm
+e4-public-welfare,e4,5,tj-036,A,False,10,10,19,10,19,-9,"It maximizes the joint allocation and favors group B, which is behind overall.",llm
+e4-public-welfare,e4,5,tj-043,A,False,0,19,10,19,10,9,It gives my group the highest payoff and ties for the highest joint total.,llm
+e4-public-welfare,e4,5,tj-026,A,False,10,10,19,10,19,-9,"It maximizes the joint total while balancing my prior choices, which have favored my group overall.",llm
+e4-public-welfare,e4,5,tj-048,A,False,10,10,19,10,19,-9,It maximizes the joint total while balancing my past choices and favoring the other group this round.,llm
+e4-public-welfare,e4,5,tj-019,A,False,10,10,19,10,19,-9,Row 10 maximizes the joint payoff and helps narrow the cumulative advantage held by group A.,llm
+e4-public-welfare,e4,5,tj-038,A,False,0,19,10,19,10,9,It maximizes the joint payoff and helps balance the groups after the latest results.,llm
+e4-public-welfare,e4,5,tj-021,A,True,0,19,10,19,10,9,I am honoring my commitment while maximizing both my group's allocation and the joint total.,llm
+e4-public-welfare,e4,5,tj-016,A,False,0,19,10,19,10,9,It maximizes the joint total while helping narrow group B's current lead.,llm
+e4-public-welfare,e4,5,tj-002,A,False,0,19,10,19,10,9,"It maximizes my group's payoff and the joint total, consistent with my established choice.",llm
+e4-public-welfare,e4,5,tj-031,A,False,0,19,10,19,10,9,It maximizes both my group's allocation and the joint total while still giving the other group 10.,llm
+e4-public-welfare,e4,5,tj-037,A,False,0,19,10,19,10,9,It maximizes my group's payoff while tying for the highest joint total.,llm
+e4-public-welfare,e4,5,tj-030,A,False,0,19,10,19,10,9,It maximizes the joint total and continues the alternating pattern that has kept cumulative allocations balanced.,llm
+e4-public-welfare,e4,5,tj-024,A,False,0,19,10,19,10,9,It maximizes the joint total and follows my previous choice of row 10.,llm
+e4-public-welfare,e4,5,tj-014,A,False,0,19,10,19,10,9,It maximizes the joint total and balances my previous choice of row 10.,llm
+e4-public-welfare,e4,5,tj-025,A,False,0,19,10,19,10,9,It maximizes the joint total and alternates from my previous choice of row 10.,llm
+e4-public-welfare,e4,5,tj-018,A,False,0,19,10,19,10,9,It gives my group the highest payoff and ties for the highest joint total.,llm
+e4-public-welfare,e4,5,tj-042,A,False,0,19,10,19,10,9,Row 0 maximizes both my group's allocation and the joint total.,llm
+e4-public-welfare,e4,5,tj-040,A,False,0,19,10,19,10,9,It gives my group the highest payoff while tying for the maximum joint total.,llm
+e4-public-welfare,e4,5,tj-020,A,False,0,19,10,19,10,9,It maximizes my group's allocation while tying for the highest joint total.,llm
+e4-public-welfare,e4,5,tj-010,A,False,0,19,10,19,10,9,It maximizes my group's allocation and ties for the highest joint total.,llm
+e4-public-welfare,e4,5,tj-029,A,False,0,19,10,19,10,9,It ties for the highest joint total while allocating more points to my group.,llm
+e4-public-welfare,e4,5,tj-017,A,False,0,19,10,19,10,9,"It maximizes the joint total while slightly favoring group A, which is currently behind.",llm
+e4-public-welfare,e4,5,tj-035,A,False,5,10,10,10,10,0,It keeps both groups' payoffs equal while their cumulative totals are nearly balanced.,llm
+e4-public-welfare,e4,5,tj-032,A,False,0,19,10,19,10,9,It maximizes the joint total and my group’s payoff while balancing my previous choice of row 10.,llm
+e4-public-welfare,e4,5,tj-000,A,False,0,19,10,19,10,9,It maximizes the joint allocation and gives my group the larger share.,llm
+e4-public-welfare,e4,5,tj-046,B,False,10,10,19,19,10,9,Row 10 gives my group the highest payoff and maximizes the joint total.,llm
+e4-public-welfare,e4,5,tj-033,B,False,10,10,19,19,10,9,It maximizes my group’s allocation while also achieving the highest joint total.,llm
+e4-public-welfare,e4,5,tj-023,B,False,0,19,10,10,19,-9,Row 0 preserves the maximum joint total while balancing my previous choice that favored my group.,llm
+e4-public-welfare,e4,5,tj-011,B,False,10,10,19,19,10,9,It gives my group the highest allocation while maximizing the joint total.,llm
+e4-public-welfare,e4,5,tj-009,B,False,10,10,19,19,10,9,It maximizes my group's allocation while tying for the highest joint total.,llm
+e4-public-welfare,e4,5,tj-034,B,False,10,10,19,19,10,9,It maximizes the joint allocation and gives my group the highest allocation.,llm
+e4-public-welfare,e4,5,tj-022,B,False,10,10,19,19,10,9,Row 10 gives my group the largest allocation and ties for the highest joint total.,llm
+e4-public-welfare,e4,5,tj-003,B,False,10,10,19,19,10,9,It maximizes my group's allocation and the joint total.,llm
+e4-public-welfare,e4,5,tj-006,B,False,10,10,19,19,10,9,It maximizes my group's allocation and ties for the highest joint total.,llm
+e4-public-welfare,e4,5,tj-007,B,False,10,10,19,19,10,9,It maximizes the joint total and gives my group the largest allocation.,llm
+e4-public-welfare,e4,5,tj-004,B,False,0,19,10,10,19,-9,It maximizes the joint total and continues the alternating pattern.,llm
+e4-public-welfare,e4,5,tj-001,B,False,10,10,19,19,10,9,"It maximizes the joint total while directing more points to group A, which currently trails.",llm
+e4-public-welfare,e4,5,tj-045,B,False,0,19,10,10,19,-9,It maximizes the joint total while keeping my group’s points at 10.,llm
+e4-public-welfare,e4,5,tj-013,B,False,10,10,19,19,10,9,It gives my group the highest allocation and maximizes the joint total.,llm
+e4-public-welfare,e4,5,tj-012,B,True,10,10,19,19,10,9,"Row 10 maximizes both the joint total and group B's allocation, consistent with my previous choices.",llm
+e4-public-welfare,e4,5,tj-047,B,False,0,19,10,10,19,-9,It maximizes the joint total and continues my alternating pattern after choosing row 10 last round.,llm
+e4-public-welfare,e4,5,tj-015,B,False,10,10,19,19,10,9,It maximizes the joint total while balancing my recent pattern of favoring the other group.,llm
+e4-public-welfare,e4,5,tj-041,B,False,10,10,19,19,10,9,Row 10 gives my group the highest allocation and maximizes the joint total.,llm
+e4-public-welfare,e4,5,tj-039,B,False,0,19,10,10,19,-9,It maximizes the joint total and continues my prior cooperative choices.,llm
+e4-public-welfare,e4,5,tj-005,B,False,10,10,19,19,10,9,"Row 10 maximizes my group's allocation and the joint total, consistent with my previous choices.",llm
+e4-public-welfare,e4,5,tj-028,B,False,10,10,19,19,10,9,It maximizes my group's allocation while tying for the highest joint total.,llm
+e4-public-welfare,e4,5,tj-049,B,False,0,19,10,10,19,-9,Row 0 maximizes the joint allocation while continuing the alternating pattern that balances benefits across rounds.,llm
+e4-public-welfare,e4,5,tj-008,B,False,10,10,19,19,10,9,Row 10 gives my group the maximum allocation while tying for the highest joint total.,llm
+e4-public-welfare,e4,5,tj-044,B,False,0,19,10,10,19,-9,It maximizes the joint allocation and gives more to the group with the lower cumulative total.,llm
+e4-public-welfare,e4,5,tj-027,B,False,10,10,19,19,10,9,It maximizes the joint allocation and reciprocates the other group's repeated commitment to row 0? no,llm

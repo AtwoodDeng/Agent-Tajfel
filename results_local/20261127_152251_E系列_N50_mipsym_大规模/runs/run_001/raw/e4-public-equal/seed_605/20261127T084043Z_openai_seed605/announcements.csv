@@ -1,0 +1,5 @@
+step,condition,text
+2,e4-public-equal,Previous results: group A total 833; group B total 608; A-to-A 475; A-to-B 250; B-to-A 358; B-to-B 358.
+3,e4-public-equal,Previous results: group A total 563; group B total 554; A-to-A 286; A-to-B 250; B-to-A 277; B-to-B 304.
+4,e4-public-equal,Previous results: group A total 545; group B total 545; A-to-A 277; A-to-B 250; B-to-A 268; B-to-B 295.
+5,e4-public-equal,Previous results: group A total 518; group B total 527; A-to-A 259; A-to-B 250; B-to-A 259; B-to-B 277.

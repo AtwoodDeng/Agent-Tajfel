@@ -1,0 +1,42 @@
+{
+  "experiment": "E 系列 N=50 大规模（矩阵 mip_sym）",
+  "experiment_id": "20261127_152251_E系列_N50_mipsym_大规模",
+  "batch": "run_001",
+  "batch_scope": "先跑 1 个种子（seed 605）；剩余 seeds [4287, 9709] 待验证后跑",
+  "git_commit": "2bb435f0acf551e3a2aa0544907cdc29647cad4c",
+  "git_commit_message": "Merge main into results: synchronize matrices and token limits",
+  "git_branch": "results",
+  "working_directory": "/home/atwood/tajfel-study",
+  "python": "/home/atwood/tajfel-study/.venv/bin/python (3.12.3)",
+  "dependencies": {
+    "socioverse": "editable checkout /home/atwood/SocioVerse2",
+    "openai": "3.52.0",
+    "duckdb": "2.0.0"
+  },
+  "command": "./.venv/bin/python scripts/run_communication.py --condition all --llm openai --seeds 605 --n-agents 50 --matrix mip_sym --driver engine --out results_local/20261127_152251_E系列_N50_mipsym_大规模/runs/run_001/raw",
+  "conditions": [
+    "e2-pair", "e2-ingroup", "e2-public", "e2-silent",
+    "e3-a-to-b",
+    "e4-private-ingroup", "e4-private-welfare", "e4-private-equal",
+    "e4-public-ingroup", "e4-public-welfare", "e4-public-equal"
+  ],
+  "n_conditions": 11,
+  "llm_kind": "openai",
+  "llm_model": "gpt-5.6-sol (from .env SV_LLM_MODEL)",
+  "llm_provider": "openai (SV_LLM_*)",
+  "temperature": 0.7,
+  "max_tokens": 220,
+  "n_agents": 50,
+  "steps": 5,
+  "seeds": [605],
+  "seeds_deferred": [4287, 9709],
+  "seed_method": "random.Random(20261127).sample(range(1,10001), 3) -> [605, 4287, 9709]",
+  "driver": "engine",
+  "matrix": "mip_sym override: (19,10),(17,10),(15,10),(13,10),(11,10),(10,10),(10,11),(10,13),(10,15),(10,17),(10,19)",
+  "matrix_note": "E4 在 mip_sym 上 welfare 立场与 ingroup 塌缩为同一目标行 (A row0 / B row10)；equal 仍为 row5",
+  "chat_subrounds": [1, 2],
+  "interaction_rounds": 3,
+  "out": "results_local/20261127_152251_E系列_N50_mipsym_大规模/runs/run_001/raw",
+  "expected_runs": 11,
+  "note": "N=50 大规模先行 1 种子验证；E4 welfare/ingroup 在 mip_sym 上承诺相同（已在实验记录标注）"
+}

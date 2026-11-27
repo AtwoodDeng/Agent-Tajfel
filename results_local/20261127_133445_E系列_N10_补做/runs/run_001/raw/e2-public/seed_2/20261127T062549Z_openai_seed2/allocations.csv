@@ -1,0 +1,51 @@
+condition,series,step,agent_id,own_group,is_leader,row,a_points,b_points,ingroup_points,outgroup_points,gap,reason,source
+e2-public,e2,1,tj-009,A,False,5,10,20,10,20,-10,It gives my group the largest possible allocation while also maximizing the joint total.,llm
+e2-public,e2,1,tj-003,A,False,5,10,20,10,20,-10,It gives the other group the most while still providing my group 10.,llm
+e2-public,e2,1,tj-005,A,False,5,10,20,10,20,-10,This row gives the other group the most while preserving a share for my group.,llm
+e2-public,e2,1,tj-001,A,False,2,13,11,13,11,2,It gives both groups a substantial allocation while keeping the split relatively balanced.,llm
+e2-public,e2,1,tj-006,A,False,5,10,20,10,20,-10,It gives the other group the most while keeping my allocation substantial.,llm
+e2-public,e2,1,tj-002,B,False,5,10,20,20,10,10,It gives my group the largest allocation while also producing the highest joint total.,llm
+e2-public,e2,1,tj-000,B,False,5,10,20,20,10,10,This row gives my group the largest allocation while also producing the highest joint total.,llm
+e2-public,e2,1,tj-004,B,False,5,10,20,20,10,10,This row gives my group the highest allocation and the highest joint total.,llm
+e2-public,e2,1,tj-007,B,False,5,10,20,20,10,10,This row gives my group the largest allocation while also maximizing the joint total.,llm
+e2-public,e2,1,tj-008,B,False,5,10,20,20,10,10,It gives my group the largest allocation while also maximizing the joint total.,llm
+e2-public,e2,2,tj-009,A,False,5,10,20,10,20,-10,"It maximizes our group's allocation and the joint total, consistent with my previous choice.",llm
+e2-public,e2,2,tj-003,A,False,5,10,20,10,20,-10,It maximizes the joint total and gives the other group the largest allocation while preserving a meaningful share for my group.,llm
+e2-public,e2,2,tj-005,A,False,5,10,20,10,20,-10,This row maximizes the joint total and gives the other group its largest allocation while preserving a meaningful share for mine.,llm
+e2-public,e2,2,tj-001,A,False,5,10,20,10,20,-10,It maximizes the joint total and gives the other group the largest allocation while preserving a meaningful share for mine.,llm
+e2-public,e2,2,tj-006,A,False,2,13,11,13,11,2,It narrows Group A's deficit while preserving a high joint total and a nearly balanced allocation.,llm
+e2-public,e2,2,tj-002,B,False,5,10,20,20,10,10,"It maximizes my group’s allocation and the joint total, consistent with my previous choice.",llm
+e2-public,e2,2,tj-000,B,False,5,10,20,20,10,10,Row 5 gives my group the largest allocation and maximizes the joint total.,llm
+e2-public,e2,2,tj-004,B,False,5,10,20,20,10,10,"It maximizes Group B's allocation and the joint total, consistent with my previous choice.",llm
+e2-public,e2,2,tj-007,B,False,5,10,20,20,10,10,It gives my group the largest allocation and maximizes the joint total.,llm
+e2-public,e2,2,tj-008,B,False,5,10,20,20,10,10,"It maximizes my group’s allocation and the joint total, consistent with my previous choice.",llm
+e2-public,e2,3,tj-009,A,False,0,15,5,15,5,10,"Group B has repeatedly favored its own maximum, so I am now protecting my group's allocation.",llm
+e2-public,e2,3,tj-003,A,False,2,13,11,13,11,2,It offers the most balanced allocation while retaining a high joint total after earlier choices strongly favored the other group.,llm
+e2-public,e2,3,tj-005,A,False,3,12,14,12,14,-2,This row maintains a high joint total while giving both groups substantial and relatively balanced allocations.,llm
+e2-public,e2,3,tj-001,A,False,0,15,5,15,5,10,Persistent imbalance and limited reciprocity make protecting my group's allocation the priority this round.,llm
+e2-public,e2,3,tj-006,A,False,0,15,5,15,5,10,"Group B has repeatedly favored its maximum, so I’ll protect Group A’s allocation while still offering a meaningful share to B.",llm
+e2-public,e2,3,tj-002,B,False,5,10,20,20,10,10,"It maximizes both my group’s allocation and the joint total, consistent with my prior choices.",llm
+e2-public,e2,3,tj-000,B,False,5,10,20,20,10,10,"Row 5 maximizes my group's allocation and the joint total, consistent with my previous choices.",llm
+e2-public,e2,3,tj-004,B,False,5,10,20,20,10,10,It consistently maximizes my group's allocation and the joint total.,llm
+e2-public,e2,3,tj-007,B,False,5,10,20,20,10,10,I chose row 5 because it maximizes my group’s allocation and the joint total.,llm
+e2-public,e2,3,tj-008,B,False,5,10,20,20,10,10,"It maximizes my group's allocation and the joint total, consistent with my previous choices.",llm
+e2-public,e2,4,tj-009,A,False,0,15,5,15,5,10,"Group B continues maximizing its advantage, so I am protecting Group A's allocation until there is reciprocal cooperation.",llm
+e2-public,e2,4,tj-003,A,False,3,12,14,12,14,-2,It preserves a near-balanced allocation with a high joint total while protecting my group from further disadvantage.,llm
+e2-public,e2,4,tj-005,A,False,4,11,17,11,17,-6,This high-total option gives both groups meaningful shares while reducing the imbalance and protecting my group’s allocation.,llm
+e2-public,e2,4,tj-001,A,False,3,12,14,12,14,-2,"This high-total, relatively balanced choice preserves meaningful shares for both groups while responding to signs of possible reciprocity.",llm
+e2-public,e2,4,tj-006,A,False,1,14,8,14,8,6,It protects Group A while offering Group B more than the strict defensive option as a measured test of reciprocity.,llm
+e2-public,e2,4,tj-002,B,False,5,10,20,20,10,10,"Row 5 maximizes my group’s allocation and the joint total, consistent with my previous choices.",llm
+e2-public,e2,4,tj-000,B,False,5,10,20,20,10,10,Row 5 maximizes my group's allocation and the joint total.,llm
+e2-public,e2,4,tj-004,B,False,3,12,14,14,12,2,"After repeated one-sided choices by Group B, row 3 protects Group A while retaining a high joint total.",llm
+e2-public,e2,4,tj-007,B,False,3,12,14,14,12,2,It preserves a high joint total while demonstrating reciprocity through a more balanced allocation.,llm
+e2-public,e2,4,tj-008,B,False,3,12,14,14,12,2,It preserves a high joint total while demonstrating reciprocity through a more balanced allocation.,llm
+e2-public,e2,5,tj-009,A,False,3,12,14,12,14,-2,"B has shifted toward balanced choices, so I’ll reciprocate with a high-total allocation that gives both groups substantial shares.",llm
+e2-public,e2,5,tj-003,A,False,3,12,14,12,14,-2,It sustains the emerging reciprocity with a near-balanced allocation and a high joint total.,llm
+e2-public,e2,5,tj-005,A,False,3,12,14,12,14,-2,This near-balanced option sustains reciprocal cooperation while preserving a high joint total and meaningful shares for both groups.,llm
+e2-public,e2,5,tj-001,A,False,3,12,14,12,14,-2,Row 3 keeps the allocation near-balanced with a high joint total and reciprocates Group B’s recent move toward cooperation.,llm
+e2-public,e2,5,tj-006,A,False,3,12,14,12,14,-2,It reciprocates B's recent cooperation with a near-balanced allocation and a high joint total.,llm
+e2-public,e2,5,tj-002,B,False,3,12,14,14,12,2,It honors the commitment to reciprocity while keeping the joint total high and both allocations balanced.,llm
+e2-public,e2,5,tj-000,B,False,3,12,14,14,12,2,Row 3 sustains the emerging reciprocity while preserving a high joint total and near-balanced allocations.,llm
+e2-public,e2,5,tj-004,B,False,3,12,14,14,12,2,"I’m reciprocating with a balanced, high-total allocation after Group B’s recent move toward cooperation.",llm
+e2-public,e2,5,tj-007,B,False,3,12,14,14,12,2,"I’m continuing the reciprocal, near-balanced choice while preserving a high joint total.",llm
+e2-public,e2,5,tj-008,B,False,3,12,14,14,12,2,I’ll reciprocate with a near-balanced allocation that keeps the joint total high.,llm

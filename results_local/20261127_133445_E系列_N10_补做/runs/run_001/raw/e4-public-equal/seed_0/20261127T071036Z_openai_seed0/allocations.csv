@@ -1,0 +1,51 @@
+condition,series,step,agent_id,own_group,is_leader,row,a_points,b_points,ingroup_points,outgroup_points,gap,reason,source
+e4-public-equal,e4,1,tj-009,A,False,0,16,4,16,4,12,It gives my group the highest payoff while still providing something to the other group.,llm
+e4-public-equal,e4,1,tj-008,A,False,0,16,4,16,4,12,It gives my group the highest allocation while still providing 4 to the other group.,llm
+e4-public-equal,e4,1,tj-001,A,True,2,15,13,15,13,2,It maximizes my group's allocation while also producing the highest joint outcome.,llm
+e4-public-equal,e4,1,tj-004,A,False,0,16,4,16,4,12,It gives my group the largest allocation while maintaining a positive allocation for the other group.,llm
+e4-public-equal,e4,1,tj-000,A,False,0,16,4,16,4,12,It gives my group the highest allocation while keeping the joint total at 20.,llm
+e4-public-equal,e4,1,tj-006,B,False,2,15,13,13,15,-2,It offers a strong group allocation while maximizing the joint total.,llm
+e4-public-equal,e4,1,tj-003,B,False,2,15,13,13,15,-2,It gives my group 13 while maximizing the joint total.,llm
+e4-public-equal,e4,1,tj-005,B,False,2,15,13,13,15,-2,It gives my group 13 while maximizing the joint total at 28.,llm
+e4-public-equal,e4,1,tj-002,B,False,2,15,13,13,15,-2,It gives my group a high allocation while also maximizing the joint total.,llm
+e4-public-equal,e4,1,tj-007,B,True,2,15,13,13,15,-2,It maximizes the joint outcome while keeping the allocation relatively balanced.,llm
+e4-public-equal,e4,2,tj-009,A,False,4,13,13,13,13,0,I chose row 4 because both group leaders committed to it and it provides equal allocations to both groups.,llm
+e4-public-equal,e4,2,tj-008,A,False,4,13,13,13,13,0,"Both group leaders committed to row 4, which provides equal allocations to both groups.",llm
+e4-public-equal,e4,2,tj-001,A,True,4,13,13,13,13,0,I choose row 4 to honor the mutual commitment with group B and keep both groups' allocations equal.,llm
+e4-public-equal,e4,2,tj-004,A,False,4,13,13,13,13,0,"Both group leaders committed to the equal allocation, which also reduces the current imbalance between groups.",llm
+e4-public-equal,e4,2,tj-000,A,False,4,13,13,13,13,0,I choose row 4 to support equal allocations and coordinate with both group leaders.,llm
+e4-public-equal,e4,2,tj-006,B,False,4,13,13,13,13,0,It honors the shared commitment and gives both groups an equal allocation.,llm
+e4-public-equal,e4,2,tj-003,B,False,4,13,13,13,13,0,"Row 4 gives both groups equal allocations, matching the leaders’ commitments.",llm
+e4-public-equal,e4,2,tj-005,B,False,4,13,13,13,13,0,It honors the shared commitment and gives both groups an equal allocation.,llm
+e4-public-equal,e4,2,tj-002,B,False,3,13,15,15,13,2,It gives my group the highest allocation among the options tied for the largest joint total.,llm
+e4-public-equal,e4,2,tj-007,B,True,4,13,13,13,13,0,It honors the mutual commitment and gives both groups an equal allocation.,llm
+e4-public-equal,e4,3,tj-009,A,False,4,13,13,13,13,0,"Both group leaders support row 4, which provides equal allocations and the strongest shared outcome.",llm
+e4-public-equal,e4,3,tj-008,A,False,4,13,13,13,13,0,"Both group leaders repeatedly committed to row 4, which keeps allocations equal between the groups.",llm
+e4-public-equal,e4,3,tj-001,A,True,4,13,13,13,13,0,I choose row 4 to honor our shared commitment and keep both groups' allocations equal.,llm
+e4-public-equal,e4,3,tj-004,A,False,4,13,13,13,13,0,Row 4 honors both leaders’ commitments and allocates equally to both groups.,llm
+e4-public-equal,e4,3,tj-000,A,False,4,13,13,13,13,0,It preserves equal allocations and honors the shared commitment coordinated by both group leaders.,llm
+e4-public-equal,e4,3,tj-006,B,False,4,13,13,13,13,0,It maintains the shared commitment to equal allocations for both groups.,llm
+e4-public-equal,e4,3,tj-003,B,False,4,13,13,13,13,0,It preserves equal allocations between the groups and honors the shared commitment.,llm
+e4-public-equal,e4,3,tj-005,B,False,4,13,13,13,13,0,It maintains the shared commitment to equal allocations while preserving a high joint total.,llm
+e4-public-equal,e4,3,tj-002,B,False,4,13,13,13,13,0,It keeps both groups' allocations equal and honors the shared commitment to row 4.,llm
+e4-public-equal,e4,3,tj-007,B,True,4,13,13,13,13,0,It honors our shared commitment to equality by giving both groups the same allocation.,llm
+e4-public-equal,e4,4,tj-009,A,False,4,13,13,13,13,0,"Both group leaders support row 4, which keeps allocations equal while providing a strong shared outcome.",llm
+e4-public-equal,e4,4,tj-008,A,False,4,13,13,13,13,0,"Both group leaders have repeatedly committed to row 4, which allocates equally to both groups.",llm
+e4-public-equal,e4,4,tj-001,A,True,4,13,13,13,13,0,I choose row 4 to honor our shared commitment and keep both groups' allocations equal.,llm
+e4-public-equal,e4,4,tj-004,A,False,4,13,13,13,13,0,Row 4 honors both leaders’ commitments and keeps the allocations equal.,llm
+e4-public-equal,e4,4,tj-000,A,False,4,13,13,13,13,0,Row 4 preserves equal allocations and follows the shared commitment to equality.,llm
+e4-public-equal,e4,4,tj-006,B,False,4,13,13,13,13,0,Row 4 keeps both groups equal and honors our shared commitment.,llm
+e4-public-equal,e4,4,tj-003,B,False,4,13,13,13,13,0,It preserves equal allocations and honors both leaders' shared commitment.,llm
+e4-public-equal,e4,4,tj-005,B,False,4,13,13,13,13,0,It honors our shared commitment to equal allocations while maintaining a high joint total.,llm
+e4-public-equal,e4,4,tj-002,B,False,4,13,13,13,13,0,It preserves equal allocations and follows the groups' shared commitment to row 4.,llm
+e4-public-equal,e4,4,tj-007,B,True,4,13,13,13,13,0,It honors our shared commitment to equality by giving both groups the same allocation.,llm
+e4-public-equal,e4,5,tj-009,A,False,4,13,13,13,13,0,"Both group leaders support row 4, which keeps allocations equal and delivers a strong shared outcome.",llm
+e4-public-equal,e4,5,tj-008,A,False,4,13,13,13,13,0,"Both group leaders have consistently committed to row 4, which keeps allocations equal.",llm
+e4-public-equal,e4,5,tj-001,A,True,4,13,13,13,13,0,I choose row 4 to honor our shared commitment and keep both groups' allocations equal.,llm
+e4-public-equal,e4,5,tj-004,A,False,4,13,13,13,13,0,Row 4 honors both leaders’ commitments and allocates equally to both groups.,llm
+e4-public-equal,e4,5,tj-000,A,False,4,13,13,13,13,0,Row 4 gives both groups equal allocations and honors the leaders’ shared commitment.,llm
+e4-public-equal,e4,5,tj-006,B,False,4,13,13,13,13,0,Row 4 keeps both groups' allocations equal and honors our shared commitment.,llm
+e4-public-equal,e4,5,tj-003,B,False,4,13,13,13,13,0,Row 4 preserves equal allocations and honors both leaders’ shared commitment.,llm
+e4-public-equal,e4,5,tj-005,B,False,4,13,13,13,13,0,Row 4 honors our shared commitment to equal allocations while keeping the joint total high.,llm
+e4-public-equal,e4,5,tj-002,B,False,4,13,13,13,13,0,It preserves equal allocations and honors both groups' repeated commitment to row 4.,llm
+e4-public-equal,e4,5,tj-007,B,True,4,13,13,13,13,0,It honors our sustained mutual commitment to equality by giving both groups the same allocation.,llm

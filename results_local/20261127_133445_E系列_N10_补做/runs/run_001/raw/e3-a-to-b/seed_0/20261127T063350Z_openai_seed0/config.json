@@ -1,0 +1,15 @@
+{
+  "condition": "e3-a-to-b",
+  "series": "e3",
+  "steps": 5,
+  "seed": 0,
+  "n_agents": 10,
+  "llm_kind": "openai",
+  "model": null,
+  "driver": "engine",
+  "matrix": null,
+  "chat_subrounds": [
+    1,
+    2
+  ]
+}

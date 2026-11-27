@@ -1,0 +1,51 @@
+condition,series,step,agent_id,own_group,is_leader,row,a_points,b_points,ingroup_points,outgroup_points,gap,reason,source
+e2-pair,e2,1,tj-006,A,False,2,13,11,13,11,2,It gives both groups a substantial allocation while keeping the split relatively balanced.,llm
+e2-pair,e2,1,tj-003,A,False,5,10,20,10,20,-10,It maximizes the total joint allocation.,llm
+e2-pair,e2,1,tj-000,A,False,5,10,20,10,20,-10,It gives the other group the most while preserving a fair share for mine.,llm
+e2-pair,e2,1,tj-007,A,False,5,10,20,10,20,-10,This row gives the other group the most while still allocating 10 to my group.,llm
+e2-pair,e2,1,tj-005,A,False,5,10,20,10,20,-10,It maximizes the combined allocation.,llm
+e2-pair,e2,1,tj-008,B,False,5,10,20,20,10,10,This row gives my group the highest allocation while still providing the other group 10.,llm
+e2-pair,e2,1,tj-004,B,False,5,10,20,20,10,10,This row gives my group the largest allocation while keeping the joint total highest.,llm
+e2-pair,e2,1,tj-002,B,False,5,10,20,20,10,10,This row gives my group the largest allocation while also producing the highest joint total.,llm
+e2-pair,e2,1,tj-009,B,False,5,10,20,20,10,10,This row gives my group the largest allocation while also maximizing the joint total.,llm
+e2-pair,e2,1,tj-001,B,False,5,10,20,20,10,10,It gives my group the largest allocation while also maximizing the joint total.,llm
+e2-pair,e2,2,tj-006,A,False,3,12,14,12,14,-2,It accepts a modest disadvantage for our group while increasing the joint outcome and keeping the allocation balanced.,llm
+e2-pair,e2,2,tj-003,A,False,5,10,20,10,20,-10,It maintains our coordination and maximizes the total joint allocation.,llm
+e2-pair,e2,2,tj-000,A,False,2,13,11,13,11,2,It keeps the allocation nearly equal while increasing the joint outcome.,llm
+e2-pair,e2,2,tj-007,A,False,0,15,5,15,5,10,"Group B is well ahead, so I chose the row that gives my group more while keeping both allocations positive.",llm
+e2-pair,e2,2,tj-005,A,False,5,10,20,10,20,-10,It maximizes the combined allocation and remains consistent with my stated strategy.,llm
+e2-pair,e2,2,tj-008,B,False,5,10,20,20,10,10,This row maximizes my group's allocation and the joint total while still giving the other group 10.,llm
+e2-pair,e2,2,tj-004,B,False,5,10,20,20,10,10,It maintains our coordination while maximizing both my group's allocation and the joint total.,llm
+e2-pair,e2,2,tj-002,B,False,5,10,20,20,10,10,"This row gives my group the largest allocation and maximizes the joint total, consistent with my previous choice.",llm
+e2-pair,e2,2,tj-009,B,False,5,10,20,20,10,10,This row maximizes the joint allocation and gives my group the largest share.,llm
+e2-pair,e2,2,tj-001,B,False,5,10,20,20,10,10,"It maximizes my group's allocation and the joint total, consistent with my prior choice.",llm
+e2-pair,e2,3,tj-006,A,False,2,13,11,13,11,2,It keeps the allocation nearly balanced while giving both groups substantial shares.,llm
+e2-pair,e2,3,tj-003,A,False,5,10,20,10,20,-10,Row 5 maximizes the joint allocation and continues our established coordination.,llm
+e2-pair,e2,3,tj-000,A,False,2,13,11,13,11,2,It raises the joint outcome while keeping the groups nearly equal.,llm
+e2-pair,e2,3,tj-007,A,False,0,15,5,15,5,10,"Group A is behind, so I chose the row that gives it the largest positive allocation while keeping both groups funded.",llm
+e2-pair,e2,3,tj-005,A,False,5,10,20,10,20,-10,Row 5 maximizes the joint allocation and is consistent with my previous choices.,llm
+e2-pair,e2,3,tj-008,B,False,5,10,20,20,10,10,Row 5 gives my group the highest allocation and keeps the other group's allocation positive.,llm
+e2-pair,e2,3,tj-004,B,False,5,10,20,20,10,10,Row 5 gives my group the largest allocation and maintains the highest joint total.,llm
+e2-pair,e2,3,tj-002,B,False,2,13,11,11,13,-2,This nearly balanced allocation helps narrow Group B's lead while keeping both groups' shares substantial.,llm
+e2-pair,e2,3,tj-009,B,False,5,10,20,20,10,10,Row 5 maximizes my group's allocation and the joint total.,llm
+e2-pair,e2,3,tj-001,B,False,5,10,20,20,10,10,Row 5 maximizes group B's allocation and the joint total while keeping group A positive.,llm
+e2-pair,e2,4,tj-006,A,False,3,12,14,12,14,-2,It improves the joint allocation while keeping the split balanced and both groups’ shares substantial.,llm
+e2-pair,e2,4,tj-003,A,False,5,10,20,10,20,-10,It preserves the established coordination and maximizes the total joint allocation.,llm
+e2-pair,e2,4,tj-000,A,False,2,13,11,13,11,2,It keeps the allocation nearly equal while preserving a high joint outcome and modestly narrowing B's lead.,llm
+e2-pair,e2,4,tj-007,A,False,0,15,5,15,5,10,"Group A remains behind, so this row most directly narrows the gap while keeping both groups funded.",llm
+e2-pair,e2,4,tj-005,A,False,5,10,20,10,20,-10,It maximizes the joint allocation and remains consistent with my previous choices.,llm
+e2-pair,e2,4,tj-008,B,False,5,10,20,20,10,10,Row 5 gives my group the highest allocation and keeps the other group's allocation positive.,llm
+e2-pair,e2,4,tj-004,B,False,5,10,20,20,10,10,It preserves the established coordination while maximizing both my group's allocation and the joint total.,llm
+e2-pair,e2,4,tj-002,B,False,5,10,20,20,10,10,This maximizes my group's allocation and the joint total while helping narrow the current deficit.,llm
+e2-pair,e2,4,tj-009,B,False,4,11,17,17,11,6,Row 4 keeps the joint allocation high while giving my group more and narrowing the gap.,llm
+e2-pair,e2,4,tj-001,B,False,5,10,20,20,10,10,Row 5 maximizes my group’s allocation and the joint total while keeping the other group’s allocation positive.,llm
+e2-pair,e2,5,tj-006,A,False,3,12,14,12,14,-2,It keeps the allocation close to balanced while improving the joint outcome.,llm
+e2-pair,e2,5,tj-003,A,False,0,15,5,15,5,10,It gives Group A more and helps narrow the persistent total-score gap.,llm
+e2-pair,e2,5,tj-000,A,False,2,13,11,13,11,2,It offers a high joint outcome while keeping the allocation nearly equal and modestly narrowing B’s lead.,llm
+e2-pair,e2,5,tj-007,A,False,0,15,5,15,5,10,"Group A is behind, so I chose the row that gives it the largest allocation while keeping both groups positive.",llm
+e2-pair,e2,5,tj-005,A,False,4,11,17,11,17,-6,Row 4 keeps the joint allocation high while narrowing the gap and matching the other group’s proposed choice.,llm
+e2-pair,e2,5,tj-008,B,False,3,12,14,14,12,2,This more balanced allocation narrows the gap while giving both groups a substantial share.,llm
+e2-pair,e2,5,tj-004,B,False,5,10,20,20,10,10,Row 5 maximizes the joint allocation and maintains the coordination I have followed.,llm
+e2-pair,e2,5,tj-002,B,False,3,12,14,14,12,2,This near-balanced allocation narrows the gap while giving both groups substantial shares.,llm
+e2-pair,e2,5,tj-009,B,False,4,11,17,17,11,6,"Row 4 sustains the emerging coordination on a high-joint, more balanced allocation.",llm
+e2-pair,e2,5,tj-001,B,False,5,10,20,20,10,10,It consistently maximizes my group's allocation and the joint total while keeping the other group positive.,llm

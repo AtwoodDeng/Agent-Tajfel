@@ -1,0 +1,251 @@
+condition,series,step,agent_id,own_group,is_leader,row,a_points,b_points,ingroup_points,outgroup_points,gap,reason,source
+e2-public,e2,1,tj-036,A,False,0,19,10,19,10,9,This row maximizes both my group's allocation and the joint total without reducing the other group's allocation.,llm
+e2-public,e2,1,tj-043,A,False,0,19,10,19,10,9,This row maximizes both my group's allocation and the joint total.,llm
+e2-public,e2,1,tj-026,A,False,0,19,10,19,10,9,This row maximizes both my group's allocation and the joint total.,llm
+e2-public,e2,1,tj-048,A,False,0,19,10,19,10,9,It maximizes both my group's allocation and the joint total without reducing the other group's allocation.,llm
+e2-public,e2,1,tj-019,A,False,0,19,10,19,10,9,It maximizes both my group's allocation and the joint total without reducing the other group's allocation.,llm
+e2-public,e2,1,tj-038,A,False,0,19,10,19,10,9,This row maximizes both my group's allocation and the joint total without reducing the other group's allocation.,llm
+e2-public,e2,1,tj-021,A,False,0,19,10,19,10,9,This row maximizes both my group's allocation and the joint total without reducing the other group's allocation.,llm
+e2-public,e2,1,tj-016,A,False,0,19,10,19,10,9,This row maximizes both my group's allocation and the joint total without reducing the other group's allocation.,llm
+e2-public,e2,1,tj-002,A,False,0,19,10,19,10,9,It maximizes both my group's allocation and the joint total without reducing the other group's allocation.,llm
+e2-public,e2,1,tj-031,A,False,0,19,10,19,10,9,It maximizes both my group's allocation and the joint total without reducing the other group's allocation.,llm
+e2-public,e2,1,tj-037,A,False,0,19,10,19,10,9,This row maximizes both my group's allocation and the joint total without reducing the other group's allocation.,llm
+e2-public,e2,1,tj-030,A,False,0,19,10,19,10,9,This row maximizes both my group's allocation and the joint total without reducing the other group's allocation.,llm
+e2-public,e2,1,tj-024,A,False,0,19,10,19,10,9,It maximizes both my group's allocation and the joint total without reducing the other group's allocation.,llm
+e2-public,e2,1,tj-014,A,False,0,19,10,19,10,9,This row maximizes both my group's allocation and the joint total without reducing the other group's allocation.,llm
+e2-public,e2,1,tj-025,A,False,0,19,10,19,10,9,This row maximizes both my group's allocation and the joint total without reducing the other group's allocation.,llm
+e2-public,e2,1,tj-018,A,False,0,19,10,19,10,9,This row maximizes both my group's allocation and the joint total without reducing the other group's allocation.,llm
+e2-public,e2,1,tj-042,A,False,0,19,10,19,10,9,This row maximizes both my group's allocation and the joint total without reducing the other group's allocation.,llm
+e2-public,e2,1,tj-040,A,False,0,19,10,19,10,9,It maximizes both my group's allocation and the joint total without reducing the other group's allocation.,llm
+e2-public,e2,1,tj-020,A,False,0,19,10,19,10,9,This row maximizes both my group's allocation and the joint total.,llm
+e2-public,e2,1,tj-010,A,False,0,19,10,19,10,9,This row maximizes both my group's allocation and the joint total without reducing the other group's allocation.,llm
+e2-public,e2,1,tj-029,A,False,0,19,10,19,10,9,This row maximizes both my group's allocation and the joint total without reducing the other group's allocation.,llm
+e2-public,e2,1,tj-017,A,False,0,19,10,19,10,9,This row maximizes both my group's allocation and the joint total without reducing the other group's allocation.,llm
+e2-public,e2,1,tj-035,A,False,0,19,10,19,10,9,This row maximizes both my group's allocation and the joint total without reducing the other group's allocation.,llm
+e2-public,e2,1,tj-032,A,False,0,19,10,19,10,9,It maximizes both my group's allocation and the joint total without reducing the other group's allocation.,llm
+e2-public,e2,1,tj-000,A,False,0,19,10,19,10,9,This row maximizes both my group's allocation and the joint total without reducing the other group's allocation.,llm
+e2-public,e2,1,tj-046,B,False,0,19,10,10,19,-9,It maximizes the joint total while giving my group 10.,llm
+e2-public,e2,1,tj-033,B,False,10,10,19,19,10,9,This row gives my group the highest amount while also maximizing the joint total.,llm
+e2-public,e2,1,tj-023,B,False,0,19,10,10,19,-9,It gives my group 10 while maximizing the total allocation.,llm
+e2-public,e2,1,tj-011,B,False,10,10,19,19,10,9,This row gives my group the highest allocation while maximizing the joint total.,llm
+e2-public,e2,1,tj-009,B,False,0,19,10,10,19,-9,It maximizes the joint total while keeping my group's allocation at 10.,llm
+e2-public,e2,1,tj-034,B,False,0,19,10,10,19,-9,It gives my group 10 while maximizing the joint total.,llm
+e2-public,e2,1,tj-022,B,False,0,19,10,10,19,-9,It gives my group 10 and maximizes the joint total.,llm
+e2-public,e2,1,tj-003,B,False,10,10,19,19,10,9,This row gives my group the highest allocation while keeping the joint total at its maximum.,llm
+e2-public,e2,1,tj-006,B,False,0,19,10,10,19,-9,It maximizes the other group's allocation while keeping my group's allocation at 10.,llm
+e2-public,e2,1,tj-007,B,False,10,10,19,19,10,9,This row gives my group the largest allocation while matching the highest joint total.,llm
+e2-public,e2,1,tj-004,B,False,0,19,10,10,19,-9,It gives my group 10 while maximizing the other group's allocation.,llm
+e2-public,e2,1,tj-001,B,False,10,10,19,19,10,9,It gives my group the highest payoff while maximizing the joint total.,llm
+e2-public,e2,1,tj-045,B,False,0,19,10,10,19,-9,It maximizes the joint allocation while giving my group 10.,llm
+e2-public,e2,1,tj-013,B,False,10,10,19,19,10,9,This row gives my group the highest payoff while maximizing the joint total.,llm
+e2-public,e2,1,tj-012,B,False,0,19,10,10,19,-9,It gives my group 10 while maximizing the other group's allocation and the joint total.,llm
+e2-public,e2,1,tj-047,B,False,0,19,10,10,19,-9,It gives my group 10 while maximizing the joint total.,llm
+e2-public,e2,1,tj-015,B,False,10,10,19,19,10,9,This row gives my group the highest allocation while keeping the joint total maximal.,llm
+e2-public,e2,1,tj-041,B,False,0,19,10,10,19,-9,It gives my group 10 while maximizing the joint total at 29.,llm
+e2-public,e2,1,tj-039,B,False,0,19,10,10,19,-9,It maximizes the joint total while keeping my group allocation at 10.,llm
+e2-public,e2,1,tj-005,B,False,0,19,10,10,19,-9,It maximizes the joint total while keeping my group's allocation at 10.,llm
+e2-public,e2,1,tj-028,B,False,0,19,10,10,19,-9,It maximizes the joint total while keeping my group's allocation at 10.,llm
+e2-public,e2,1,tj-049,B,False,0,19,10,10,19,-9,It maximizes the joint total while keeping my group's allocation at 10.,llm
+e2-public,e2,1,tj-008,B,False,10,10,19,19,10,9,It gives my group the highest allocation while maximizing the joint total.,llm
+e2-public,e2,1,tj-044,B,False,0,19,10,10,19,-9,It gives my group 10 while maximizing the other group's allocation and the joint total.,llm
+e2-public,e2,1,tj-027,B,False,0,19,10,10,19,-9,It maximizes the other group's allocation while keeping my group's allocation at 10.,llm
+e2-public,e2,2,tj-036,A,False,0,19,10,19,10,9,This row maximizes my group's allocation and the joint total without reducing the other group's allocation.,llm
+e2-public,e2,2,tj-043,A,False,0,19,10,19,10,9,It maximizes our group’s allocation and the joint total while keeping the other group’s allocation at 10.,llm
+e2-public,e2,2,tj-026,A,False,0,19,10,19,10,9,Row 0 maximizes our group's allocation and the joint total while keeping the other group's allocation unchanged.,llm
+e2-public,e2,2,tj-048,A,False,0,19,10,19,10,9,It maximizes my group's allocation and the joint total without reducing the other group's allocation.,llm
+e2-public,e2,2,tj-019,A,False,0,19,10,19,10,9,It maximizes our group's allocation and the joint total while leaving the other group's allocation unchanged.,llm
+e2-public,e2,2,tj-038,A,False,0,19,10,19,10,9,This row maximizes my group's allocation and the joint total without reducing the other group's allocation.,llm
+e2-public,e2,2,tj-021,A,False,0,19,10,19,10,9,This maximizes Group A's allocation and the joint total while keeping Group B at 10.,llm
+e2-public,e2,2,tj-016,A,False,0,19,10,19,10,9,It maximizes Group A's allocation and the joint total while keeping Group B at 10.,llm
+e2-public,e2,2,tj-002,A,False,0,19,10,19,10,9,Row 0 maximizes Group A’s allocation and the joint total while keeping Group B at 10.,llm
+e2-public,e2,2,tj-031,A,False,0,19,10,19,10,9,It maximizes our group's allocation and the joint total while leaving the other group's allocation at 10.,llm
+e2-public,e2,2,tj-037,A,False,0,19,10,19,10,9,This row maximizes my group's allocation and the joint total without reducing the other group's allocation.,llm
+e2-public,e2,2,tj-030,A,False,0,19,10,19,10,9,It maximizes my group's allocation and the joint total without reducing the other group's allocation.,llm
+e2-public,e2,2,tj-024,A,False,0,19,10,19,10,9,It maximizes my group's allocation and the joint total without reducing the other group's allocation.,llm
+e2-public,e2,2,tj-014,A,False,0,19,10,19,10,9,It maximizes my group’s allocation and the joint total while keeping the other group’s allocation at 10.,llm
+e2-public,e2,2,tj-025,A,False,0,19,10,19,10,9,It maximizes my group's allocation and the joint total while keeping the other group's allocation at 10.,llm
+e2-public,e2,2,tj-018,A,False,0,19,10,19,10,9,Row 0 maximizes my group’s allocation and the joint total while keeping the other group’s allocation unchanged.,llm
+e2-public,e2,2,tj-042,A,False,0,19,10,19,10,9,It maximizes my group's allocation and the joint total without reducing the other group's allocation.,llm
+e2-public,e2,2,tj-040,A,False,0,19,10,19,10,9,It maximizes our group's allocation and the joint total while leaving the other group's allocation unchanged.,llm
+e2-public,e2,2,tj-020,A,False,0,19,10,19,10,9,It maximizes Group A’s allocation and the joint total while keeping Group B at 10.,llm
+e2-public,e2,2,tj-010,A,False,0,19,10,19,10,9,It maximizes Group A’s allocation and the joint total while keeping Group B at 10.,llm
+e2-public,e2,2,tj-029,A,False,0,19,10,19,10,9,It maximizes Group A’s allocation and the joint total while keeping Group B at 10.,llm
+e2-public,e2,2,tj-017,A,False,0,19,10,19,10,9,This row maximizes my group's allocation and the joint total without reducing the other group's allocation.,llm
+e2-public,e2,2,tj-035,A,False,10,10,19,10,19,-9,This preserves the maximum joint total while reciprocating by giving the other group the larger allocation.,llm
+e2-public,e2,2,tj-032,A,False,0,19,10,19,10,9,Row 0 maximizes Group A's allocation and the joint total while keeping Group B at 10.,llm
+e2-public,e2,2,tj-000,A,False,0,19,10,19,10,9,Row 0 maximizes our group's allocation and the joint total while keeping the other group's allocation at 10.,llm
+e2-public,e2,2,tj-046,B,False,0,19,10,10,19,-9,"It maximizes the joint total while preserving my group’s allocation of 10, consistent with my previous choice.",llm
+e2-public,e2,2,tj-033,B,False,10,10,19,19,10,9,It gives my group the highest allocation while maximizing the joint total.,llm
+e2-public,e2,2,tj-023,B,False,10,10,19,19,10,9,"It maximizes my group's allocation and the joint total, helping counter the current imbalance.",llm
+e2-public,e2,2,tj-011,B,False,10,10,19,19,10,9,It maximizes my group's allocation while also achieving the highest joint total.,llm
+e2-public,e2,2,tj-009,B,False,10,10,19,19,10,9,It maximizes my group's allocation and the joint total while helping offset the existing imbalance.,llm
+e2-public,e2,2,tj-034,B,False,0,19,10,10,19,-9,It maximizes the joint total while preserving my group's allocation at 10.,llm
+e2-public,e2,2,tj-022,B,False,0,19,10,10,19,-9,It maximizes the joint total while keeping my group's allocation at 10.,llm
+e2-public,e2,2,tj-003,B,False,10,10,19,19,10,9,It gives my group the highest allocation while preserving the maximum joint total.,llm
+e2-public,e2,2,tj-006,B,False,0,19,10,10,19,-9,It maximizes the joint total while keeping my group's allocation at 10.,llm
+e2-public,e2,2,tj-007,B,False,10,10,19,19,10,9,This row maximizes my group's allocation while preserving the highest joint total.,llm
+e2-public,e2,2,tj-004,B,False,10,10,19,19,10,9,It maximizes my group's allocation and the joint total while counterbalancing the prior disadvantage.,llm
+e2-public,e2,2,tj-001,B,False,10,10,19,19,10,9,It maximizes my group's payoff while also achieving the highest joint total.,llm
+e2-public,e2,2,tj-045,B,False,0,19,10,10,19,-9,"It preserves the highest joint total while giving my group 10, as I chose previously.",llm
+e2-public,e2,2,tj-013,B,False,10,10,19,19,10,9,"This maximizes my group's payoff and the joint total, helping counter the current allocation imbalance.",llm
+e2-public,e2,2,tj-012,B,False,10,10,19,19,10,9,"Group A has not reciprocated, so I chose the efficient maximum that now favors my group.",llm
+e2-public,e2,2,tj-047,B,False,0,19,10,10,19,-9,It gives Group B 10 while maximizing the joint total.,llm
+e2-public,e2,2,tj-015,B,False,10,10,19,19,10,9,This row maximizes my group's allocation while preserving the highest joint total.,llm
+e2-public,e2,2,tj-041,B,False,10,10,19,19,10,9,It maximizes my group's allocation and the joint total while helping offset the current disparity.,llm
+e2-public,e2,2,tj-039,B,False,10,10,19,19,10,9,I choose the allocation that maximizes Group B's payoff while preserving the highest joint total.,llm
+e2-public,e2,2,tj-005,B,False,10,10,19,19,10,9,It maximizes my group's allocation and the joint total while counterbalancing the prior disparity.,llm
+e2-public,e2,2,tj-028,B,False,10,10,19,19,10,9,It maximizes my group's allocation and the joint total while counterbalancing the existing disparity.,llm
+e2-public,e2,2,tj-049,B,False,0,19,10,10,19,-9,It preserves the maximum joint total while keeping Group B's allocation at 10.,llm
+e2-public,e2,2,tj-008,B,False,10,10,19,19,10,9,It maximizes my group's allocation while preserving the highest joint total.,llm
+e2-public,e2,2,tj-044,B,False,10,10,19,19,10,9,"It maximizes my group's allocation and the joint total, counterbalancing the large cumulative advantage held by group A.",llm
+e2-public,e2,2,tj-027,B,False,0,19,10,10,19,-9,"It preserves the maximum joint total while keeping my group's allocation at 10, consistent with my prior choice.",llm
+e2-public,e2,3,tj-036,A,False,10,10,19,10,19,-9,This preserves the maximum joint total while improving Group B’s share and supporting reciprocity.,llm
+e2-public,e2,3,tj-043,A,False,10,10,19,10,19,-9,It preserves the maximum joint total while improving Group B’s share after its repeated efficient choices.,llm
+e2-public,e2,3,tj-026,A,False,10,10,19,10,19,-9,It preserves the maximum joint total while reciprocating by giving the other group the larger share.,llm
+e2-public,e2,3,tj-048,A,False,10,10,19,10,19,-9,"It maximizes Group A's allocation and the joint total while giving Group B more, reciprocating its prior efficient choices.",llm
+e2-public,e2,3,tj-019,A,False,10,10,19,10,19,-9,"It maximizes the joint total while improving Group B’s share, reciprocating its earlier efficiency-focused choices.",llm
+e2-public,e2,3,tj-038,A,False,10,10,19,10,19,-9,"It maximizes our group's allocation and the joint total, while reciprocating Group B's support for efficient outcomes.",llm
+e2-public,e2,3,tj-021,A,False,10,10,19,10,19,-9,It gives Group A the highest payoff and maximizes the joint total while improving Group B’s share compared with my earlier choices.,llm
+e2-public,e2,3,tj-016,A,False,10,10,19,10,19,-9,It preserves the maximum joint total while improving Group B’s share and narrowing the cumulative gap.,llm
+e2-public,e2,3,tj-002,A,False,10,10,19,10,19,-9,It preserves the maximum joint total while improving Group B’s share in response to the substantial cumulative imbalance.,llm
+e2-public,e2,3,tj-031,A,False,0,19,10,19,10,9,It gives our group the highest allocation while maximizing the joint total and keeping the other group at 10.,llm
+e2-public,e2,3,tj-037,A,False,10,10,19,10,19,-9,It preserves the maximum joint total while improving Group B’s share in return for its earlier choices.,llm
+e2-public,e2,3,tj-030,A,False,0,19,10,19,10,9,It maximizes my group’s allocation and the joint total.,llm
+e2-public,e2,3,tj-024,A,False,10,10,19,10,19,-9,"It gives my group 19 while preserving the maximum joint total, reciprocating the other group's earlier efficient choices.",llm
+e2-public,e2,3,tj-014,A,False,10,10,19,10,19,-9,"It gives my group 19 while preserving the maximum joint total, reciprocating the efficient choice that favored the other group.",llm
+e2-public,e2,3,tj-025,A,False,10,10,19,10,19,-9,This preserves the maximum joint total while improving Group B’s share and narrowing the cumulative gap.,llm
+e2-public,e2,3,tj-018,A,False,0,19,10,19,10,9,It preserves the maximum joint total and gives my group the larger allocation without reducing the other group’s share.,llm
+e2-public,e2,3,tj-042,A,False,10,10,19,10,19,-9,It preserves the maximum joint total while improving Group B’s share and reciprocating for the reduced imbalance.,llm
+e2-public,e2,3,tj-040,A,False,10,10,19,10,19,-9,It preserves the maximum joint total while improving Group B’s share in response to the cumulative imbalance.,llm
+e2-public,e2,3,tj-020,A,False,0,19,10,19,10,9,"It maximizes the joint total while giving my group 19, and the prior totals show our group still trails.",llm
+e2-public,e2,3,tj-010,A,False,10,10,19,10,19,-9,"It preserves the maximum joint total while giving Group B more, reciprocating its efficient choices and narrowing the cumulative gap.",llm
+e2-public,e2,3,tj-029,A,False,10,10,19,10,19,-9,"It preserves the maximum joint total while giving Group B more, reciprocating for the substantial cumulative imbalance.",llm
+e2-public,e2,3,tj-017,A,False,10,10,19,10,19,-9,This preserves the maximum joint total while reciprocally improving the other group's share and helping narrow the cumulative imbalance.,llm
+e2-public,e2,3,tj-035,A,False,10,10,19,10,19,-9,This preserves the maximum joint total while continuing to narrow the remaining cumulative imbalance through reciprocity.,llm
+e2-public,e2,3,tj-032,A,False,10,10,19,10,19,-9,It preserves the maximum joint total while improving Group B's share and reciprocally narrowing Group A's cumulative lead.,llm
+e2-public,e2,3,tj-000,A,False,10,10,19,10,19,-9,This preserves the maximum joint total while reciprocally improving group B's share and narrowing the cumulative gap.,llm
+e2-public,e2,3,tj-046,B,False,0,19,10,10,19,-9,It preserves the maximum joint total and continues my consistent efficiency-first choice.,llm
+e2-public,e2,3,tj-033,B,False,10,10,19,19,10,9,It maximizes my group's allocation while preserving the highest joint total.,llm
+e2-public,e2,3,tj-023,B,False,10,10,19,19,10,9,It maximizes my group's allocation and the joint total while helping address the cumulative imbalance.,llm
+e2-public,e2,3,tj-011,B,False,10,10,19,19,10,9,It maximizes my group's allocation and the joint total while helping address the cumulative imbalance.,llm
+e2-public,e2,3,tj-009,B,False,10,10,19,19,10,9,It maximizes my group's allocation and the joint total while helping correct the existing imbalance.,llm
+e2-public,e2,3,tj-034,B,False,10,10,19,19,10,9,It preserves the maximum joint total while improving Group B’s share after two rounds of imbalance.,llm
+e2-public,e2,3,tj-022,B,False,10,10,19,19,10,9,It maximizes my group's allocation and the joint total while helping offset the cumulative imbalance.,llm
+e2-public,e2,3,tj-003,B,False,10,10,19,19,10,9,It maximizes my group's allocation and the joint total while helping address the cumulative imbalance.,llm
+e2-public,e2,3,tj-006,B,False,10,10,19,19,10,9,It maximizes my group's allocation and the joint total while helping reduce the remaining cumulative disadvantage.,llm
+e2-public,e2,3,tj-007,B,False,10,10,19,19,10,9,It maximizes my group's allocation and the joint total while helping address the cumulative imbalance.,llm
+e2-public,e2,3,tj-004,B,False,10,10,19,19,10,9,It maximizes my group's allocation and the joint total while helping offset the cumulative disadvantage.,llm
+e2-public,e2,3,tj-001,B,False,10,10,19,19,10,9,It maximizes Group B’s payoff while preserving the highest joint total.,llm
+e2-public,e2,3,tj-045,B,False,10,10,19,19,10,9,It maximizes both Group B's allocation and the joint total while helping narrow the cumulative imbalance.,llm
+e2-public,e2,3,tj-013,B,False,10,10,19,19,10,9,This maximizes my group's payoff and the joint total while helping correct the cumulative imbalance.,llm
+e2-public,e2,3,tj-012,B,False,10,10,19,19,10,9,It gives Group B the larger allocation while preserving the maximum joint total.,llm
+e2-public,e2,3,tj-047,B,False,10,10,19,19,10,9,It gives Group B 19 while preserving the maximum joint total of 29.,llm
+e2-public,e2,3,tj-015,B,False,10,10,19,19,10,9,"This row maximizes my group’s allocation and the joint total, helping narrow the cumulative imbalance.",llm
+e2-public,e2,3,tj-041,B,False,10,10,19,19,10,9,"It gives my group 19 while preserving the maximum joint total, helping address the substantial cumulative imbalance.",llm
+e2-public,e2,3,tj-039,B,False,10,10,19,19,10,9,"It maximizes Group B’s allocation while preserving the highest joint total, responding to the substantial cumulative imbalance.",llm
+e2-public,e2,3,tj-005,B,False,10,10,19,19,10,9,"It maximizes my group's allocation while preserving the highest joint total, and helps address the overall imbalance.",llm
+e2-public,e2,3,tj-028,B,False,10,10,19,19,10,9,"It maximizes my group's allocation and the joint total, helping narrow the existing disparity without sacrificing efficiency.",llm
+e2-public,e2,3,tj-049,B,False,10,10,19,19,10,9,It maximizes our group's allocation and the joint total while reciprocating the other group's earlier efficient choices.,llm
+e2-public,e2,3,tj-008,B,False,10,10,19,19,10,9,It maximizes my group's allocation while preserving the highest joint total.,llm
+e2-public,e2,3,tj-044,B,False,10,10,19,19,10,9,It maximizes Group B's allocation while preserving the highest joint total and helps narrow the cumulative imbalance.,llm
+e2-public,e2,3,tj-027,B,False,10,10,19,19,10,9,It maximizes my group's allocation and the joint total while helping reduce the cumulative disadvantage.,llm
+e2-public,e2,4,tj-036,A,False,10,10,19,10,19,-9,"It keeps the maximum joint total while giving Group B more, continuing the efficient reciprocal choice.",llm
+e2-public,e2,4,tj-043,A,False,0,19,10,19,10,9,"Group B now leads substantially, so this maximizes joint value while helping restore balance toward Group A.",llm
+e2-public,e2,4,tj-026,A,False,0,19,10,19,10,9,"Group B now leads substantially, so row 0 strengthens my group while preserving the maximum joint total.",llm
+e2-public,e2,4,tj-048,A,False,10,10,19,10,19,-9,It preserves the maximum joint total while further narrowing Group A's remaining cumulative lead.,llm
+e2-public,e2,4,tj-019,A,False,0,19,10,19,10,9,"Group B now leads overall, so this maximizes joint value while restoring balance toward Group A.",llm
+e2-public,e2,4,tj-038,A,False,0,19,10,19,10,9,"Group B now leads overall, so this maximizes Group A's allocation and the joint total while restoring balance efficiently.",llm
+e2-public,e2,4,tj-021,A,False,0,19,10,19,10,9,"Group B now leads substantially, so this maximizes joint value while helping restore balance toward my group.",llm
+e2-public,e2,4,tj-016,A,False,0,19,10,19,10,9,It maximizes the joint total while strengthening Group A now that Group B leads overall.,llm
+e2-public,e2,4,tj-002,A,False,10,10,19,10,19,-9,It preserves the maximum joint total while improving Group B’s share and continuing reciprocal choices as Group A remains ahead overall.,llm
+e2-public,e2,4,tj-031,A,False,10,10,19,10,19,-9,It preserves the maximum joint total while improving the other group's share and narrowing our remaining cumulative lead.,llm
+e2-public,e2,4,tj-037,A,False,10,10,19,10,19,-9,"This preserves the maximum joint total while giving Group B more, continuing the reciprocal pattern that narrows the cumulative gap.",llm
+e2-public,e2,4,tj-030,A,False,0,19,10,19,10,9,"Group B now leads overall, and this row maximizes Group A's allocation while preserving the highest joint total.",llm
+e2-public,e2,4,tj-024,A,False,0,19,10,19,10,9,It maximizes my group's allocation and the joint total while responding to the latest results showing the other group ahead.,llm
+e2-public,e2,4,tj-014,A,False,0,19,10,19,10,9,It maximizes the joint total while strengthening my group now that the other group leads overall.,llm
+e2-public,e2,4,tj-025,A,False,0,19,10,19,10,9,"Group B now leads substantially, so this maximizes joint value while helping restore balance toward Group A.",llm
+e2-public,e2,4,tj-018,A,False,10,10,19,10,19,-9,It preserves the maximum joint total while improving Group B’s share and continuing reciprocal choices that narrow the cumulative gap.,llm
+e2-public,e2,4,tj-042,A,False,10,10,19,10,19,-9,"It preserves the maximum joint total while improving Group B’s share, continuing the reciprocal pattern that has narrowed the overall gap.",llm
+e2-public,e2,4,tj-040,A,False,10,10,19,10,19,-9,It preserves the maximum joint total while improving Group B’s share and continuing efficient reciprocity.,llm
+e2-public,e2,4,tj-020,A,False,0,19,10,19,10,9,It maximizes my group's allocation and the joint total while helping reduce Group B's current lead.,llm
+e2-public,e2,4,tj-010,A,False,10,10,19,10,19,-9,"It preserves the maximum joint total while giving Group B more, continuing the reciprocal pattern that has narrowed the cumulative gap.",llm
+e2-public,e2,4,tj-029,A,False,0,19,10,19,10,9,"Group B now leads in the latest results, so this maximum-total choice restores reciprocity by favoring Group A.",llm
+e2-public,e2,4,tj-017,A,False,0,19,10,19,10,9,This maximizes the joint total while strengthening Group A now that Group B leads overall.,llm
+e2-public,e2,4,tj-035,A,False,0,19,10,19,10,9,This maximizes the joint total while restoring balance across my four choices now that Group B leads in the latest results.,llm
+e2-public,e2,4,tj-032,A,False,0,19,10,19,10,9,It maximizes the joint total while strengthening Group A now that Group B leads substantially overall.,llm
+e2-public,e2,4,tj-000,A,False,10,10,19,10,19,-9,This preserves the maximum joint total while improving Group B’s share and continuing reciprocal choices to narrow the cumulative gap.,llm
+e2-public,e2,4,tj-046,B,False,10,10,19,19,10,9,It gives my group the largest allocation while preserving the maximum joint total and reciprocating the previous B-favoring choices.,llm
+e2-public,e2,4,tj-033,B,False,10,10,19,19,10,9,It maximizes Group B's allocation while preserving the highest joint total.,llm
+e2-public,e2,4,tj-023,B,False,0,19,10,10,19,-9,It preserves the maximum joint total while helping correct the latest imbalance favoring my group.,llm
+e2-public,e2,4,tj-011,B,False,10,10,19,19,10,9,It maximizes Group B’s allocation and the joint total while helping narrow the cumulative imbalance.,llm
+e2-public,e2,4,tj-009,B,False,10,10,19,19,10,9,It gives my group the largest allocation while preserving the maximum joint total and continues the reciprocal pattern.,llm
+e2-public,e2,4,tj-034,B,False,10,10,19,19,10,9,It preserves the maximum joint total while improving Group B’s share and continuing efficient reciprocity.,llm
+e2-public,e2,4,tj-022,B,False,10,10,19,19,10,9,"It gives my group 19 and maximizes the joint total, continuing the efficient reciprocal choice that narrows the cumulative gap.",llm
+e2-public,e2,4,tj-003,B,False,10,10,19,19,10,9,It maximizes Group B’s allocation while preserving the highest joint total and continues the reciprocal effort to narrow the cumulative gap.,llm
+e2-public,e2,4,tj-006,B,False,10,10,19,19,10,9,It maximizes the joint total while bringing my cumulative allocation gap back to balance.,llm
+e2-public,e2,4,tj-007,B,False,10,10,19,19,10,9,It maximizes my group's allocation and the joint total while helping close the remaining cumulative gap.,llm
+e2-public,e2,4,tj-004,B,False,0,19,10,10,19,-9,It preserves the maximum joint total while helping offset my group's recent advantage.,llm
+e2-public,e2,4,tj-001,B,False,10,10,19,19,10,9,It gives Group B the highest payoff while preserving the maximum joint total and continuing efficient reciprocity.,llm
+e2-public,e2,4,tj-045,B,False,10,10,19,19,10,9,It gives Group B the largest allocation while preserving the maximum joint total and continuing reciprocal choices as A remains ahead.,llm
+e2-public,e2,4,tj-013,B,False,10,10,19,19,10,9,It maximizes my group’s payoff and the joint total while helping narrow the remaining imbalance.,llm
+e2-public,e2,4,tj-012,B,False,10,10,19,19,10,9,"It gives Group B the highest allocation while preserving the maximum joint total, continuing the reciprocal choice as Group A still leads overall.",llm
+e2-public,e2,4,tj-047,B,False,10,10,19,19,10,9,It maximizes my group's allocation and the joint total while helping close the remaining cumulative gap.,llm
+e2-public,e2,4,tj-015,B,False,10,10,19,19,10,9,This maximizes my group's allocation and the joint total while helping narrow the cumulative imbalance.,llm
+e2-public,e2,4,tj-041,B,False,0,19,10,10,19,-9,"It preserves the maximum joint total while giving more to Group A, which now trails substantially overall.",llm
+e2-public,e2,4,tj-039,B,False,10,10,19,19,10,9,It gives Group B the highest allocation while preserving the maximum joint total and narrowing the cumulative imbalance.,llm
+e2-public,e2,4,tj-005,B,False,10,10,19,19,10,9,It maximizes my group's allocation and the joint total while helping close the remaining cumulative gap.,llm
+e2-public,e2,4,tj-028,B,False,10,10,19,19,10,9,"It maximizes Group B’s allocation and the joint total, continuing efficient reciprocity while B still trails overall.",llm
+e2-public,e2,4,tj-049,B,False,10,10,19,19,10,9,It maximizes the joint total while improving Group B’s share and narrowing the cumulative imbalance.,llm
+e2-public,e2,4,tj-008,B,False,10,10,19,19,10,9,It maximizes my group’s allocation and the joint total while reciprocating the other group’s earlier efficiency-focused choices.,llm
+e2-public,e2,4,tj-044,B,False,10,10,19,19,10,9,It maximizes Group B’s allocation while preserving the highest joint total.,llm
+e2-public,e2,4,tj-027,B,False,10,10,19,19,10,9,It maximizes my group’s allocation and the joint total while continuing the reciprocal pattern that narrows the cumulative gap.,llm
+e2-public,e2,5,tj-036,A,False,0,19,10,19,10,9,"As Group A, this preserves the maximum joint total and favors the group now trailing overall.",llm
+e2-public,e2,5,tj-043,A,False,10,10,19,10,19,-9,"A leads cumulatively, so this preserves the maximum joint total while improving Group B’s share.",llm
+e2-public,e2,5,tj-026,A,False,10,10,19,10,19,-9,"Group B still leads cumulatively, so this preserves the maximum joint total while improving Group A’s share.",llm
+e2-public,e2,5,tj-048,A,False,0,19,10,19,10,9,"A currently leads by only 72 points, so this maximum-joint-total choice favors A and modestly closes the cumulative gap.",llm
+e2-public,e2,5,tj-019,A,False,10,10,19,10,19,-9,"Group A currently leads cumulatively, so this equally efficient option improves Group B’s share and supports reciprocity.",llm
+e2-public,e2,5,tj-038,A,False,10,10,19,10,19,-9,"Group B currently leads cumulatively, so this equally efficient choice improves Group A’s share and supports reciprocal balance.",llm
+e2-public,e2,5,tj-021,A,False,0,19,10,19,10,9,"Group B now leads cumulatively, so this maximizes the joint total while improving Group A's share.",llm
+e2-public,e2,5,tj-016,A,False,0,19,10,19,10,9,"Group A trails cumulatively, so this maximizes the joint total while improving A’s share.",llm
+e2-public,e2,5,tj-002,A,False,10,10,19,10,19,-9,It preserves the maximum joint total while favoring B enough to narrow A's small cumulative lead.,llm
+e2-public,e2,5,tj-031,A,False,0,19,10,19,10,9,It preserves the maximum joint total while strengthening our group and narrowing the current cumulative gap.,llm
+e2-public,e2,5,tj-037,A,False,0,19,10,19,10,9,"Group A trails in the latest published results, so this equally efficient choice improves A’s share and restores balance.",llm
+e2-public,e2,5,tj-030,A,False,0,19,10,19,10,9,"Group B now leads overall, so this preserves the maximum joint total while improving Group A’s share.",llm
+e2-public,e2,5,tj-024,A,False,0,19,10,19,10,9,"It maximizes the joint total while strengthening Group A, which trails Group B by 54 cumulatively.",llm
+e2-public,e2,5,tj-014,A,False,0,19,10,19,10,9,It preserves the maximum joint total and improves my group’s share while the published cumulative totals show it trailing.,llm
+e2-public,e2,5,tj-025,A,False,0,19,10,19,10,9,"Group B now leads overall, so row 0 preserves the maximum joint total while improving Group A’s share.",llm
+e2-public,e2,5,tj-018,A,False,0,19,10,19,10,9,"The published cumulative totals are nearly balanced, so I favor the maximum joint total while modestly improving Group A's share.",llm
+e2-public,e2,5,tj-042,A,False,0,19,10,19,10,9,"Group B led the latest results, so this maximum-joint-total choice strengthens Group A and supports reciprocal balance.",llm
+e2-public,e2,5,tj-040,A,False,0,19,10,19,10,9,"Group B led the latest round, so this maximum-total choice strengthens Group A and supports reciprocal balance.",llm
+e2-public,e2,5,tj-020,A,False,0,19,10,19,10,9,"Group B leads overall, so row 0 improves Group A’s share while preserving the maximum joint total.",llm
+e2-public,e2,5,tj-010,A,False,0,19,10,19,10,9,"Group B leads cumulatively by 54, so this maximizes joint value while helping Group A restore balance.",llm
+e2-public,e2,5,tj-029,A,False,0,19,10,19,10,9,"It maximizes the joint total and favors Group A, which trails in the latest published results.",llm
+e2-public,e2,5,tj-017,A,False,0,19,10,19,10,9,"Group A now trails substantially, so row 0 improves A’s share while preserving the maximum joint total.",llm
+e2-public,e2,5,tj-035,A,False,0,19,10,19,10,9,"Group B currently leads, so row 0 improves Group A’s share while preserving the maximum joint total.",llm
+e2-public,e2,5,tj-032,A,False,0,19,10,19,10,9,"It maximizes the joint total while strengthening Group A, which trails cumulatively across the published rounds.",llm
+e2-public,e2,5,tj-000,A,False,0,19,10,19,10,9,"A leads the published cumulative totals by 72, so row 0 preserves the maximum joint total while modestly improving A's share.",llm
+e2-public,e2,5,tj-046,B,False,0,19,10,10,19,-9,"Group B now leads overall, so this maximum-total option improves Group A’s share and restores balance efficiently.",llm
+e2-public,e2,5,tj-033,B,False,0,19,10,10,19,-9,"Group B leads cumulatively, so row 0 favors Group A while preserving the maximum joint total.",llm
+e2-public,e2,5,tj-023,B,False,0,19,10,10,19,-9,It preserves the maximum joint total and improves Group A’s share while the published cumulative totals show A slightly ahead.,llm
+e2-public,e2,5,tj-011,B,False,0,19,10,10,19,-9,"A currently trails cumulatively, so this equally high-total choice improves A’s share and supports reciprocity.",llm
+e2-public,e2,5,tj-009,B,False,0,19,10,10,19,-9,"It preserves the maximum joint total while improving Group A’s share, reciprocating now that Group B leads overall.",llm
+e2-public,e2,5,tj-034,B,False,0,19,10,10,19,-9,"It preserves the maximum joint total while favoring Group A, which trails cumulatively after the latest results.",llm
+e2-public,e2,5,tj-022,B,False,0,19,10,10,19,-9,It preserves the maximum joint total while favoring the other group to narrow our cumulative lead.,llm
+e2-public,e2,5,tj-003,B,False,10,10,19,19,10,9,"It maximizes my group's allocation and the joint total, continuing the efficient reciprocal pattern while Group A remains ahead cumulatively.",llm
+e2-public,e2,5,tj-006,B,False,10,10,19,19,10,9,It maximizes the joint total while strengthening the cumulatively trailing group and preserving efficient reciprocity.,llm
+e2-public,e2,5,tj-007,B,False,0,19,10,10,19,-9,It preserves the maximum joint total while favoring the other group and narrowing our group's cumulative lead.,llm
+e2-public,e2,5,tj-004,B,False,0,19,10,10,19,-9,"It preserves the maximum joint total while favoring Group A, which is currently behind overall.",llm
+e2-public,e2,5,tj-001,B,False,0,19,10,10,19,-9,"It maximizes the joint total while favoring Group A, which trails in the latest results.",llm
+e2-public,e2,5,tj-045,B,False,10,10,19,19,10,9,It maximizes Group B’s allocation and the joint total while helping close A’s remaining cumulative lead.,llm
+e2-public,e2,5,tj-013,B,False,10,10,19,19,10,9,This maximizes my group's payoff and the joint total while helping close A's remaining cumulative lead.,llm
+e2-public,e2,5,tj-012,B,False,0,19,10,10,19,-9,"Group B leads overall, so this equally efficient choice improves Group A’s share and helps restore balance.",llm
+e2-public,e2,5,tj-047,B,False,0,19,10,10,19,-9,It preserves the maximum joint total while narrowing my group's 54-point cumulative lead.,llm
+e2-public,e2,5,tj-015,B,False,10,10,19,19,10,9,This maximizes my group's allocation and the joint total while helping close the small cumulative gap.,llm
+e2-public,e2,5,tj-041,B,False,0,19,10,10,19,-9,"It preserves the maximum joint total while favoring Group A, which trails Group B cumulatively.",llm
+e2-public,e2,5,tj-039,B,False,0,19,10,10,19,-9,It preserves the maximum joint total while helping the other group close our 54-point cumulative lead.,llm
+e2-public,e2,5,tj-005,B,False,0,19,10,10,19,-9,"It preserves the maximum joint total while favoring Group A, which slightly trails cumulatively.",llm
+e2-public,e2,5,tj-028,B,False,10,10,19,19,10,9,"It maximizes my group’s allocation and the joint total, continuing the efficient reciprocal pattern.",llm
+e2-public,e2,5,tj-049,B,False,10,10,19,19,10,9,It maximizes the joint total while strengthening my group and narrowing the remaining cumulative gap.,llm
+e2-public,e2,5,tj-008,B,False,0,19,10,10,19,-9,It preserves the maximum joint total while favoring the other group to offset my group's current cumulative lead.,llm
+e2-public,e2,5,tj-044,B,False,10,10,19,19,10,9,It maximizes Group B’s allocation and the joint total while modestly narrowing A’s cumulative lead.,llm
+e2-public,e2,5,tj-027,B,False,0,19,10,10,19,-9,It preserves the maximum joint total while favoring the other group now that my group is cumulatively ahead.,llm

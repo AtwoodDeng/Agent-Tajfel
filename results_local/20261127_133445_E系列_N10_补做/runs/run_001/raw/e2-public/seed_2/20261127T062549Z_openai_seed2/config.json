@@ -1,0 +1,15 @@
+{
+  "condition": "e2-public",
+  "series": "e2",
+  "steps": 5,
+  "seed": 2,
+  "n_agents": 10,
+  "llm_kind": "openai",
+  "model": null,
+  "driver": "engine",
+  "matrix": null,
+  "chat_subrounds": [
+    1,
+    2
+  ]
+}

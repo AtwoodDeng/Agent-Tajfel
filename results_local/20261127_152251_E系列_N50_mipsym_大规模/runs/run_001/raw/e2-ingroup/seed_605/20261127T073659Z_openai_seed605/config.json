@@ -1,0 +1,15 @@
+{
+  "condition": "e2-ingroup",
+  "series": "e2",
+  "steps": 5,
+  "seed": 605,
+  "n_agents": 50,
+  "llm_kind": "openai",
+  "model": null,
+  "driver": "engine",
+  "matrix": "mip_sym",
+  "chat_subrounds": [
+    1,
+    2
+  ]
+}

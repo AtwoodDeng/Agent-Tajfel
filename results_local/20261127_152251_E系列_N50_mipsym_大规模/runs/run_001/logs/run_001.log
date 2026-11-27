@@ -1,0 +1,14 @@
+WARNING: real LLM run (openai) -- 11 condition/seed pairs, 5 steps, 50 agents, model=env default
+conditions=11 seeds=[605] driver=engine llm=openai -> results_local/20261127_152251_E系列_N50_mipsym_大规模/runs/run_001/raw/<condition>/seed_<seed>/
+e2-pair seed 605: mean_gap=2.44 welfare=0.9911 fallback=0.0
+e2-ingroup seed 605: mean_gap=8.28 welfare=1.0 fallback=0.0
+e2-public seed 605: mean_gap=1.08 welfare=1.0 fallback=0.0
+e2-silent seed 605: mean_gap=4.86 welfare=0.94 fallback=0.0
+e3-a-to-b seed 605: mean_gap=4.32 welfare=1.0 fallback=0.0
+e4-private-ingroup seed 605: mean_gap=8.1 welfare=0.98 fallback=0.0
+e4-private-welfare seed 605: mean_gap=8.64 welfare=1.0 fallback=0.0
+e4-private-equal seed 605: mean_gap=0.9 welfare=0.3 fallback=0.0
+e4-public-ingroup seed 605: mean_gap=5.76 welfare=1.0 fallback=0.0
+e4-public-welfare seed 605: mean_gap=4.86 welfare=0.98 fallback=0.0
+e4-public-equal seed 605: mean_gap=0.18 welfare=0.1 fallback=0.0
+summary -> results_local/20261127_152251_E系列_N50_mipsym_大规模/runs/run_001/raw/index.json

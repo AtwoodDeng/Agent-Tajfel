@@ -1,0 +1,51 @@
+condition,series,step,agent_id,own_group,is_leader,row,a_points,b_points,ingroup_points,outgroup_points,gap,reason,source
+e3-a-to-b,e3,1,tj-006,A,False,2,15,13,15,13,2,It gives my group 15 while maximizing the joint total at 28.,llm
+e3-a-to-b,e3,1,tj-003,A,False,2,15,13,15,13,2,It gives my group a high payoff while also maximizing the joint total.,llm
+e3-a-to-b,e3,1,tj-000,A,False,2,15,13,15,13,2,It gives my group the highest allocation while also producing the highest joint total.,llm
+e3-a-to-b,e3,1,tj-007,A,False,2,15,13,15,13,2,It gives my group 15 while also producing the highest joint total.,llm
+e3-a-to-b,e3,1,tj-005,A,False,2,15,13,15,13,2,It gives my group a high allocation while maximizing the joint total.,llm
+e3-a-to-b,e3,1,tj-008,B,False,2,15,13,13,15,-2,It gives my group 13 while maximizing the joint total at 28.,llm
+e3-a-to-b,e3,1,tj-004,B,False,2,15,13,13,15,-2,It gives my group a strong allocation while also maximizing the joint total.,llm
+e3-a-to-b,e3,1,tj-002,B,False,2,15,13,13,15,-2,It gives my group a strong allocation while also maximizing the joint total.,llm
+e3-a-to-b,e3,1,tj-009,B,False,2,15,13,13,15,-2,It gives my group 13 while maximizing the joint total at 28.,llm
+e3-a-to-b,e3,1,tj-001,B,False,4,13,13,13,13,0,It gives both groups an equal share of 13.,llm
+e3-a-to-b,e3,2,tj-006,A,False,2,15,13,15,13,2,It maximizes the joint total while giving my group 15.,llm
+e3-a-to-b,e3,2,tj-003,A,False,2,15,13,15,13,2,It gives my group 15 while achieving the highest joint total of 28.,llm
+e3-a-to-b,e3,2,tj-000,A,False,2,15,13,15,13,2,It gives my group the highest allocation while also producing the highest joint total.,llm
+e3-a-to-b,e3,2,tj-007,A,False,2,15,13,15,13,2,It gives my group 15 while also producing the highest joint total.,llm
+e3-a-to-b,e3,2,tj-005,A,False,2,15,13,15,13,2,It gives Group A the higher allocation while maximizing the joint total.,llm
+e3-a-to-b,e3,2,tj-008,B,False,3,13,15,15,13,2,It gives my group 15 while maintaining the highest joint total of 28.,llm
+e3-a-to-b,e3,2,tj-004,B,False,3,13,15,15,13,2,It maximizes the joint total while giving my group the larger share.,llm
+e3-a-to-b,e3,2,tj-002,B,False,3,13,15,15,13,2,It maximizes the joint total while giving my group the larger share.,llm
+e3-a-to-b,e3,2,tj-009,B,False,3,13,15,15,13,2,It preserves the maximum joint total while giving my group more.,llm
+e3-a-to-b,e3,2,tj-001,B,False,2,15,13,13,15,-2,It keeps the joint payoff high while giving the other group a modest advantage.,llm
+e3-a-to-b,e3,3,tj-006,A,False,2,15,13,15,13,2,It maximizes the joint total while giving my group 15.,llm
+e3-a-to-b,e3,3,tj-003,A,False,2,15,13,15,13,2,It gives my group a strong payoff while maximizing the joint total.,llm
+e3-a-to-b,e3,3,tj-000,A,False,2,15,13,15,13,2,It preserves the highest joint total while giving my group the larger allocation.,llm
+e3-a-to-b,e3,3,tj-007,A,False,2,15,13,15,13,2,It gives my group 15 while also producing the highest joint total.,llm
+e3-a-to-b,e3,3,tj-005,A,False,2,15,13,15,13,2,It gives my group a high allocation while maximizing the joint total.,llm
+e3-a-to-b,e3,3,tj-008,B,False,3,13,15,15,13,2,It gives my group the larger share while preserving the maximum joint total of 28.,llm
+e3-a-to-b,e3,3,tj-004,B,False,3,13,15,15,13,2,It maximizes the joint total while giving my group the larger share.,llm
+e3-a-to-b,e3,3,tj-002,B,False,2,15,13,13,15,-2,It maximizes the joint total while modestly favoring the other group to support reciprocity.,llm
+e3-a-to-b,e3,3,tj-009,B,False,3,13,15,15,13,2,It maximizes the joint total while giving my group the larger share.,llm
+e3-a-to-b,e3,3,tj-001,B,False,3,13,15,15,13,2,It gives group A the largest payoff while also achieving the highest joint total.,llm
+e3-a-to-b,e3,4,tj-006,A,False,2,15,13,15,13,2,It maximizes the joint total while giving my group the larger allocation.,llm
+e3-a-to-b,e3,4,tj-003,A,False,2,15,13,15,13,2,It gives my group 15 while maximizing the joint total at 28.,llm
+e3-a-to-b,e3,4,tj-000,A,False,2,15,13,15,13,2,It gives my group the highest allocation while also producing the highest joint total.,llm
+e3-a-to-b,e3,4,tj-007,A,False,2,15,13,15,13,2,It gives my group 15 while maximizing the joint total at 28.,llm
+e3-a-to-b,e3,4,tj-005,A,False,2,15,13,15,13,2,It maintains a strong allocation for my group while maximizing the joint total.,llm
+e3-a-to-b,e3,4,tj-008,B,False,3,13,15,15,13,2,It gives my group 15 while preserving the highest joint total of 28.,llm
+e3-a-to-b,e3,4,tj-004,B,False,3,13,15,15,13,2,It maximizes the joint total while giving my group the larger share.,llm
+e3-a-to-b,e3,4,tj-002,B,False,3,13,15,15,13,2,It maximizes the joint total while modestly favoring my group in response to the other group's stated strategy.,llm
+e3-a-to-b,e3,4,tj-009,B,False,3,13,15,15,13,2,It maximizes the joint total while giving my group the larger share.,llm
+e3-a-to-b,e3,4,tj-001,B,False,3,13,15,15,13,2,It gives my group the largest payoff while maintaining the highest joint total.,llm
+e3-a-to-b,e3,5,tj-006,A,False,2,15,13,15,13,2,It maximizes the joint total while giving my group the larger allocation.,llm
+e3-a-to-b,e3,5,tj-003,A,False,2,15,13,15,13,2,It maximizes the joint total while preserving a modest advantage for my group.,llm
+e3-a-to-b,e3,5,tj-000,A,False,2,15,13,15,13,2,It maintains the highest joint total while giving my group the larger allocation.,llm
+e3-a-to-b,e3,5,tj-007,A,False,2,15,13,15,13,2,It gives my group 15 while maximizing the joint total at 28.,llm
+e3-a-to-b,e3,5,tj-005,A,False,2,15,13,15,13,2,It gives my group a strong allocation while maximizing the joint total.,llm
+e3-a-to-b,e3,5,tj-008,B,False,3,13,15,15,13,2,It gives my group 15 while preserving the highest joint total of 28.,llm
+e3-a-to-b,e3,5,tj-004,B,False,3,13,15,15,13,2,It maximizes the joint total while giving my group the larger share.,llm
+e3-a-to-b,e3,5,tj-002,B,False,3,13,15,15,13,2,"It maximizes the joint total while giving my group the larger share, matching the balanced results so far.",llm
+e3-a-to-b,e3,5,tj-009,B,False,3,13,15,15,13,2,It preserves the maximum joint total while giving my group the larger share.,llm
+e3-a-to-b,e3,5,tj-001,B,False,3,13,15,15,13,2,It maximizes my group's payoff while preserving the highest joint total.,llm

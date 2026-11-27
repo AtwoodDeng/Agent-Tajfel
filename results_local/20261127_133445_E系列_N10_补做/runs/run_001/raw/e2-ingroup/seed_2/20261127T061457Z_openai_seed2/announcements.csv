@@ -1,0 +1,5 @@
+step,condition,text
+2,e2-ingroup,Previous results: group A total 100; group B total 200; A-to-A 50; A-to-B 100; B-to-A 50; B-to-B 100.
+3,e2-ingroup,Previous results: group A total 120; group B total 140; A-to-A 70; A-to-B 40; B-to-A 50; B-to-B 100.
+4,e2-ingroup,Previous results: group A total 121; group B total 137; A-to-A 69; A-to-B 43; B-to-A 52; B-to-B 94.
+5,e2-ingroup,Previous results: group A total 123; group B total 131; A-to-A 63; A-to-B 61; B-to-A 60; B-to-B 70.

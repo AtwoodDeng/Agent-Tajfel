@@ -1,0 +1,51 @@
+condition,series,step,agent_id,own_group,is_leader,row,a_points,b_points,ingroup_points,outgroup_points,gap,reason,source
+e2-pair,e2,1,tj-009,A,False,2,13,11,13,11,2,It gives both groups a substantial allocation while keeping the outcome balanced.,llm
+e2-pair,e2,1,tj-003,A,False,5,10,20,10,20,-10,This row gives the other group the most while keeping my group's allocation at 10.,llm
+e2-pair,e2,1,tj-005,A,False,5,10,20,10,20,-10,It gives the largest combined payoff.,llm
+e2-pair,e2,1,tj-001,A,False,5,10,20,10,20,-10,"This row maximizes the joint total, giving both groups 30 together.",llm
+e2-pair,e2,1,tj-006,A,False,5,10,20,10,20,-10,It gives the other group the most while still allocating 10 to my group.,llm
+e2-pair,e2,1,tj-002,B,False,5,10,20,20,10,10,It gives my group the largest allocation while also producing the highest joint total.,llm
+e2-pair,e2,1,tj-000,B,False,5,10,20,20,10,10,This row gives my group the largest allocation while also maximizing the joint total.,llm
+e2-pair,e2,1,tj-004,B,False,5,10,20,20,10,10,It gives my group the largest allocation while still providing the other group with 10.,llm
+e2-pair,e2,1,tj-007,B,False,5,10,20,20,10,10,This row gives my group the largest allocation while also maximizing the joint total.,llm
+e2-pair,e2,1,tj-008,B,False,5,10,20,20,10,10,This row gives my group the largest allocation while keeping the joint total highest.,llm
+e2-pair,e2,2,tj-009,A,False,0,15,5,15,5,10,It maximizes my group's allocation and helps narrow the large cumulative gap between groups.,llm
+e2-pair,e2,2,tj-003,A,False,5,10,20,10,20,-10,It maximizes the joint payoff and the other group's allocation while preserving 10 for my group.,llm
+e2-pair,e2,2,tj-005,A,False,5,10,20,10,20,-10,It maintains our coordinated strategy of maximizing the joint payoff while favoring the other group.,llm
+e2-pair,e2,2,tj-001,A,False,0,15,5,15,5,10,This offsets the prior B-favoring outcome and moves the two-round allocation toward balance.,llm
+e2-pair,e2,2,tj-006,A,False,0,15,5,15,5,10,"Group A is substantially behind overall, so this row helps reduce the imbalance.",llm
+e2-pair,e2,2,tj-002,B,False,5,10,20,20,10,10,It gives my group the largest allocation and also maximizes the joint total.,llm
+e2-pair,e2,2,tj-000,B,False,5,10,20,20,10,10,This row maximizes both my group's allocation and the joint total.,llm
+e2-pair,e2,2,tj-004,B,False,0,15,5,5,15,-10,This offsets last round's 10-point advantage to my group and supports balanced cooperation.,llm
+e2-pair,e2,2,tj-007,B,False,5,10,20,20,10,10,It gives my group the largest allocation and maximizes the joint total.,llm
+e2-pair,e2,2,tj-008,B,False,5,10,20,20,10,10,It gives my group the largest allocation and the highest joint total.,llm
+e2-pair,e2,3,tj-009,A,False,3,12,14,12,14,-2,It gives A a stronger share than the high-total options while still keeping the joint allocation substantial.,llm
+e2-pair,e2,3,tj-003,A,False,5,10,20,10,20,-10,It maximizes the joint payoff and the other group's allocation while keeping my group's allocation at 10.,llm
+e2-pair,e2,3,tj-005,A,False,5,10,20,10,20,-10,It maintains the coordinated strategy of maximizing joint payoff while favoring the other group.,llm
+e2-pair,e2,3,tj-001,A,False,0,15,5,15,5,10,I’m choosing the efficient outcome that favors my group to help balance the substantial lead for group B.,llm
+e2-pair,e2,3,tj-006,A,False,0,15,5,15,5,10,"Group A still trails, so this choice improves A’s share and narrows the gap.",llm
+e2-pair,e2,3,tj-002,B,False,0,15,5,5,15,-10,I’m choosing the reciprocal option to help narrow the group imbalance while preserving a positive joint total.,llm
+e2-pair,e2,3,tj-000,B,False,5,10,20,20,10,10,Row 5 gives my group the largest allocation and maximizes the joint total.,llm
+e2-pair,e2,3,tj-004,B,False,5,10,20,20,10,10,It preserves the highest joint total and alternates the 10-point advantage after my previous choice favored the other group.,llm
+e2-pair,e2,3,tj-007,B,False,2,13,11,11,13,-2,It preserves a high joint total while giving group A a slightly larger share to help reduce the cumulative imbalance.,llm
+e2-pair,e2,3,tj-008,B,False,5,10,20,20,10,10,It maximizes both my group's allocation and the joint total.,llm
+e2-pair,e2,4,tj-009,A,False,3,12,14,12,14,-2,It modestly narrows the current gap while preserving a strong joint allocation.,llm
+e2-pair,e2,4,tj-003,A,False,2,13,11,13,11,2,It modestly benefits my group while narrowing the current gap and retaining a strong joint payoff.,llm
+e2-pair,e2,4,tj-005,A,False,5,10,20,10,20,-10,It maintains the coordinated strategy of maximizing joint payoff while favoring the other group.,llm
+e2-pair,e2,4,tj-001,A,False,0,15,5,15,5,10,I choose the efficient row favoring group A to help reduce group B's substantial cumulative lead.,llm
+e2-pair,e2,4,tj-006,A,False,2,13,11,13,11,2,"It modestly narrows A's remaining deficit while preserving a balanced, high joint return.",llm
+e2-pair,e2,4,tj-002,B,False,2,13,11,11,13,-2,It further narrows the group imbalance while improving the joint total.,llm
+e2-pair,e2,4,tj-000,B,False,5,10,20,20,10,10,This row maximizes both my group's allocation and the joint total.,llm
+e2-pair,e2,4,tj-004,B,False,5,10,20,20,10,10,It maximizes the joint total while giving my group the largest allocation.,llm
+e2-pair,e2,4,tj-007,B,False,3,12,14,14,12,2,It gives my group a modest advantage while keeping the joint total high.,llm
+e2-pair,e2,4,tj-008,B,False,2,13,11,11,13,-2,It modestly favors the other group to reduce the overall imbalance while preserving a relatively high joint total.,llm
+e2-pair,e2,5,tj-009,A,False,0,15,5,15,5,10,It most directly narrows A's cumulative deficit by maximizing my group's allocation.,llm
+e2-pair,e2,5,tj-003,A,False,0,15,5,15,5,10,It most strongly narrows the substantial cumulative gap by giving my group the largest available advantage.,llm
+e2-pair,e2,5,tj-005,A,False,2,13,11,13,11,2,It gives group A the larger share while keeping the joint payoff relatively high.,llm
+e2-pair,e2,5,tj-001,A,False,0,15,5,15,5,10,"Group B still leads cumulatively, so this row narrows the gap most strongly in this round.",llm
+e2-pair,e2,5,tj-006,A,False,0,15,5,15,5,10,I’ll reciprocate with the option that most improves A’s share and narrows the remaining imbalance.,llm
+e2-pair,e2,5,tj-002,B,False,2,13,11,11,13,-2,It continues narrowing B’s cumulative lead while preserving a relatively strong joint total.,llm
+e2-pair,e2,5,tj-000,B,False,0,15,5,5,15,-10,"This gives group A a 10-point advantage, honoring the commitment to reduce group B's lead.",llm
+e2-pair,e2,5,tj-004,B,False,0,15,5,5,15,-10,It honors the commitment to favor group A this round and narrows group B's cumulative lead.,llm
+e2-pair,e2,5,tj-007,B,False,2,13,11,11,13,-2,It gives the other group a modest advantage while preserving a high joint total and helping narrow the cumulative gap.,llm
+e2-pair,e2,5,tj-008,B,False,2,13,11,11,13,-2,It narrows the cumulative imbalance while preserving a strong joint total.,llm

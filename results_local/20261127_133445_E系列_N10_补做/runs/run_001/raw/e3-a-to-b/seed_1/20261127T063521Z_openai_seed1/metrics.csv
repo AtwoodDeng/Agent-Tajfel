@@ -1,0 +1,6 @@
+condition,series,step,mean_gap,mif_favour_share,group_welfare,mean_abs_gap,mean_gap_member,mean_gap_leader,mean_gap_group_a,mean_gap_group_b,n_messages,n_deliveries,mean_message_len,n_truncated,n_allocations,fallback_rate
+e3-a-to-b,e3,1,0.2,0.5,0.975,1.8,0.2,,2.0,-1.6,10,10,97.7,0,10,0.0
+e3-a-to-b,e3,2,1.6,0.9,1.0,2.0,1.6,,2.0,1.2,10,10,101.4,0,10,0.0
+e3-a-to-b,e3,3,1.6,0.9,1.0,2.0,1.6,,2.0,1.2,10,10,114.7,0,10,0.0
+e3-a-to-b,e3,4,2.0,1.0,1.0,2.0,2.0,,2.0,2.0,10,10,114.6,0,10,0.0
+e3-a-to-b,e3,5,2.0,1.0,1.0,2.0,2.0,,2.0,2.0,0,0,,0,10,0.0

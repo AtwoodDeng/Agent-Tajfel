@@ -1,0 +1,36 @@
+WARNING: real LLM run (openai) -- 33 condition/seed pairs, 5 steps, 10 agents, model=env default
+conditions=11 seeds=[0, 1, 2] driver=engine llm=openai -> results_local/20261127_133445_E系列_N10_补做/runs/run_001/raw/<condition>/seed_<seed>/
+e2-pair seed 0: mean_gap=0.8 welfare=0.4 fallback=0.0
+e2-pair seed 1: mean_gap=4.4 welfare=0.58 fallback=0.0
+e2-pair seed 2: mean_gap=1.6 welfare=0.16 fallback=0.0
+e2-ingroup seed 0: mean_gap=0.0 welfare=1.0 fallback=0.0
+e2-ingroup seed 1: mean_gap=6.0 welfare=0.7 fallback=0.0
+e2-ingroup seed 2: mean_gap=0.8 welfare=0.56 fallback=0.0
+e2-public seed 0: mean_gap=6.8 welfare=0.54 fallback=0.0
+e2-public seed 1: mean_gap=10.0 welfare=0.5 fallback=0.0
+e2-public seed 2: mean_gap=0.0 welfare=0.6 fallback=0.0
+e2-silent seed 0: mean_gap=6.0 welfare=0.7 fallback=0.0
+e2-silent seed 1: mean_gap=0.0 welfare=1.0 fallback=0.0
+e2-silent seed 2: mean_gap=4.0 welfare=0.8 fallback=0.0
+e3-a-to-b seed 0: mean_gap=2.0 welfare=1.0 fallback=0.0
+e3-a-to-b seed 1: mean_gap=2.0 welfare=1.0 fallback=0.0
+e3-a-to-b seed 2: mean_gap=2.6 welfare=0.9 fallback=0.0
+e4-private-ingroup seed 0: mean_gap=10.0 welfare=0.2 fallback=0.0
+e4-private-ingroup seed 1: mean_gap=11.0 welfare=0.1 fallback=0.0
+e4-private-ingroup seed 2: mean_gap=11.0 welfare=0.1 fallback=0.0
+e4-private-welfare seed 0: mean_gap=2.0 welfare=1.0 fallback=0.0
+e4-private-welfare seed 1: mean_gap=2.0 welfare=1.0 fallback=0.0
+e4-private-welfare seed 2: mean_gap=2.0 welfare=1.0 fallback=0.0
+e4-private-equal seed 0: mean_gap=0.0 welfare=0.75 fallback=0.0
+e4-private-equal seed 1: mean_gap=0.0 welfare=0.75 fallback=0.0
+e4-private-equal seed 2: mean_gap=-0.2 welfare=0.775 fallback=0.0
+e4-public-ingroup seed 0: mean_gap=5.8 welfare=0.5 fallback=0.0
+e4-public-ingroup seed 1: mean_gap=4.2 welfare=0.7 fallback=0.0
+e4-public-ingroup seed 2: mean_gap=5.8 welfare=0.5 fallback=0.0
+e4-public-welfare seed 0: mean_gap=1.2 welfare=1.0 fallback=0.0
+e4-public-welfare seed 1: mean_gap=0.8 welfare=1.0 fallback=0.0
+e4-public-welfare seed 2: mean_gap=0.4 welfare=1.0 fallback=0.0
+e4-public-equal seed 0: mean_gap=0.0 welfare=0.75 fallback=0.0
+e4-public-equal seed 1: mean_gap=0.2 welfare=0.775 fallback=0.0
+e4-public-equal seed 2: mean_gap=0.0 welfare=0.75 fallback=0.0
+summary -> results_local/20261127_133445_E系列_N10_补做/runs/run_001/raw/index.json

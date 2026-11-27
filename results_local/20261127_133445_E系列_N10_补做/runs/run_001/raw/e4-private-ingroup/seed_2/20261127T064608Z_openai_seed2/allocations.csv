@@ -1,0 +1,51 @@
+condition,series,step,agent_id,own_group,is_leader,row,a_points,b_points,ingroup_points,outgroup_points,gap,reason,source
+e4-private-ingroup,e4,1,tj-009,A,False,0,16,4,16,4,12,It gives my group the highest allocation while keeping the joint total at 20.,llm
+e4-private-ingroup,e4,1,tj-003,A,True,2,15,13,15,13,2,It maximizes the joint allocation while slightly favoring my group.,llm
+e4-private-ingroup,e4,1,tj-005,A,False,0,16,4,16,4,12,It gives my group the largest allocation while still providing the other group 4.,llm
+e4-private-ingroup,e4,1,tj-001,A,False,2,15,13,15,13,2,It gives my group a high payoff while also maximizing the joint total.,llm
+e4-private-ingroup,e4,1,tj-006,A,False,0,16,4,16,4,12,It gives my group the largest payoff.,llm
+e4-private-ingroup,e4,1,tj-002,B,True,4,13,13,13,13,0,It gives both groups an equal and relatively high allocation.,llm
+e4-private-ingroup,e4,1,tj-000,B,False,2,15,13,13,15,-2,This row gives my group 13 while maximizing the joint total at 28.,llm
+e4-private-ingroup,e4,1,tj-004,B,False,2,15,13,13,15,-2,It gives my group 13 while maximizing the joint total at 28.,llm
+e4-private-ingroup,e4,1,tj-007,B,False,2,15,13,13,15,-2,It gives my group 13 while maximizing the joint total at 28.,llm
+e4-private-ingroup,e4,1,tj-008,B,False,2,15,13,13,15,-2,It gives my group 13 while producing the highest joint total.,llm
+e4-private-ingroup,e4,2,tj-009,A,False,0,16,4,16,4,12,It maximizes my group's allocation and follows the group leader's coordinated strategy.,llm
+e4-private-ingroup,e4,2,tj-003,A,True,0,16,4,16,4,12,I committed to row 0 because it gives group A the largest possible advantage.,llm
+e4-private-ingroup,e4,2,tj-005,A,False,0,16,4,16,4,12,It maximizes my group's allocation and maintains our committed strategy.,llm
+e4-private-ingroup,e4,2,tj-001,A,False,0,16,4,16,4,12,I choose row 0 to honor the leader's commitment and give my group the largest possible advantage.,llm
+e4-private-ingroup,e4,2,tj-006,A,False,0,16,4,16,4,12,It gives my group the highest possible payoff and matches our leader's commitment.,llm
+e4-private-ingroup,e4,2,tj-002,B,True,1,4,16,16,4,12,I am honoring my commitment to choose the row that maximizes my group's allocation advantage.,llm
+e4-private-ingroup,e4,2,tj-000,B,False,1,4,16,16,4,12,I will coordinate with the group leader's commitment while maximizing our group's allocation.,llm
+e4-private-ingroup,e4,2,tj-004,B,False,1,4,16,16,4,12,It gives my group the highest available payoff of 16.,llm
+e4-private-ingroup,e4,2,tj-007,B,False,1,4,16,16,4,12,I choose row 1 to align with my group's commitment and receive the highest payoff of 16.,llm
+e4-private-ingroup,e4,2,tj-008,B,False,1,4,16,16,4,12,It follows our group leader's commitment and helps close group B's current deficit.,llm
+e4-private-ingroup,e4,3,tj-009,A,False,0,16,4,16,4,12,It gives my group the highest allocation and follows the leader’s coordinated strategy.,llm
+e4-private-ingroup,e4,3,tj-003,A,True,0,16,4,16,4,12,It gives group A the largest possible advantage over group B.,llm
+e4-private-ingroup,e4,3,tj-005,A,False,0,16,4,16,4,12,It maximizes my group's allocation and follows the leader's committed strategy.,llm
+e4-private-ingroup,e4,3,tj-001,A,False,0,16,4,16,4,12,I choose row 0 to support the leader's commitment and maximize group A's advantage.,llm
+e4-private-ingroup,e4,3,tj-006,A,False,0,16,4,16,4,12,It gives my group the highest payoff and follows our leader’s commitment.,llm
+e4-private-ingroup,e4,3,tj-002,B,True,1,4,16,16,4,12,I am honoring my commitment to maximize group B's allocation advantage.,llm
+e4-private-ingroup,e4,3,tj-000,B,False,1,4,16,16,4,12,I will honor the group leader's commitment and choose the row that maximizes my group's allocation.,llm
+e4-private-ingroup,e4,3,tj-004,B,False,1,4,16,16,4,12,It gives my group the highest available payoff of 16 and aligns with the stated commitment.,llm
+e4-private-ingroup,e4,3,tj-007,B,False,1,4,16,16,4,12,Row 1 gives my group the highest payoff and matches the leader's commitment.,llm
+e4-private-ingroup,e4,3,tj-008,B,False,1,4,16,16,4,12,It honors the leader's commitment and maximizes our group's advantage.,llm
+e4-private-ingroup,e4,4,tj-009,A,False,0,16,4,16,4,12,It gives my group the highest allocation and follows the leader’s coordinated strategy.,llm
+e4-private-ingroup,e4,4,tj-003,A,True,0,16,4,16,4,12,I have repeatedly committed to row 0 because it gives group A the largest advantage over group B.,llm
+e4-private-ingroup,e4,4,tj-005,A,False,0,16,4,16,4,12,It gives my group the largest allocation and follows the leader’s committed strategy.,llm
+e4-private-ingroup,e4,4,tj-001,A,False,0,16,4,16,4,12,I choose row 0 to honor the leader's commitment and maximize group A's advantage.,llm
+e4-private-ingroup,e4,4,tj-006,A,False,0,16,4,16,4,12,It gives my group the highest payoff and follows our leader's commitment.,llm
+e4-private-ingroup,e4,4,tj-002,B,True,1,4,16,16,4,12,It honors my commitment to maximize group B’s allocation advantage.,llm
+e4-private-ingroup,e4,4,tj-000,B,False,1,4,16,16,4,12,I will honor the group leader's commitment and maximize my group's allocation.,llm
+e4-private-ingroup,e4,4,tj-004,B,False,1,4,16,16,4,12,It gives my group the highest payoff and follows the leader's stated commitment.,llm
+e4-private-ingroup,e4,4,tj-007,B,False,1,4,16,16,4,12,It gives my group the highest payoff and follows the leader's stated commitment.,llm
+e4-private-ingroup,e4,4,tj-008,B,False,1,4,16,16,4,12,It honors the leader's commitment and maximizes our group's allocation advantage.,llm
+e4-private-ingroup,e4,5,tj-009,A,False,0,16,4,16,4,12,It gives my group the highest allocation and follows the leader’s coordinated strategy.,llm
+e4-private-ingroup,e4,5,tj-003,A,True,0,16,4,16,4,12,It honors my repeated commitment and gives group A the largest possible advantage.,llm
+e4-private-ingroup,e4,5,tj-005,A,False,0,16,4,16,4,12,It maximizes my group's allocation and remains consistent with our established strategy.,llm
+e4-private-ingroup,e4,5,tj-001,A,False,0,16,4,16,4,12,I choose row 0 to maintain the leader's coordinated strategy and maximize group A's advantage.,llm
+e4-private-ingroup,e4,5,tj-006,A,False,0,16,4,16,4,12,It gives my group the highest payoff and follows our leader's commitment.,llm
+e4-private-ingroup,e4,5,tj-002,B,True,1,4,16,16,4,12,I am honoring my commitment to maximize group B's allocation advantage.,llm
+e4-private-ingroup,e4,5,tj-000,B,False,3,13,15,15,13,2,This row maximizes the joint total while giving my group the larger allocation.,llm
+e4-private-ingroup,e4,5,tj-004,B,False,1,4,16,16,4,12,It gives my group the highest payoff and follows the leader's stated commitment.,llm
+e4-private-ingroup,e4,5,tj-007,B,False,1,4,16,16,4,12,It gives my group the highest payoff and follows the leader's stated commitment.,llm
+e4-private-ingroup,e4,5,tj-008,B,False,1,4,16,16,4,12,It honors the leader's commitment and maximizes group B's allocation advantage.,llm

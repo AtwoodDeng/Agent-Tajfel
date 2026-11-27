@@ -1,0 +1,251 @@
+condition,series,step,agent_id,own_group,is_leader,row,a_points,b_points,ingroup_points,outgroup_points,gap,reason,source
+e4-private-ingroup,e4,1,tj-036,A,False,0,19,10,19,10,9,It maximizes both my group's allocation and the joint total without reducing the other group's allocation.,llm
+e4-private-ingroup,e4,1,tj-043,A,False,0,19,10,19,10,9,This row maximizes both my group's allocation and the joint total without reducing the other group's allocation.,llm
+e4-private-ingroup,e4,1,tj-026,A,False,0,19,10,19,10,9,It maximizes both my group's allocation and the joint total without reducing the other group's allocation.,llm
+e4-private-ingroup,e4,1,tj-048,A,False,0,19,10,19,10,9,This row maximizes both my group's allocation and the joint total without reducing the other group's allocation.,llm
+e4-private-ingroup,e4,1,tj-019,A,False,0,19,10,19,10,9,This row maximizes both my group's allocation and the joint total without reducing the other group's allocation.,llm
+e4-private-ingroup,e4,1,tj-038,A,False,0,19,10,19,10,9,It maximizes both my group's allocation and the joint total without reducing the other group's allocation.,llm
+e4-private-ingroup,e4,1,tj-021,A,True,0,19,10,19,10,9,This row gives my group the largest allocation while still giving the other group 10.,llm
+e4-private-ingroup,e4,1,tj-016,A,False,0,19,10,19,10,9,It maximizes both my group's allocation and the joint total without reducing the other group's allocation.,llm
+e4-private-ingroup,e4,1,tj-002,A,False,0,19,10,19,10,9,This row maximizes both my group's allocation and the joint total without reducing the other group's allocation.,llm
+e4-private-ingroup,e4,1,tj-031,A,False,0,19,10,19,10,9,It maximizes both my group's allocation and the joint total without reducing the other group's allocation.,llm
+e4-private-ingroup,e4,1,tj-037,A,False,0,19,10,19,10,9,It maximizes both my group's allocation and the joint total without reducing the other group's allocation.,llm
+e4-private-ingroup,e4,1,tj-030,A,False,0,19,10,19,10,9,It maximizes both my group's allocation and the joint total without reducing the other group's allocation.,llm
+e4-private-ingroup,e4,1,tj-024,A,False,0,19,10,19,10,9,This row maximizes my group's allocation and ties for the highest joint outcome.,llm
+e4-private-ingroup,e4,1,tj-014,A,False,0,19,10,19,10,9,This row maximizes both my group's allocation and the joint total.,llm
+e4-private-ingroup,e4,1,tj-025,A,False,0,19,10,19,10,9,This row maximizes both my group's allocation and the joint total without reducing the other group's allocation.,llm
+e4-private-ingroup,e4,1,tj-018,A,False,0,19,10,19,10,9,This row maximizes both my group's allocation and the joint total without reducing the other group's allocation.,llm
+e4-private-ingroup,e4,1,tj-042,A,False,0,19,10,19,10,9,It maximizes both my group's allocation and the joint total without reducing the other group's allocation.,llm
+e4-private-ingroup,e4,1,tj-040,A,False,0,19,10,19,10,9,This row maximizes my group's allocation and the joint total without reducing the other group's allocation.,llm
+e4-private-ingroup,e4,1,tj-020,A,False,0,19,10,19,10,9,It maximizes both my group's allocation and the joint total without reducing the other group's allocation.,llm
+e4-private-ingroup,e4,1,tj-010,A,False,0,19,10,19,10,9,This row maximizes both my group's allocation and the joint total without reducing the other group's allocation.,llm
+e4-private-ingroup,e4,1,tj-029,A,False,0,19,10,19,10,9,It maximizes both my group's allocation and the joint total without reducing the other group's allocation.,llm
+e4-private-ingroup,e4,1,tj-017,A,False,0,19,10,19,10,9,This row maximizes both my group's allocation and the joint total without reducing the other group's allocation.,llm
+e4-private-ingroup,e4,1,tj-035,A,False,0,19,10,19,10,9,This row maximizes both my group's allocation and the joint total without reducing the other group's allocation.,llm
+e4-private-ingroup,e4,1,tj-032,A,False,0,19,10,19,10,9,This row maximizes both my group's allocation and the joint total without reducing the other group's allocation.,llm
+e4-private-ingroup,e4,1,tj-000,A,False,0,19,10,19,10,9,It maximizes both my group's allocation and the joint total without reducing the other group's allocation.,llm
+e4-private-ingroup,e4,1,tj-046,B,False,10,10,19,19,10,9,This row gives my group the highest allocation while maximizing the joint total.,llm
+e4-private-ingroup,e4,1,tj-033,B,False,10,10,19,19,10,9,"This row gives my group the highest allocation, 19.",llm
+e4-private-ingroup,e4,1,tj-023,B,False,10,10,19,19,10,9,This row maximizes my group’s allocation while keeping the joint total at its highest value.,llm
+e4-private-ingroup,e4,1,tj-011,B,False,10,10,19,19,10,9,This row maximizes my group's allocation while also maximizing the joint total.,llm
+e4-private-ingroup,e4,1,tj-009,B,False,10,10,19,19,10,9,This row gives my group the highest payoff while keeping the joint total maximal.,llm
+e4-private-ingroup,e4,1,tj-034,B,False,10,10,19,19,10,9,It gives my group the largest allocation while keeping the joint total maximal.,llm
+e4-private-ingroup,e4,1,tj-022,B,False,0,19,10,10,19,-9,It maximizes the joint total while giving my group 10.,llm
+e4-private-ingroup,e4,1,tj-003,B,False,0,19,10,10,19,-9,It gives my group 10 while maximizing the other group's allocation and the joint total.,llm
+e4-private-ingroup,e4,1,tj-006,B,False,10,10,19,19,10,9,This row gives my group the highest allocation while maximizing the joint total.,llm
+e4-private-ingroup,e4,1,tj-007,B,False,0,19,10,10,19,-9,It maximizes the joint allocation while giving my group 10.,llm
+e4-private-ingroup,e4,1,tj-004,B,False,10,10,19,19,10,9,It gives my group the highest possible allocation.,llm
+e4-private-ingroup,e4,1,tj-001,B,False,0,19,10,10,19,-9,It maximizes the joint allocation while giving my group 10.,llm
+e4-private-ingroup,e4,1,tj-045,B,False,10,10,19,19,10,9,This row gives my group the highest allocation while maximizing the joint total.,llm
+e4-private-ingroup,e4,1,tj-013,B,False,10,10,19,19,10,9,This row gives my group the highest payoff while keeping the joint payoff at its maximum.,llm
+e4-private-ingroup,e4,1,tj-012,B,True,10,10,19,19,10,9,It maximizes my group's allocation while keeping the joint total at its highest.,llm
+e4-private-ingroup,e4,1,tj-047,B,False,10,10,19,19,10,9,This row gives my group the highest allocation while keeping the joint total maximal.,llm
+e4-private-ingroup,e4,1,tj-015,B,False,10,10,19,19,10,9,It gives my group the highest payoff while preserving the maximum joint total.,llm
+e4-private-ingroup,e4,1,tj-041,B,False,0,19,10,10,19,-9,It gives my group 10 while maximizing the other group's allocation.,llm
+e4-private-ingroup,e4,1,tj-039,B,False,10,10,19,19,10,9,I chose the row that gives my group the highest allocation while maximizing the joint total.,llm
+e4-private-ingroup,e4,1,tj-005,B,False,10,10,19,19,10,9,It gives my group the highest allocation while maximizing the joint total.,llm
+e4-private-ingroup,e4,1,tj-028,B,False,10,10,19,19,10,9,It gives my group the highest allocation while maximizing the joint total.,llm
+e4-private-ingroup,e4,1,tj-049,B,False,5,10,10,10,10,0,I chose the equal split because it treats both groups fairly.,llm
+e4-private-ingroup,e4,1,tj-008,B,False,5,10,10,10,10,0,I chose the equal split so both groups receive the same amount.,llm
+e4-private-ingroup,e4,1,tj-044,B,False,10,10,19,19,10,9,This row gives my group the highest allocation while maximizing the joint total.,llm
+e4-private-ingroup,e4,1,tj-027,B,False,10,10,19,19,10,9,This row maximizes my group’s allocation while also maximizing the joint total.,llm
+e4-private-ingroup,e4,2,tj-036,A,False,0,19,10,19,10,9,I choose row 0 because it maximizes my group's allocation and the joint total while matching the leader's commitment.,llm
+e4-private-ingroup,e4,2,tj-043,A,False,0,19,10,19,10,9,Row 0 maximizes my group's allocation and the joint total while keeping the other group's allocation unchanged.,llm
+e4-private-ingroup,e4,2,tj-026,A,False,0,19,10,19,10,9,Row 0 gives my group the highest allocation and matches the leader's commitment.,llm
+e4-private-ingroup,e4,2,tj-048,A,False,0,19,10,19,10,9,Row 0 maximizes my group’s allocation and the joint total while preserving the other group’s allocation of 10.,llm
+e4-private-ingroup,e4,2,tj-019,A,False,0,19,10,19,10,9,Row 0 maximizes my group’s allocation and the joint total while preserving the other group’s allocation.,llm
+e4-private-ingroup,e4,2,tj-038,A,False,0,19,10,19,10,9,It gives my group the highest allocation and matches our leader's commitment.,llm
+e4-private-ingroup,e4,2,tj-021,A,True,0,19,10,19,10,9,It honors my stated commitment and maximizes both group A's allocation and the joint total.,llm
+e4-private-ingroup,e4,2,tj-016,A,False,0,19,10,19,10,9,It maximizes my group's allocation and the joint total while preserving the other group's allocation.,llm
+e4-private-ingroup,e4,2,tj-002,A,False,0,19,10,19,10,9,I choose row 0 because it maximizes my group’s allocation and the joint total while preserving the other group’s allocation.,llm
+e4-private-ingroup,e4,2,tj-031,A,False,0,19,10,19,10,9,It gives my group the highest allocation and maximizes the joint total while keeping the other group at 10.,llm
+e4-private-ingroup,e4,2,tj-037,A,False,0,19,10,19,10,9,Row 0 maximizes my group's allocation and the joint total while preserving the other group's allocation.,llm
+e4-private-ingroup,e4,2,tj-030,A,False,0,19,10,19,10,9,I choose row 0 because it maximizes my group's allocation and the joint total while matching our leader's commitment.,llm
+e4-private-ingroup,e4,2,tj-024,A,False,0,19,10,19,10,9,It maximizes my group's allocation and the joint outcome while following the leader's coordinated strategy.,llm
+e4-private-ingroup,e4,2,tj-014,A,False,0,19,10,19,10,9,"Row 0 maximizes my group's allocation and the joint total, consistent with my previous choice.",llm
+e4-private-ingroup,e4,2,tj-025,A,False,0,19,10,19,10,9,Row 0 maximizes my group's allocation and the joint total while preserving the other group's allocation.,llm
+e4-private-ingroup,e4,2,tj-018,A,False,0,19,10,19,10,9,Row 0 maximizes my group's allocation and the joint total while preserving the other group's allocation.,llm
+e4-private-ingroup,e4,2,tj-042,A,False,0,19,10,19,10,9,I choose row 0 to maximize my group's allocation and maintain the agreed group strategy.,llm
+e4-private-ingroup,e4,2,tj-040,A,False,0,19,10,19,10,9,It maximizes my group's allocation and the joint total while keeping the other group's allocation unchanged.,llm
+e4-private-ingroup,e4,2,tj-020,A,False,0,19,10,19,10,9,Row 0 maximizes my group's allocation and the joint total while maintaining the agreed gap of 9.,llm
+e4-private-ingroup,e4,2,tj-010,A,False,0,19,10,19,10,9,Row 0 maximizes my group's allocation and joint total while keeping the other group's allocation at 10.,llm
+e4-private-ingroup,e4,2,tj-029,A,False,0,19,10,19,10,9,It maximizes my group's allocation and the joint total while preserving the other group's allocation.,llm
+e4-private-ingroup,e4,2,tj-017,A,False,0,19,10,19,10,9,"Row 0 maximizes my group's allocation and the joint total, consistent with my previous choice.",llm
+e4-private-ingroup,e4,2,tj-035,A,False,0,19,10,19,10,9,Row 0 maximizes my group’s allocation and the joint total while keeping the other group’s allocation at 10.,llm
+e4-private-ingroup,e4,2,tj-032,A,False,0,19,10,19,10,9,It maximizes my group's allocation and the joint total while matching my previous choice.,llm
+e4-private-ingroup,e4,2,tj-000,A,False,0,19,10,19,10,9,Row 0 gives my group the highest allocation and matches our leader’s commitment.,llm
+e4-private-ingroup,e4,2,tj-046,B,False,10,10,19,19,10,9,It maximizes my group's allocation and the joint total while honoring the group leader's coordination request.,llm
+e4-private-ingroup,e4,2,tj-033,B,False,10,10,19,19,10,9,"This row gives my group the highest allocation, 19.",llm
+e4-private-ingroup,e4,2,tj-023,B,False,10,10,19,19,10,9,This row gives my group the highest allocation and preserves the highest joint total.,llm
+e4-private-ingroup,e4,2,tj-011,B,False,10,10,19,19,10,9,"Row 10 maximizes my group's allocation and the joint total, consistent with my previous choice.",llm
+e4-private-ingroup,e4,2,tj-009,B,False,10,10,19,19,10,9,"It maximizes my group's payoff and the joint total, consistent with my previous choice.",llm
+e4-private-ingroup,e4,2,tj-034,B,False,10,10,19,19,10,9,It maximizes my group's allocation and honors the group's stated coordination strategy.,llm
+e4-private-ingroup,e4,2,tj-022,B,False,10,10,19,19,10,9,"It gives my group 19 points, the highest available amount, while preserving the maximum joint total.",llm
+e4-private-ingroup,e4,2,tj-003,B,False,0,19,10,10,19,-9,It preserves my previous choice and maximizes the joint total while giving the other group the larger allocation.,llm
+e4-private-ingroup,e4,2,tj-006,B,False,10,10,19,19,10,9,This honors our group leader's commitment while maximizing both our allocation and the joint total.,llm
+e4-private-ingroup,e4,2,tj-007,B,False,0,19,10,10,19,-9,It maximizes the joint allocation while giving my group 10.,llm
+e4-private-ingroup,e4,2,tj-004,B,False,10,10,19,19,10,9,It gives my group the highest possible allocation.,llm
+e4-private-ingroup,e4,2,tj-001,B,False,10,10,19,19,10,9,"It gives my group the largest allocation, 19 points.",llm
+e4-private-ingroup,e4,2,tj-045,B,False,10,10,19,19,10,9,It honors the group commitment while maximizing our allocation and the joint total.,llm
+e4-private-ingroup,e4,2,tj-013,B,False,10,10,19,19,10,9,It gives my group the highest payoff while keeping the joint payoff at its maximum.,llm
+e4-private-ingroup,e4,2,tj-012,B,True,10,10,19,19,10,9,It gives group B the largest allocation while preserving the maximum joint total.,llm
+e4-private-ingroup,e4,2,tj-047,B,False,10,10,19,19,10,9,I choose the row that gives my group the highest allocation and keeps the joint total maximal.,llm
+e4-private-ingroup,e4,2,tj-015,B,False,10,10,19,19,10,9,It gives my group the highest payoff and the maximum joint total.,llm
+e4-private-ingroup,e4,2,tj-041,B,False,10,10,19,19,10,9,It maximizes my group's allocation and the joint total while matching the proposed reciprocal choice.,llm
+e4-private-ingroup,e4,2,tj-039,B,False,10,10,19,19,10,9,I chose row 10 to maximize my group's allocation and maintain the leader's coordinated commitment.,llm
+e4-private-ingroup,e4,2,tj-005,B,False,10,10,19,19,10,9,It gives my group the highest allocation and maximizes the joint total.,llm
+e4-private-ingroup,e4,2,tj-028,B,False,10,10,19,19,10,9,It gives my group the highest allocation and maximizes the joint total.,llm
+e4-private-ingroup,e4,2,tj-049,B,False,5,10,10,10,10,0,I choose the equal split to treat both groups fairly.,llm
+e4-private-ingroup,e4,2,tj-008,B,False,10,10,19,19,10,9,"I chose the row the other group’s leader committed to, coordinating on the largest joint total.",llm
+e4-private-ingroup,e4,2,tj-044,B,False,10,10,19,19,10,9,I am honoring the group commitment while maximizing my group's allocation and the joint total.,llm
+e4-private-ingroup,e4,2,tj-027,B,False,10,10,19,19,10,9,Row 10 maximizes my group's allocation and the joint total.,llm
+e4-private-ingroup,e4,3,tj-036,A,False,0,19,10,19,10,9,"Row 0 maximizes my group's allocation and the joint total, consistent with my past choices.",llm
+e4-private-ingroup,e4,3,tj-043,A,False,0,19,10,19,10,9,Row 0 maximizes my group's allocation and the joint total while leaving the other group's allocation unchanged.,llm
+e4-private-ingroup,e4,3,tj-026,A,False,0,19,10,19,10,9,Row 0 gives my group the highest allocation and matches the leader's commitment.,llm
+e4-private-ingroup,e4,3,tj-048,A,False,0,19,10,19,10,9,Row 0 gives my group the highest allocation and the largest advantage over the other group.,llm
+e4-private-ingroup,e4,3,tj-019,A,False,0,19,10,19,10,9,"Row 0 maximizes my group's allocation and the joint total, while the other group receives 10.",llm
+e4-private-ingroup,e4,3,tj-038,A,False,0,19,10,19,10,9,It maximizes my group's allocation and advantage while matching the leader's commitment.,llm
+e4-private-ingroup,e4,3,tj-021,A,True,0,19,10,19,10,9,It honors my public commitment and gives group A its largest allocation.,llm
+e4-private-ingroup,e4,3,tj-016,A,False,0,19,10,19,10,9,It maximizes my group's allocation and the joint total while keeping the other group's allocation unchanged.,llm
+e4-private-ingroup,e4,3,tj-002,A,False,0,19,10,19,10,9,It maximizes my group's allocation and the joint total without reducing the other group's allocation.,llm
+e4-private-ingroup,e4,3,tj-031,A,False,0,19,10,19,10,9,It maximizes my group's allocation and the joint total while leaving the other group's allocation unchanged.,llm
+e4-private-ingroup,e4,3,tj-037,A,False,0,19,10,19,10,9,It maximizes my group's allocation and the joint total while leaving the other group's allocation unchanged.,llm
+e4-private-ingroup,e4,3,tj-030,A,False,0,19,10,19,10,9,"Row 0 gives my group the highest allocation and joint total, consistent with our leader's commitment.",llm
+e4-private-ingroup,e4,3,tj-024,A,False,0,19,10,19,10,9,It maximizes group A's allocation and advantage while maintaining the highest joint outcome.,llm
+e4-private-ingroup,e4,3,tj-014,A,False,0,19,10,19,10,9,"Row 0 maximizes my group's allocation and the joint total, consistent with my previous choices.",llm
+e4-private-ingroup,e4,3,tj-025,A,False,0,19,10,19,10,9,Row 0 maximizes my group's allocation and the joint total while keeping the other group's allocation unchanged.,llm
+e4-private-ingroup,e4,3,tj-018,A,False,0,19,10,19,10,9,Row 0 maximizes my group's allocation and the joint total while keeping the other group's allocation unchanged.,llm
+e4-private-ingroup,e4,3,tj-042,A,False,0,19,10,19,10,9,Row 0 maximizes my group's allocation and preserves our established group strategy.,llm
+e4-private-ingroup,e4,3,tj-040,A,False,0,19,10,19,10,9,It maximizes my group's allocation and the joint total while leaving the other group's allocation unchanged.,llm
+e4-private-ingroup,e4,3,tj-020,A,False,0,19,10,19,10,9,It maximizes my group's allocation and the joint total while keeping the other group's allocation unchanged.,llm
+e4-private-ingroup,e4,3,tj-010,A,False,0,19,10,19,10,9,Row 0 gives my group the highest allocation and joint total while holding the other group's allocation at 10.,llm
+e4-private-ingroup,e4,3,tj-029,A,False,0,19,10,19,10,9,It gives my group the highest allocation and the largest advantage over the other group.,llm
+e4-private-ingroup,e4,3,tj-017,A,False,0,19,10,19,10,9,Row 0 maximizes my group's allocation and the joint total while matching the established group commitment.,llm
+e4-private-ingroup,e4,3,tj-035,A,False,0,19,10,19,10,9,Row 0 maximizes my group's allocation and maintains the largest advantage over the other group.,llm
+e4-private-ingroup,e4,3,tj-032,A,False,0,19,10,19,10,9,It gives my group the highest allocation and preserves my previous choice.,llm
+e4-private-ingroup,e4,3,tj-000,A,False,0,19,10,19,10,9,Row 0 maximizes my group's allocation and joint total while matching the leader's commitment.,llm
+e4-private-ingroup,e4,3,tj-046,B,False,10,10,19,19,10,9,It gives my group the highest allocation and maximizes the joint total.,llm
+e4-private-ingroup,e4,3,tj-033,B,False,10,10,19,19,10,9,This row gives my group the highest possible allocation of 19.,llm
+e4-private-ingroup,e4,3,tj-023,B,False,0,19,10,10,19,-9,It preserves the highest joint total while giving my group the largest allocation.,llm
+e4-private-ingroup,e4,3,tj-011,B,False,10,10,19,19,10,9,"It maximizes my group's allocation and the joint total, consistent with my previous choices.",llm
+e4-private-ingroup,e4,3,tj-009,B,False,10,10,19,19,10,9,It gives my group the highest payoff while also maximizing the joint total.,llm
+e4-private-ingroup,e4,3,tj-034,B,False,10,10,19,19,10,9,It maximizes my group's allocation and follows our stated coordination strategy.,llm
+e4-private-ingroup,e4,3,tj-022,B,False,10,10,19,19,10,9,It gives my group the highest available payoff while maximizing the joint total.,llm
+e4-private-ingroup,e4,3,tj-003,B,False,0,19,10,10,19,-9,It preserves the maximum joint total while helping narrow my group's current lead.,llm
+e4-private-ingroup,e4,3,tj-006,B,False,10,10,19,19,10,9,"It gives my group the highest allocation while maximizing the joint total, consistent with my previous choices.",llm
+e4-private-ingroup,e4,3,tj-007,B,False,0,19,10,10,19,-9,It maximizes the joint allocation while keeping my group’s allocation at 10.,llm
+e4-private-ingroup,e4,3,tj-004,B,False,10,10,19,19,10,9,It gives my group the highest possible allocation of 19 points.,llm
+e4-private-ingroup,e4,3,tj-001,B,False,10,10,19,19,10,9,It honors the group leader's commitment and maximizes my group's allocation.,llm
+e4-private-ingroup,e4,3,tj-045,B,False,10,10,19,19,10,9,This gives my group the highest allocation and maximizes the joint total.,llm
+e4-private-ingroup,e4,3,tj-013,B,False,10,10,19,19,10,9,It gives my group the highest payoff while keeping the joint payoff at its maximum.,llm
+e4-private-ingroup,e4,3,tj-012,B,True,10,10,19,19,10,9,It gives group B the largest allocation while keeping the joint total at its maximum.,llm
+e4-private-ingroup,e4,3,tj-047,B,False,10,10,19,19,10,9,This row gives my group the highest allocation while keeping the joint total maximal.,llm
+e4-private-ingroup,e4,3,tj-015,B,False,10,10,19,19,10,9,It maximizes my group's payoff while preserving the highest joint total.,llm
+e4-private-ingroup,e4,3,tj-041,B,False,10,10,19,19,10,9,It maximizes my group's allocation and the joint total while honoring the leader's coordinated choice.,llm
+e4-private-ingroup,e4,3,tj-039,B,False,10,10,19,19,10,9,I choose row 10 to maximize my group's allocation and maintain the leader's commitment.,llm
+e4-private-ingroup,e4,3,tj-005,B,False,10,10,19,19,10,9,It gives my group the highest allocation while maximizing the joint total.,llm
+e4-private-ingroup,e4,3,tj-028,B,False,10,10,19,19,10,9,It gives my group the highest allocation and maximizes the joint total.,llm
+e4-private-ingroup,e4,3,tj-049,B,False,5,10,10,10,10,0,I choose the equal split to treat both groups fairly.,llm
+e4-private-ingroup,e4,3,tj-008,B,False,10,10,19,19,10,9,"I’m coordinating with the other group’s leader on row 10, which gives my group the largest possible allocation.",llm
+e4-private-ingroup,e4,3,tj-044,B,False,10,10,19,19,10,9,This honors the group commitment and gives my group the highest allocation while maximizing the joint total.,llm
+e4-private-ingroup,e4,3,tj-027,B,False,10,10,19,19,10,9,Row 10 maximizes my group's allocation and the joint total while honoring the group's stated strategy.,llm
+e4-private-ingroup,e4,4,tj-036,A,False,0,19,10,19,10,9,Row 0 gives my group the most while also maximizing the joint total.,llm
+e4-private-ingroup,e4,4,tj-043,A,False,0,19,10,19,10,9,Row 0 maximizes my group's allocation and the joint total while keeping the other group's allocation unchanged.,llm
+e4-private-ingroup,e4,4,tj-026,A,False,0,19,10,19,10,9,Row 0 gives my group the highest allocation and the largest advantage.,llm
+e4-private-ingroup,e4,4,tj-048,A,False,0,19,10,19,10,9,Row 0 maximizes my group's allocation and the joint total while leaving the other group's allocation unchanged.,llm
+e4-private-ingroup,e4,4,tj-019,A,False,0,19,10,19,10,9,Row 0 maximizes my group's allocation and the joint total while the other group receives 10.,llm
+e4-private-ingroup,e4,4,tj-038,A,False,0,19,10,19,10,9,"It gives my group the highest allocation and largest advantage, consistent with my previous choices.",llm
+e4-private-ingroup,e4,4,tj-021,A,True,0,19,10,19,10,9,"I will honor my public commitment to row 0, which gives group A the largest allocation.",llm
+e4-private-ingroup,e4,4,tj-016,A,False,0,19,10,19,10,9,It maximizes my group's allocation and the joint total while keeping the other group's allocation at 10.,llm
+e4-private-ingroup,e4,4,tj-002,A,False,0,19,10,19,10,9,Row 0 maximizes my group’s allocation and the joint total.,llm
+e4-private-ingroup,e4,4,tj-031,A,False,0,19,10,19,10,9,It gives my group the highest allocation and maximizes the joint total while keeping the other group at 10.,llm
+e4-private-ingroup,e4,4,tj-037,A,False,0,19,10,19,10,9,Row 0 maximizes my group's allocation and the joint total while keeping the other group's allocation at 10.,llm
+e4-private-ingroup,e4,4,tj-030,A,False,0,19,10,19,10,9,Row 0 gives my group the highest allocation and the highest joint total.,llm
+e4-private-ingroup,e4,4,tj-024,A,False,0,19,10,19,10,9,It maximizes my group's allocation and ties for the highest joint outcome.,llm
+e4-private-ingroup,e4,4,tj-014,A,False,0,19,10,19,10,9,"Row 0 maximizes my group's allocation and the joint total, consistent with my previous choices.",llm
+e4-private-ingroup,e4,4,tj-025,A,False,0,19,10,19,10,9,Row 0 maximizes my group's allocation and the joint total while leaving the other group's allocation unchanged.,llm
+e4-private-ingroup,e4,4,tj-018,A,False,0,19,10,19,10,9,Row 0 maximizes my group's allocation and the joint total while keeping the other group's allocation unchanged.,llm
+e4-private-ingroup,e4,4,tj-042,A,False,0,19,10,19,10,9,Row 0 gives my group the highest allocation and the highest joint total.,llm
+e4-private-ingroup,e4,4,tj-040,A,False,0,19,10,19,10,9,Row 0 maximizes my group's allocation and the joint total while keeping the other group's allocation at 10.,llm
+e4-private-ingroup,e4,4,tj-020,A,False,0,19,10,19,10,9,Row 0 maximizes my group's allocation and the joint total.,llm
+e4-private-ingroup,e4,4,tj-010,A,False,0,19,10,19,10,9,Row 0 maximizes my group's allocation and the joint total while keeping the other group's allocation at 10.,llm
+e4-private-ingroup,e4,4,tj-029,A,False,0,19,10,19,10,9,Row 0 maximizes my group’s allocation and advantage while the leader has committed to it.,llm
+e4-private-ingroup,e4,4,tj-017,A,False,0,19,10,19,10,9,"Row 0 maximizes my group's allocation and the joint total, consistent with my previous choices.",llm
+e4-private-ingroup,e4,4,tj-035,A,False,0,19,10,19,10,9,Row 0 maximizes my group's allocation and advantage while keeping the other group's allocation at 10.,llm
+e4-private-ingroup,e4,4,tj-032,A,False,0,19,10,19,10,9,It maximizes my group's allocation and the joint total while remaining consistent with prior choices.,llm
+e4-private-ingroup,e4,4,tj-000,A,False,0,19,10,19,10,9,"Row 0 maximizes my group's allocation and the joint total, consistent with my group's leader's commitment.",llm
+e4-private-ingroup,e4,4,tj-046,B,False,10,10,19,19,10,9,It gives my group the highest allocation and maximizes the joint total.,llm
+e4-private-ingroup,e4,4,tj-033,B,False,10,10,19,19,10,9,It gives my group the highest allocation of 19 and matches the committed choice.,llm
+e4-private-ingroup,e4,4,tj-023,B,False,10,10,19,19,10,9,It maximizes my group's allocation and the joint total while honoring the leader's coordinated strategy.,llm
+e4-private-ingroup,e4,4,tj-011,B,False,10,10,19,19,10,9,"Row 10 maximizes my group's allocation and the joint total, consistent with my previous choices.",llm
+e4-private-ingroup,e4,4,tj-009,B,False,10,10,19,19,10,9,It gives my group the highest payoff while also maximizing the joint total.,llm
+e4-private-ingroup,e4,4,tj-034,B,False,10,10,19,19,10,9,It maximizes my group's allocation and follows our stated coordination strategy.,llm
+e4-private-ingroup,e4,4,tj-022,B,False,10,10,19,19,10,9,It gives my group the highest payoff while preserving the maximum joint total.,llm
+e4-private-ingroup,e4,4,tj-003,B,False,0,19,10,10,19,-9,It maximizes the joint total while helping narrow my group's lead.,llm
+e4-private-ingroup,e4,4,tj-006,B,False,10,10,19,19,10,9,It maximizes my group's allocation and the joint total while remaining consistent with our leader's commitment.,llm
+e4-private-ingroup,e4,4,tj-007,B,False,10,10,19,19,10,9,It maximizes the joint allocation while favoring my group and reciprocating the leader's repeated commitment.,llm
+e4-private-ingroup,e4,4,tj-004,B,False,10,10,19,19,10,9,It gives my group the highest possible allocation of 19 points.,llm
+e4-private-ingroup,e4,4,tj-001,B,False,10,10,19,19,10,9,It follows the leader's commitment and maximizes my group's allocation.,llm
+e4-private-ingroup,e4,4,tj-045,B,False,10,10,19,19,10,9,It gives my group the highest allocation and matches the leader's repeated commitment.,llm
+e4-private-ingroup,e4,4,tj-013,B,False,10,10,19,19,10,9,It gives my group the highest payoff while keeping the joint payoff at its maximum.,llm
+e4-private-ingroup,e4,4,tj-012,B,True,10,10,19,19,10,9,It gives group B the largest allocation and preserves the maximum joint total.,llm
+e4-private-ingroup,e4,4,tj-047,B,False,5,10,10,10,10,0,It gives both groups equal allocations and maximizes the joint total.,llm
+e4-private-ingroup,e4,4,tj-015,B,False,10,10,19,19,10,9,It maximizes my group's payoff while preserving the highest joint total.,llm
+e4-private-ingroup,e4,4,tj-041,B,False,10,10,19,19,10,9,"It maximizes my group's allocation and the joint total, consistent with my previous choices.",llm
+e4-private-ingroup,e4,4,tj-039,B,False,10,10,19,19,10,9,I chose row 10 to maximize my group's allocation and maintain the leader's coordinated commitment.,llm
+e4-private-ingroup,e4,4,tj-005,B,False,10,10,19,19,10,9,"It maximizes my group's allocation and the joint total, consistent with prior choices and coordination.",llm
+e4-private-ingroup,e4,4,tj-028,B,False,10,10,19,19,10,9,It maximizes both my group's allocation and the joint total.,llm
+e4-private-ingroup,e4,4,tj-049,B,False,5,10,10,10,10,0,I choose the equal split to treat both groups fairly.,llm
+e4-private-ingroup,e4,4,tj-008,B,False,10,10,19,19,10,9,I am honoring the leader's commitment while maximizing my group's allocation and the joint total.,llm
+e4-private-ingroup,e4,4,tj-044,B,False,10,10,19,19,10,9,This honors my group's commitment and gives my group the highest allocation while maximizing the joint total.,llm
+e4-private-ingroup,e4,4,tj-027,B,False,10,10,19,19,10,9,"Row 10 maximizes my group's allocation and the joint total, consistent with the established strategy.",llm
+e4-private-ingroup,e4,5,tj-036,A,False,0,19,10,19,10,9,"It maximizes my group's allocation and the joint total, consistent with my prior choices.",llm
+e4-private-ingroup,e4,5,tj-043,A,False,0,19,10,19,10,9,Row 0 maximizes my group's allocation and the joint total while leaving the other group's allocation unchanged.,llm
+e4-private-ingroup,e4,5,tj-026,A,False,0,19,10,19,10,9,It maximizes my group's allocation and the joint total while leaving the other group's allocation unchanged.,llm
+e4-private-ingroup,e4,5,tj-048,A,False,0,19,10,19,10,9,"Row 0 maximizes my group’s allocation and the joint total, while keeping the other group’s allocation at 10.",llm
+e4-private-ingroup,e4,5,tj-019,A,False,0,19,10,19,10,9,Row 0 maximizes my group's allocation and the joint total.,llm
+e4-private-ingroup,e4,5,tj-038,A,False,0,19,10,19,10,9,"It gives my group the highest allocation and largest advantage, consistent with my previous choices.",llm
+e4-private-ingroup,e4,5,tj-021,A,True,0,19,10,19,10,9,It honors my public commitment while maximizing group A's allocation and the joint total.,llm
+e4-private-ingroup,e4,5,tj-016,A,False,0,19,10,19,10,9,It maximizes my group's allocation and the joint total while leaving the other group's allocation unchanged.,llm
+e4-private-ingroup,e4,5,tj-002,A,False,0,19,10,19,10,9,It maximizes my group's allocation and the joint total without reducing the other group's allocation.,llm
+e4-private-ingroup,e4,5,tj-031,A,False,0,19,10,19,10,9,It maximizes my group's allocation and the joint total without reducing the other group's allocation.,llm
+e4-private-ingroup,e4,5,tj-037,A,False,0,19,10,19,10,9,Row 0 gives my group the highest allocation and the largest advantage.,llm
+e4-private-ingroup,e4,5,tj-030,A,False,0,19,10,19,10,9,It maximizes my group's allocation and the joint total while leaving the other group's allocation unchanged.,llm
+e4-private-ingroup,e4,5,tj-024,A,False,0,19,10,19,10,9,It maximizes my group's allocation and maintains the highest joint outcome.,llm
+e4-private-ingroup,e4,5,tj-014,A,False,0,19,10,19,10,9,"Row 0 maximizes my group's allocation and the joint total, consistent with my previous choices.",llm
+e4-private-ingroup,e4,5,tj-025,A,False,0,19,10,19,10,9,Row 0 maximizes my group's allocation and the joint total while keeping the other group's allocation unchanged.,llm
+e4-private-ingroup,e4,5,tj-018,A,False,0,19,10,19,10,9,Row 0 maximizes my group's allocation and the joint total while leaving the other group's allocation unchanged.,llm
+e4-private-ingroup,e4,5,tj-042,A,False,0,19,10,19,10,9,Row 0 maximizes my group's allocation and matches our established group strategy.,llm
+e4-private-ingroup,e4,5,tj-040,A,False,0,19,10,19,10,9,It maximizes my group's allocation and the joint total while leaving the other group's allocation unchanged.,llm
+e4-private-ingroup,e4,5,tj-020,A,False,0,19,10,19,10,9,It maximizes my group's allocation and the joint total without reducing the other group's allocation.,llm
+e4-private-ingroup,e4,5,tj-010,A,False,0,19,10,19,10,9,Row 0 maximizes my group's allocation and the joint total while keeping the other group's allocation at 10.,llm
+e4-private-ingroup,e4,5,tj-029,A,False,0,19,10,19,10,9,Row 0 gives my group the highest allocation and largest advantage over the other group.,llm
+e4-private-ingroup,e4,5,tj-017,A,False,0,19,10,19,10,9,"Row 0 maximizes my group's allocation and the joint total, consistent with the established commitment.",llm
+e4-private-ingroup,e4,5,tj-035,A,False,0,19,10,19,10,9,Row 0 maximizes my group's allocation and the joint total while preserving the other group's allocation.,llm
+e4-private-ingroup,e4,5,tj-032,A,False,0,19,10,19,10,9,It maximizes my group's allocation and the joint total while remaining consistent with prior choices.,llm
+e4-private-ingroup,e4,5,tj-000,A,False,0,19,10,19,10,9,Row 0 gives my group the highest allocation and the highest joint total.,llm
+e4-private-ingroup,e4,5,tj-046,B,False,10,10,19,19,10,9,It gives my group the highest allocation while also maximizing the joint total.,llm
+e4-private-ingroup,e4,5,tj-033,B,False,10,10,19,19,10,9,This row gives my group the highest possible allocation of 19 and follows the leader's commitment.,llm
+e4-private-ingroup,e4,5,tj-023,B,False,10,10,19,19,10,9,It maximizes my group's allocation while also achieving the highest joint total.,llm
+e4-private-ingroup,e4,5,tj-011,B,False,10,10,19,19,10,9,"It maximizes my group's allocation and the joint total, consistent with my past choices and the leader's commitment.",llm
+e4-private-ingroup,e4,5,tj-009,B,False,10,10,19,19,10,9,"It gives my group the highest payoff and preserves the maximum joint total, consistent with the established choice.",llm
+e4-private-ingroup,e4,5,tj-034,B,False,10,10,19,19,10,9,It maximizes my group's allocation and follows our stated coordination strategy.,llm
+e4-private-ingroup,e4,5,tj-022,B,False,10,10,19,19,10,9,It maximizes my group's payoff and the joint total while honoring the established coordination.,llm
+e4-private-ingroup,e4,5,tj-003,B,False,0,19,10,10,19,-9,It maximizes the joint total while narrowing the current gap between the groups.,llm
+e4-private-ingroup,e4,5,tj-006,B,False,10,10,19,19,10,9,"It gives my group the highest allocation and maximizes the joint total, consistent with my previous choices.",llm
+e4-private-ingroup,e4,5,tj-007,B,False,10,10,19,19,10,9,"It maximizes the joint allocation and favors my group, matching the leader's repeated commitment.",llm
+e4-private-ingroup,e4,5,tj-004,B,False,10,10,19,19,10,9,It gives my group the highest possible allocation of 19 points.,llm
+e4-private-ingroup,e4,5,tj-001,B,False,10,10,19,19,10,9,It follows the leader's commitment and maximizes my group's allocation.,llm
+e4-private-ingroup,e4,5,tj-045,B,False,10,10,19,19,10,9,It continues the group commitment while maximizing our allocation and the joint total.,llm
+e4-private-ingroup,e4,5,tj-013,B,False,0,19,10,10,19,-9,It maximizes the joint payoff while giving my group the highest payoff among rows tied for that maximum.,llm
+e4-private-ingroup,e4,5,tj-012,B,True,10,10,19,19,10,9,It gives group B the largest allocation and preserves the maximum joint total.,llm
+e4-private-ingroup,e4,5,tj-047,B,False,10,10,19,19,10,9,"It maximizes my group's allocation and the joint total, consistent with the leader's commitment.",llm
+e4-private-ingroup,e4,5,tj-015,B,False,10,10,19,19,10,9,It maximizes my group’s payoff while preserving the highest joint total.,llm
+e4-private-ingroup,e4,5,tj-041,B,False,10,10,19,19,10,9,It maximizes my group's allocation and the joint total while maintaining the established coordinated choice.,llm
+e4-private-ingroup,e4,5,tj-039,B,False,10,10,19,19,10,9,I chose the row that gives my group the highest allocation and maintains my consistent choice.,llm
+e4-private-ingroup,e4,5,tj-005,B,False,10,10,19,19,10,9,"It maximizes my group's allocation and the joint total, consistent with my prior choices.",llm
+e4-private-ingroup,e4,5,tj-028,B,False,10,10,19,19,10,9,It gives my group the highest allocation and maximizes the joint total.,llm
+e4-private-ingroup,e4,5,tj-049,B,False,5,10,10,10,10,0,I choose the equal split because it treats both groups fairly.,llm
+e4-private-ingroup,e4,5,tj-008,B,False,10,10,19,19,10,9,I am continuing to honor the leader's commitment while maximizing my group's allocation and the joint total.,llm
+e4-private-ingroup,e4,5,tj-044,B,False,10,10,19,19,10,9,I’m continuing my previous choice to maximize my group’s allocation and the joint total.,llm
+e4-private-ingroup,e4,5,tj-027,B,False,10,10,19,19,10,9,"Row 10 maximizes my group's allocation and the joint total, consistent with my previous choices.",llm

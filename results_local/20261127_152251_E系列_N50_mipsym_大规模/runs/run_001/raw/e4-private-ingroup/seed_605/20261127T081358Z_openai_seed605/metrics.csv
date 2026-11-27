@@ -1,0 +1,6 @@
+condition,series,step,mean_gap,mif_favour_share,group_welfare,mean_abs_gap,mean_gap_member,mean_gap_leader,mean_gap_group_a,mean_gap_group_b,n_messages,n_deliveries,mean_message_len,n_truncated,n_allocations,fallback_rate
+e4-private-ingroup,e4,1,6.84,0.86,0.96,8.64,6.75,9.0,9.0,4.68,4,96,136.5,0,50,0.0
+e4-private-ingroup,e4,2,8.1,0.94,0.98,8.82,8.0625,9.0,9.0,7.2,4,96,122.5,0,50,0.0
+e4-private-ingroup,e4,3,7.74,0.92,0.98,8.82,7.6875,9.0,9.0,6.48,4,96,127.75,0,50,0.0
+e4-private-ingroup,e4,4,8.28,0.94,0.96,8.64,8.25,9.0,9.0,7.56,4,96,136.75,0,50,0.0
+e4-private-ingroup,e4,5,8.1,0.94,0.98,8.82,8.0625,9.0,9.0,7.2,0,0,,0,50,0.0

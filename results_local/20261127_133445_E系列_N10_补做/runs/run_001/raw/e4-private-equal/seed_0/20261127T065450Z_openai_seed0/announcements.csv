@@ -1,0 +1,5 @@
+step,condition,text
+2,e4-private-equal,Previous results: group A total 150; group B total 112; A-to-A 77; A-to-B 47; B-to-A 73; B-to-B 65.
+3,e4-private-equal,Previous results: group A total 130; group B total 130; A-to-A 65; A-to-B 65; B-to-A 65; B-to-B 65.
+4,e4-private-equal,Previous results: group A total 130; group B total 130; A-to-A 65; A-to-B 65; B-to-A 65; B-to-B 65.
+5,e4-private-equal,Previous results: group A total 130; group B total 130; A-to-A 65; A-to-B 65; B-to-A 65; B-to-B 65.

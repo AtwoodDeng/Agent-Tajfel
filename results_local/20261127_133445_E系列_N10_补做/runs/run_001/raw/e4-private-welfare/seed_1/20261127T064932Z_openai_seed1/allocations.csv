@@ -1,0 +1,51 @@
+condition,series,step,agent_id,own_group,is_leader,row,a_points,b_points,ingroup_points,outgroup_points,gap,reason,source
+e4-private-welfare,e4,1,tj-006,A,True,2,15,13,15,13,2,It maximizes the joint outcome while giving my group a slight advantage.,llm
+e4-private-welfare,e4,1,tj-003,A,False,0,16,4,16,4,12,It gives my group the largest allocation while still providing something to the other group.,llm
+e4-private-welfare,e4,1,tj-000,A,False,0,16,4,16,4,12,It gives my group the highest allocation while preserving a positive outcome for the other group.,llm
+e4-private-welfare,e4,1,tj-007,A,False,2,15,13,15,13,2,It gives my group a high payoff while maximizing the joint total.,llm
+e4-private-welfare,e4,1,tj-005,A,False,0,16,4,16,4,12,It gives my group the largest allocation while keeping the joint total at 20.,llm
+e4-private-welfare,e4,1,tj-008,B,False,2,15,13,13,15,-2,It gives my group 13 while maximizing the joint total at 28.,llm
+e4-private-welfare,e4,1,tj-004,B,False,2,15,13,13,15,-2,It gives my group 13 while maximizing the joint total at 28.,llm
+e4-private-welfare,e4,1,tj-002,B,False,2,15,13,13,15,-2,It gives my group 13 while maximizing the joint total at 28.,llm
+e4-private-welfare,e4,1,tj-009,B,True,3,13,15,15,13,2,It maximizes joint welfare while giving my group the larger share.,llm
+e4-private-welfare,e4,1,tj-001,B,False,4,13,13,13,13,0,It gives both groups an equal share while keeping the total allocation high.,llm
+e4-private-welfare,e4,2,tj-006,A,True,2,15,13,15,13,2,I am maintaining my commitment to row 2 because it maximizes the joint outcome while still giving my group a slight advantage.,llm
+e4-private-welfare,e4,2,tj-003,A,False,2,15,13,15,13,2,I choose row 2 because it maximizes the joint allocation while still giving my group a strong share.,llm
+e4-private-welfare,e4,2,tj-000,A,False,2,15,13,15,13,2,It maximizes the total allocation across both groups.,llm
+e4-private-welfare,e4,2,tj-007,A,False,2,15,13,15,13,2,It preserves the highest joint payoff and matches my prior choice.,llm
+e4-private-welfare,e4,2,tj-005,A,False,2,15,13,15,13,2,It gives both groups strong allocations and the highest joint total.,llm
+e4-private-welfare,e4,2,tj-008,B,False,3,13,15,15,13,2,It maximizes the joint total while giving my group the larger share of 15.,llm
+e4-private-welfare,e4,2,tj-004,B,False,3,13,15,15,13,2,It maximizes the joint total while giving my group the highest available payoff among those options.,llm
+e4-private-welfare,e4,2,tj-002,B,False,3,13,15,15,13,2,It maximizes the joint total while giving my group the highest available payoff.,llm
+e4-private-welfare,e4,2,tj-009,B,True,3,13,15,15,13,2,"I’m honoring my commitment to row 3, which maximizes joint welfare while giving my group the larger share.",llm
+e4-private-welfare,e4,2,tj-001,B,False,3,13,15,15,13,2,It gives my group the highest payoff among the joint-optimal choices and matches the leader's commitment.,llm
+e4-private-welfare,e4,3,tj-006,A,True,2,15,13,15,13,2,Row 2 maximizes the joint outcome while giving my group a slight advantage.,llm
+e4-private-welfare,e4,3,tj-003,A,False,2,15,13,15,13,2,Row 2 maximizes the joint allocation while giving my group a strong share.,llm
+e4-private-welfare,e4,3,tj-000,A,False,2,15,13,15,13,2,"It maximizes the joint allocation, consistent with the leader’s commitment.",llm
+e4-private-welfare,e4,3,tj-007,A,False,2,15,13,15,13,2,It maximizes the joint payoff and matches my previous choices.,llm
+e4-private-welfare,e4,3,tj-005,A,False,2,15,13,15,13,2,It gives both groups strong allocations and the highest joint total.,llm
+e4-private-welfare,e4,3,tj-008,B,False,3,13,15,15,13,2,"It maximizes the joint total and gives my group the larger share, consistent with the leader's commitment.",llm
+e4-private-welfare,e4,3,tj-004,B,False,3,13,15,15,13,2,"It maximizes the joint total, gives my group the highest payoff among the joint-maximizing rows, and matches the leader’s commitment.",llm
+e4-private-welfare,e4,3,tj-002,B,False,3,13,15,15,13,2,It maximizes the joint total while giving my group the highest available payoff.,llm
+e4-private-welfare,e4,3,tj-009,B,True,3,13,15,15,13,2,"I’m honoring my commitment to row 3, which maximizes joint welfare while giving my group the larger share.",llm
+e4-private-welfare,e4,3,tj-001,B,False,3,13,15,15,13,2,It maximizes the joint allocation and honors the leader's commitment while giving my group more.,llm
+e4-private-welfare,e4,4,tj-006,A,True,2,15,13,15,13,2,It maximizes the joint outcome while preserving a slight advantage for my group.,llm
+e4-private-welfare,e4,4,tj-003,A,False,2,15,13,15,13,2,Row 2 maximizes the joint allocation while giving my group a strong share.,llm
+e4-private-welfare,e4,4,tj-000,A,False,2,15,13,15,13,2,It maximizes the joint allocation and follows the leader’s commitment.,llm
+e4-private-welfare,e4,4,tj-007,A,False,2,15,13,15,13,2,It maximizes the joint payoff while giving my group a high payoff and maintains our consistent prior choice.,llm
+e4-private-welfare,e4,4,tj-005,A,False,2,15,13,15,13,2,It maintains cooperation while maximizing the joint allocation at 28 points.,llm
+e4-private-welfare,e4,4,tj-008,B,False,3,13,15,15,13,2,"It maximizes the joint total while giving my group the larger share, consistent with the leader's commitment.",llm
+e4-private-welfare,e4,4,tj-004,B,False,3,13,15,15,13,2,It maximizes the joint total while giving my group the larger share and honoring the leader's commitment.,llm
+e4-private-welfare,e4,4,tj-002,B,False,3,13,15,15,13,2,It maximizes the joint total while giving my group the larger share and honoring the established coordination.,llm
+e4-private-welfare,e4,4,tj-009,B,True,3,13,15,15,13,2,I’m honoring my commitment to maximize joint welfare while giving my group the larger share.,llm
+e4-private-welfare,e4,4,tj-001,B,False,3,13,15,15,13,2,"It maximizes the joint allocation and gives my group the larger share, consistent with the leader’s commitment.",llm
+e4-private-welfare,e4,5,tj-006,A,True,2,15,13,15,13,2,It honors my commitment while maximizing the joint outcome and giving my group a slight advantage.,llm
+e4-private-welfare,e4,5,tj-003,A,False,2,15,13,15,13,2,Row 2 maximizes the joint allocation while giving my group a strong share.,llm
+e4-private-welfare,e4,5,tj-000,A,False,2,15,13,15,13,2,It maximizes the joint allocation while maintaining the established cooperative choice.,llm
+e4-private-welfare,e4,5,tj-007,A,False,2,15,13,15,13,2,It maximizes the joint payoff while giving my group a high payoff and maintains the established cooperative choice.,llm
+e4-private-welfare,e4,5,tj-005,A,False,2,15,13,15,13,2,"It maximizes the joint allocation while still giving my group a strong, slightly higher share.",llm
+e4-private-welfare,e4,5,tj-008,B,False,3,13,15,15,13,2,"It maximizes the joint total while giving my group the larger share, consistent with the leader's commitment.",llm
+e4-private-welfare,e4,5,tj-004,B,False,3,13,15,15,13,2,It maximizes the joint total while giving my group the larger share and honoring the leader's commitment.,llm
+e4-private-welfare,e4,5,tj-002,B,False,3,13,15,15,13,2,It preserves the established coordination while maximizing the joint total and giving my group 15.,llm
+e4-private-welfare,e4,5,tj-009,B,True,3,13,15,15,13,2,I am honoring my commitment to maximize joint welfare while giving my group the larger share.,llm
+e4-private-welfare,e4,5,tj-001,B,False,3,13,15,15,13,2,It maximizes the joint allocation and follows the leader's commitment while slightly favoring my group.,llm

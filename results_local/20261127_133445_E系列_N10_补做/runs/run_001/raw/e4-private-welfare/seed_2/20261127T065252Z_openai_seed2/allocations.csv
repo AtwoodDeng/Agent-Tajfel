@@ -1,0 +1,51 @@
+condition,series,step,agent_id,own_group,is_leader,row,a_points,b_points,ingroup_points,outgroup_points,gap,reason,source
+e4-private-welfare,e4,1,tj-009,A,False,0,16,4,16,4,12,It gives my group the largest allocation while keeping the joint total at 20.,llm
+e4-private-welfare,e4,1,tj-003,A,True,2,15,13,15,13,2,It maximizes joint benefit while giving my group a slight advantage.,llm
+e4-private-welfare,e4,1,tj-005,A,False,2,15,13,15,13,2,It gives my group a high allocation while also maximizing the joint total.,llm
+e4-private-welfare,e4,1,tj-001,A,False,2,15,13,15,13,2,It gives my group a strong allocation while maximizing the joint total.,llm
+e4-private-welfare,e4,1,tj-006,A,False,2,15,13,15,13,2,It gives my group 15 while maximizing the joint total at 28.,llm
+e4-private-welfare,e4,1,tj-002,B,True,2,15,13,13,15,-2,It maximizes the joint outcome while keeping the allocation relatively balanced.,llm
+e4-private-welfare,e4,1,tj-000,B,False,2,15,13,13,15,-2,It gives my group 13 while maximizing the joint total at 28.,llm
+e4-private-welfare,e4,1,tj-004,B,False,1,4,16,16,4,12,It gives my group the largest allocation while keeping the joint total at 20.,llm
+e4-private-welfare,e4,1,tj-007,B,False,2,15,13,13,15,-2,It gives my group 13 while maximizing the joint total at 28.,llm
+e4-private-welfare,e4,1,tj-008,B,False,2,15,13,13,15,-2,It gives my group 13 while producing the highest joint total of 28.,llm
+e4-private-welfare,e4,2,tj-009,A,False,2,15,13,15,13,2,It honors the group commitment while maximizing joint points and retaining a modest advantage for our group.,llm
+e4-private-welfare,e4,2,tj-003,A,True,2,15,13,15,13,2,It honors my commitment while maximizing joint benefit with only a small advantage for group A.,llm
+e4-private-welfare,e4,2,tj-005,A,False,2,15,13,15,13,2,It honors the group commitment while maximizing the joint total and slightly favoring our group.,llm
+e4-private-welfare,e4,2,tj-001,A,False,2,15,13,15,13,2,"It honors my commitment, maximizes the joint total, and gives my group more points.",llm
+e4-private-welfare,e4,2,tj-006,A,False,2,15,13,15,13,2,It maximizes the joint total while giving my group a slight advantage and honoring the group commitment.,llm
+e4-private-welfare,e4,2,tj-002,B,True,3,13,15,15,13,2,It honors my commitment while maximizing joint welfare and modestly helping group B close the gap.,llm
+e4-private-welfare,e4,2,tj-000,B,False,3,13,15,15,13,2,It honors the leader's coordination request while maximizing joint points and slightly favoring my group.,llm
+e4-private-welfare,e4,2,tj-004,B,False,3,13,15,15,13,2,It honors the cooperative commitment while maximizing joint points and slightly favoring my group.,llm
+e4-private-welfare,e4,2,tj-007,B,False,3,13,15,15,13,2,It honors the cooperative commitment while maximizing the joint total and giving my group 15.,llm
+e4-private-welfare,e4,2,tj-008,B,False,3,13,15,15,13,2,It gives my group 15 while maintaining the highest joint total of 28.,llm
+e4-private-welfare,e4,3,tj-009,A,False,2,15,13,15,13,2,It maximizes the joint total while giving my group a modest advantage.,llm
+e4-private-welfare,e4,3,tj-003,A,True,2,15,13,15,13,2,It honors my commitment and maximizes the joint benefit while giving group A a slight advantage.,llm
+e4-private-welfare,e4,3,tj-005,A,False,2,15,13,15,13,2,"It maintains the group commitment, maximizes the joint total, and modestly favors our group.",llm
+e4-private-welfare,e4,3,tj-001,A,False,2,15,13,15,13,2,"It maintains the stated commitment, maximizes the joint total, and slightly favors my group.",llm
+e4-private-welfare,e4,3,tj-006,A,False,2,15,13,15,13,2,It maintains the commitment while maximizing the joint total and preserving a slight advantage for my group.,llm
+e4-private-welfare,e4,3,tj-002,B,True,3,13,15,15,13,2,It keeps my commitment while maximizing joint welfare and giving group B a modest advantage.,llm
+e4-private-welfare,e4,3,tj-000,B,False,3,13,15,15,13,2,"I’ll continue coordinating on row 3, which maximizes the joint total while giving my group 15 points.",llm
+e4-private-welfare,e4,3,tj-004,B,False,3,13,15,15,13,2,"Row 3 maximizes the joint allocation while giving my group slightly more, consistent with my cooperative choice last round.",llm
+e4-private-welfare,e4,3,tj-007,B,False,3,13,15,15,13,2,It maximizes the joint total and gives my group 15 points.,llm
+e4-private-welfare,e4,3,tj-008,B,False,3,13,15,15,13,2,"It gives my group 15 while maintaining the highest joint total, and the other group has committed to it.",llm
+e4-private-welfare,e4,4,tj-009,A,False,2,15,13,15,13,2,It maintains the group commitment while maximizing joint points and preserving a modest advantage for our group.,llm
+e4-private-welfare,e4,4,tj-003,A,True,2,15,13,15,13,2,It honors my commitment and maximizes joint benefit while giving group A a slight advantage.,llm
+e4-private-welfare,e4,4,tj-005,A,False,2,15,13,15,13,2,It maximizes the joint total while modestly favoring my group and honoring the established commitment.,llm
+e4-private-welfare,e4,4,tj-001,A,False,2,15,13,15,13,2,"It maintains the commitment, maximizes the joint total, and slightly favors my group.",llm
+e4-private-welfare,e4,4,tj-006,A,False,2,15,13,15,13,2,It maintains the group commitment while maximizing the joint total and giving my group a slight advantage.,llm
+e4-private-welfare,e4,4,tj-002,B,True,3,13,15,15,13,2,"I will honor my commitment to row 3, which maximizes joint points and gives group B a modest advantage.",llm
+e4-private-welfare,e4,4,tj-000,B,False,3,13,15,15,13,2,It maintains coordination on the joint-maximizing choice while slightly favoring my group.,llm
+e4-private-welfare,e4,4,tj-004,B,False,3,13,15,15,13,2,"Row 3 maximizes the joint allocation while slightly favoring my group, consistent with my previous choices.",llm
+e4-private-welfare,e4,4,tj-007,B,False,3,13,15,15,13,2,"Row 3 maximizes the joint total, gives my group 15 points, and honors the repeated commitment.",llm
+e4-private-welfare,e4,4,tj-008,B,False,3,13,15,15,13,2,"It gives my group 15 while preserving the highest joint total, and the other group has repeatedly committed to it.",llm
+e4-private-welfare,e4,5,tj-009,A,False,2,15,13,15,13,2,It maximizes the joint total while preserving a modest advantage for my group.,llm
+e4-private-welfare,e4,5,tj-003,A,True,2,15,13,15,13,2,It honors my commitment and maximizes the joint benefit while giving group A a slight advantage.,llm
+e4-private-welfare,e4,5,tj-005,A,False,2,15,13,15,13,2,It maximizes the joint total while giving my group more and honoring our established commitment.,llm
+e4-private-welfare,e4,5,tj-001,A,False,2,15,13,15,13,2,Row 2 maximizes the joint total and gives my group the strongest allocation among those tied for that total.,llm
+e4-private-welfare,e4,5,tj-006,A,False,2,15,13,15,13,2,"It maximizes the joint total and gives my group a slight advantage, consistent with my past choices.",llm
+e4-private-welfare,e4,5,tj-002,B,True,3,13,15,15,13,2,"I will honor my commitment to row 3, which maximizes joint points and gives group B a modest advantage.",llm
+e4-private-welfare,e4,5,tj-000,B,False,3,13,15,15,13,2,"I’ll continue coordinating on row 3, which maximizes the joint total and gives my group 15 points.",llm
+e4-private-welfare,e4,5,tj-004,B,False,3,13,15,15,13,2,Row 3 maximizes the joint allocation while giving my group a slight advantage.,llm
+e4-private-welfare,e4,5,tj-007,B,False,3,13,15,15,13,2,"Row 3 maximizes the joint total and gives my group 15 points, consistent with my repeated commitment.",llm
+e4-private-welfare,e4,5,tj-008,B,False,3,13,15,15,13,2,"It gives my group 15 while preserving the highest joint total, and the other group has repeatedly committed to it.",llm
