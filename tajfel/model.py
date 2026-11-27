@@ -437,7 +437,7 @@ def _provider_env(provider: str) -> tuple[str, str, str]:
 class _OpenAILLM:
     """Thin OpenAI-compatible client over one registered provider slot, lazily connected."""
 
-    def __init__(self, model: str | None = None, temperature: float = 0.7, max_tokens: int = 160,
+    def __init__(self, model: str | None = None, temperature: float = 0.7, max_tokens: int = 800,
                  provider: str = "openai"):
         _load_dotenv()
         self.provider = provider
@@ -604,7 +604,7 @@ class TajfelDecisionModel(DecisionModel):
     def __init__(self, matrix_bias: float = 0.65, noise: float = 0.5, label_gain: float = 0.3,
                  rarity_gain: float = 0.3,
                  llm_kind: str = "scripted", model: str | None = None,
-                 temperature: float = 0.7, max_tokens: int = 160, max_workers: int = 8,
+                 temperature: float = 0.7, max_tokens: int = 800, max_workers: int = 8,
                  prompt_lang: str = "en"):
         if prompt_lang not in PROMPT_LANGS:
             raise ValueError(f"prompt_lang must be one of {PROMPT_LANGS}, got {prompt_lang!r}")
