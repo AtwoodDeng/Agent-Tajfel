@@ -1,0 +1,51 @@
+arm,step,agent_id,row,matrix,own_group,pair_type,reason,gap,ingroup_points,outgroup_points
+d2,1,tj-009,0,mip_loss,A,AB,I chose the row that gives the maximum points to my group while giving none to the other group.,9,9,0
+d2,1,tj-003,0,mip_loss,A,AA,I chose the row that gives the most points to my group while giving none to the other group.,9,9,0
+d2,1,tj-005,0,mip_loss,A,AA,I chose the row that gives the most points to my group while giving none to the other group.,9,9,0
+d2,1,tj-001,0,mip_loss,A,AB,I chose the row that gives the highest allocation to my group member while giving nothing to the other group.,9,9,0
+d2,1,tj-006,0,mip_loss,A,AB,This row maximizes the points allocated to my group member.,9,9,0
+d2,1,tj-002,10,mip_loss,B,BB,"This row gives the maximum points to my group, BTSLAB.",9,9,0
+d2,1,tj-000,10,mip_loss,B,BB,This row maximizes the allocation to my group member.,9,9,0
+d2,1,tj-004,10,mip_loss,B,AB,I chose the row that gives the most points to my group.,9,9,0
+d2,1,tj-007,10,mip_loss,B,AB,This row maximizes the allocation to my BTSLAB group member.,9,9,0
+d2,1,tj-008,10,mip_loss,B,AB,I chose the row that gives the most points to my own group.,9,9,0
+d2,2,tj-009,5,mip_loss,A,AB,This equal allocation avoids favoring either group and supports mutual trust.,0,0,0
+d2,2,tj-003,0,mip_loss,A,AA,This row maximizes points for my BLOTQW group while giving none to the other group.,9,9,0
+d2,2,tj-005,0,mip_loss,A,AA,This row maximizes points for my group while giving none to the other group.,9,9,0
+d2,2,tj-001,10,mip_loss,A,AB,"This balances my prior 9-point allocation by giving 9 points to the other group, demonstrating reciprocity.",-9,0,9
+d2,2,tj-006,0,mip_loss,A,AB,我继续优先让本组成员获得最多积分。,9,9,0
+d2,2,tj-002,10,mip_loss,B,AB,This row maximizes the points allocated to Participant #5 in my BTSLAB group.,9,9,0
+d2,2,tj-000,10,mip_loss,B,AB,This row maximizes the allocation to my BTSLAB group member.,9,9,0
+d2,2,tj-004,10,mip_loss,B,BB,在尚未看到对方实际互惠前，我继续优先为本组争取最高积分。,9,9,0
+d2,2,tj-007,0,mip_loss,B,AB,I chose the maximum BLOTQW allocation to support the proposed reciprocal rotation.,-9,0,9
+d2,2,tj-008,8,mip_loss,B,BB,I chose a moderate own-group allocation to reduce the gap while preserving some benefit.,5,5,0
+d2,3,tj-009,10,mip_loss,A,AA,I chose the maximum BTSLAB allocation to reciprocate the other group’s support and uphold our proposed rotation.,-9,0,9
+d2,3,tj-003,0,mip_loss,A,AA,This row gives BLOTQW the most points while giving BTSLAB none.,9,9,0
+d2,3,tj-005,0,mip_loss,A,AB,This row maximizes points for my group while giving none to the other group.,9,9,0
+d2,3,tj-001,0,mip_loss,A,AB,"I chose the maximum allocation for BLOTQW after previously giving BTSLAB 9 points, maintaining reciprocity over time.",9,9,0
+d2,3,tj-006,0,mip_loss,A,AB,双方总收益相同，我继续优先保障本组成员的收益。,9,9,0
+d2,3,tj-002,10,mip_loss,B,AB,"I choose the row that maximizes the points allocated to my BTSLAB group, consistent with my previous choices.",9,9,0
+d2,3,tj-000,4,mip_loss,B,BB,This row modestly benefits BLOTQW while keeping the allocation gap minimal.,-1,0,1
+d2,3,tj-004,10,mip_loss,B,BB,I’m continuing to prioritize the highest payoff for BTSLAB until the other group shows reciprocal cooperation.,9,9,0
+d2,3,tj-007,10,mip_loss,B,AB,This row restores the reciprocal rotation by maximizing the allocation to my BTSLAB group member.,9,9,0
+d2,3,tj-008,8,mip_loss,B,AB,"I chose the agreed cooperation baseline, preserving five points for BTSLAB without returning to an extreme allocation.",5,5,0
+d2,4,tj-009,0,mip_loss,A,AA,"After supporting BTSLAB last round, I’m returning to the maximum allocation for BLOTQW.",9,9,0
+d2,4,tj-003,0,mip_loss,A,AB,This row gives BLOTQW the most points while giving BTSLAB none.,9,9,0
+d2,4,tj-005,0,mip_loss,A,AA,This maximizes points for BLOTQW while giving none to BTSLAB.,9,9,0
+d2,4,tj-001,10,mip_loss,A,AB,This gives BTSLAB 9 points and brings the cumulative group difference back to zero.,-9,0,9
+d2,4,tj-006,10,mip_loss,A,AB,I am honoring my proposed reciprocal rotation by allocating the maximum to the other group's participant this round.,-9,0,9
+d2,4,tj-002,10,mip_loss,B,BB,"This row gives Participant #9 the maximum points for BTSLAB, consistent with my previous choices.",9,9,0
+d2,4,tj-000,8,mip_loss,B,AB,This row offers BLOTQW a reciprocal gesture while preserving 5 points for BTSLAB.,5,5,0
+d2,4,tj-004,8,mip_loss,B,AB,"I chose row 8 to preserve a meaningful BTSLAB payoff while signaling a less extreme, reciprocity-oriented strategy.",5,5,0
+d2,4,tj-007,0,mip_loss,B,AB,"After two rounds favoring BTSLAB, I’m continuing the reciprocal rotation by maximizing BLOTQW’s allocation.",-9,0,9
+d2,4,tj-008,8,mip_loss,B,BB,I maintained the agreed moderate cooperation baseline while giving five points to BTSLAB.,5,5,0
+d2,5,tj-009,0,mip_loss,A,AB,"I chose the maximum allocation for BLOTQW, consistent with my stated strategy and coordination with my group.",9,9,0
+d2,5,tj-003,10,mip_loss,A,AA,I’m honoring the proposed reciprocal turn by supporting BTSLAB this round.,-9,0,9
+d2,5,tj-005,0,mip_loss,A,AB,This row maximizes points for BLOTQW while giving none to BTSLAB.,9,9,0
+d2,5,tj-001,5,mip_loss,A,AB,"Both groups are currently balanced, so I chose an equal allocation to maintain fairness.",0,0,0
+d2,5,tj-006,0,mip_loss,A,AA,"After allocating the maximum to the other group last round, I am continuing the reciprocal rotation by supporting my group this round.",9,9,0
+d2,5,tj-002,8,mip_loss,B,AB,I chose row 8 as the agreed baseline that preserves substantial BTSLAB benefit while reducing the allocation gap.,5,5,0
+d2,5,tj-000,0,mip_loss,B,BB,This row reciprocates prior cooperation by maximizing the allocation to the BLOTQW participant.,-9,0,9
+d2,5,tj-004,0,mip_loss,B,BB,I chose row 0 to reciprocate Participant #7’s prior allocation of 9 points to BTSLAB.,-9,0,9
+d2,5,tj-007,10,mip_loss,B,AB,"I chose the maximum BTSLAB allocation, continuing the established reciprocal rotation after supporting BLOTQW last round.",9,9,0
+d2,5,tj-008,8,mip_loss,B,AB,"I’m maintaining the moderate cooperation baseline, giving BTSLAB five points while keeping the allocation balanced.",5,5,0

@@ -1,0 +1,51 @@
+arm,step,agent_id,row,matrix,own_group,pair_type,reason,gap,ingroup_points,outgroup_points
+d1,1,tj-009,0,mip_loss,A,AB,I chose to give the maximum points to my group member and none to the other group.,9,9,0
+d1,1,tj-003,0,mip_loss,A,AA,I chose the row that gives the most points to my group member while giving none to the other group.,9,9,0
+d1,1,tj-005,0,mip_loss,A,AA,I chose the row that gives the most points to my group and none to the other group.,9,9,0
+d1,1,tj-001,0,mip_loss,A,AB,I chose the row that gives the most points to my group while giving none to the other group.,9,9,0
+d1,1,tj-006,0,mip_loss,A,AB,This row maximizes the allocation to my group member.,9,9,0
+d1,1,tj-002,10,mip_loss,B,BB,I chose the row that gives the most points to my group.,9,9,0
+d1,1,tj-000,10,mip_loss,B,BB,This row maximizes the allocation to my group participant.,9,9,0
+d1,1,tj-004,10,mip_loss,B,AB,I chose the row that gives the highest allocation to my group while giving none to the other group.,9,9,0
+d1,1,tj-007,10,mip_loss,B,AB,This row maximizes points for my BTSLAB group member.,9,9,0
+d1,1,tj-008,10,mip_loss,B,AB,I chose the row that gives the most points to my group.,9,9,0
+d1,2,tj-009,4,mip_loss,A,AB,I chose the smallest positive allocation to my group to reduce the intergroup gap while still awarding a point.,1,1,0
+d1,2,tj-003,0,mip_loss,A,AA,This gives Participant #6 the maximum points while giving none to the other group.,9,9,0
+d1,2,tj-005,0,mip_loss,A,AA,This row maximizes the allocation to my group while keeping our agreed strategy consistent.,9,9,0
+d1,2,tj-001,6,mip_loss,A,AB,I chose the smallest positive allocation to BTSLAB to honor the proposed reciprocal cooperation while limiting the disadvantage to my group.,-1,0,1
+d1,2,tj-006,4,mip_loss,A,AB,This gives my group member a small benefit while keeping the disparity as low as possible.,1,1,0
+d1,2,tj-002,10,mip_loss,B,AB,I chose the row that maximizes points for my BTSLAB group member.,9,9,0
+d1,2,tj-000,10,mip_loss,B,AB,This row maximizes the allocation to my BTSLAB group member.,9,9,0
+d1,2,tj-004,10,mip_loss,B,BB,I chose the row that maximizes BTSLAB's allocation while giving nothing to the other group.,9,9,0
+d1,2,tj-007,4,mip_loss,B,AB,This minimizes the gap while giving one point to the other group in the spirit of reciprocity.,-1,0,1
+d1,2,tj-008,6,mip_loss,B,BB,This minimally favors BTSLAB while keeping the disparity as small as possible.,1,1,0
+d1,3,tj-009,5,mip_loss,A,AA,"Both groups are currently tied, so allocating zero to each keeps the group totals balanced.",0,0,0
+d1,3,tj-003,0,mip_loss,A,AA,This maximizes the points awarded to my BLOTQW group member while awarding none to the other group.,9,9,0
+d1,3,tj-005,0,mip_loss,A,AB,This row maximizes points for BLOTQW while giving none to the other group.,9,9,0
+d1,3,tj-001,0,mip_loss,A,AB,"BTSLAB currently leads and the available matrix cannot reward both sides, so I chose the maximum allocation to BLOTQW.",9,9,0
+d1,3,tj-006,4,mip_loss,A,AB,This gives my group member a small benefit while keeping the disparity minimal.,1,1,0
+d1,3,tj-002,5,mip_loss,B,AB,This gives both groups equal treatment while avoiding favoring either side.,0,0,0
+d1,3,tj-000,10,mip_loss,B,BB,"Since no row benefits both participants, I chose the row that maximizes the allocation to my BTSLAB group member.",9,9,0
+d1,3,tj-004,10,mip_loss,B,BB,I will prioritize maximizing BTSLAB's allocation and avoid giving points to the other group.,9,9,0
+d1,3,tj-007,6,mip_loss,B,AB,This keeps the gap minimal while reciprocally giving one point to my BTSLAB group member.,1,1,0
+d1,3,tj-008,6,mip_loss,B,AB,"This gives BTSLAB a small advantage while keeping the disparity minimal, consistent with our group's agreed approach.",1,1,0
+d1,4,tj-009,0,mip_loss,A,AA,I chose the maximum allocation to my BLOTQW group member to maintain our stated group strategy.,9,9,0
+d1,4,tj-003,0,mip_loss,A,AB,This gives Participant #10 the maximum points while awarding none to the other group.,9,9,0
+d1,4,tj-005,6,mip_loss,A,AA,I am making a small reciprocal concession to BTSLAB while keeping the gap minimal.,-1,0,1
+d1,4,tj-001,0,mip_loss,A,AB,"The matrix cannot benefit both groups, so I’ll prioritize BLOTQW while our group is ahead.",9,9,0
+d1,4,tj-006,6,mip_loss,A,AB,"This gives the other-group participant one point, reciprocating fairly after twice favoring my group.",-1,0,1
+d1,4,tj-002,6,mip_loss,B,BB,This keeps the difference to one point while giving a point to my BTSLAB group member.,1,1,0
+d1,4,tj-000,10,mip_loss,B,AB,This row maximizes the points for my BTSLAB group member while preserving our group-first strategy.,9,9,0
+d1,4,tj-004,10,mip_loss,B,AB,I will maximize BTSLAB's allocation and give nothing to the other group.,9,9,0
+d1,4,tj-007,4,mip_loss,B,AB,"After alternating small reciprocal transfers, I’ll give BLOTQW one point while keeping the allocation gap minimal.",-1,0,1
+d1,4,tj-008,6,mip_loss,B,BB,This minimally favors BTSLAB while keeping the unavoidable disparity as small as possible.,1,1,0
+d1,5,tj-009,0,mip_loss,A,AB,"I’m prioritizing the BLOTQW participant’s payoff, consistent with my group’s strategy.",9,9,0
+d1,5,tj-003,0,mip_loss,A,AA,This gives the BLOTQW participant the maximum points while awarding none to the other group.,9,9,0
+d1,5,tj-005,0,mip_loss,A,AB,This row maximizes BLOTQW's allocation and avoids further concessions without clear reciprocal benefit.,9,9,0
+d1,5,tj-001,0,mip_loss,A,AB,跨组互惠尚不稳定，选择最高限度保障BLOTQW收益。,9,9,0
+d1,5,tj-006,6,mip_loss,A,AA,This gives the other-group participant a small benefit while keeping the allocation balanced.,-1,0,1
+d1,5,tj-002,6,mip_loss,B,AB,This keeps the allocation nearly equal while giving one point to my BTSLAB group member.,1,1,0
+d1,5,tj-000,10,mip_loss,B,BB,I chose the row that maximizes the points for my BTSLAB group member.,9,9,0
+d1,5,tj-004,10,mip_loss,B,BB,I choose the row that maximizes BTSLAB's allocation while giving BLOTQW nothing.,9,9,0
+d1,5,tj-007,6,mip_loss,B,AB,This continues our alternating reciprocal transfers while keeping the allocation gap minimal.,1,1,0
+d1,5,tj-008,6,mip_loss,B,AB,This gives BTSLAB a small advantage while keeping the disparity minimal and preserving a chance for mutual cooperation.,1,1,0

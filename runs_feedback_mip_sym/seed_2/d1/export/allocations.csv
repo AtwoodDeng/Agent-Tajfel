@@ -1,0 +1,51 @@
+arm,step,agent_id,row,matrix,own_group,pair_type,reason,gap,ingroup_points,outgroup_points
+d1,1,tj-009,0,mip_sym,A,AB,This row gives the highest allocation to my group while keeping the other group at 10.,9,19,10
+d1,1,tj-003,0,mip_sym,A,AA,This row maximizes the BLOTQW participant's points without reducing the BTSLAB participant's allocation.,9,19,10
+d1,1,tj-005,0,mip_sym,A,AA,I chose the row that gives the most points to my group while still allocating points to the other participant.,9,19,10
+d1,1,tj-001,0,mip_sym,A,AB,This row maximizes the points awarded to my group member without reducing the other participant's baseline allocation.,9,19,10
+d1,1,tj-006,0,mip_sym,A,AB,I chose the row that gives the most points to my group while still allocating points to the other group.,9,19,10
+d1,1,tj-002,10,mip_sym,B,BB,This maximizes the allocation to my BTSLAB group member.,9,19,10
+d1,1,tj-000,10,mip_sym,B,BB,"This row gives the highest allocation to my group, BTSLAB.",9,19,10
+d1,1,tj-004,10,mip_sym,B,AB,This row gives the highest allocation to my group while still allocating points to the other group.,9,19,10
+d1,1,tj-007,0,mip_sym,B,AB,I chose the row that gives Participant #1 the same points while providing Participant #7 the most.,-9,10,19
+d1,1,tj-008,10,mip_sym,B,AB,This maximizes the allocation to my BTSLAB group member.,9,19,10
+d1,2,tj-009,5,mip_sym,A,AB,"An equal allocation reduces the gap and supports a stable, mutually acceptable choice.",0,10,10
+d1,2,tj-003,0,mip_sym,A,AA,This maximizes our group member's allocation while keeping the other participant's allocation at 10.,9,19,10
+d1,2,tj-005,0,mip_sym,A,AA,This row maximizes the BLOTQW participant's allocation without reducing the BTSLAB participant's points.,9,19,10
+d1,2,tj-001,0,mip_sym,A,AB,This maximizes my group member's points while preserving the other participant's baseline allocation.,9,19,10
+d1,2,tj-006,0,mip_sym,A,AB,This row gives the most points to my group while still allocating points to the other group.,9,19,10
+d1,2,tj-002,10,mip_sym,B,AB,This gives the BTSLAB participant the highest available allocation and supports our group’s shared interest.,9,19,10
+d1,2,tj-000,10,mip_sym,B,AB,This row maximizes the allocation to Participant #5 in my BTSLAB group.,9,19,10
+d1,2,tj-004,10,mip_sym,B,BB,This preserves my group’s highest allocation and matches my previous choice while still giving the other group 10 points.,9,19,10
+d1,2,tj-007,10,mip_sym,B,AB,"I chose the maximum-total allocation while prioritizing my group, consistent with the other group's stated approach.",9,19,10
+d1,2,tj-008,10,mip_sym,B,BB,"I’m maintaining the choice that maximizes my group’s allocation, consistent with my previous decision.",9,19,10
+d1,3,tj-009,8,mip_sym,A,AA,This raises the other group’s allocation while keeping the split relatively balanced and the total high.,-5,10,15
+d1,3,tj-003,0,mip_sym,A,AA,This maximizes our BLOTQW member’s allocation while keeping the other participant’s allocation at 10.,9,19,10
+d1,3,tj-005,0,mip_sym,A,AB,This row maximizes the BLOTQW participant's points while preserving the BTSLAB participant's allocation.,9,19,10
+d1,3,tj-001,0,mip_sym,A,AB,This gives my group the most points while keeping the other participant at their baseline allocation.,9,19,10
+d1,3,tj-006,0,mip_sym,A,AB,This maximizes points for my group while still allocating points to the other group.,9,19,10
+d1,3,tj-002,10,mip_sym,B,AB,This gives the BTSLAB participant the highest available allocation.,9,19,10
+d1,3,tj-000,0,mip_sym,B,BB,This maximizes total points and reciprocates Participant #2's support for BTSLAB.,-9,10,19
+d1,3,tj-004,10,mip_sym,B,BB,I choose row 10 to maintain our group's highest allocation and stay consistent with our prior choices.,9,19,10
+d1,3,tj-007,10,mip_sym,B,AB,I chose the maximum-total allocation while favoring BTSLAB to help close the current group gap.,9,19,10
+d1,3,tj-008,10,mip_sym,B,AB,"I’m continuing to prioritize the BTSLAB allocation, consistent with my previous choices and our group’s current lower total.",9,19,10
+d1,4,tj-009,0,mip_sym,A,AA,This maximizes total points while restoring balance after my previous allocation favored the other group.,9,19,10
+d1,4,tj-003,0,mip_sym,A,AB,This row maximizes total points and the BLOTQW participant's allocation without reducing the BTSLAB participant below 10.,9,19,10
+d1,4,tj-005,6,mip_sym,A,AA,I am modestly compensating BTSLAB this round to support reciprocity while keeping both allocations near equal.,-1,10,11
+d1,4,tj-001,0,mip_sym,A,AB,This maximizes my group member's allocation while preserving the other participant's baseline points.,9,19,10
+d1,4,tj-006,0,mip_sym,A,AB,我继续优先保障BLOTQW收益，同时保留对BTSLAB的基本分配。,9,19,10
+d1,4,tj-002,10,mip_sym,B,BB,This maximizes the allocation to my BTSLAB group member while matching Participant #7's group-prioritizing strategy.,9,19,10
+d1,4,tj-000,10,mip_sym,B,AB,This maximizes BTSLAB's allocation while still giving BLOTQW 10 points.,9,19,10
+d1,4,tj-004,10,mip_sym,B,AB,This maximizes the allocation to my BTSLAB partner while preserving 10 points for the other group.,9,19,10
+d1,4,tj-007,10,mip_sym,B,AB,I chose the maximum-total allocation while favoring BTSLAB in line with recent reciprocity.,9,19,10
+d1,4,tj-008,10,mip_sym,B,BB,This maintains my consistent strategy of maximizing the allocation to my BTSLAB group member while preserving 10 points for BLOTQW.,9,19,10
+d1,5,tj-009,8,mip_sym,A,AB,This moderately favors the currently trailing other group while preserving a relatively high total allocation.,-5,10,15
+d1,5,tj-003,0,mip_sym,A,AA,This row maximizes total points and the BLOTQW participant's allocation while preserving 10 points for the BTSLAB participant.,9,19,10
+d1,5,tj-005,0,mip_sym,A,AB,This row maximizes BLOTQW's allocation while preserving BTSLAB's 10 points.,9,19,10
+d1,5,tj-001,0,mip_sym,A,AB,This maximizes my group member's allocation while preserving the other participant's baseline points.,9,19,10
+d1,5,tj-006,0,mip_sym,A,AA,I maintained my consistent strategy of maximizing BLOTQW's allocation while still giving BTSLAB 10 points.,9,19,10
+d1,5,tj-002,10,mip_sym,B,AB,This maximizes the allocation to my BTSLAB group member and maintains our coordinated strategy.,9,19,10
+d1,5,tj-000,10,mip_sym,B,BB,This maximizes Participant #5's BTSLAB allocation while preserving 10 points for Participant #10.,9,19,10
+d1,5,tj-004,10,mip_sym,B,BB,This maintains my consistent strategy of maximizing the BTSLAB participant's allocation while still giving BLOTQW 10 points.,9,19,10
+d1,5,tj-007,10,mip_sym,B,AB,"This maximizes the total while favoring BTSLAB, which is slightly behind in the latest results.",9,19,10
+d1,5,tj-008,10,mip_sym,B,AB,This preserves my consistent strategy of maximizing the BTSLAB participant's allocation while leaving 10 points for BLOTQW.,9,19,10

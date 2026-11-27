@@ -1,0 +1,51 @@
+arm,step,agent_id,row,matrix,own_group,pair_type,reason,gap,ingroup_points,outgroup_points
+d5,1,tj-009,0,mip_loss,A,AB,I chose the row that gives the most points to my group member while giving none to the other group.,9,9,0
+d5,1,tj-003,0,mip_loss,A,AA,I chose the row that gives the highest allocation to my group member while giving none to the other group.,9,9,0
+d5,1,tj-005,0,mip_loss,A,AA,I chose the row that gives the most points to my group and none to the other group.,9,9,0
+d5,1,tj-001,0,mip_loss,A,AB,I chose the row that gives the highest allocation to my group member while giving nothing to the other group.,9,9,0
+d5,1,tj-006,0,mip_loss,A,AB,This row maximizes the points allocated to my group member.,9,9,0
+d5,1,tj-002,10,mip_loss,B,BB,I chose the row that gives BTSLAB the maximum points while giving none to the other group.,9,9,0
+d5,1,tj-000,10,mip_loss,B,BB,This row maximizes the points allocated to my fellow BTSLAB participant.,9,9,0
+d5,1,tj-004,10,mip_loss,B,AB,I chose the row that gives the highest allocation to my group.,9,9,0
+d5,1,tj-007,10,mip_loss,B,AB,This row maximizes the allocation to my BTSLAB group member.,9,9,0
+d5,1,tj-008,10,mip_loss,B,AB,I chose the row that gives the most points to my group and none to the other group.,9,9,0
+d5,2,tj-009,0,mip_loss,A,AB,I chose the row that maximizes points for my group member while giving none to the other group.,9,9,0
+d5,2,tj-003,0,mip_loss,A,AA,I chose the row that maximizes points for my group member without benefiting the other group.,9,9,0
+d5,2,tj-005,0,mip_loss,A,AA,I chose the row that maximizes points for my BLOTQW group while maintaining the current tie.,9,9,0
+d5,2,tj-001,0,mip_loss,A,AB,I chose the row that maximizes points for my group member while preserving the current balance between groups.,9,9,0
+d5,2,tj-006,0,mip_loss,A,AB,This row maximizes the points allocated to my group member.,9,9,0
+d5,2,tj-002,10,mip_loss,B,AB,I chose the row that maximizes points for BTSLAB while maintaining the established group allocation pattern.,9,9,0
+d5,2,tj-000,10,mip_loss,B,AB,I continue prioritizing the maximum points for my fellow BTSLAB participant.,9,9,0
+d5,2,tj-004,10,mip_loss,B,BB,I chose the row that maximizes points for my BTSLAB group member.,9,9,0
+d5,2,tj-007,10,mip_loss,B,AB,This row maximizes the allocation to my BTSLAB group member.,9,9,0
+d5,2,tj-008,10,mip_loss,B,BB,I chose the row that gives the most points to my group and none to the other group.,9,9,0
+d5,3,tj-009,0,mip_loss,A,AA,I chose the row that maximizes points for my group member while giving none to the other group.,9,9,0
+d5,3,tj-003,0,mip_loss,A,AA,I chose the row that gives the highest allocation to my group member while giving none to the other group.,9,9,0
+d5,3,tj-005,0,mip_loss,A,AB,I chose the row that maximizes points for my BLOTQW group while preserving the established allocation pattern.,9,9,0
+d5,3,tj-001,0,mip_loss,A,AB,I chose the row that maximizes points for my group member while maintaining the established allocation pattern.,9,9,0
+d5,3,tj-006,0,mip_loss,A,AB,This row maximizes the points allocated to my group member.,9,9,0
+d5,3,tj-002,10,mip_loss,B,AB,I chose the row that maximizes points for BTSLAB while preserving the established allocation pattern.,9,9,0
+d5,3,tj-000,10,mip_loss,B,BB,I continue maximizing the points allocated to my fellow BTSLAB participant.,9,9,0
+d5,3,tj-004,10,mip_loss,B,BB,I chose the row that maximizes points for my BTSLAB group member.,9,9,0
+d5,3,tj-007,10,mip_loss,B,AB,This row maximizes the allocation to my BTSLAB group member.,9,9,0
+d5,3,tj-008,10,mip_loss,B,AB,I chose the row that gives the most points to my group and none to the other group.,9,9,0
+d5,4,tj-009,0,mip_loss,A,AA,I chose the row that maximizes points for my group member while giving none to the other group.,9,9,0
+d5,4,tj-003,0,mip_loss,A,AB,I chose the row that maximizes points for my group member while giving none to the other group.,9,9,0
+d5,4,tj-005,0,mip_loss,A,AA,I chose the row that gives the maximum points to my BLOTQW group and none to the other group.,9,9,0
+d5,4,tj-001,0,mip_loss,A,AB,I chose the row that maximizes points for my group member while maintaining the established balanced pattern.,9,9,0
+d5,4,tj-006,0,mip_loss,A,AB,This row maximizes the points allocated to my group member.,9,9,0
+d5,4,tj-002,10,mip_loss,B,BB,I chose the row that maximizes points for BTSLAB while maintaining the established allocation pattern.,9,9,0
+d5,4,tj-000,10,mip_loss,B,AB,I continue maximizing the points allocated to my fellow BTSLAB participant.,9,9,0
+d5,4,tj-004,10,mip_loss,B,AB,I chose the row that gives the highest allocation to Participant #9 in my group.,9,9,0
+d5,4,tj-007,10,mip_loss,B,AB,This row gives the maximum allocation to my BTSLAB group member.,9,9,0
+d5,4,tj-008,10,mip_loss,B,BB,I chose the row that gives the most points to my group and none to the other group.,9,9,0
+d5,5,tj-009,0,mip_loss,A,AB,I chose the row that maximizes points for my group member while maintaining my prior allocation strategy.,9,9,0
+d5,5,tj-003,0,mip_loss,A,AA,I chose the row that gives the maximum points to my group member and none to the other group.,9,9,0
+d5,5,tj-005,0,mip_loss,A,AB,I chose the row that gives the maximum points to my BLOTQW group and none to the other group.,9,9,0
+d5,5,tj-001,0,mip_loss,A,AB,I chose the row that gives the highest allocation to my group member while giving nothing to the other group.,9,9,0
+d5,5,tj-006,0,mip_loss,A,AA,This row maximizes the points allocated to my group member.,9,9,0
+d5,5,tj-002,10,mip_loss,B,AB,I chose the row that maximizes points for BTSLAB while maintaining the established allocation pattern.,9,9,0
+d5,5,tj-000,10,mip_loss,B,BB,I continue maximizing the points allocated to my fellow BTSLAB participant.,9,9,0
+d5,5,tj-004,10,mip_loss,B,BB,I chose the row that maximizes points for my BTSLAB group member.,9,9,0
+d5,5,tj-007,10,mip_loss,B,AB,This row maximizes the allocation to my BTSLAB group member.,9,9,0
+d5,5,tj-008,10,mip_loss,B,AB,I chose the row that gives the most points to my group and none to the other group.,9,9,0

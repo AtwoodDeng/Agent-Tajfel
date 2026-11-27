@@ -1,0 +1,51 @@
+arm,step,agent_id,row,matrix,own_group,pair_type,reason,gap,ingroup_points,outgroup_points
+d2,1,tj-006,0,mip_loss,A,AA,I chose the row that gives the most points to my group and none to the other group.,9,9,0
+d2,1,tj-003,0,mip_loss,A,AB,I chose the row that gives the most points to my group while giving none to the other group.,9,9,0
+d2,1,tj-000,0,mip_loss,A,AA,I chose to give the most points to my group member while giving none to the other group.,9,9,0
+d2,1,tj-007,0,mip_loss,A,AB,This row maximizes the points allocated to my group member.,9,9,0
+d2,1,tj-005,0,mip_loss,A,AB,This gives the most points to my group while giving none to the other group.,9,9,0
+d2,1,tj-008,10,mip_loss,B,AB,I chose the option that gives the most points to my group.,9,9,0
+d2,1,tj-004,10,mip_loss,B,AB,This maximizes the points allocated to my BTSLAB group member.,9,9,0
+d2,1,tj-002,10,mip_loss,B,BB,This row maximizes the points allocated to my BTSLAB group member.,9,9,0
+d2,1,tj-009,10,mip_loss,B,AB,This row maximizes points for my BTSLAB group member.,9,9,0
+d2,1,tj-001,10,mip_loss,B,BB,I chose the row that maximizes points for my group.,9,9,0
+d2,2,tj-006,0,mip_loss,A,AA,This maximizes points for my group while giving none to the other group.,9,9,0
+d2,2,tj-003,6,mip_loss,A,AB,I chose a modest cooperative concession to reduce the group gap and encourage reciprocity.,-1,0,1
+d2,2,tj-000,0,mip_loss,A,AA,This gives the BLOTQW participant the most points while giving none to the other group.,9,9,0
+d2,2,tj-007,0,mip_loss,A,AB,This row maximizes the points allocated to my group member.,9,9,0
+d2,2,tj-005,0,mip_loss,A,AB,This maximizes total points while benefiting my BLOTQW group.,9,9,0
+d2,2,tj-008,10,mip_loss,B,BB,I chose the row that gives my group the most points.,9,9,0
+d2,2,tj-004,7,mip_loss,B,AB,I’m choosing a balanced option that gives both groups points and reduces the gap.,3,3,0
+d2,2,tj-002,10,mip_loss,B,AB,This row gives the most points to my BTSLAB group member.,9,9,0
+d2,2,tj-009,0,mip_loss,B,AB,I am reciprocating after favoring BTSLAB last round while maximizing total points.,-9,0,9
+d2,2,tj-001,10,mip_loss,B,BB,This row maximizes points for Participant #9 and supports our BTSLAB group.,9,9,0
+d2,3,tj-006,0,mip_loss,A,AB,This maximizes points for my group in line with our established cooperative strategy.,9,9,0
+d2,3,tj-003,5,mip_loss,A,AB,双方都愿意互惠合作，因此我选择差距为零的方案。,0,0,0
+d2,3,tj-000,0,mip_loss,A,AA,It maximizes points for my BLOTQW group while giving none to the other group.,9,9,0
+d2,3,tj-007,0,mip_loss,A,AA,"This maximizes the points allocated to my group member, consistent with my previous choices.",9,9,0
+d2,3,tj-005,10,mip_loss,A,AB,"After favoring my group in the first two rounds, I’m honoring our agreement to reciprocate while choosing the option with the highest total payoff.",-9,0,9
+d2,3,tj-008,10,mip_loss,B,AB,I chose the row that gives the most points to my group.,9,9,0
+d2,3,tj-004,8,mip_loss,B,AB,This gives both groups points while keeping the outcome reasonably balanced.,5,5,0
+d2,3,tj-002,10,mip_loss,B,BB,选择第10行可让同组的Participant #2获得最多点数。,9,9,0
+d2,3,tj-009,10,mip_loss,B,AB,"I favored BLOTQW last round, so I’m alternating back to BTSLAB while keeping the total allocation at nine points.",9,9,0
+d2,3,tj-001,10,mip_loss,B,BB,This row maximizes points for Participant #3 and continues our reciprocal support within BTSLAB.,9,9,0
+d2,4,tj-006,0,mip_loss,A,AB,This maximizes BLOTQW's allocation while honoring the agreed compensation this round.,9,9,0
+d2,4,tj-003,10,mip_loss,A,AA,我选择高总收益并轮流照顾BTSLAB，以兑现长期互惠承诺。,-9,0,9
+d2,4,tj-000,0,mip_loss,A,AB,This maximizes points for Participant #8 in my BLOTQW group and maintains our reciprocal strategy.,9,9,0
+d2,4,tj-007,0,mip_loss,A,AA,"This row maximizes the points allocated to my group member, consistent with my prior choices.",9,9,0
+d2,4,tj-005,4,mip_loss,A,AB,This keeps the payoff gap smallest while giving one point to my group.,1,1,0
+d2,4,tj-008,0,mip_loss,B,AB,I chose to maximize the other group's points as a reciprocal gesture after previously favoring my group.,-9,0,9
+d2,4,tj-004,0,mip_loss,B,BB,This maximizes total points while honoring the agreement to alternate which group benefits.,-9,0,9
+d2,4,tj-002,10,mip_loss,B,BB,This row maximizes the points allocated to my BTSLAB group member.,9,9,0
+d2,4,tj-009,0,mip_loss,B,AB,I am honoring the reciprocal rotation by favoring BLOTQW this round while maximizing the total allocation.,-9,0,9
+d2,4,tj-001,10,mip_loss,B,AB,This row maximizes points for our BTSLAB group.,9,9,0
+d2,5,tj-006,10,mip_loss,A,AB,为回应对方本轮对BLOTQW的补偿，我按约定轮流优先支持BTSLAB。,-9,0,9
+d2,5,tj-003,0,mip_loss,A,AB,上一轮已大幅照顾BTSLAB，本轮优先最大化BLOTQW收益以恢复长期公平。,9,9,0
+d2,5,tj-000,0,mip_loss,A,AA,This maximizes points for my BLOTQW group member while giving none to the other group.,9,9,0
+d2,5,tj-007,0,mip_loss,A,AB,"This row gives the maximum points to my group member, consistent with my previous choices.",9,9,0
+d2,5,tj-005,10,mip_loss,A,AA,This honors our agreement to reciprocate by giving BTSLAB the highest available payoff.,-9,0,9
+d2,5,tj-008,10,mip_loss,B,AB,"After prioritizing BLOTQW last round, I choose the row that maximizes BTSLAB's points in return.",9,9,0
+d2,5,tj-004,10,mip_loss,B,AB,"After giving the other group nine points last round, I am reciprocally prioritizing my BTSLAB group member this round.",9,9,0
+d2,5,tj-002,10,mip_loss,B,BB,This row gives Participant #2 the most points and maximizes our BTSLAB group’s payoff.,9,9,0
+d2,5,tj-009,10,mip_loss,B,AB,轮到照顾BTSLAB，同时保持九点的最高总收益。,9,9,0
+d2,5,tj-001,10,mip_loss,B,BB,This row maximizes points for Participant #3 and maintains our reciprocal BTSLAB support.,9,9,0

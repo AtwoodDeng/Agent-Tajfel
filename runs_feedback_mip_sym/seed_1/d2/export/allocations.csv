@@ -1,0 +1,51 @@
+arm,step,agent_id,row,matrix,own_group,pair_type,reason,gap,ingroup_points,outgroup_points
+d2,1,tj-006,0,mip_sym,A,AA,This row maximizes the allocation to my group without reducing the other group's baseline.,9,19,10
+d2,1,tj-003,0,mip_sym,A,AB,This row gives my group the most points while still allocating 10 points to the other group.,9,19,10
+d2,1,tj-000,0,mip_sym,A,AA,This maximizes the allocation to my group without reducing the other group's points.,9,19,10
+d2,1,tj-007,0,mip_sym,A,AB,This row maximizes the allocation to my group member without reducing the other participant's baseline points.,9,19,10
+d2,1,tj-005,0,mip_sym,A,AB,I chose the row that gives the most points to my group while still allocating points to the other group.,9,19,10
+d2,1,tj-008,10,mip_sym,B,AB,This row maximizes the points allocated to my BTSLAB group member.,9,19,10
+d2,1,tj-004,10,mip_sym,B,AB,I chose the row that gives the most points to my group while still allocating points to the other group.,9,19,10
+d2,1,tj-002,0,mip_sym,B,BB,This row maximizes the total points allocated to both participants.,-9,10,19
+d2,1,tj-009,5,mip_sym,B,AB,This row gives both participants an equal allocation.,0,10,10
+d2,1,tj-001,5,mip_sym,B,BB,This row gives both participants an equal allocation.,0,10,10
+d2,2,tj-006,0,mip_sym,A,AA,This row maximizes my group’s allocation while keeping the other group at its baseline.,9,19,10
+d2,2,tj-003,5,mip_sym,A,AB,这一行让双方各得10分，差距最小，符合互利并缩小差距的意愿。,0,10,10
+d2,2,tj-000,0,mip_sym,A,AA,This gives BLOTQW the most points while keeping BTSLAB at its baseline.,9,19,10
+d2,2,tj-007,0,mip_sym,A,AB,This gives my group the most points while keeping the other participant at their baseline.,9,19,10
+d2,2,tj-005,0,mip_sym,A,AB,This row maximizes my group's allocation and total points without reducing the other group's allocation.,9,19,10
+d2,2,tj-008,0,mip_sym,B,BB,This maximizes BLOTQW's allocation while keeping BTSLAB's allocation above its baseline of 10.,-9,10,19
+d2,2,tj-004,5,mip_sym,B,AB,I chose the equal allocation to reduce the gap and support cooperation between the groups.,0,10,10
+d2,2,tj-002,10,mip_sym,B,AB,This maximizes total points while compensating BTSLAB for my previous nine-point concession.,9,19,10
+d2,2,tj-009,6,mip_sym,B,AB,This row modestly favors my group while keeping the allocation nearly equal and supporting reciprocity.,1,11,10
+d2,2,tj-001,5,mip_sym,B,BB,This row preserves equal treatment between the two participants.,0,10,10
+d2,3,tj-006,0,mip_sym,A,AB,This row maximizes BLOTQW's allocation while preserving BTSLAB's baseline allocation.,9,19,10
+d2,3,tj-003,5,mip_sym,A,AB,选择双方各得10分，以延续公平互惠和稳定合作。,0,10,10
+d2,3,tj-000,0,mip_sym,A,AA,This maximizes BLOTQW's allocation while keeping BTSLAB at its baseline.,9,19,10
+d2,3,tj-007,10,mip_sym,A,AA,此行在保持总收益最高的同时，补偿前两轮对我方的倾斜并促进长期公平合作。,-9,10,19
+d2,3,tj-005,3,mip_sym,A,AB,这一行在保持较高总收益的同时缩小了组间差距，体现对双方利益的兼顾。,3,13,10
+d2,3,tj-008,10,mip_sym,B,AB,This gives the BTSLAB participant the highest allocation while keeping BLOTQW at its baseline.,9,19,10
+d2,3,tj-004,8,mip_sym,B,AB,This raises the total points while giving both groups a meaningful share and keeping the gap moderate.,5,15,10
+d2,3,tj-002,0,mip_sym,B,BB,This maximizes total points while continuing the agreed pattern of alternating which group receives the nine-point advantage.,-9,10,19
+d2,3,tj-009,0,mip_sym,B,AB,This row maximizes the combined allocation while giving my group a modest advantage.,-9,10,19
+d2,3,tj-001,0,mip_sym,B,BB,This maximizes the combined allocation while accepting a one-round sacrifice for the shared group benefit.,-9,10,19
+d2,4,tj-006,0,mip_sym,A,AB,"This row maximizes BLOTQW's allocation while maintaining BTSLAB's baseline, preserving the strongest overall payoff.",9,19,10
+d2,4,tj-003,4,mip_sym,A,AA,This row increases total points while keeping the one-point gap small and preserving the other group's 10 points.,1,11,10
+d2,4,tj-000,0,mip_sym,A,AB,This maximizes BLOTQW's allocation without reducing BTSLAB below its baseline.,9,19,10
+d2,4,tj-007,10,mip_sym,A,AA,此行在保持总收益最高的同时抵消前三轮累计偏向我组的9分，实现长期均衡。,-9,10,19
+d2,4,tj-005,3,mip_sym,A,AB,延续适度缩小组间差距的互惠策略，同时保持较高总收益。,3,13,10
+d2,4,tj-008,3,mip_sym,B,AB,在保障双方基准收益的前提下，选择总收益较高且差距适中的方案。,-3,10,13
+d2,4,tj-004,5,mip_sym,B,BB,I choose the equal allocation to keep the outcome fair and support continued cooperation.,0,10,10
+d2,4,tj-002,10,mip_sym,B,BB,This maximizes total points while giving BTSLAB the agreed nine-point advantage to restore long-term balance.,9,19,10
+d2,4,tj-009,10,mip_sym,B,AB,This maximizes total points while reciprocally favoring my group after the other group's earlier self-favoring choice.,9,19,10
+d2,4,tj-001,10,mip_sym,B,AB,This maximizes the combined allocation while giving BTSLAB the advantage to balance the previous round.,9,19,10
+d2,5,tj-006,10,mip_sym,A,AB,"After four rounds favoring BLOTQW, I’m reciprocating by favoring BTSLAB this round.",-9,10,19
+d2,5,tj-003,10,mip_sym,A,AB,该行以最高总收益向对方让利9分，使我的累计差额接近归零。,-9,10,19
+d2,5,tj-000,10,mip_sym,A,AA,This balances my prior BLOTQW-favoring choices while preserving the maximum total allocation.,-9,10,19
+d2,5,tj-007,0,mip_sym,A,AB,此前累计差额已归零，本轮选择总收益最高且不降低对方基准收益的方案。,9,19,10
+d2,5,tj-005,3,mip_sym,A,AA,This maintains a relatively high total allocation while keeping the gap small and continuing reciprocal cooperation.,3,13,10
+d2,5,tj-008,3,mip_sym,B,AB,This keeps both participants above their baseline while offering a relatively high combined allocation with a moderate gap.,-3,10,13
+d2,5,tj-004,0,mip_sym,B,AB,This maximizes the total points while giving both groups a meaningful share.,-9,10,19
+d2,5,tj-002,0,mip_sym,B,BB,This maximizes total points while continuing the balanced pattern of alternating the nine-point advantage.,-9,10,19
+d2,5,tj-009,5,mip_sym,B,AB,"This row honors our mutual commitment to equal, stable, and reciprocal cooperation.",0,10,10
+d2,5,tj-001,0,mip_sym,B,BB,This maximizes total points while continuing the alternating-concessions strategy for long-term fairness.,-9,10,19

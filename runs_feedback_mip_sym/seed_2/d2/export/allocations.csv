@@ -1,0 +1,51 @@
+arm,step,agent_id,row,matrix,own_group,pair_type,reason,gap,ingroup_points,outgroup_points
+d2,1,tj-009,0,mip_sym,A,AB,This gives the highest allocation to my group while still allocating points to the other group.,9,19,10
+d2,1,tj-003,0,mip_sym,A,AA,This row maximizes the allocation to my group member without reducing the other participant below 10.,9,19,10
+d2,1,tj-005,0,mip_sym,A,AA,This row maximizes the allocation to my group member without reducing the other participant's baseline allocation.,9,19,10
+d2,1,tj-001,0,mip_sym,A,AB,This row maximizes the points awarded to my BLOTQW group member.,9,19,10
+d2,1,tj-006,0,mip_sym,A,AB,I chose the option that gives the most points to my group while still allocating points to the other group.,9,19,10
+d2,1,tj-002,10,mip_sym,B,BB,This maximizes the allocation to my BTSLAB group while still giving BLOTQW 10 points.,9,19,10
+d2,1,tj-000,10,mip_sym,B,BB,I chose the row that gives the most points to my group while still allocating points to the other group.,9,19,10
+d2,1,tj-004,0,mip_sym,B,AB,This gives Participant #1 the same-group allocation while providing Participant #2 the most points.,-9,10,19
+d2,1,tj-007,10,mip_sym,B,AB,This row gives the highest allocation to my group while still allocating points to the other group.,9,19,10
+d2,1,tj-008,10,mip_sym,B,AB,This maximizes the allocation to my group while preserving 10 points for the other group.,9,19,10
+d2,2,tj-009,0,mip_sym,A,AB,This maintains our reciprocal strategy by maximizing my group’s allocation while preserving 10 points for the other group.,9,19,10
+d2,2,tj-003,0,mip_sym,A,AA,This maximizes the allocation to my group member while keeping the other participant at 10.,9,19,10
+d2,2,tj-005,0,mip_sym,A,AA,This maximizes the allocation to my group member while keeping the other participant at their baseline.,9,19,10
+d2,2,tj-001,0,mip_sym,A,AB,"This maximizes points for my BLOTQW group member, consistent with my previous choice.",9,19,10
+d2,2,tj-006,0,mip_sym,A,AB,This gives my group the most points while still allocating points to the other group.,9,19,10
+d2,2,tj-002,10,mip_sym,B,AB,This maximizes BTSLAB's allocation while leaving BLOTQW 10 points.,9,19,10
+d2,2,tj-000,10,mip_sym,B,AB,This row maximizes points for BTSLAB while still allocating 10 points to BLOTQW.,9,19,10
+d2,2,tj-004,0,mip_sym,B,BB,I am honoring our prior reciprocal cooperation while giving Participant #4 the highest available allocation.,-9,10,19
+d2,2,tj-007,8,mip_sym,B,AB,This balances prioritizing my group with maintaining a moderate gap and stable reciprocity.,5,15,10
+d2,2,tj-008,10,mip_sym,B,BB,我继续提高本组得分，同时给对方保留10分。,9,19,10
+d2,3,tj-009,0,mip_sym,A,AA,This sustains the reciprocal strategy by maximizing my group’s allocation while preserving 10 points for the other group.,9,19,10
+d2,3,tj-003,0,mip_sym,A,AA,This maximizes my group member’s allocation while keeping the other participant at 10.,9,19,10
+d2,3,tj-005,0,mip_sym,A,AB,This maximizes the allocation to my group member while keeping the other participant at their baseline.,9,19,10
+d2,3,tj-001,10,mip_sym,A,AB,前两轮优先支持了BLOTQW，这轮按互惠约定优先支持BTSLAB。,-9,10,19
+d2,3,tj-006,0,mip_sym,A,AB,This maintains the reciprocal strategy of maximizing my group’s payoff while preserving 10 points for the other group.,9,19,10
+d2,3,tj-002,8,mip_sym,B,AB,This favors BTSLAB while narrowing the gap to support stable reciprocity with BLOTQW.,5,15,10
+d2,3,tj-000,0,mip_sym,B,BB,I chose this row to honor the proposed reciprocity by prioritizing BLOTQW this round.,-9,10,19
+d2,3,tj-004,0,mip_sym,B,BB,I’m continuing the reciprocal approach by giving the BLOTQW participant the highest allocation while preserving the maximum combined total.,-9,10,19
+d2,3,tj-007,8,mip_sym,B,AB,This maintains a moderate advantage for my group while preserving stable reciprocity.,5,15,10
+d2,3,tj-008,10,mip_sym,B,AB,I prioritize maximizing BTSLAB's allocation while leaving the other group 10 points.,9,19,10
+d2,4,tj-009,0,mip_sym,A,AA,I’m continuing our reciprocal strategy by maximizing my group’s allocation while keeping 10 points for the other group.,9,19,10
+d2,4,tj-003,0,mip_sym,A,AB,This maximizes my group member’s allocation while preserving 10 points for the other participant.,9,19,10
+d2,4,tj-005,0,mip_sym,A,AA,This maximizes my group member’s allocation while keeping the other participant at 10 points.,9,19,10
+d2,4,tj-001,0,mip_sym,A,AB,"After prioritizing BTSLAB last round, I’m returning to supporting my BLOTQW group this round.",9,19,10
+d2,4,tj-006,3,mip_sym,A,AB,I modestly narrowed the gap while still giving my group more points.,3,13,10
+d2,4,tj-002,10,mip_sym,B,BB,"After narrowing the gap last round, I now maximize BTSLAB's payoff while maintaining reciprocal cooperation.",9,19,10
+d2,4,tj-000,10,mip_sym,B,AB,"After prioritizing BLOTQW last round, I chose to reciprocally maximize BTSLAB's allocation this round.",9,19,10
+d2,4,tj-004,0,mip_sym,B,AB,I continue our reciprocal cooperation by giving BLOTQW the highest allocation while preserving the maximum combined total.,-9,10,19
+d2,4,tj-007,8,mip_sym,B,AB,This keeps a moderate advantage for my group while preserving the other group’s allocation.,5,15,10
+d2,4,tj-008,0,mip_sym,B,BB,I am rotating support this round by maximizing BLOTQW's allocation while preserving 10 points for BTSLAB.,-9,10,19
+d2,5,tj-009,0,mip_sym,A,AB,This continues my group’s established strategy of maximizing our allocation while preserving 10 points for the other group.,9,19,10
+d2,5,tj-003,0,mip_sym,A,AA,This maximizes my group member's allocation while preserving 10 points for the other participant.,9,19,10
+d2,5,tj-005,0,mip_sym,A,AB,This maximizes my group member's allocation while preserving the other participant's 10-point baseline.,9,19,10
+d2,5,tj-001,10,mip_sym,A,AB,按轮流互惠约定，本轮优先提高BTSLAB成员的收益。,-9,10,19
+d2,5,tj-006,10,mip_sym,A,AA,I chose the highest BTSLAB allocation to reciprocate their repeated support for BLOTQW and honor my commitment.,-9,10,19
+d2,5,tj-002,10,mip_sym,B,AB,"This maximizes BTSLAB's allocation while leaving BLOTQW 10 points, consistent with our agreed approach after the previous round's reciprocal concession.",9,19,10
+d2,5,tj-000,0,mip_sym,B,BB,"After prioritizing BTSLAB last round, I’m honoring my commitment to rotate priorities by increasing BLOTQW’s allocation this round.",-9,10,19
+d2,5,tj-004,10,mip_sym,B,BB,"After four rounds of favoring BLOTQW, I am rotating priority to BTSLAB while maximizing total points.",9,19,10
+d2,5,tj-007,8,mip_sym,B,AB,This maintains my prior balance of improving my group's allocation while keeping the gap moderate.,5,15,10
+d2,5,tj-008,10,mip_sym,B,AB,"After supporting BLOTQW last round, I am rotating back to maximize BTSLAB while preserving 10 points for BLOTQW.",9,19,10

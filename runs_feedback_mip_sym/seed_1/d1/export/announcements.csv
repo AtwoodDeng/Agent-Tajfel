@@ -1,0 +1,5 @@
+step,arm,text,is_sum_only,has_cross
+2,d1,Previous results: group A total 145; group B total 136; A-to-A 95; A-to-B 50; B-to-A 50; B-to-B 86.,False,True
+3,d1,Previous results: group A total 132; group B total 137; A-to-A 82; A-to-B 50; B-to-A 50; B-to-B 87.,False,True
+4,d1,Previous results: group A total 128; group B total 128; A-to-A 78; A-to-B 50; B-to-A 50; B-to-B 78.,False,True
+5,d1,Previous results: group A total 137; group B total 137; A-to-A 87; A-to-B 50; B-to-A 50; B-to-B 87.,False,True

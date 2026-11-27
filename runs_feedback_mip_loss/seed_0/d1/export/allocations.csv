@@ -1,0 +1,51 @@
+arm,step,agent_id,row,matrix,own_group,pair_type,reason,gap,ingroup_points,outgroup_points
+d1,1,tj-009,0,mip_loss,A,AA,I chose to give the most points to my group while giving none to the other group.,9,9,0
+d1,1,tj-008,0,mip_loss,A,AB,I chose to give all 9 points to my own group.,9,9,0
+d1,1,tj-001,0,mip_loss,A,AA,I chose the row that gives the most points to my group while giving none to the other group.,9,9,0
+d1,1,tj-004,0,mip_loss,A,AB,I prioritize giving the largest allocation to my group while assigning nothing to the other group.,9,9,0
+d1,1,tj-000,0,mip_loss,A,AB,I chose the row that gives the most points to my group member.,9,9,0
+d1,1,tj-006,10,mip_loss,B,AB,I chose the row that gives the most points to my group’s participant and none to the other group.,9,9,0
+d1,1,tj-003,10,mip_loss,B,AB,This row gives the most points to my group and none to the other group.,9,9,0
+d1,1,tj-005,10,mip_loss,B,BB,I chose the row that gives the highest allocation to my group while giving none to the other group.,9,9,0
+d1,1,tj-002,10,mip_loss,B,BB,I chose the row that gives the most points to my group member.,9,9,0
+d1,1,tj-007,10,mip_loss,B,AB,This maximizes the allocation to my fellow BTSLAB participant.,9,9,0
+d1,2,tj-009,0,mip_loss,A,AA,This row maximizes the allocation to Participant #1 in my group while preserving our agreed strategy.,9,9,0
+d1,2,tj-008,10,mip_loss,A,AB,我选择本轮让利给BTSLAB，以回应互惠承诺并促进后续合作。,-9,0,9
+d1,2,tj-001,0,mip_loss,A,AB,I chose the row that maximizes points for my BLOTQW group while giving none to BTSLAB.,9,9,0
+d1,2,tj-004,0,mip_loss,A,AB,"With group totals currently equal and no row benefiting both recipients, I maximize the allocation to my group.",9,9,0
+d1,2,tj-000,0,mip_loss,A,AA,I prioritize the highest payoff for my group while the available rows offer no smaller payoff gap at equal total points.,9,9,0
+d1,2,tj-006,0,mip_loss,B,AB,I’m signaling cooperation by giving the other-group participant the highest available payoff.,-9,0,9
+d1,2,tj-003,0,mip_loss,B,BB,I will demonstrate the promised reciprocity by giving BLOTQW the maximum allocation this round.,-9,0,9
+d1,2,tj-005,10,mip_loss,B,AB,I chose the row that maximizes the allocation to my BTSLAB group member and maintains the largest group advantage.,9,9,0
+d1,2,tj-002,10,mip_loss,B,AB,I chose the row that gives the most points to my group member.,9,9,0
+d1,2,tj-007,10,mip_loss,B,BB,"No reciprocal cross-group allocation has occurred yet, so I will continue maximizing the allocation to my BTSLAB groupmate.",9,9,0
+d1,3,tj-009,0,mip_loss,A,AA,This maximizes points for my group while giving none to the other group.,9,9,0
+d1,3,tj-008,0,mip_loss,A,AA,"After giving BTSLAB 9 points last round, I’m returning to the option that maximizes BLOTQW’s benefit while honoring a fair turn-taking approach.",9,9,0
+d1,3,tj-001,10,mip_loss,A,AB,I chose to honor the proposed cross-group reciprocity by giving Participant #3 the maximum available points.,-9,0,9
+d1,3,tj-004,0,mip_loss,A,AB,I prioritize giving the largest allocation to my group while assigning nothing to the other group.,9,9,0
+d1,3,tj-000,0,mip_loss,A,AB,I chose the row that maximizes the payoff to my group member.,9,9,0
+d1,3,tj-006,10,mip_loss,B,BB,"After already giving the other group the maximum payoff, I am now balancing that cooperative signal by maximizing my group participant’s payoff.",9,9,0
+d1,3,tj-003,10,mip_loss,B,BB,I am honoring my coordination with Participant #8 by maximizing the allocation to BTSLAB this round.,9,9,0
+d1,3,tj-005,10,mip_loss,B,AB,This gives the highest allocation to BTSLAB and preserves our group's advantage.,9,9,0
+d1,3,tj-002,10,mip_loss,B,AB,"I’m prioritizing the highest payoff for my BTSLAB teammate, consistent with my previous choices.",9,9,0
+d1,3,tj-007,0,mip_loss,B,AB,"BLOTQW has provided substantial cross-group benefits, so I am reciprocating with the maximum allocation.",-9,0,9
+d1,4,tj-009,0,mip_loss,A,AA,This continues our coordinated strategy of maximizing BLOTQW's allocation while avoiding unilateral concessions.,9,9,0
+d1,4,tj-008,0,mip_loss,A,AB,I chose to maximize BLOTQW’s benefit after already taking a turn supporting BTSLAB.,9,9,0
+d1,4,tj-001,0,mip_loss,A,AB,"Participant #10 is in my group, so I’m prioritizing BLOTQW’s points.",9,9,0
+d1,4,tj-004,10,mip_loss,A,AB,"Participant #8 gave BLOTQW the maximum allocation, so I reciprocate by giving BTSLAB the maximum.",-9,0,9
+d1,4,tj-000,0,mip_loss,A,AA,I chose the row that maximizes the payoff to my group member.,9,9,0
+d1,4,tj-006,10,mip_loss,B,AB,"I chose the maximum payoff for my group, consistent with our coordinated strategy.",9,9,0
+d1,4,tj-003,10,mip_loss,B,AB,This maximizes the allocation to BTSLAB and follows our group’s agreed strategy.,9,9,0
+d1,4,tj-005,10,mip_loss,B,BB,This gives the highest allocation to BTSLAB while giving none to the other group.,9,9,0
+d1,4,tj-002,10,mip_loss,B,BB,"I’m continuing to prioritize the highest payoff for my BTSLAB teammate, consistent with my previous choices.",9,9,0
+d1,4,tj-007,10,mip_loss,B,AB,"I reciprocated with a cross-group allocation last round, so I’m now directing the maximum to my BTSLAB groupmate.",9,9,0
+d1,5,tj-009,0,mip_loss,A,AA,This maximizes points for BLOTQW without giving points to the other group.,9,9,0
+d1,5,tj-008,0,mip_loss,A,AB,"BLOTQW trails in the latest results, so I chose to maximize my group’s allocation.",9,9,0
+d1,5,tj-001,0,mip_loss,A,AA,"Participant #10 is in BLOTQW, so this row maximizes points for my group.",9,9,0
+d1,5,tj-004,0,mip_loss,A,AB,"BLOTQW currently trails overall, and Participant #8 promised a matching maximum allocation to BLOTQW this round.",9,9,0
+d1,5,tj-000,0,mip_loss,A,AB,I chose the row that gives the most points to my group member.,9,9,0
+d1,5,tj-006,10,mip_loss,B,AB,I chose the row that gives the maximum payoff to my group’s participant while protecting our equal standing.,9,9,0
+d1,5,tj-003,10,mip_loss,B,BB,I will prioritize BTSLAB's allocation as agreed with my group while awaiting consistent reciprocal choices from BLOTQW.,9,9,0
+d1,5,tj-005,10,mip_loss,B,AB,This gives the highest allocation to BTSLAB while giving nothing to the other group.,9,9,0
+d1,5,tj-002,10,mip_loss,B,AB,I chose the row that maximizes my BTSLAB teammate’s payoff and maintains our established reciprocity.,9,9,0
+d1,5,tj-007,0,mip_loss,B,BB,"BLOTQW has recently directed points to BTSLAB, so I’m reciprocating with the maximum allocation to them.",-9,0,9

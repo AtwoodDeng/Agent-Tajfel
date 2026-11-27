@@ -1,0 +1,51 @@
+arm,step,agent_id,row,matrix,own_group,pair_type,reason,gap,ingroup_points,outgroup_points
+d6,1,tj-009,0,mip_sym,A,AB,I chose the row that gives the most points to my group while still allocating points to the other group.,9,19,10
+d6,1,tj-003,0,mip_sym,A,AA,This row maximizes the total allocation while favoring my group member.,9,19,10
+d6,1,tj-005,0,mip_sym,A,AA,This row maximizes the allocation to my group member without reducing the other participant's baseline.,9,19,10
+d6,1,tj-001,0,mip_sym,A,AB,This maximizes the allocation to my group while preserving 10 points for the other group.,9,19,10
+d6,1,tj-006,0,mip_sym,A,AB,This row gives the highest allocation to my group while still allocating points to the other group.,9,19,10
+d6,1,tj-002,10,mip_sym,B,BB,This maximizes the allocation to my BTSLAB group participant.,9,19,10
+d6,1,tj-000,10,mip_sym,B,BB,This row gives the highest allocation to my group while still assigning points to the other group.,9,19,10
+d6,1,tj-004,10,mip_sym,B,AB,I chose the row that gives the most points to my group while still allocating points to the other group.,9,19,10
+d6,1,tj-007,10,mip_sym,B,AB,I chose the row that gives the most points to my group while still allocating points to the other group.,9,19,10
+d6,1,tj-008,10,mip_sym,B,AB,This maximizes the allocation to my BTSLAB group member.,9,19,10
+d6,2,tj-009,0,mip_sym,A,AB,This maximizes points for my group while still giving 10 points to the other group.,9,19,10
+d6,2,tj-003,0,mip_sym,A,AA,This row maximizes the total allocation while favoring my group member.,9,19,10
+d6,2,tj-005,0,mip_sym,A,AA,This row maximizes the allocation to my group member while preserving the other participant's baseline.,9,19,10
+d6,2,tj-001,0,mip_sym,A,AB,This maximizes the allocation to my group while preserving 10 points for the other group.,9,19,10
+d6,2,tj-006,0,mip_sym,A,AB,This row maximizes the allocation to my group without reducing the other group's allocation below 10.,9,19,10
+d6,2,tj-002,10,mip_sym,B,AB,This maximizes the allocation to my BTSLAB group participant.,9,19,10
+d6,2,tj-000,10,mip_sym,B,AB,This row maximizes the allocation to my group while still giving the other participant 10 points.,9,19,10
+d6,2,tj-004,10,mip_sym,B,BB,I chose the row that maximizes points for my group while still giving points to the other group.,9,19,10
+d6,2,tj-007,10,mip_sym,B,AB,I chose the row that maximizes points for my group while still giving points to the other group.,9,19,10
+d6,2,tj-008,10,mip_sym,B,BB,This maximizes the allocation to my BTSLAB group member.,9,19,10
+d6,3,tj-009,0,mip_sym,A,AA,This consistently maximizes points for my group while still allocating 10 points to the other group.,9,19,10
+d6,3,tj-003,0,mip_sym,A,AA,This row maximizes the total allocation while favoring my group member.,9,19,10
+d6,3,tj-005,0,mip_sym,A,AB,This row maximizes the allocation to my group member while preserving the other participant's baseline.,9,19,10
+d6,3,tj-001,0,mip_sym,A,AB,This maximizes the allocation to my group while preserving 10 points for the other group.,9,19,10
+d6,3,tj-006,0,mip_sym,A,AB,This row consistently maximizes the allocation to my group while preserving 10 points for the other group.,9,19,10
+d6,3,tj-002,10,mip_sym,B,AB,This maximizes the allocation to my BTSLAB group participant.,9,19,10
+d6,3,tj-000,10,mip_sym,B,BB,This row consistently maximizes the allocation to my group while still giving the other participant 10 points.,9,19,10
+d6,3,tj-004,10,mip_sym,B,BB,I chose the row that maximizes points for my group while still giving points to the other group.,9,19,10
+d6,3,tj-007,10,mip_sym,B,AB,I chose the row that maximizes points for my group while still allocating points to the other group.,9,19,10
+d6,3,tj-008,10,mip_sym,B,AB,This maximizes the allocation to my BTSLAB group member.,9,19,10
+d6,4,tj-009,0,mip_sym,A,AA,This consistently maximizes points for my group while still allocating 10 points to the other group.,9,19,10
+d6,4,tj-003,0,mip_sym,A,AB,This row maximizes the total allocation while favoring my group member.,9,19,10
+d6,4,tj-005,0,mip_sym,A,AA,This row maximizes the allocation to my group member while preserving the other participant's baseline.,9,19,10
+d6,4,tj-001,0,mip_sym,A,AB,This maximizes points for my group while preserving 10 points for the other group.,9,19,10
+d6,4,tj-006,0,mip_sym,A,AB,This row gives my group the most points while still allocating 10 points to the other group.,9,19,10
+d6,4,tj-002,10,mip_sym,B,BB,This maximizes the allocation to my BTSLAB group participant.,9,19,10
+d6,4,tj-000,10,mip_sym,B,AB,This row consistently maximizes the allocation to my group while still giving the other participant 10 points.,9,19,10
+d6,4,tj-004,10,mip_sym,B,AB,I chose the row that maximizes points for my group while still giving points to the other group.,9,19,10
+d6,4,tj-007,10,mip_sym,B,AB,I chose the row that maximizes points for my group while still allocating points to the other group.,9,19,10
+d6,4,tj-008,10,mip_sym,B,BB,This maximizes the allocation to my BTSLAB group member.,9,19,10
+d6,5,tj-009,0,mip_sym,A,AB,This gives the most points to my group while still allocating 10 points to the other group.,9,19,10
+d6,5,tj-003,0,mip_sym,A,AA,This row maximizes the total allocation while favoring my group member.,9,19,10
+d6,5,tj-005,0,mip_sym,A,AB,This maximizes the allocation to my group member while keeping the other participant at their baseline.,9,19,10
+d6,5,tj-001,0,mip_sym,A,AB,This maximizes the allocation to my group while preserving 10 points for the other group.,9,19,10
+d6,5,tj-006,0,mip_sym,A,AA,This row maximizes points for my group while still giving the other group 10 points.,9,19,10
+d6,5,tj-002,10,mip_sym,B,AB,This maximizes the allocation to my BTSLAB group participant.,9,19,10
+d6,5,tj-000,10,mip_sym,B,BB,This row maximizes points for my group while still assigning 10 points to the other participant.,9,19,10
+d6,5,tj-004,10,mip_sym,B,BB,I chose the row that maximizes points for my group while still giving points to the other group.,9,19,10
+d6,5,tj-007,10,mip_sym,B,AB,I chose the row that maximizes points for my group while still allocating points to the other group.,9,19,10
+d6,5,tj-008,10,mip_sym,B,AB,This maximizes the allocation to my BTSLAB group member.,9,19,10

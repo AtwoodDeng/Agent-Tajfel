@@ -1,0 +1,6 @@
+step,mean_gap,mif_favour_share,group_welfare,n_messages,mean_message_len,fallback_rate,n_allocations,mean_gap_samepair,mean_gap_crosspair
+1,5.4,0.7,0.8,20,71.4,0.0,10,2.25,7.5
+2,3.7,0.6,0.6111,20,84.6,0.0,10,2.25,4.6667
+3,-0.1,0.5,0.7889,20,82.35,0.0,10,-4.5,2.8333
+4,3.7,0.7,0.6778,20,93.2,0.0,10,0.25,6.0
+5,-4.5,0.2,0.7667,20,93.65,0.0,10,-6.0,-3.5

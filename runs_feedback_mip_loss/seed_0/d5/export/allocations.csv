@@ -1,0 +1,51 @@
+arm,step,agent_id,row,matrix,own_group,pair_type,reason,gap,ingroup_points,outgroup_points
+d5,1,tj-009,0,mip_loss,A,AA,I chose the row that gives the most points to my group and none to the other group.,9,9,0
+d5,1,tj-008,0,mip_loss,A,AB,I chose the row that gives the most points to my group and none to the other group.,9,9,0
+d5,1,tj-001,0,mip_loss,A,AA,I chose to give the maximum points to Participant #10 in my group.,9,9,0
+d5,1,tj-004,0,mip_loss,A,AB,I chose the row that gives the most points to my group.,9,9,0
+d5,1,tj-000,0,mip_loss,A,AB,I chose the row that gives the most points to my in-group participant.,9,9,0
+d5,1,tj-006,10,mip_loss,B,AB,I prioritized maximizing points for my group while giving none to the other group.,9,9,0
+d5,1,tj-003,10,mip_loss,B,AB,I chose the row that gives the most points to my group.,9,9,0
+d5,1,tj-005,10,mip_loss,B,BB,I chose the row that gives the highest allocation to my group.,9,9,0
+d5,1,tj-002,10,mip_loss,B,BB,I chose the row that gives the most points to my group member.,9,9,0
+d5,1,tj-007,0,mip_loss,B,AB,This maximizes the total points without favoring my own group.,-9,0,9
+d5,2,tj-009,0,mip_loss,A,AA,I chose the row that gives the most points to my group and none to the other group.,9,9,0
+d5,2,tj-008,0,mip_loss,A,AB,I chose the row that maximizes points for my BLOTQW group while maintaining the prior strategy.,9,9,0
+d5,2,tj-001,0,mip_loss,A,AB,I chose to give the maximum points to Participant #5 in my group.,9,9,0
+d5,2,tj-004,0,mip_loss,A,AB,I chose the row that gives the most points to my group.,9,9,0
+d5,2,tj-000,0,mip_loss,A,AA,I chose the row that gives the most points to my in-group participant.,9,9,0
+d5,2,tj-006,10,mip_loss,B,AB,I prioritized maximizing points for my group while giving none to the other group.,9,9,0
+d5,2,tj-003,10,mip_loss,B,BB,I chose the row that gives the most points to my group.,9,9,0
+d5,2,tj-005,10,mip_loss,B,AB,I chose the row that maximizes the allocation to my BTSLAB group.,9,9,0
+d5,2,tj-002,10,mip_loss,B,AB,I chose the row that gives the most points to my group member.,9,9,0
+d5,2,tj-007,10,mip_loss,B,BB,I chose to maximize support for my group after the other group allocated nothing to us.,9,9,0
+d5,3,tj-009,0,mip_loss,A,AA,I chose the row that gives the most points to my group and none to the other group.,9,9,0
+d5,3,tj-008,0,mip_loss,A,AA,I chose the row that gives the most points to my group and none to the other group.,9,9,0
+d5,3,tj-001,0,mip_loss,A,AB,I chose to give the maximum points to Participant #9 in my group.,9,9,0
+d5,3,tj-004,0,mip_loss,A,AB,I chose the row that gives the most points to my group.,9,9,0
+d5,3,tj-000,0,mip_loss,A,AB,I chose the row that gives the most points to my in-group participant.,9,9,0
+d5,3,tj-006,10,mip_loss,B,BB,I prioritized maximizing points for my group while giving none to the other group.,9,9,0
+d5,3,tj-003,10,mip_loss,B,BB,I chose the row that gives the most points to my group.,9,9,0
+d5,3,tj-005,10,mip_loss,B,AB,I chose the row that gives the highest allocation to my BTSLAB group.,9,9,0
+d5,3,tj-002,10,mip_loss,B,AB,I chose the row that gives the most points to my group member.,9,9,0
+d5,3,tj-007,10,mip_loss,B,AB,I chose to keep all 9 points within my group while the group totals are balanced.,9,9,0
+d5,4,tj-009,0,mip_loss,A,AA,I chose the row that gives the most points to my group and none to the other group.,9,9,0
+d5,4,tj-008,0,mip_loss,A,AB,"I chose the row that maximizes points for my BLOTQW group, consistent with my prior choices.",9,9,0
+d5,4,tj-001,0,mip_loss,A,AB,I chose to give the maximum points to Participant #10 in my group.,9,9,0
+d5,4,tj-004,0,mip_loss,A,AB,I chose the row that gives the most points to my group.,9,9,0
+d5,4,tj-000,0,mip_loss,A,AA,I chose the row that gives the most points to my in-group participant.,9,9,0
+d5,4,tj-006,10,mip_loss,B,AB,I continued maximizing the allocation to my BTSLAB group.,9,9,0
+d5,4,tj-003,10,mip_loss,B,AB,I chose the row that gives the most points to my group.,9,9,0
+d5,4,tj-005,10,mip_loss,B,BB,I chose the row that maximizes the allocation to my BTSLAB group.,9,9,0
+d5,4,tj-002,10,mip_loss,B,BB,I chose the row that gives the most points to my group member.,9,9,0
+d5,4,tj-007,10,mip_loss,B,AB,I chose to maximize support for my group while both groups remain equally resourced.,9,9,0
+d5,5,tj-009,0,mip_loss,A,AA,"I chose the row that maximizes points for my group, consistent with my past choices.",9,9,0
+d5,5,tj-008,0,mip_loss,A,AB,I chose the row that gives the most points to my BLOTQW group and none to the other group.,9,9,0
+d5,5,tj-001,0,mip_loss,A,AA,I chose to give the maximum points to Participant #10 in my group.,9,9,0
+d5,5,tj-004,0,mip_loss,A,AB,I continue to prioritize the maximum points for my group.,9,9,0
+d5,5,tj-000,0,mip_loss,A,AB,I chose the row that gives the most points to my in-group participant.,9,9,0
+d5,5,tj-006,10,mip_loss,B,AB,I continued maximizing points allocated to my BTSLAB group.,9,9,0
+d5,5,tj-003,10,mip_loss,B,BB,I chose the row that gives the most points to my group.,9,9,0
+d5,5,tj-005,10,mip_loss,B,AB,I chose the row that maximizes the allocation to my BTSLAB group.,9,9,0
+d5,5,tj-002,10,mip_loss,B,AB,I chose the row that gives the most points to my group member.,9,9,0
+d5,5,tj-007,10,mip_loss,B,BB,I chose to maximize support for my group given the continued lack of cross-group allocation.,9,9,0

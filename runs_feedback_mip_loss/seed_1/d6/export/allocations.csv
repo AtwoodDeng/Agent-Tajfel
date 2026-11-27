@@ -1,0 +1,51 @@
+arm,step,agent_id,row,matrix,own_group,pair_type,reason,gap,ingroup_points,outgroup_points
+d6,1,tj-006,0,mip_loss,A,AA,I chose the row that gives the most points to my group while giving none to the other group.,9,9,0
+d6,1,tj-003,0,mip_loss,A,AB,I chose the row that gives the most points to my group while giving none to the other group.,9,9,0
+d6,1,tj-000,0,mip_loss,A,AA,I chose the row that gives the most points to my group while giving none to the other group.,9,9,0
+d6,1,tj-007,0,mip_loss,A,AB,This maximizes the allocation to my group member without giving points to the other group.,9,9,0
+d6,1,tj-005,0,mip_loss,A,AB,I chose the row that gives the most points to my group and none to the other group.,9,9,0
+d6,1,tj-008,10,mip_loss,B,AB,I chose the row that gives the most points to my group.,9,9,0
+d6,1,tj-004,10,mip_loss,B,AB,This row maximizes the points allocated to my BTSLAB group member.,9,9,0
+d6,1,tj-002,10,mip_loss,B,BB,This maximizes the points allocated to my BTSLAB group member.,9,9,0
+d6,1,tj-009,10,mip_loss,B,AB,This maximizes the points allocated to my BTSLAB group member.,9,9,0
+d6,1,tj-001,10,mip_loss,B,BB,I chose the row that maximizes points for my group while still allocating nothing to the other group.,9,9,0
+d6,2,tj-006,0,mip_loss,A,AA,This row maximizes the allocation to my group while assigning none to the other group.,9,9,0
+d6,2,tj-003,0,mip_loss,A,AB,I chose the row that maximizes points for my group while giving none to the other group.,9,9,0
+d6,2,tj-000,0,mip_loss,A,AA,I chose the row that maximizes points for my group.,9,9,0
+d6,2,tj-007,0,mip_loss,A,AB,I continue to maximize points for my group member without giving points to the other group.,9,9,0
+d6,2,tj-005,0,mip_loss,A,AB,I chose the row that maximizes points for my group.,9,9,0
+d6,2,tj-008,10,mip_loss,B,BB,I chose the row that gives the most points to my group.,9,9,0
+d6,2,tj-004,10,mip_loss,B,AB,This row maximizes the points allocated to my BTSLAB group member.,9,9,0
+d6,2,tj-002,10,mip_loss,B,AB,This maximizes the points allocated to my BTSLAB group member.,9,9,0
+d6,2,tj-009,10,mip_loss,B,AB,This maximizes the points allocated to my BTSLAB group member.,9,9,0
+d6,2,tj-001,10,mip_loss,B,BB,I chose the row that maximizes points for my group.,9,9,0
+d6,3,tj-006,0,mip_loss,A,AB,This row maximizes points for my group while giving none to the other group.,9,9,0
+d6,3,tj-003,0,mip_loss,A,AB,I chose the row that gives the most points to my group while giving none to the other group.,9,9,0
+d6,3,tj-000,0,mip_loss,A,AA,This gives the most points to my group while giving none to the other group.,9,9,0
+d6,3,tj-007,0,mip_loss,A,AA,I prioritize maximizing points for my group member without allocating points to the other group.,9,9,0
+d6,3,tj-005,0,mip_loss,A,AB,I chose the row that maximizes points for my group.,9,9,0
+d6,3,tj-008,10,mip_loss,B,AB,I chose the row that gives the most points to my group.,9,9,0
+d6,3,tj-004,10,mip_loss,B,AB,This row maximizes the points allocated to my BTSLAB group member.,9,9,0
+d6,3,tj-002,10,mip_loss,B,BB,This maximizes the points allocated to my BTSLAB group member.,9,9,0
+d6,3,tj-009,10,mip_loss,B,AB,This maximizes the points allocated to my BTSLAB group member.,9,9,0
+d6,3,tj-001,10,mip_loss,B,BB,I chose the row that maximizes points for my group.,9,9,0
+d6,4,tj-006,0,mip_loss,A,AB,This row maximizes points for my group while assigning none to the other group.,9,9,0
+d6,4,tj-003,0,mip_loss,A,AA,I chose the row that maximizes points for my group while giving none to the other group.,9,9,0
+d6,4,tj-000,0,mip_loss,A,AB,This row maximizes points for my group while giving none to the other group.,9,9,0
+d6,4,tj-007,0,mip_loss,A,AA,I continue to maximize points for my group member without allocating points to the other group.,9,9,0
+d6,4,tj-005,0,mip_loss,A,AB,I chose the row that maximizes points for my group.,9,9,0
+d6,4,tj-008,10,mip_loss,B,AB,I chose the row that gives the most points to my group.,9,9,0
+d6,4,tj-004,10,mip_loss,B,BB,This row maximizes the points allocated to my BTSLAB group member.,9,9,0
+d6,4,tj-002,10,mip_loss,B,BB,This maximizes the points allocated to my BTSLAB group member.,9,9,0
+d6,4,tj-009,10,mip_loss,B,AB,This maximizes the points allocated to my BTSLAB group member.,9,9,0
+d6,4,tj-001,10,mip_loss,B,AB,I chose the row that maximizes points for my group.,9,9,0
+d6,5,tj-006,0,mip_loss,A,AB,This row maximizes points for my group while assigning none to the other group.,9,9,0
+d6,5,tj-003,0,mip_loss,A,AB,I chose the row that maximizes points for my group while giving none to the other group.,9,9,0
+d6,5,tj-000,0,mip_loss,A,AA,This row maximizes points for my group while giving none to the other group.,9,9,0
+d6,5,tj-007,0,mip_loss,A,AB,I prioritize maximizing points for my group member without allocating points to the other group.,9,9,0
+d6,5,tj-005,0,mip_loss,A,AA,I chose the row that maximizes points for my group.,9,9,0
+d6,5,tj-008,10,mip_loss,B,AB,I chose the row that gives the most points to my group.,9,9,0
+d6,5,tj-004,10,mip_loss,B,AB,This row maximizes the points allocated to my BTSLAB group member.,9,9,0
+d6,5,tj-002,10,mip_loss,B,BB,This maximizes the points allocated to my BTSLAB group member.,9,9,0
+d6,5,tj-009,10,mip_loss,B,AB,This maximizes the points allocated to my BTSLAB group member.,9,9,0
+d6,5,tj-001,10,mip_loss,B,BB,I chose the row that maximizes points for my group.,9,9,0

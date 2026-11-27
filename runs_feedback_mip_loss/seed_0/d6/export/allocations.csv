@@ -1,0 +1,51 @@
+arm,step,agent_id,row,matrix,own_group,pair_type,reason,gap,ingroup_points,outgroup_points
+d6,1,tj-009,0,mip_loss,A,AA,I chose the option that gives the most points to my group while giving none to the other group.,9,9,0
+d6,1,tj-008,0,mip_loss,A,AB,I prioritize supporting Participant #1 in my own group.,9,9,0
+d6,1,tj-001,0,mip_loss,A,AA,I chose the row that gives the most points to my group member.,9,9,0
+d6,1,tj-004,0,mip_loss,A,AB,I chose the row that gives the most points to my group and none to the other group.,9,9,0
+d6,1,tj-000,0,mip_loss,A,AB,I chose to give the points to Participant #2 in my group.,9,9,0
+d6,1,tj-006,10,mip_loss,B,AB,I chose the row that gives the most points to my group and none to the other group.,9,9,0
+d6,1,tj-003,10,mip_loss,B,AB,I chose the row that gives the most points to my group while giving none to the other group.,9,9,0
+d6,1,tj-005,9,mip_loss,B,BB,I chose a row that gives more points to my group while still giving the other group none.,7,7,0
+d6,1,tj-002,10,mip_loss,B,BB,I chose the row that gives the most points to my group member and none to the other group.,9,9,0
+d6,1,tj-007,10,mip_loss,B,AB,This row maximizes the points allocated to my group member.,9,9,0
+d6,2,tj-009,0,mip_loss,A,AA,This maximizes the allocation to my group member.,9,9,0
+d6,2,tj-008,0,mip_loss,A,AB,I prioritize supporting Participant #2 in my own group.,9,9,0
+d6,2,tj-001,0,mip_loss,A,AB,I chose the row that maximizes points for my group member.,9,9,0
+d6,2,tj-004,0,mip_loss,A,AB,I chose the row that gives the most points to my group and none to the other group.,9,9,0
+d6,2,tj-000,0,mip_loss,A,AA,I chose the maximum allocation for Participant #10 in my group.,9,9,0
+d6,2,tj-006,10,mip_loss,B,AB,I chose the row that gives the most points to my group and none to the other group.,9,9,0
+d6,2,tj-003,10,mip_loss,B,BB,I chose the row that gives the most points to my group while giving none to the other group.,9,9,0
+d6,2,tj-005,10,mip_loss,B,AB,I chose the row that maximizes points for my group member.,9,9,0
+d6,2,tj-002,10,mip_loss,B,AB,I chose the row that maximizes points for my group member.,9,9,0
+d6,2,tj-007,10,mip_loss,B,BB,This row maximizes the points allocated to my group member.,9,9,0
+d6,3,tj-009,0,mip_loss,A,AA,This continues maximizing the allocation to my group member.,9,9,0
+d6,3,tj-008,0,mip_loss,A,AA,I consistently prioritize maximizing support for a participant in my own group.,9,9,0
+d6,3,tj-001,0,mip_loss,A,AB,I chose the row that maximizes points for my group member.,9,9,0
+d6,3,tj-004,0,mip_loss,A,AB,I chose the row that maximizes points for my group.,9,9,0
+d6,3,tj-000,0,mip_loss,A,AB,I chose the row that gives the maximum points to Participant #9 in my group.,9,9,0
+d6,3,tj-006,10,mip_loss,B,BB,This row maximizes the points awarded to my group.,9,9,0
+d6,3,tj-003,10,mip_loss,B,BB,I chose the row that maximizes points for my group while giving none to the other group.,9,9,0
+d6,3,tj-005,10,mip_loss,B,AB,I chose the row that maximizes points for my group member.,9,9,0
+d6,3,tj-002,10,mip_loss,B,AB,I chose the row that maximizes points for my group member.,9,9,0
+d6,3,tj-007,10,mip_loss,B,AB,This row maximizes the points allocated to my group member.,9,9,0
+d6,4,tj-009,0,mip_loss,A,AA,This continues maximizing points for my group member.,9,9,0
+d6,4,tj-008,0,mip_loss,A,AB,I consistently prioritize maximizing support for a participant in my own group.,9,9,0
+d6,4,tj-001,0,mip_loss,A,AB,I chose the row that gives the most points to my group member.,9,9,0
+d6,4,tj-004,0,mip_loss,A,AB,I chose the row that maximizes points for my group and gives none to the other group.,9,9,0
+d6,4,tj-000,0,mip_loss,A,AA,I chose the maximum allocation for Participant #10 in my group.,9,9,0
+d6,4,tj-006,10,mip_loss,B,AB,This row maximizes the points awarded to my group.,9,9,0
+d6,4,tj-003,10,mip_loss,B,AB,I chose the row that gives the most points to my group while giving none to the other group.,9,9,0
+d6,4,tj-005,10,mip_loss,B,BB,I chose the row that maximizes points for my group member.,9,9,0
+d6,4,tj-002,10,mip_loss,B,BB,I chose the row that gives the most points to my group member and none to the other group.,9,9,0
+d6,4,tj-007,10,mip_loss,B,AB,This row maximizes the points allocated to my group member.,9,9,0
+d6,5,tj-009,0,mip_loss,A,AA,This gives the most points to my group member and none to the other group.,9,9,0
+d6,5,tj-008,0,mip_loss,A,AB,I consistently prioritize maximizing support for Participant #1 in my own group.,9,9,0
+d6,5,tj-001,0,mip_loss,A,AA,I chose the row that gives the most points to my group member.,9,9,0
+d6,5,tj-004,0,mip_loss,A,AB,I chose the row that gives the most points to my group and none to the other group.,9,9,0
+d6,5,tj-000,0,mip_loss,A,AB,I chose the maximum allocation for Participant #2 in my group.,9,9,0
+d6,5,tj-006,10,mip_loss,B,AB,This row maximizes the points awarded to my group.,9,9,0
+d6,5,tj-003,10,mip_loss,B,BB,I chose the row that gives the most points to my group while giving none to the other group.,9,9,0
+d6,5,tj-005,10,mip_loss,B,AB,I chose the row that maximizes points for my group member.,9,9,0
+d6,5,tj-002,10,mip_loss,B,AB,I chose the row that maximizes points for my group member.,9,9,0
+d6,5,tj-007,10,mip_loss,B,BB,This row maximizes the points allocated to my group member.,9,9,0

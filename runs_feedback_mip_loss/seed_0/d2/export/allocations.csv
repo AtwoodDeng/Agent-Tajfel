@@ -1,0 +1,51 @@
+arm,step,agent_id,row,matrix,own_group,pair_type,reason,gap,ingroup_points,outgroup_points
+d2,1,tj-009,0,mip_loss,A,AA,I chose to give the most points to my group while giving none to the other group.,9,9,0
+d2,1,tj-008,0,mip_loss,A,AB,I chose to give all 9 points to my group and none to the other group.,9,9,0
+d2,1,tj-001,0,mip_loss,A,AA,I chose the row that gives the most points to my group member and none to the other group.,9,9,0
+d2,1,tj-004,0,mip_loss,A,AB,I chose to give the most points to my group while giving none to the other group.,9,9,0
+d2,1,tj-000,0,mip_loss,A,AB,I chose to give the maximum points to my group member and none to the other group.,9,9,0
+d2,1,tj-006,10,mip_loss,B,AB,I chose the row that gives the most points to my group and none to the other group.,9,9,0
+d2,1,tj-003,10,mip_loss,B,AB,I chose the row that gives the most points to my group while allocating none to the other group.,9,9,0
+d2,1,tj-005,10,mip_loss,B,BB,I chose the row that gives the highest allocation to my group.,9,9,0
+d2,1,tj-002,10,mip_loss,B,BB,I chose the row that gives the most points to my group.,9,9,0
+d2,1,tj-007,10,mip_loss,B,AB,This maximizes the points awarded to my fellow BTSLAB participant.,9,9,0
+d2,2,tj-009,0,mip_loss,A,AA,"This row maximizes the allocation to the BLOTQW participant, consistent with our group's coordinated strategy.",9,9,0
+d2,2,tj-008,0,mip_loss,A,AB,我继续把9分给本组，保持与上一轮一致的选择。,9,9,0
+d2,2,tj-001,0,mip_loss,A,AB,I chose the row that gives the most points to my group member and none to the other group.,9,9,0
+d2,2,tj-004,0,mip_loss,A,AB,I am maintaining the choice that maximizes my group’s points.,9,9,0
+d2,2,tj-000,0,mip_loss,A,AA,I chose the maximum allocation for my group because this matrix offers no option that benefits both participants.,9,9,0
+d2,2,tj-006,10,mip_loss,B,AB,"I continue to prioritize the highest possible payoff for my group, even though the other group receives zero.",9,9,0
+d2,2,tj-003,10,mip_loss,B,BB,I prioritized the maximum allocation to my BTSLAB group member.,9,9,0
+d2,2,tj-005,10,mip_loss,B,AB,"This row maximizes the allocation to my BTSLAB group, consistent with our agreed strategy.",9,9,0
+d2,2,tj-002,10,mip_loss,B,AB,"This row gives BTSLAB the highest payoff, consistent with my previous choice.",9,9,0
+d2,2,tj-007,10,mip_loss,B,BB,This maximizes the points awarded to my fellow BTSLAB participant.,9,9,0
+d2,3,tj-009,0,mip_loss,A,AA,This gives the BLOTQW participant the most points and follows our group's strategy.,9,9,0
+d2,3,tj-008,5,mip_loss,A,AA,I’m choosing the equal allocation to honor our agreement to minimize the gap between the groups.,0,0,0
+d2,3,tj-001,0,mip_loss,A,AB,I chose the row that gives the most points to my group member and none to the other group.,9,9,0
+d2,3,tj-004,2,mip_loss,A,AB,I chose a moderate allocation that preserves a meaningful benefit for my group while reducing the previous extreme gap.,5,5,0
+d2,3,tj-000,0,mip_loss,A,AB,I chose the row that gives the maximum points to my group member and none to the other participant.,9,9,0
+d2,3,tj-006,8,mip_loss,B,BB,This gives both groups points while keeping a reasonable benefit for my group and improving the balance.,5,5,0
+d2,3,tj-003,10,mip_loss,B,BB,"I prioritize maximizing the points for my BTSLAB teammate, consistent with my previous choices.",9,9,0
+d2,3,tj-005,5,mip_loss,B,AB,我承诺选择组间差距最小的方案，以减少对立。,0,0,0
+d2,3,tj-002,10,mip_loss,B,AB,This row maximizes BTSLAB’s payoff and remains consistent with my prior choices.,9,9,0
+d2,3,tj-007,10,mip_loss,B,AB,This maximizes the points awarded to my fellow BTSLAB participant.,9,9,0
+d2,4,tj-009,0,mip_loss,A,AA,This gives the BLOTQW participant the most points while giving none to the other group.,9,9,0
+d2,4,tj-008,0,mip_loss,A,AB,I’m prioritizing Participant #10 and our group’s points this round.,9,9,0
+d2,4,tj-001,0,mip_loss,A,AB,该行能延续既定策略，为本组成员争取最高积分。,9,9,0
+d2,4,tj-004,8,mip_loss,A,AB,I chose 5 points for Participant #8 as a reciprocal trust-building response after taking 5 points for my group last round.,-5,0,5
+d2,4,tj-000,0,mip_loss,A,AA,本轮没有双方同时得分的选项，因此我选择优先保障本组成员的最高收益。,9,9,0
+d2,4,tj-006,0,mip_loss,B,AB,I chose the maximum payoff for the other group to begin correcting the large imbalance created by my earlier choices.,-9,0,9
+d2,4,tj-003,10,mip_loss,B,AB,"I chose the row that maximizes points for my BTSLAB teammate, consistent with my prior strategy and coordination.",9,9,0
+d2,4,tj-005,5,mip_loss,B,BB,我继续选择零差距方案，以兑现跨组互惠承诺并减少对立。,0,0,0
+d2,4,tj-002,10,mip_loss,B,BB,This row maximizes BTSLAB’s payoff and remains consistent with my prior choices.,9,9,0
+d2,4,tj-007,10,mip_loss,B,AB,This maximizes the points awarded to my fellow BTSLAB participant.,9,9,0
+d2,5,tj-009,0,mip_loss,A,AA,This row gives the BLOTQW participant the most points and preserves our group's priority.,9,9,0
+d2,5,tj-008,5,mip_loss,A,AB,I’m honoring my commitment to choose the equal allocation and reduce the gap between the groups.,0,0,0
+d2,5,tj-001,0,mip_loss,A,AA,我选择让本组成员获得最高积分的方案，以延续对BLOTQW的支持。,9,9,0
+d2,5,tj-004,8,mip_loss,A,AB,I’ll reciprocate the previous 5-point concession by giving BTSLAB 5 points while preserving the established exchange.,-5,0,5
+d2,5,tj-000,0,mip_loss,A,AB,"No option benefits both participants, so I’m prioritizing the maximum payoff for my group member.",9,9,0
+d2,5,tj-006,5,mip_loss,B,AB,I chose the balanced zero-gap row to honor my explicit reciprocal agreement with Participant #9.,0,0,0
+d2,5,tj-003,10,mip_loss,B,BB,"I prioritize maximizing points for my BTSLAB teammate, consistent with my previous choices.",9,9,0
+d2,5,tj-005,5,mip_loss,B,AB,我选择差距为零的方案，继续履行互惠承诺并维持合作。,0,0,0
+d2,5,tj-002,10,mip_loss,B,AB,"This row gives BTSLAB the highest payoff, consistent with my previous choices.",9,9,0
+d2,5,tj-007,2,mip_loss,B,BB,兑现互惠承诺，让BLOTQW获得5分以回应对方上一轮让利。,-5,0,5

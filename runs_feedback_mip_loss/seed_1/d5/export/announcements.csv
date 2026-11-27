@@ -1,0 +1,5 @@
+step,arm,text,is_sum_only,has_cross
+2,d5,Previous results: group A total 45; group B total 45; A-to-A 45; A-to-B 0; B-to-A 0; B-to-B 45.,False,True
+3,d5,Previous results: group A total 45; group B total 45; A-to-A 45; A-to-B 0; B-to-A 0; B-to-B 45.,False,True
+4,d5,Previous results: group A total 45; group B total 45; A-to-A 45; A-to-B 0; B-to-A 0; B-to-B 45.,False,True
+5,d5,Previous results: group A total 45; group B total 45; A-to-A 45; A-to-B 0; B-to-A 0; B-to-B 45.,False,True
