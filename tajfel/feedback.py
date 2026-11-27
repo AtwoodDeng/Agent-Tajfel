@@ -22,9 +22,11 @@ except Exception:  # Windows selftest imports this module with framework stubs
     Persona = SimpleNamespace
 
 try:
-    from tajfel.model import MATRIX_MIF, agent_id, agent_index, group_of, group_sizes, other_group, is_llm_kind
+    from tajfel.model import MATRIX_MIF, GROUP_NAMES, matrix_for, agent_id, agent_index, group_of, group_sizes, other_group, is_llm_kind
 except Exception:
     MATRIX_MIF=[(15,5),(14,8),(13,11),(12,14),(11,17),(10,20)]
+    GROUP_NAMES={"A":"BLOTQW","B":"BTSLAB"}
+    def matrix_for(kind): return MATRIX_MIF
     def agent_id(i): return f"tj-{i:03d}"
     def agent_index(a): return int(str(a).split("-")[-1])
     def group_of(i,n,condition="c1"): return "A" if i < n//2 else "B"
@@ -44,6 +46,11 @@ except Exception:
                     ((m.get("step")==step and m.get("round",0)<round_idx) or
                      (self.carry_previous_step and m.get("step")==step-1))]
         def drain(self): return []
+
+def participant_no(aid: str) -> int:
+    """1-indexed participant number shown to agents as their name."""
+    return agent_index(aid) + 1
+
 
 ARMS=("d1","d2","d3","d4","d5","d6")
 # d6 is the missing cell of the announcement x chat 2x2: labels visible (like d1/d2/d5) but no
@@ -79,7 +86,7 @@ def _history_text(history):
     return json.dumps(history, ensure_ascii=False, sort_keys=True)
 
 def _leak_check(prompt, hidden=True):
-    if hidden and re.search(r"your group|ingroup|outgroup|group\s+[ab]", prompt, re.I):
+    if hidden and re.search(r"your group|ingroup|outgroup|group\s+[ab]|BLOTQW|BTSLAB", prompt, re.I):
         raise AssertionError("hidden-arm prompt leaks group identity")
     return prompt
 
@@ -88,20 +95,36 @@ def build_feedback_prompt(ob, round_idx=None):
     r=lp.get("round_idx", 0) if round_idx is None else round_idx
     hist=lp.get("personal_history", []) or []
     rows=mp.get("rows", [])
-    lines=["You are a participant in a multi-round allocation and communication study."]
     visible=bool(mp.get("label_visible", arm in ("d1","d2","d5","d6")))
+    own_group=lp.get("own_group") or "A"
+    own_name=lp.get("own_name") or GROUP_NAMES.get(own_group, own_group)
+    other_name=GROUP_NAMES.get(other_group(own_group), other_group(own_group))
+    own_no=lp.get("own_no")
+    lines=[f"You are Participant #{own_no} in a multi-round allocation and communication study."]
+    if visible:
+        lines.append(f"You belong to the {own_name} group.")
     if r==0:
+        if visible:
+            ing=lp.get("ingroup_recipient_no"); out=lp.get("outgroup_recipient_no")
+            lines.append(f"You must allocate points to two specific participants: "
+                         f"Participant #{ing} ({own_name}, your group) and "
+                         f"Participant #{out} ({other_name}, other group).")
         lines.append('Choose exactly one row of the matrix. Reply as JSON only: {"row": 0, "reason": "one short sentence explaining why you chose this row"}')
         for row in rows:
             a,b=row["a_points"],row["b_points"]
             if visible:
-                own,oth=(a,b) if lp.get("own_group")=="A" else (b,a)
-                lines.append(f"row {row['row']}: ingroup {own} outgroup {oth}")
+                own,oth=(a,b) if own_group=="A" else (b,a)
+                lines.append(f"row {row['row']}: {own_name} {own} {other_name} {oth}")
             else: lines.append(f"row {row['row']}: Person A {a} Person B {b}")
     else:
         lines.append("Write one Chinese message of at most 200 characters.")
         partner=lp.get("partner_id")
-        if partner: lines.append(f"Your partner is participant {partner}.")
+        if partner:
+            pn=lp.get("partner_no"); pname=lp.get("partner_name","")
+            if visible and pname:
+                lines.append(f"Your partner is Participant #{pn} ({pname} group).")
+            else:
+                lines.append(f"Your partner is Participant #{pn}.")
         if lp.get("partner_message"): lines.append("Partner's message: "+str(lp["partner_message"]))
     if hist:
         lines.append("Your past choices:")
@@ -117,7 +140,9 @@ def build_feedback_prompt(ob, round_idx=None):
         msgs=[h for h in hist if h.get("kind")=="message"]
         if msgs:
             lines.append("Your conversations:")
-            lines.extend(f"step {h['step']} {h['direction']} {h['partner_id']}: {h['content']}" for h in msgs)
+            for h in msgs:
+                pno=participant_no(h["partner_id"]) if h.get("partner_id") else "?"
+                lines.append(f"step {h['step']} {h['direction']} Participant #{pno}: {h['content']}")
     prompt="\n".join(lines)
     return _leak_check(prompt, not visible)
 
@@ -171,15 +196,35 @@ class FeedbackEnvironmentProvider(EnvironmentProvider):
         if round_idx == 0 and ann and not any(x["step"] == t for x in self.announcements):
             self.announcements.append({"step":t,"arm":self.arm,"text":ann,"is_sum_only":self.arm=="d3","has_cross":self.arm in ("d1","d5")})
             for aid in self.history: self.history[aid].append({"kind":"announcement","step":t,"text":ann})
-        out=[]; rows=[{"row":i,"a_points":a,"b_points":b} for i,(a,b) in enumerate(MATRIX_MIF)]
+        out=[]; kind=self.matrix_at(t); rows=[{"row":i,"a_points":a,"b_points":b} for i,(a,b) in enumerate(matrix_for(kind))]
         for aid in agent_ids:
+            g=self.groups[aid]
             partner,ptype=self._pending_partner.get(aid,(None,"unknown")); partner_msg=""
             if round_idx>=2 and partner:
                 vals=self.message_bus.visible_to(aid,[partner],t,round_idx)
                 vals=[m for m in vals if m.get("step")==t and m.get("round")==1]
                 partner_msg=vals[-1].get("content","") if vals else ""
-            lp={"own_group":self.groups[aid] if self.label_visible else None,"partner_id":partner,"pair_type":ptype,"round_idx":round_idx,"personal_history":list(self.history[aid]),"partner_message":partner_msg}
-            mp={"arm":self.arm,"matrix_kind":"mif","label_visible":self.label_visible,"rows":rows,"announcement":ann}
+            same=sorted(a for a,gg in self.groups.items() if gg==g and a!=aid)
+            other=sorted(a for a,gg in self.groups.items() if gg!=g)
+            ing_rec=same[(t-1)%len(same)] if same else None
+            out_rec=other[(t-1)%len(other)] if other else None
+            if ptype in ("AA","BB") and partner: ing_rec=partner
+            elif ptype=="AB" and partner: out_rec=partner
+            lp={"own_group":g if self.label_visible else None,
+                "own_no":participant_no(aid),
+                "own_name":GROUP_NAMES.get(g,g),
+                "partner_id":partner,
+                "partner_no":participant_no(partner) if partner else None,
+                "partner_name":GROUP_NAMES.get(self.groups.get(partner,""),"") if partner else None,
+                "pair_type":ptype,
+                "ingroup_recipient":ing_rec,
+                "ingroup_recipient_no":participant_no(ing_rec) if ing_rec else None,
+                "outgroup_recipient":out_rec,
+                "outgroup_recipient_no":participant_no(out_rec) if out_rec else None,
+                "round_idx":round_idx,
+                "personal_history":list(self.history[aid]),
+                "partner_message":partner_msg}
+            mp={"arm":self.arm,"matrix_kind":kind,"label_visible":self.label_visible,"rows":rows,"announcement":ann}
             out.append(Observation(agent_id=aid,step=t,macro_physical=mp,macro_information={"announcement":ann},local_physical=lp))
         return out
     def apply(self, actions):
@@ -199,7 +244,7 @@ class FeedbackEnvironmentProvider(EnvironmentProvider):
             ap=int(p.get("a_points",p.get("ingroup_points",0))); bp=int(p.get("b_points",p.get("outgroup_points",0)))
             own,other=(ap,bp) if g=="A" else (bp,ap)
             ptype=next((kind for x,y,kind in self.pairings.get(t,[]) if a.agent_id in (x,y)),"unknown")
-            rec={"kind":"allocation","arm":self.arm,"step":t,"agent_id":a.agent_id,"row":int(p["row"]),"own_group":g,"pair_type":ptype,"reason":str(p.get("reason",""))[:200],"ingroup_points":own,"outgroup_points":other,"gap":own-other}; self.history[a.agent_id].append(rec); self.allocations.append(rec); by_group[g].append(rec)
+            rec={"kind":"allocation","arm":self.arm,"step":t,"agent_id":a.agent_id,"row":int(p["row"]),"matrix":str(p.get("matrix","mif")),"own_group":g,"pair_type":ptype,"reason":str(p.get("reason",""))[:200],"ingroup_points":own,"outgroup_points":other,"gap":own-other}; self.history[a.agent_id].append(rec); self.allocations.append(rec); by_group[g].append(rec)
             if g=="A": cross["AA"]+=rec["ingroup_points"]; cross["AB"]+=rec["outgroup_points"]
             else: cross["BB"]+=rec["ingroup_points"]; cross["BA"]+=rec["outgroup_points"]
         s={"step":t,"group_a_received":cross["AA"]+cross["BA"],"group_b_received":cross["AB"]+cross["BB"],**{f"a_to_a":cross["AA"],"a_to_b":cross["AB"],"b_to_a":cross["BA"],"b_to_b":cross["BB"]},"total_sum":sum(cross.values())}; self.scores.append(s)
@@ -243,7 +288,7 @@ class FeedbackDecisionModel(DecisionModel):
                 if r==0:
                     match=re.search(r'"row"\s*:\s*(\d+)',reply)
                     row=int(match.group(1)) if match else -1
-                    if not 0 <= row < len(MATRIX_MIF): raise ValueError("unparseable allocation")
+                    if not 0 <= row < len(ob.macro_physical["rows"]): raise ValueError("unparseable allocation")
                     rm=re.search(r'"reason"\s*:\s*"([^"]*)"',reply)
                     reason=rm.group(1)[:200] if rm else ""
                 else:
@@ -259,14 +304,14 @@ class FeedbackDecisionModel(DecisionModel):
         else: content=self._scripted_message(ob,r,prompt)
         if r==0:
             if not is_llm_kind(self.llm_kind): row=self._row(ob_for_prompt)
-            a,b=MATRIX_MIF[row]
+            rr=ob.macro_physical["rows"][row]; a,b=int(rr["a_points"]),int(rr["b_points"])
             if lp.get("own_group") in ("A","B"):
                 own,other=(a,b) if lp.get("own_group")=="A" else (b,a)
             else:
                 own,other=a,b  # hidden-label arms do not reveal this orientation to the agent
             return _mk_action(agent_id=ob.agent_id,step=ob.step,kind="allocate_in_group_matrix",
                 payload={"row":row,"a_points":a,"b_points":b,"ingroup_points":own,
-                         "outgroup_points":other,"gap":own-other,"matrix":"mif","reason":reason},
+                         "outgroup_points":other,"gap":own-other,"matrix":ob.macro_physical.get("matrix_kind","mif"),"reason":reason},
                 source=source,rationale=[reason or "allocation choice"])
         return _mk_action(agent_id=ob.agent_id,step=ob.step,kind="chat",
             payload={"content":content,"recipient":partner,"round_idx":r},
@@ -297,7 +342,7 @@ class FeedbackMetricCollector(MetricCollector):
         pair_type={agent: kind for a,b,kind in env.pairings.get(t,[]) for agent in (a,b)}
         def avg(xs): return round(sum(xs)/len(xs),4) if xs else None
         if aa:
-            joints=[a+b for a,b in MATRIX_MIF]; lo,hi=min(joints),max(joints)
+            joints=[a+b for a,b in matrix_for(env.matrix_at(t))]; lo,hi=min(joints),max(joints)
             total=sum(int(x["ingroup_points"])+int(x["outgroup_points"]) for x in aa)
             group_welfare=round((total-lo*len(aa))/((hi-lo)*len(aa)),4) if hi>lo else None
         else:
@@ -320,5 +365,5 @@ def run_arm(arm="d1",steps=5,seed=0,out="runs"):
     d=Path(out)/arm/"export"; d.mkdir(parents=True,exist_ok=True)
     def dump(name,rows,fields):
         with (d/name).open("w",newline="",encoding="utf-8") as f: w=csv.DictWriter(f,fieldnames=fields,extrasaction="ignore"); w.writeheader(); w.writerows(rows)
-    dump("allocations.csv",env.allocations,["arm","step","agent_id","row","own_group","pair_type","reason","gap","ingroup_points","outgroup_points"]); dump("messages.csv",env.messages,["step","round","sender","recipient","pair_type","content","truncated","source"]); dump("scores.csv",env.scores,["step","group_a_received","group_b_received","a_to_a","a_to_b","b_to_a","b_to_b","total_sum"]); dump("announcements.csv",env.announcements,["step","arm","text","is_sum_only","has_cross"]); dump("pairings.csv",[{"step":t,"agent_a":a,"agent_b":b,"pair_type":k,"round_rotation":t%2} for t,ps in env.pairings.items() for a,b,k in ps],["step","agent_a","agent_b","pair_type","round_rotation"]); dump("metrics.csv",metrics,list(metrics[0]) if metrics else ["step"])
+    dump("allocations.csv",env.allocations,["arm","step","agent_id","row","matrix","own_group","pair_type","reason","gap","ingroup_points","outgroup_points"]); dump("messages.csv",env.messages,["step","round","sender","recipient","pair_type","content","truncated","source"]); dump("scores.csv",env.scores,["step","group_a_received","group_b_received","a_to_a","a_to_b","b_to_a","b_to_b","total_sum"]); dump("announcements.csv",env.announcements,["step","arm","text","is_sum_only","has_cross"]); dump("pairings.csv",[{"step":t,"agent_a":a,"agent_b":b,"pair_type":k,"round_rotation":t%2} for t,ps in env.pairings.items() for a,b,k in ps],["step","agent_a","agent_b","pair_type","round_rotation"]); dump("metrics.csv",metrics,list(metrics[0]) if metrics else ["step"])
     return env,metrics

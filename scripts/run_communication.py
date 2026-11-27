@@ -65,7 +65,7 @@ def _parse_seeds(text: str) -> list[int]:
 
 
 def run_via_engine(condition: str, llm: str, steps: int, seed: int, n_agents: int,
-                   model: str | None, dest: Path) -> list[dict]:
+                   model: str | None, dest: Path, matrix: str | None = None) -> list[dict]:
     """Drive the real engine so the condition also survives SocioVerse2's own orchestration."""
     from socioverse.engine import build_simulator
 
@@ -76,7 +76,8 @@ def run_via_engine(condition: str, llm: str, steps: int, seed: int, n_agents: in
     del study
     env_bundle = env_bundle.model_copy(update={
         "provider_ref": ENV_REF,
-        "provider_args": {"condition": condition, "n_agents": n_agents, "seed": seed, "steps": steps}})
+        "provider_args": {"condition": condition, "n_agents": n_agents, "seed": seed, "steps": steps,
+                          **({"matrix": matrix} if matrix else {})}})
     pop_bundle = pop_bundle.model_copy(update={
         "provider_ref": POPULATION_REF, "provider_args": {"n_agents": n_agents}})
     # every step has 1 allocation round + the chat sub-rounds that exist before the last step
@@ -97,20 +98,20 @@ def run_via_engine(condition: str, llm: str, steps: int, seed: int, n_agents: in
     rows = [r for r in history.rows if r.get("step", 0) > 0]
     export_run(env, rows, dest, config={"condition": condition, "series": series, "steps": steps,
                                         "seed": seed, "n_agents": n_agents, "llm_kind": llm,
-                                        "model": model, "driver": "engine",
+                                        "model": model, "driver": "engine", "matrix": matrix,
                                         "chat_subrounds": list(CHAT_SUBROUNDS)})
     return rows
 
 
 def run_standalone(condition: str, llm: str, steps: int, seed: int, n_agents: int,
-                   model: str | None, dest: Path) -> tuple[list[dict], object]:
+                   model: str | None, dest: Path, matrix: str | None = None) -> tuple[list[dict], object]:
     """Fallback driver: identical round loop without the engine (used when it cannot be built)."""
     env, metrics = run_condition(condition, steps=steps, seed=seed, n_agents=n_agents, llm_kind=llm,
-                                 model=model, out=None)
+                                 model=model, out=None, matrix=matrix)
     export_run(env, metrics, dest, config={"condition": condition, "series": SERIES_OF[condition],
                                            "steps": steps, "seed": seed, "n_agents": n_agents,
                                            "llm_kind": llm, "model": model, "driver": "standalone",
-                                           "chat_subrounds": list(CHAT_SUBROUNDS)})
+                                           "matrix": matrix, "chat_subrounds": list(CHAT_SUBROUNDS)})
     return metrics, env
 
 
@@ -132,6 +133,9 @@ def main(argv=None) -> int:
     p.add_argument("--seed", type=int, default=None, help="single seed (kept for compatibility)")
     p.add_argument("--seeds", default=None, help="seed list, e.g. 0-9 or 1,4,7")
     p.add_argument("--n-agents", type=int, default=N_AGENTS)
+    p.add_argument("--matrix", default=None,
+                   help="override the allocation matrix name, e.g. mip_sym / parity_sym / original_1971 "
+                        "(default: the condition's designed matrix)")
     p.add_argument("--out", default="runs_communication")
     p.add_argument("--driver", choices=["engine", "standalone"], default="engine")
     p.add_argument("--force", action="store_true", help="allow re-running a condition/seed that exists")
@@ -165,10 +169,10 @@ def main(argv=None) -> int:
             continue
         try:
             if a.driver == "engine":
-                rows = run_via_engine(condition, a.llm, a.steps, seed, a.n_agents, a.model, dest)
+                rows = run_via_engine(condition, a.llm, a.steps, seed, a.n_agents, a.model, dest, a.matrix)
                 env = None
             else:
-                rows, env = run_standalone(condition, a.llm, a.steps, seed, a.n_agents, a.model, dest)
+                rows, env = run_standalone(condition, a.llm, a.steps, seed, a.n_agents, a.model, dest, a.matrix)
         except Exception as exc:  # keep the batch going; report at the end
             failures.append((condition, seed, f"{type(exc).__name__}: {exc}"))
             print(f"{condition} seed {seed}: FAILED {type(exc).__name__}: {exc}")

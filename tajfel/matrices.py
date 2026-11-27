@@ -26,6 +26,26 @@ Run ``python -m tajfel.matrices`` to print every matrix as a table with gap / jo
 
 from __future__ import annotations
 
+# --- the canonical C-series matrices (shared by C and D) ----------------------------------------
+# These three were the C-series default rotation (parity -> mjp -> mif); the D-series default is
+# `mif`. Kept here so `tajfel/matrices.py` is the single source of truth for every matrix.
+
+# P — parity: joint profit constant, only the gap varies.
+MATRIX_PARITY: list[tuple[int, int]] = [
+    (19, 1), (17, 3), (15, 5), (13, 7), (11, 9),
+    (9, 11), (7, 13), (5, 15), (3, 17), (1, 19),
+]
+
+# MJP — maximum joint profit: joint profit rises toward the high end while the gap falls.
+MATRIX_MJP: list[tuple[int, int]] = [
+    (7, 1), (10, 5), (11, 10), (12, 15), (10, 19), (8, 21),
+]
+
+# MIF — maximum ingroup difference: gap peaks at the top while joint profit falls.
+MATRIX_MIF: list[tuple[int, int]] = [
+    (15, 5), (14, 8), (13, 11), (12, 14), (11, 17), (10, 20),
+]
+
 # --- the original paper's matrix (recorded verbatim, 13 columns) --------------------------------
 # Tajfel, H., Billig, M. G., Bundy, R. P., & Flament, C. (1971). The two rows are
 # (ingroup member, outgroup member); participants chose ONE column.
@@ -88,6 +108,15 @@ MATRIX_MJP_NEG: list[tuple[int, int]] = _negate(MATRIX_MJP_SYM)
 MATRIX_MIP_LOSS: list[tuple[int, int]] = _shift(MATRIX_MIP_SYM, -10)                   # centre -> (0,0)
 MATRIX_MIP_NEG: list[tuple[int, int]] = _negate(MATRIX_MIP_SYM)
 
+# --- E-series matrix (shared by E3 and E4) -----------------------------------------------------
+# On MATRIX_MIF the B group's "favour own group" and "maximise joint profit" rows coincide at
+# (10, 20), which collapses two leader stances into one recommendation. This table keeps the
+# three E4 stances distinct for both groups: ingroup -> (16,4)/(4,16),
+# welfare -> (15,13)/(13,15), equal -> (13,13). The A/B columns mirror pairwise.
+MATRIX_E_SYMMETRIC: list[tuple[int, int]] = [
+    (16, 4), (4, 16), (15, 13), (13, 15), (13, 13),
+]
+
 # --- helpers ------------------------------------------------------------------------------------
 
 
@@ -134,6 +163,30 @@ def describe(name: str) -> dict:
 # --- registry -----------------------------------------------------------------------------------
 
 MATRIX_LIBRARY: dict[str, dict] = {
+    "parity": {
+        "rows": MATRIX_PARITY,
+        "strategy": "P (parity)",
+        "valence": "gain",
+        "note": "C-series default parity (10 rows, joint profit 20)",
+    },
+    "mjp": {
+        "rows": MATRIX_MJP,
+        "strategy": "MJP (maximum joint profit)",
+        "valence": "gain",
+        "note": "C-series default MJP (6 rows)",
+    },
+    "mif": {
+        "rows": MATRIX_MIF,
+        "strategy": "MIF (maximum ingroup difference)",
+        "valence": "gain",
+        "note": "C/D-series default MIF (6 rows)",
+    },
+    "e_symmetric": {
+        "rows": MATRIX_E_SYMMETRIC,
+        "strategy": "E (custom)",
+        "valence": "gain",
+        "note": "E3/E4 matrix: 5 rows, A/B columns mirror pairwise; ingroup/welfare/equal land on distinct rows for both groups",
+    },
     "original_1971": {
         "rows": MATRIX_ORIGINAL_1971,
         "strategy": "MD/MIP vs MJP",

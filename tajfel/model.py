@@ -98,30 +98,21 @@ _log = logging.getLogger(__name__)
 # direction to the joint profit: walking up the table buys the ingroup a bigger relative
 # advantage while shrinking the total paid out. That sacrifice is what the matrix measures.
 
-MATRIX_PARITY: list[tuple[int, int]] = [
-    (19, 1), (17, 3), (15, 5), (13, 7), (11, 9),
-    (9, 11), (7, 13), (5, 15), (3, 17), (1, 19),
-]
-# Type 3 (MIF): the gap GROWS as the joint profit FALLS, which is the real maximum-difference
-# trade-off: row 0 is the maximum-difference row (biggest gap, lowest joint profit), the last
-# row is the maximum-joint row (biggest total, own group behind). No row dominates another --
-# own-group points fall monotonically while the other group's rise -- so every one of the four
-# Tajfel strategies (max joint / max own / max difference / fair) lands on a different row.
-MATRIX_MIF: list[tuple[int, int]] = [
-    (15, 5), (14, 8), (13, 11), (12, 14), (11, 17), (10, 20),
-]
-# Type 2 (MJP): joint profit peaks INTERIOR to the table and the gap falls away at the high end,
-# so a joint-profit maximiser lands mid-table while an ingroup-favouring agent drifts toward the
-# low rows (accepting a smaller joint profit to keep the ingroup ahead). The interior peak is what
-# makes this a trade-off matrix rather than a monotone one.
-MATRIX_MJP: list[tuple[int, int]] = [
-    (7, 1), (10, 5), (11, 10), (12, 15), (10, 19), (8, 21),
-]
+# Matrices live in ONE global library (`tajfel/matrices.py`) shared by the C-series (this module)
+# and the D-series (`tajfel/feedback.py`); both resolve them through `matrix_for` / `MATRICES`.
+try:
+    from .matrices import MATRIX_LIBRARY, MATRIX_MIF, MATRIX_MJP, MATRIX_PARITY
+except ImportError:  # pragma: no cover - selftest loads model.py flat, outside the package
+    import importlib.util as _ilu
+    _spec = _ilu.spec_from_file_location(
+        "tajfel_matrices", Path(__file__).parent / "matrices.py")
+    _mod = _ilu.module_from_spec(_spec)
+    _spec.loader.exec_module(_mod)
+    MATRIX_LIBRARY = _mod.MATRIX_LIBRARY
+    MATRIX_MIF, MATRIX_MJP, MATRIX_PARITY = _mod.MATRIX_MIF, _mod.MATRIX_MJP, _mod.MATRIX_PARITY
 
 MATRICES: dict[str, list[tuple[int, int]]] = {
-    "parity": MATRIX_PARITY,
-    "mjp": MATRIX_MJP,   # maximum joint profit
-    "mif": MATRIX_MIF,   # maximum ingroup difference
+    name: entry["rows"] for name, entry in MATRIX_LIBRARY.items()
 }
 
 # Anchor rows (what "favouring the ingroup" means on each matrix type).
@@ -169,6 +160,8 @@ def agent_index(aid: str) -> int:
 
 
 GROUPS = ("A", "B")
+# Concrete, meaningless group names shown to agents in place of "ingroup"/"outgroup".
+GROUP_NAMES = {"A": "BLOTQW", "B": "BTSLAB"}
 
 
 def group_of(i: int, n: int, condition: str = DEFAULT_CONDITION) -> str:
@@ -444,7 +437,7 @@ def _provider_env(provider: str) -> tuple[str, str, str]:
 class _OpenAILLM:
     """Thin OpenAI-compatible client over one registered provider slot, lazily connected."""
 
-    def __init__(self, model: str | None = None, temperature: float = 0.7, max_tokens: int = 160,
+    def __init__(self, model: str | None = None, temperature: float = 0.7, max_tokens: int = 800,
                  provider: str = "openai"):
         _load_dotenv()
         self.provider = provider
@@ -489,28 +482,29 @@ def _make_llm(kind: str, **kw) -> Callable[[str], str] | None:
 _PROMPTS: dict[str, dict[str, str]] = {
     "en": {
         "head": ("You are a participant in a short decision study. {framing}"),
-        "task_labelled": ("You must allocate money to two anonymous people: the ingroup member "
-                          "(the member of YOUR group listed in the left column) and the outgroup "
-                          "member (listed in the right column). Pick exactly ONE row of the "
-                          "matrix below. Each row shows (the ingroup member's points, the "
-                          "outgroup member's points)."),
+        "task_labelled": ("You are a member of the {own_name} group. You must allocate points to "
+                          "two anonymous people: the {own_name} member (listed in the left column) "
+                          "and the {other_name} member (listed in the right column). Pick exactly "
+                          "ONE row of the matrix below. Each row shows ({own_name} points, "
+                          "{other_name} points)."),
         "task_hidden": ("You must allocate money between two anonymous people -- Person A in the "
                         "left column and Person B in the right column. Pick exactly ONE row of "
                         "the matrix below. Each row shows (Person A's points, Person B's points)."),
         "tail": ('Answer with one line of JSON only: {{"row": <a row number from 0 to {max_row}>, '
                  '"reason": "<at most 12 words>"}}'),
-        "note_visible": "- Left column = your ingroup member, right column = the outgroup member.",
+        "note_visible": "- Left column = the {own_name} member, right column = the {other_name} member.",
         "note_hidden": ("- You are not told which of Person A and Person B belongs to which group."),
     },
     "zh": {
         "head": ("你是参加一个简短决策研究的被试。{framing}"),
-        "task_labelled": ("你需要把金额分配给两个匿名的人：内群体成员（你所在群体的成员，在左列）与外群体成员"
-                          "（在右列）。请在下面的矩阵中只选一行。每一行是（内群体成员的点数, 外群体成员的点数）。"),
+        "task_labelled": ("你是 {own_name} 组的成员。你需要把积分分配给两个匿名的人：{own_name} 组成员（在左列）"
+                          "和 {other_name} 组成员（在右列）。请在下面的矩阵中只选一行。每一行是（{own_name} 的点数, "
+                          "{other_name} 的点数）。"),
         "task_hidden": ("你需要把金额分配给两个匿名的人——左列的甲与右列的乙。请在下面的矩阵中只选一行。"
                         "每一行是（甲的点数, 乙的点数）。"),
         "tail": ('只输出一行 JSON: {{"row": <0 到 {max_row} 之间的行号>, '
                  '"reason": "<不超过20字的理由>"}}'),
-        "note_visible": "- 左列 = 你的内群体成员，右列 = 外群体成员。",
+        "note_visible": "- 左列 = {own_name} 组成员，右列 = {other_name} 组成员。",
         "note_hidden": "- 你并不知道甲和乙分别属于哪个群体。",
     },
 }
@@ -536,15 +530,16 @@ def build_tajfel_prompt(ob: Observation, lang: str = "en") -> str:
     framing = ob.macro_information.get("framing", "")
     rows = ob.macro_physical.get("rows", [])
     label_visible = bool(ob.macro_physical.get("label_visible", True))
-    kind = ob.macro_physical.get("matrix_kind", "?")
     # rows are stored canonically (A, B); on a labelled arm the agent sees the two columns from
     # ITS OWN point of view, so "the left column is your group" is true for every agent
     own = (ob.local_physical or {}).get("own_group", "A")
+    own_name = GROUP_NAMES.get(own, own)
+    other_name = GROUP_NAMES.get(other_group(own), other_group(own))
 
-    lines = [t["head"].format(framing=framing), f"- Matrix type: {kind}"]
+    lines = [t["head"].format(framing=framing)]
     if label_visible:
-        lines.append(t["note_visible"])
-        lines.append(t["task_labelled"])
+        lines.append(t["note_visible"].format(own_name=own_name, other_name=other_name))
+        lines.append(t["task_labelled"].format(own_name=own_name, other_name=other_name))
     else:
         lines.append(t["note_hidden"])
         lines.append(t["task_hidden"])
@@ -553,7 +548,7 @@ def build_tajfel_prompt(ob: Observation, lang: str = "en") -> str:
         a, b = int(r["a_points"]), int(r["b_points"])
         if label_visible:
             own_pts, other_pts = (a, b) if own == "A" else (b, a)
-            lines.append(f"  row {r['row']}:  ingroup {own_pts}  outgroup {other_pts}   "
+            lines.append(f"  row {r['row']}:  {own_name} {own_pts}  {other_name} {other_pts}   "
                          f"(joint {a + b})")
         else:
             # a hidden label must not disclose which column is the agent's own group
@@ -609,7 +604,7 @@ class TajfelDecisionModel(DecisionModel):
     def __init__(self, matrix_bias: float = 0.65, noise: float = 0.5, label_gain: float = 0.3,
                  rarity_gain: float = 0.3,
                  llm_kind: str = "scripted", model: str | None = None,
-                 temperature: float = 0.7, max_tokens: int = 160, max_workers: int = 8,
+                 temperature: float = 0.7, max_tokens: int = 800, max_workers: int = 8,
                  prompt_lang: str = "en"):
         if prompt_lang not in PROMPT_LANGS:
             raise ValueError(f"prompt_lang must be one of {PROMPT_LANGS}, got {prompt_lang!r}")

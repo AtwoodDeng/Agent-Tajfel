@@ -139,8 +139,9 @@ def main() -> int:
         print(f"  {'':7}              joints={joints}")
         if len(v) < 2:
             failures.append(f"{k}: needs >= 2 rows")
-        if any(a < 0 or b < 0 for a, b in v):
-            failures.append(f"{k}: negative payoff")
+        valence = taj.MATRIX_LIBRARY.get(k, {}).get("valence", "gain")
+        if valence == "gain" and any(a < 0 or b < 0 for a, b in v):
+            failures.append(f"{k}: negative payoff in a gain matrix")
     # parity: joint profit constant, gap sweeps sign
     if len({a + b for a, b in taj.MATRIX_PARITY}) != 1:
         failures.append("parity: joint profit must be constant across rows")
@@ -259,8 +260,8 @@ def main() -> int:
 
     ob_shown = FakeObs(taj, "tj-004", 3, "mif", True)
     prompt_v = taj.build_tajfel_prompt(ob_shown, "en")
-    if "ingroup" not in prompt_v:
-        failures.append("c1/c3 prompt must name the ingroup and outgroup columns")
+    if "BLOTQW" not in prompt_v or "BTSLAB" not in prompt_v:
+        failures.append("c1/c3 prompt must name the two concrete group columns")
     # the visible prompt must present the matrix from THIS agent's own point of view
     p_a = taj.build_tajfel_prompt(FakeObs(taj, "tj-000", 3, "mif", True,
                                           condition="c1", own_group="A"), "en")
@@ -269,10 +270,10 @@ def main() -> int:
     if p_a == p_b:
         failures.append("c1/c3 prompt must differ for group-A and group-B agents (own-group "
                         "perspective)")
-    if "ingroup 15  outgroup 5" not in p_a:
-        failures.append("c1: a group-A agent must see row 0 as ingroup 15 / outgroup 5")
-    if "ingroup 5  outgroup 15" not in p_b:
-        failures.append("c1: a group-B agent must see row 0 as ingroup 5 / outgroup 15 "
+    if "BLOTQW 15  BTSLAB 5" not in p_a:
+        failures.append("c1: a group-A agent must see row 0 as BLOTQW 15 / BTSLAB 5")
+    if "BTSLAB 5  BLOTQW 15" not in p_b:
+        failures.append("c1: a group-B agent must see row 0 as BTSLAB 5 / BLOTQW 15 "
                         "(own-group perspective)")
     print("\n== prompt (c1, label visible) ==")
     print(prompt_v)
