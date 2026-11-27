@@ -1,0 +1,21 @@
+{
+  "condition": "c1",
+  "label": "label visible (classic minimal group)",
+  "llm": "scripted",
+  "n_agents": 10,
+  "n_steps": 3,
+  "seed": 42,
+  "out": "/home/atwood/tajfel-study/runs/c1",
+  "n_allocations": 30,
+  "allocations_csv": "/home/atwood/tajfel-study/runs/c1/export/allocations.csv",
+  "metrics_csv": "/home/atwood/tajfel-study/runs/c1/export/metrics.csv",
+  "last_step": {
+    "mean_favour": 4.4,
+    "favour_parity": null,
+    "favour_mjp": null,
+    "favour_mif": 4.4,
+    "mean_gap": 4.4,
+    "mif_favour_share": 1.0,
+    "fallback_rate": 0.0
+  }
+}

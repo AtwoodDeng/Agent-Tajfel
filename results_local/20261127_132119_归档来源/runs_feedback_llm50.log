@@ -1,0 +1,17 @@
+===== d1 start 12:14:47 =====
+WARNING: real LLM run: d1, 10 steps, 50 agents x 3 rounds
+d1: final mean_gap=0.08
+===== d1 done 12:33:29 =====
+===== d2 start 12:33:29 =====
+WARNING: real LLM run: d2, 10 steps, 50 agents x 3 rounds
+d2: final mean_gap=0.56
+===== d2 done 12:49:21 =====
+===== d4 start 12:49:21 =====
+WARNING: real LLM run: d4, 10 steps, 50 agents x 3 rounds
+d4: final mean_gap=-0.08
+===== d4 done 13:02:16 =====
+===== d5 start 13:02:16 =====
+WARNING: real LLM run: d5, 10 steps, 50 agents x 1 rounds
+d5: final mean_gap=4.56
+===== d5 done 13:05:32 =====
+ALL DONE 13:05:32

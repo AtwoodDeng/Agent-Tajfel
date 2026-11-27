@@ -1,0 +1,21 @@
+{
+  "condition": "c2",
+  "label": "label hidden (Person A / Person B, group labels withheld)",
+  "llm": "scripted",
+  "n_agents": 10,
+  "n_steps": 3,
+  "seed": 42,
+  "out": "/home/atwood/tajfel-study/runs/c2",
+  "n_allocations": 30,
+  "allocations_csv": "/home/atwood/tajfel-study/runs/c2/export/allocations.csv",
+  "metrics_csv": "/home/atwood/tajfel-study/runs/c2/export/metrics.csv",
+  "last_step": {
+    "mean_favour": 0.0,
+    "favour_parity": null,
+    "favour_mjp": null,
+    "favour_mif": 0.0,
+    "mean_gap": 0,
+    "mif_favour_share": 0.4,
+    "fallback_rate": 0.0
+  }
+}

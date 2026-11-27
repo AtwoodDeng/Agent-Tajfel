@@ -1,0 +1,57 @@
+{
+  "record_type": "历史补录",
+  "source_path": "runs/c3",
+  "archive_commit": "708530feee128c04513b6d03aa3f394e12dee216",
+  "runtime_commit": null,
+  "condition": "c3",
+  "seed": 42,
+  "llm_kind": "scripted",
+  "model": null,
+  "n_agents_declared": 10,
+  "n_agents_observed": 10,
+  "steps_declared": 3,
+  "steps_observed": [
+    1,
+    2,
+    3
+  ],
+  "matrices_observed": [
+    "mif",
+    "mjp",
+    "parity"
+  ],
+  "source_config": {},
+  "source_summary": {
+    "condition": "c3",
+    "label": "rarity (label visible, own group is the 10/40 minority)",
+    "llm": "scripted",
+    "n_agents": 10,
+    "n_steps": 3,
+    "seed": 42,
+    "out": "/home/atwood/tajfel-study/runs/c3",
+    "n_allocations": 30,
+    "allocations_csv": "/home/atwood/tajfel-study/runs/c3/export/allocations.csv",
+    "metrics_csv": "/home/atwood/tajfel-study/runs/c3/export/metrics.csv",
+    "last_step": {
+      "mean_favour": 3.6,
+      "favour_parity": null,
+      "favour_mjp": null,
+      "favour_mif": 3.6,
+      "mean_gap": 3.6,
+      "mif_favour_share": 0.7,
+      "fallback_rate": 0.0
+    }
+  },
+  "directory_timestamp": "未知",
+  "actual_start": null,
+  "actual_end": null,
+  "exit_code": null,
+  "command": null,
+  "runtime_workdir": null,
+  "sampling_parameters": null,
+  "concurrency": null,
+  "retries": null,
+  "timeout": null,
+  "chat_subrounds": null,
+  "unknown_reason": "原始产物未记录的字段保持 null；归档提交不等于运行代码版本。"
+}

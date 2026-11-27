@@ -1,0 +1,7 @@
+{
+  "allocations": 500,
+  "metric_rows": 10,
+  "first_mean_gap": 3.6,
+  "last_mean_gap": 4.56,
+  "max_fallback_rate": 0.0
+}

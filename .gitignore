@@ -7,6 +7,7 @@
 runs/
 runs_feedback/
 runs_communication/
+results_local/
 .tmp-selftest/
 **/trajectory/
 **/*.duckdb
@@ -51,3 +52,10 @@ Thumbs.db
 *.swp
 *.swo
 *~
+
+# Historical results reorganized on the results branch (keep snapshots ignored).
+!results_local/
+results_local/*
+!results_local/实验结果索引.md
+!results_local/20261127_132119_*/
+!results_local/20261127_132119_*/**
